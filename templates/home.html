@@ -1,9 +1,35 @@
 {% extends "base.html" %}
 
-
+{% block title %}
+Unilearn | Building...
+{% endblock %}
 {% block js %}
 {% endblock %}
 
-
+{% block css %}
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<style>
+	body,html{
+		background-color: #dde2e6;
+	}
+	div.center{
+		text-align: center;
+		margin-top: 10%;
+	}
+	h1{
+		text-align: center;
+		font-size: 5em;
+		font-family: 'Open Sans', sans-serif;
+	}
+	h3{
+		font-family: 'Open Sans', sans-serif;		
+	}
+</style>
+{% endblock %}
 {% block main %}
+<div class="center">
+	<img src="http://i.imgur.com/BMiUGxR.png" alt="Logotipo Unilearn" height="200px">
+	<h1>Unilearn</h1>
+	<h3>Made in Medellín, Colombia with &#9829;</h3>
+</div>
 {% endblock %}
