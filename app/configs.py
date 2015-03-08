@@ -1,0 +1,1 @@
+secret_key = 'this_should_be_configured'
