@@ -1,8 +1,6 @@
+# -*- coding: utf8 -*-
 from flask import render_template, redirect, session, url_for, request, json
-from app import app
-from app import api
-from app import models
-#,db
+from app import models, app, db
 
 @app.route("/main")
 @app.route('/index')
