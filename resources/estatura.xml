@@ -1,0 +1,3403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{7}$de los$\dfrac{2}{8}$de la estatura de Alberto es 20 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{2}$de los$\dfrac{3}{8}$de la estatura de Vicente es 37 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+197.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+172.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{8}$de los$\dfrac{4}{7}$de la estatura de Esteban es 35 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{5}$de los$\dfrac{4}{8}$de la estatura de Pedro es 36 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{4}$de los$\dfrac{2}{4}$de la estatura de Esteban es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{7}$de los$\dfrac{1}{5}$de la estatura de Esteban es 22 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+176.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{2}$de los$\dfrac{2}{7}$de la estatura de Esteban es 27 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{7}$de los$\dfrac{2}{2}$de la estatura de Esteban es 25 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{4}$de los$\dfrac{2}{7}$de la estatura de Pedro es 26 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+182.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+195.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{7}$de los$\dfrac{3}{7}$de la estatura de Pedro es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{6}$de los$\dfrac{1}{6}$de la estatura de Alberto es 22 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+176.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{7}$de los$\dfrac{3}{4}$de la estatura de Pedro es 36 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{1}{2}$de la estatura de Alberto es 27 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{5}$de los$\dfrac{1}{5}$de la estatura de Alberto es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{6}$de los$\dfrac{2}{3}$de la estatura de Alberto es 20 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{8}$de los$\dfrac{2}{4}$de la estatura de Esteban es 34 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+181.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+178.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{5}$de los$\dfrac{1}{4}$de la estatura de Vicente es 29 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+193.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+174.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+169.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{4}$de los$\dfrac{2}{5}$de la estatura de Vicente es 35 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{7}$de los$\dfrac{4}{6}$de la estatura de Pedro es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{6}$de los$\dfrac{3}{8}$de la estatura de Esteban es 34 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+181.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+178.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{7}$de los$\dfrac{2}{6}$de la estatura de Esteban es 36 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{7}$de los$\dfrac{4}{4}$de la estatura de Vicente es 23 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+184.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+172.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{4}$de los$\dfrac{2}{5}$de la estatura de Vicente es 37 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+185.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+197.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+172.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{1}{2}$de la estatura de Alberto es 28 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{8}$de los$\dfrac{3}{5}$de la estatura de Esteban es 37 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+164.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+172.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+185.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{8}$de los$\dfrac{3}{3}$de la estatura de Esteban es 24 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{4}{7}$de la estatura de Pedro es 35 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{7}$de los$\dfrac{1}{3}$de la estatura de Alberto es 25 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{4}$de los$\dfrac{1}{7}$de la estatura de Alberto es 23 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+191.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+184.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{3}{8}$de la estatura de Vicente es 24 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{6}$de los$\dfrac{1}{3}$de la estatura de Esteban es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+193.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{8}$de los$\dfrac{3}{7}$de la estatura de Vicente es 35 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{3}$de los$\dfrac{1}{5}$de la estatura de Pedro es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{3}$de los$\dfrac{2}{7}$de la estatura de Vicente es 34 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+178.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+181.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{5}$de los$\dfrac{4}{7}$de la estatura de Vicente es 22 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+176.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{4}$de los$\dfrac{4}{6}$de la estatura de Pedro es 29 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+174.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+181.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+169.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{3}{5}$de la estatura de Vicente es 37 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+185.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+172.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+194.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{7}$de los$\dfrac{3}{4}$de la estatura de Vicente es 39 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+182.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+195.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{7}$de los$\dfrac{3}{7}$de la estatura de Vicente es 24 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{8}$de los$\dfrac{4}{5}$de la estatura de Alberto es 33 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+176.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{2}$de los$\dfrac{2}{5}$de la estatura de Alberto es 39 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+195.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+182.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{3}$de los$\dfrac{1}{5}$de la estatura de Vicente es 24 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{3}{5}$de la estatura de Alberto es 39 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+195.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+182.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{7}$de los$\dfrac{3}{8}$de la estatura de Pedro es 20 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{3}{7}$de la estatura de Alberto es 28 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+171.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{3}{6}$de la estatura de Vicente es 32 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{2}$de los$\dfrac{2}{6}$de la estatura de Vicente es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{8}$de los$\dfrac{2}{6}$de la estatura de Alberto es 30 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{3}$de los$\dfrac{2}{8}$de la estatura de Pedro es 30 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{3}$de los$\dfrac{1}{4}$de la estatura de Pedro es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{5}$de los$\dfrac{4}{6}$de la estatura de Esteban es 24 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{6}$de los$\dfrac{4}{6}$de la estatura de Alberto es 20 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{5}$de los$\dfrac{3}{3}$de la estatura de Esteban es 36 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{8}$de los$\dfrac{4}{5}$de la estatura de Esteban es 39 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+195.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{2}{6}$de la estatura de Vicente es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{2}$de los$\dfrac{3}{7}$de la estatura de Esteban es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{7}$de los$\dfrac{3}{4}$de la estatura de Pedro es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+171.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{1}{2}$de la estatura de Esteban es 32 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{5}$de los$\dfrac{2}{4}$de la estatura de Vicente es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+171.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{8}$de los$\dfrac{2}{5}$de la estatura de Alberto es 25 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{2}{4}$de la estatura de Esteban es 30 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{4}$de los$\dfrac{4}{7}$de la estatura de Vicente es 25 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{4}{7}$de la estatura de Vicente es 34 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+178.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+181.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{2}{4}$de la estatura de Esteban es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+193.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{7}$de los$\dfrac{2}{8}$de la estatura de Alberto es 23 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+184.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+172.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{8}$de los$\dfrac{3}{7}$de la estatura de Alberto es 36 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{4}$de los$\dfrac{1}{7}$de la estatura de Alberto es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{2}{3}$de la estatura de Vicente es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+171.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{5}$de los$\dfrac{1}{3}$de la estatura de Esteban es 26 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+195.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+184.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{8}$de los$\dfrac{3}{3}$de la estatura de Alberto es 23 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+184.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+172.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+191.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{2}{5}$de la estatura de Pedro es 26 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+195.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+182.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{8}$de los$\dfrac{4}{7}$de la estatura de Esteban es 28 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{4}{6}$de la estatura de Pedro es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+171.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{6}$de los$\dfrac{3}{7}$de la estatura de Esteban es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+199.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+171.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{4}{8}$de la estatura de Esteban es 33 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+176.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{1}{3}$de la estatura de Alberto es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{8}$de los$\dfrac{3}{4}$de la estatura de Alberto es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{5}$de los$\dfrac{4}{4}$de la estatura de Vicente es 38 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+190.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+171.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{7}$de los$\dfrac{3}{7}$de la estatura de Vicente es 30 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{6}$de los$\dfrac{4}{4}$de la estatura de Alberto es 27 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{5}$de los$\dfrac{2}{3}$de la estatura de Vicente es 25 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+177.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{6}$de los$\dfrac{1}{4}$de la estatura de Vicente es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{3}$de los$\dfrac{1}{6}$de la estatura de Vicente es 20 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+166.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{4}$de los$\dfrac{1}{3}$de la estatura de Esteban es 27 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{6}$de los$\dfrac{1}{4}$de la estatura de Vicente es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{8}$de los$\dfrac{1}{3}$de la estatura de Pedro es 31 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{7}$de los$\dfrac{2}{4}$de la estatura de Esteban es 27 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{6}$de los$\dfrac{4}{8}$de la estatura de Vicente es 30 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{8}$de los$\dfrac{2}{5}$de la estatura de Vicente es 26 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+161.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+182.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{5}$de los$\dfrac{4}{5}$de la estatura de Pedro es 30 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+187.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{3}{7}$de la estatura de Pedro es 24 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{8}$de los$\dfrac{4}{8}$de la estatura de Pedro es 33 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+176.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+173.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{3}$de los$\dfrac{3}{8}$de la estatura de Esteban es 22 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+176.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+198.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{3}{8}$de los$\dfrac{2}{4}$de la estatura de Pedro es 35 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{1}{4}$de los$\dfrac{3}{6}$de la estatura de Pedro es 21 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+183.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{8}$de los$\dfrac{2}{3}$de la estatura de Vicente es 32 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+196.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{8}$de los$\dfrac{1}{3}$de la estatura de Vicente es 27 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+162.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+189.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+165.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{3}$de los$\dfrac{2}{7}$de la estatura de Esteban es 34 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+178.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+185.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+181.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{4}{5}$de los$\dfrac{1}{6}$de la estatura de Alberto es 24 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+192.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+168.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+170.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>$\dfrac{2}{8}$de los$\dfrac{3}{7}$de la estatura de Alberto es 20 cm.]]> Su estatura es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+186.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+163.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+175.0 cm.
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+180.0 cm.
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+</quiz>

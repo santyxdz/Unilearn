@@ -1,0 +1,3403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$57.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.3$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{1.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$45.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-4.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$31.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$10.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{1.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$26.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$17.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.6$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{8.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$68.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.6$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{3.0}{13.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$61.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{1.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.4$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$14.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.3$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{4.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{4.0}{9.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$38.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.9$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{1.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.1$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.1$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{3.0}{12.0}$de la edad actual de Gloria, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$34.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.3$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-8.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{4.0}{13.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$32.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$10.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{3.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.1$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.3$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$7.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{4.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$63.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{12.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$48.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$12.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$30.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$15.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.3$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$7.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$42.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{1.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$29.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$34.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{4.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$66.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{1.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$30.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{8.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$15.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.1$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.4$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{4.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$45.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$11.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$7.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{2.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{9.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$32.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{4.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$81.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$16.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{3.0}{11.0}$de la edad actual de Claudia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$26.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$11.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{2.0}{13.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$35.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$27.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$17.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{4.0}{10.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$26.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$26.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.6$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$35.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$35.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{4.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.1$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.3$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{3.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$38.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$15.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$37.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.3$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{1.0}{12.0}$de la edad actual de Gloria, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$30.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$16.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{12.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$110.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{3.0}{13.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$29.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{3.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$44.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$11.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{12.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$90.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$7.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{10.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$90.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$12.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$40.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$13.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{3.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{1.0}{12.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$32.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{2.0}{11.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$35.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$31.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$12.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-9.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{3.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$27.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$27.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.4$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$88.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$37.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$12.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$7.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$41.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{4.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$48.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$16.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{3.0}{9.0}$de la edad actual de Claudia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.9$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{1.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{2.0}{9.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$28.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{1.0}{9.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$11.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{10.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$47.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-4.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{3.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-9.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{13.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$82.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.3$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{1.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$27.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$16.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$26.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.4$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{13.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$65.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$17.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{8.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-7.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$7.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{1.0}{10.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$30.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$16.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{3.0}{11.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$23.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$10.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.9$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{2.0}{13.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$35.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{1.0}{13.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$35.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$20.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$26.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.9$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{4.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$11.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-3.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{2.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$39.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$23.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.6$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{4.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$27.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$16.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.3$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{2.0}{11.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$29.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$23.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{2.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$64.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{10.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$47.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$23.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$24.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.2$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.7$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{3.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$25.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$12.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.6$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{2.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$23.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$23.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.1$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\dfrac{2.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{6.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$66.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$13.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{3.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\dfrac{2.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$13.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$4.8$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{3.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$32.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.6$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{2.0}{13.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$78.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$21.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{4.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$38.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$12.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-4.4$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$14.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{4.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$58.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$19.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.7$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$5.3$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{3.0}{11.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$35.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$3.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\dfrac{1.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$27.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$16.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.5$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{3.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{3.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$88.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{2.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{2.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$23.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.5$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.1$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\dfrac{4.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$44.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$44.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-2.8$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$6.3$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{3.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{1.0}{1.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$22.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-1.6$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$2.2$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\dfrac{3.0}{7.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\dfrac{3.0}{5.0}$ de la edad de su esposa.]]> La edad actual de su esposa es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$18.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$9.3$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$-8.0$]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$8.0$]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+</quiz>

@@ -1,0 +1,3403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3240.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$6120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2295.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2125.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2250.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1280.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3240.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$6120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3825.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$6120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$6480.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4590.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5440.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$810.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1350.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4165.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$5440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3825.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4050.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5040.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4320.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3570.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3150.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1280.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$960.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1280.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2560.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4590.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2295.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4320.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4050.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4760.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3840.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3060.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3570.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1350.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$765.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5760.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$480.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1260.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$960.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1080.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1350.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2550.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$765.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4165.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2250.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2125.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2550.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1080.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2250.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3060.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2400.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$5355.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2430.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4590.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2520.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3570.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1890.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2550.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2700.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3570.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2550.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1190.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$960.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3150.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2520.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1890.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2000.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4760.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4480.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$960.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$765.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4165.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4480.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2250.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1600.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2430.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5355.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4320.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4050.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1620.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1890.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$5040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4760.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3150.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3570.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4165.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4480.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$510.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1190.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$640.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1190.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$720.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1680.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4410.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2800.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3060.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2550.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3570.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$640.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$900.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$850.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$850.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1190.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3150.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2125.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3780.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3920.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4760.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$5120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4480.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3200.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2560.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1680.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$810.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1350.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$510.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$900.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$850.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1190.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1680.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1350.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1190.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$480.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1280.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3150.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3570.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$6120.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3825.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4860.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5040.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$850.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$480.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2880.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$510.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$540.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 300 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$960.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2880.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $3 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1275.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1620.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2880.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1920.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2160.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 800 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $6 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2880.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1530.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2560.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2125.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1200.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $7 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2975.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1785.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4165.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2240.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{20}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2040.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2560.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $2 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1360.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1280.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$510.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 500 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $8 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5440.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2720.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$4320.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2240.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1080.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 400 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $5 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1800.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3200.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3400.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 700 hect&#225;reas se cultivan $\dfrac{1}{20}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $4 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$2380.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1020.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2240.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$1700.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una finca de 600 hect&#225;reas se cultivan $\dfrac{1}{10}$, se alquilan$\dfrac{1}{10}$y lo restante se vende en $9 millones la hect&#225;rea]]> El dinero obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+$4320.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$5760.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$2295.0 millones
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+$3600.0 millones
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+</quiz>

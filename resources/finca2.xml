@@ -1,0 +1,3403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 237 millones y la vendi&#243; ganando 69 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$306$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$312$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$329$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$333$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 356 millones y la vendi&#243; ganando 71 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$427$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$442$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$440$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$444$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 310 millones y la vendi&#243; ganando 79 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$389$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$391$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$366$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$408$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 495 millones y la vendi&#243; ganando 78 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$573$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$546$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$557$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$583$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 357 millones y la vendi&#243; ganando 66 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$423$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$418$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$444$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$420$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 472 millones y la vendi&#243; ganando 89 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$561$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$536$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$540$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$537$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 594 millones y la vendi&#243; ganando 80 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$674$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$645$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$677$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$681$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 407 millones y la vendi&#243; ganando 83 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$490$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$493$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$495$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$465$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 518 millones y la vendi&#243; ganando 69 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$587$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$571$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$586$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$614$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 533 millones y la vendi&#243; ganando 80 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$613$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$609$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$596$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$593$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 332 millones y la vendi&#243; ganando 51 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$383$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$409$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$406$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$389$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 249 millones y la vendi&#243; ganando 75 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$324$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$338$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$308$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$311$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 403 millones y la vendi&#243; ganando 56 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$459$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$467$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$477$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$466$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 414 millones y la vendi&#243; ganando 58 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$472$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$483$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$477$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$501$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 229 millones y la vendi&#243; ganando 89 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$318$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$299$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$283$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$328$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 458 millones y la vendi&#243; ganando 54 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$512$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$554$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$518$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$521$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 385 millones y la vendi&#243; ganando 87 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$472$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$459$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$474$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$463$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 229 millones y la vendi&#243; ganando 76 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$305$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$323$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$316$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$306$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 426 millones y la vendi&#243; ganando 81 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$507$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$494$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$491$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$526$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 400 millones y la vendi&#243; ganando 86 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$486$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$454$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$487$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$458$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 504 millones y la vendi&#243; ganando 62 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$566$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$574$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$593$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$588$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 240 millones y la vendi&#243; ganando 90 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$330$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$313$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$335$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$339$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 568 millones y la vendi&#243; ganando 78 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$646$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$638$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$665$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$643$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 576 millones y la vendi&#243; ganando 68 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$644$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$663$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$640$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$674$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 408 millones y la vendi&#243; ganando 66 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$474$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$494$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$503$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$468$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 341 millones y la vendi&#243; ganando 89 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$430$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$411$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$439$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$426$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 382 millones y la vendi&#243; ganando 96 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$478$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$453$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$445$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$433$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 332 millones y la vendi&#243; ganando 62 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$394$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$400$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$409$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$411$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 256 millones y la vendi&#243; ganando 68 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$324$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$352$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$323$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$331$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 570 millones y la vendi&#243; ganando 67 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$637$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$631$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$625$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$650$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 495 millones y la vendi&#243; ganando 53 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$548$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$546$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$575$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$561$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 283 millones y la vendi&#243; ganando 88 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$371$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$364$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$382$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$373$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 333 millones y la vendi&#243; ganando 76 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$409$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$403$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$389$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$426$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 589 millones y la vendi&#243; ganando 92 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$681$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$664$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$686$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$663$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 520 millones y la vendi&#243; ganando 62 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$582$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$583$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$580$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$584$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 536 millones y la vendi&#243; ganando 50 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$586$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$628$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$615$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$605$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 244 millones y la vendi&#243; ganando 58 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$302$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$333$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$298$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$295$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 382 millones y la vendi&#243; ganando 91 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$473$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$481$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$480$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$443$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 598 millones y la vendi&#243; ganando 65 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$663$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$671$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$666$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$660$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 264 millones y la vendi&#243; ganando 66 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$330$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$338$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$348$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$318$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 405 millones y la vendi&#243; ganando 70 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$475$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$501$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$479$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$488$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 216 millones y la vendi&#243; ganando 50 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$266$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$275$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$313$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$286$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 342 millones y la vendi&#243; ganando 58 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$400$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$438$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$437$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$430$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 301 millones y la vendi&#243; ganando 84 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$385$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$362$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$375$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$361$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 413 millones y la vendi&#243; ganando 96 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$509$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$482$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$497$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$484$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 220 millones y la vendi&#243; ganando 52 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$272$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$313$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$287$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$275$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 261 millones y la vendi&#243; ganando 72 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$333$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$320$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$321$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$348$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 456 millones y la vendi&#243; ganando 77 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$533$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$513$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$510$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$547$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 540 millones y la vendi&#243; ganando 91 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$631$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$607$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$632$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$613$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 446 millones y la vendi&#243; ganando 88 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$534$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$541$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$516$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$545$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 464 millones y la vendi&#243; ganando 82 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$546$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$542$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$526$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$534$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 512 millones y la vendi&#243; ganando 80 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$592$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$590$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$588$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$572$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 502 millones y la vendi&#243; ganando 93 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$595$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$592$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$582$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$560$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 293 millones y la vendi&#243; ganando 83 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$376$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$346$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$368$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$371$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 390 millones y la vendi&#243; ganando 98 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$488$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$454$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$469$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$440$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 417 millones y la vendi&#243; ganando 57 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$474$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$467$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$486$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$494$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 429 millones y la vendi&#243; ganando 79 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$508$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$525$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$492$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$486$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 521 millones y la vendi&#243; ganando 89 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$610$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$575$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$620$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$602$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 598 millones y la vendi&#243; ganando 73 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$671$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$657$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$666$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$685$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 596 millones y la vendi&#243; ganando 71 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$667$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$676$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$686$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$665$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 410 millones y la vendi&#243; ganando 73 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$483$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$475$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$472$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$464$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 496 millones y la vendi&#243; ganando 79 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$575$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$584$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$591$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$572$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 416 millones y la vendi&#243; ganando 90 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$506$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$500$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$494$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$481$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 292 millones y la vendi&#243; ganando 66 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$358$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$385$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$372$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$382$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 280 millones y la vendi&#243; ganando 50 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$330$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$347$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$339$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$359$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 265 millones y la vendi&#243; ganando 58 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$323$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$362$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$321$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$357$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 502 millones y la vendi&#243; ganando 97 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$599$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$558$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$573$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$554$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 270 millones y la vendi&#243; ganando 65 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$335$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$342$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$356$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$360$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 475 millones y la vendi&#243; ganando 98 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$573$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$574$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$542$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$540$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 385 millones y la vendi&#243; ganando 51 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$436$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$457$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$450$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$473$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 297 millones y la vendi&#243; ganando 64 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$361$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$392$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$352$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$359$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 368 millones y la vendi&#243; ganando 50 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$418$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$458$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$448$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$439$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 484 millones y la vendi&#243; ganando 60 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$544$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$569$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$538$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$537$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 243 millones y la vendi&#243; ganando 89 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$332$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$312$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$329$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$298$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 478 millones y la vendi&#243; ganando 68 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$546$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$534$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$545$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$549$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 580 millones y la vendi&#243; ganando 54 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$634$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$636$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$653$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$659$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 333 millones y la vendi&#243; ganando 82 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$415$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$386$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$403$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$410$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 368 millones y la vendi&#243; ganando 97 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$465$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$419$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$458$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$443$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 296 millones y la vendi&#243; ganando 90 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$386$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$365$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$392$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$349$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 530 millones y la vendi&#243; ganando 60 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$590$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$629$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$628$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$609$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 470 millones y la vendi&#243; ganando 83 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$553$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$525$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$523$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$557$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 337 millones y la vendi&#243; ganando 97 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$434$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$428$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$414$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$432$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 299 millones y la vendi&#243; ganando 55 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$354$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$361$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$352$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$360$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 436 millones y la vendi&#243; ganando 89 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$525$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$493$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$491$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$509$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 238 millones y la vendi&#243; ganando 72 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$310$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$305$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$293$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$331$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 351 millones y la vendi&#243; ganando 98 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$449$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$413$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$445$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$414$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 533 millones y la vendi&#243; ganando 71 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$604$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$597$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$615$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$606$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 444 millones y la vendi&#243; ganando 70 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$514$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$532$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$522$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$520$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 370 millones y la vendi&#243; ganando 51 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$421$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$435$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$440$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$453$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 255 millones y la vendi&#243; ganando 85 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$340$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$334$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$347$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$333$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 395 millones y la vendi&#243; ganando 99 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$494$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$480$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$464$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$472$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 234 millones y la vendi&#243; ganando 87 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$321$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$307$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$322$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$311$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 486 millones y la vendi&#243; ganando 64 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$550$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$564$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$573$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$584$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 257 millones y la vendi&#243; ganando 61 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$318$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$310$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$331$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$314$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 484 millones y la vendi&#243; ganando 84 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$568$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$544$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$579$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$574$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 398 millones y la vendi&#243; ganando 96 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$494$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$469$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$489$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$452$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 439 millones y la vendi&#243; ganando 75 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$514$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$524$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$496$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$512$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 242 millones y la vendi&#243; ganando 55 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$297$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$318$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$332$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$323$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 334 millones y la vendi&#243; ganando 71 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$405$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$425$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$400$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$406$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+<question type="multichoice">
+<name>
+<text>
+Seleccion Multiple
+</text>
+ </name>
+<questiontext format="html">
+<text>
+<![CDATA[<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 577 millones y la vendi&#243; ganando 74 millones]]>, el valor obtenido por la venta es
+</text>
+</questiontext>
+
+ <answer fraction="100" format="html">
+<text>
+<![CDATA[$651$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$676$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$673$  millones]]>
+</text>
+</answer>
+ <answer fraction="0" format="html">
+<text>
+<![CDATA[$654$  millones]]>
+</text>
+</answer>
+<shuffleanswers>"1"</shuffleanswers>
+</question>
+</quiz>
