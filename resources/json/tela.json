@@ -1,0 +1,3306 @@
+{
+    "quiz": {
+        "question": [
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "21.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "39.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "43.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 65.0 metros, se cortan$\\dfrac{2}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "6.37 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "42.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "34.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 51.0 metros, se cortan$\\dfrac{1}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "56.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 98.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "32.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "64.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "21.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "41.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 97.0 metros, se cortan$\\dfrac{3}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "10.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "47.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "41.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.7 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 83.0 metros, se cortan$\\dfrac{1}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "33.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "11.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "44.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "41.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 67.0 metros, se cortan$\\dfrac{4}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "42.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "46.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "37.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 75.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "40.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "20.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "15.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 70.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "36.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "56.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "70.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 85.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "11.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "19.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 51.0 metros, se cortan$\\dfrac{2}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "35.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "56.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "11.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 70.0 metros, se cortan$\\dfrac{3}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "59.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "33.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "13.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "47.2 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 59.0 metros, se cortan$\\dfrac{5}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "21.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "42.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "36.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 63.0 metros, se cortan$\\dfrac{2}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "20.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "15.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "42.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "35.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 70.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "30.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "36.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "15.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "18.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 54.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "31.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "54.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "13.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 95.0 metros, se cortan$\\dfrac{2}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "30.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "34.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "5.66 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 51.0 metros, se cortan$\\dfrac{3}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "33.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "44.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "22.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 77.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "43.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "33.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "6.75 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 54.0 metros, se cortan$\\dfrac{4}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "30.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "18.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 54.0 metros, se cortan$\\dfrac{5}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "98.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "49.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "56.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "58.7 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 98.0 metros, se cortan$\\dfrac{5}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "43.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "26.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "46.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 65.0 metros, se cortan$\\dfrac{4}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "29.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "19.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 69.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "16.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "42.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "21.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.4 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 64.0 metros, se cortan$\\dfrac{2}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "22.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "34.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "7.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 60.0 metros, se cortan$\\dfrac{3}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "26.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "20.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 61.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "42.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 63.0 metros, se cortan$\\dfrac{4}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "7.71 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "43.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "33.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "13.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 54.0 metros, se cortan$\\dfrac{1}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "18.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "73.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "48.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "40.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 73.0 metros, se cortan$\\dfrac{2}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "23.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "66.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "16.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "83.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 83.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "34.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 51.0 metros, se cortan$\\dfrac{4}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "26.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "34.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "20.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 60.0 metros, se cortan$\\dfrac{4}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "54.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "64.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 81.0 metros, se cortan$\\dfrac{4}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "18.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "42.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "16.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "37.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 75.0 metros, se cortan$\\dfrac{2}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "42.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "48.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "60.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 85.0 metros, se cortan$\\dfrac{3}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "31.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "9.87 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "15.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 79.0 metros, se cortan$\\dfrac{2}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "18.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "38.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 64.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "63.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "39.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "19.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "47.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 79.0 metros, se cortan$\\dfrac{4}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "46.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "39.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "26.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 92.0 metros, se cortan$\\dfrac{4}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "19.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 68.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "75.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "58.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "67.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 94.0 metros, se cortan$\\dfrac{4}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "18.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "37.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.25 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "14.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 66.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "28.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "14.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "33.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 100.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "40.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "22.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "44.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "38.2 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 67.0 metros, se cortan$\\dfrac{3}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "31.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "21.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "39.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 63.0 metros, se cortan$\\dfrac{3}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "48.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "42.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "96.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 96.0 metros, se cortan$\\dfrac{3}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "47.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "29.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "22.1 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 59.0 metros, se cortan$\\dfrac{4}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "34.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "39.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "44.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 78.0 metros, se cortan$\\dfrac{4}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "9.88 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "63.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "29.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 89.0 metros, se cortan$\\dfrac{1}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "48.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "40.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 61.0 metros, se cortan$\\dfrac{4}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "33.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "14.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "66.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "82.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 99.0 metros, se cortan$\\dfrac{2}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "20.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.11 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.4 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 73.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "38.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "48.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "97.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 97.0 metros, se cortan$\\dfrac{2}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "8.55 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "34.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "64.1 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 77.0 metros, se cortan$\\dfrac{1}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "38.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "26.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "11.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 70.0 metros, se cortan$\\dfrac{5}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "73.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "70.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "39.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "33.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 88.0 metros, se cortan$\\dfrac{5}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "34.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 80.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "66.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "64.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "22.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "50.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 80.0 metros, se cortan$\\dfrac{5}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "13.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "20.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "35.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.85 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 62.0 metros, se cortan$\\dfrac{2}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "31.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "9.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "42.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "52.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 63.0 metros, se cortan$\\dfrac{4}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "72.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "36.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 72.0 metros, se cortan$\\dfrac{5}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "59.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "29.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "14.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "7.37 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 59.0 metros, se cortan$\\dfrac{5}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "21.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "35.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "22.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 57.0 metros, se cortan$\\dfrac{3}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "60.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "91.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "52.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 91.0 metros, se cortan$\\dfrac{4}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "17.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "14.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "43.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 52.0 metros, se cortan$\\dfrac{2}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "20.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "7.71 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.1 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 54.0 metros, se cortan$\\dfrac{3}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "37.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "46.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 65.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "31.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "49.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "20.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 62.0 metros, se cortan$\\dfrac{3}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "25.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.44 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "38.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 76.0 metros, se cortan$\\dfrac{2}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "18.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "37.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "44.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 66.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "7.75 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "15.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "10.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 62.0 metros, se cortan$\\dfrac{1}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "13.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "7.71 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "18.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 54.0 metros, se cortan$\\dfrac{2}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "34.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "9.16 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "6.87 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 55.0 metros, se cortan$\\dfrac{5}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "46.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "40.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "13.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "36.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 92.0 metros, se cortan$\\dfrac{3}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "28.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.25 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "33.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "16.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 66.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "48.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "37.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "18.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "52.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 84.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "53.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "35.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "62.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 94.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "16.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "69.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "55.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "77.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 97.0 metros, se cortan$\\dfrac{1}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "60.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "36.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "39.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 91.0 metros, se cortan$\\dfrac{4}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "33.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "16.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.37 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "55.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 67.0 metros, se cortan$\\dfrac{4}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "11.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "56.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "43.7 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 70.0 metros, se cortan$\\dfrac{1}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "24.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "33.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "16.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "21.7 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 58.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "21.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "51.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "16.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 64.0 metros, se cortan$\\dfrac{3}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "34.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "46.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 77.0 metros, se cortan$\\dfrac{4}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "42.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "14.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "49.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 99.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "32.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "18.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "28.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 56.0 metros, se cortan$\\dfrac{4}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "31.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "49.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 74.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "46.1 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "10.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "27.6 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 83.0 metros, se cortan$\\dfrac{5}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "54.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "19.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "30.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "45.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 68.0 metros, se cortan$\\dfrac{4}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "44.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "35.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "11.8 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 71.0 metros, se cortan$\\dfrac{5}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "48.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "32.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "53.3 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 80.0 metros, se cortan$\\dfrac{3}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "40.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "11.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.7 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 95.0 metros, se cortan$\\dfrac{3}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "18.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "9.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.5 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 63.0 metros, se cortan$\\dfrac{2}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "6.37 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "25.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.7 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 51.0 metros, se cortan$\\dfrac{1}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "24.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "51.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "10.2 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "18.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 72.0 metros, se cortan$\\dfrac{3}{9}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "32.3 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "48.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "55.4 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "58.1 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 97.0 metros, se cortan$\\dfrac{2}{6}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "71.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "23.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "31.5 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.7 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 71.0 metros, se cortan$\\dfrac{5}{5}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "9.42 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "18.8 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "8.25 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "26.4 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 66.0 metros, se cortan$\\dfrac{1}{7}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "42.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "12.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "70.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "24.0 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 84.0 metros, se cortan$\\dfrac{4}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "30.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "60.0 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "26.6 metros"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "17.1 metros"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>De una pieza de tela de 60.0 metros, se cortan$\\dfrac{4}{8}$ El trozo de tela cortado mide"
+                }, 
+                "shuffleanswers": "\"1\""
+            }
+        ]
+    }
+}

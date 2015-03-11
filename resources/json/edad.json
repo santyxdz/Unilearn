@@ -1,0 +1,3306 @@
+{
+    "quiz": {
+        "question": [
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$57.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.3$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$45.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-4.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{1.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$31.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$10.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$26.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$17.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.6$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{1.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{8.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$68.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.6$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$61.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{3.0}{13.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.4$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{1.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$14.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.3$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{4.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{4.0}{9.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$38.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.9$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.1$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.1$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{1.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$34.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{3.0}{12.0}$de la edad actual de Gloria, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$18.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.3$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-8.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$32.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$10.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{4.0}{13.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.1$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{3.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.3$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$7.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$63.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{4.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$48.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$12.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{12.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$30.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$15.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.3$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$7.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$42.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$29.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{1.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$34.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$66.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{4.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$30.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{1.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$15.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.1$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.4$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{8.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$45.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$11.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$7.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{4.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{2.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{9.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$32.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{8.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$81.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$16.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{4.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$26.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$11.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{3.0}{11.0}$de la edad actual de Claudia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$35.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{2.0}{13.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$27.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$17.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$26.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$26.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.6$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{4.0}{10.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$35.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$35.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.1$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.3$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{4.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$38.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$15.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{3.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$37.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.3$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$30.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$16.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{1.0}{12.0}$de la edad actual de Gloria, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$110.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{12.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$29.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{3.0}{13.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$44.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$11.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$19.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{3.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$90.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$7.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{12.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$90.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$12.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{10.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$40.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$13.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{3.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$32.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{1.0}{12.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$35.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{2.0}{11.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$31.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$12.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-9.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$27.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$27.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.4$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{3.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$88.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$37.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$12.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$7.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$41.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$48.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$16.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{4.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.9$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{3.0}{9.0}$de la edad actual de Claudia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{1.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$28.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{2.0}{9.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{1.0}{9.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$11.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$47.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-4.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{10.0}$de la edad actual de Patricia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-9.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{3.0}{8.0}$de la edad actual de Manuela, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$82.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.3$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{13.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$27.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$16.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{1.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$26.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.4$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$65.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$17.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{13.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-7.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$7.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{8.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$30.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$16.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{1.0}{10.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$23.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$10.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.9$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{3.0}{11.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$35.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{2.0}{13.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$35.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$20.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{1.0}{13.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$26.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.9$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{4.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$11.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-3.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{4.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$39.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$23.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.6$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{2.0}{7.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$27.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$16.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.3$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{4.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$29.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$23.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{2.0}{11.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$64.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{2.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$47.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$23.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{10.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$24.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.2$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.7$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{9.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{3.0}{10.0}$de la edad actual de Claudia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$25.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$12.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.6$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$23.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$23.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.1$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{2.0}{9.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$66.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$13.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$19.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Alberto es $\\dfrac{2.0}{7.0}$de la edad actual de Claudia, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{6.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$13.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$4.8$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{3.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 17 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{2.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$32.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.6$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{3.0}{12.0}$de la edad actual de Patricia, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$78.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$21.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{2.0}{13.0}$de la edad actual de Patricia, su esposa. Dentro de 18 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$38.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$12.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-4.4$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$14.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{4.0}{8.0}$de la edad actual de Gloria, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$58.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$19.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.7$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$5.3$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{4.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$35.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$3.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{3.0}{11.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$27.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$16.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.5$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Esteban es $\\dfrac{1.0}{11.0}$de la edad actual de Patricia, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$88.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{3.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{3.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$23.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$18.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.5$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.1$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{2.0}{11.0}$de la edad actual de Manuela, su esposa. Dentro de 15 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{2.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$44.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$44.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-2.8$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$6.3$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Vicente es $\\dfrac{4.0}{7.0}$de la edad actual de Manuela, su esposa. Dentro de 19 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$22.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-1.6$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$2.2$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{3.0}{10.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{1.0}{1.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$18.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$9.3$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$-8.0$"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$8.0$"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>La edad actual de Pedro es $\\dfrac{3.0}{7.0}$de la edad actual de Gloria, su esposa. Dentro de 16 a&#241;os la edad de su esposo ser&#225; los$\\dfrac{3.0}{5.0}$ de la edad de su esposa. La edad actual de su esposa es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }
+        ]
+    }
+}

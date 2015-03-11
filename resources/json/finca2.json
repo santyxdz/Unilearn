@@ -1,0 +1,3306 @@
+{
+    "quiz": {
+        "question": [
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$306$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$312$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$329$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$333$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 237 millones y la vendi&#243; ganando 69 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$427$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$442$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$440$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$444$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 356 millones y la vendi&#243; ganando 71 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$389$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$391$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$366$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$408$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 310 millones y la vendi&#243; ganando 79 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$573$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$546$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$557$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$583$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 495 millones y la vendi&#243; ganando 78 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$423$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$418$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$444$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$420$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 357 millones y la vendi&#243; ganando 66 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$561$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$536$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$540$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$537$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 472 millones y la vendi&#243; ganando 89 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$674$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$645$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$677$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$681$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 594 millones y la vendi&#243; ganando 80 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$490$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$493$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$495$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$465$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 407 millones y la vendi&#243; ganando 83 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$587$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$571$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$586$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$614$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 518 millones y la vendi&#243; ganando 69 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$613$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$609$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$596$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$593$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 533 millones y la vendi&#243; ganando 80 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$383$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$409$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$406$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$389$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 332 millones y la vendi&#243; ganando 51 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$324$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$338$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$308$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$311$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 249 millones y la vendi&#243; ganando 75 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$459$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$467$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$477$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$466$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 403 millones y la vendi&#243; ganando 56 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$472$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$483$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$477$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$501$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 414 millones y la vendi&#243; ganando 58 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$318$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$299$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$283$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$328$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 229 millones y la vendi&#243; ganando 89 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$512$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$554$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$518$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$521$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 458 millones y la vendi&#243; ganando 54 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$472$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$459$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$474$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$463$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 385 millones y la vendi&#243; ganando 87 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$305$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$323$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$316$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$306$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 229 millones y la vendi&#243; ganando 76 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$507$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$494$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$491$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$526$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 426 millones y la vendi&#243; ganando 81 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$486$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$454$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$487$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$458$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 400 millones y la vendi&#243; ganando 86 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$566$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$574$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$593$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$588$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 504 millones y la vendi&#243; ganando 62 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$330$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$313$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$335$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$339$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 240 millones y la vendi&#243; ganando 90 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$646$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$638$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$665$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$643$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 568 millones y la vendi&#243; ganando 78 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$644$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$663$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$640$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$674$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 576 millones y la vendi&#243; ganando 68 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$474$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$494$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$503$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$468$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 408 millones y la vendi&#243; ganando 66 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$430$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$411$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$439$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$426$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 341 millones y la vendi&#243; ganando 89 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$478$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$453$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$445$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$433$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 382 millones y la vendi&#243; ganando 96 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$394$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$400$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$409$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$411$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 332 millones y la vendi&#243; ganando 62 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$324$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$352$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$323$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$331$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 256 millones y la vendi&#243; ganando 68 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$637$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$631$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$625$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$650$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 570 millones y la vendi&#243; ganando 67 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$548$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$546$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$575$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$561$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 495 millones y la vendi&#243; ganando 53 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$371$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$364$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$382$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$373$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 283 millones y la vendi&#243; ganando 88 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$409$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$403$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$389$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$426$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 333 millones y la vendi&#243; ganando 76 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$681$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$664$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$686$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$663$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 589 millones y la vendi&#243; ganando 92 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$582$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$583$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$580$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$584$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 520 millones y la vendi&#243; ganando 62 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$586$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$628$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$615$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$605$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 536 millones y la vendi&#243; ganando 50 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$302$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$333$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$298$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$295$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 244 millones y la vendi&#243; ganando 58 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$473$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$481$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$480$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$443$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 382 millones y la vendi&#243; ganando 91 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$663$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$671$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$666$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$660$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 598 millones y la vendi&#243; ganando 65 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$330$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$338$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$348$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$318$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 264 millones y la vendi&#243; ganando 66 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$475$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$501$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$479$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$488$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 405 millones y la vendi&#243; ganando 70 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$266$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$275$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$313$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$286$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 216 millones y la vendi&#243; ganando 50 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$400$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$438$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$437$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$430$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 342 millones y la vendi&#243; ganando 58 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$385$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$362$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$375$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$361$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 301 millones y la vendi&#243; ganando 84 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$509$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$482$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$497$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$484$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 413 millones y la vendi&#243; ganando 96 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$272$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$313$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$287$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$275$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 220 millones y la vendi&#243; ganando 52 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$333$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$320$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$321$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$348$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 261 millones y la vendi&#243; ganando 72 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$533$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$513$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$510$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$547$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 456 millones y la vendi&#243; ganando 77 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$631$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$607$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$632$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$613$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 540 millones y la vendi&#243; ganando 91 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$534$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$541$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$516$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$545$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 446 millones y la vendi&#243; ganando 88 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$546$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$542$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$526$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$534$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 464 millones y la vendi&#243; ganando 82 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$592$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$590$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$588$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$572$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 512 millones y la vendi&#243; ganando 80 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$595$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$592$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$582$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$560$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 502 millones y la vendi&#243; ganando 93 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$376$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$346$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$368$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$371$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 293 millones y la vendi&#243; ganando 83 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$488$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$454$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$469$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$440$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 390 millones y la vendi&#243; ganando 98 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$474$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$467$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$486$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$494$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 417 millones y la vendi&#243; ganando 57 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$508$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$525$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$492$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$486$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 429 millones y la vendi&#243; ganando 79 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$610$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$575$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$620$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$602$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 521 millones y la vendi&#243; ganando 89 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$671$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$657$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$666$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$685$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 598 millones y la vendi&#243; ganando 73 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$667$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$676$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$686$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$665$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 596 millones y la vendi&#243; ganando 71 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$483$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$475$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$472$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$464$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 410 millones y la vendi&#243; ganando 73 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$575$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$584$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$591$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$572$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 496 millones y la vendi&#243; ganando 79 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$506$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$500$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$494$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$481$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 416 millones y la vendi&#243; ganando 90 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$358$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$385$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$372$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$382$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 292 millones y la vendi&#243; ganando 66 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$330$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$347$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$339$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$359$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 280 millones y la vendi&#243; ganando 50 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$323$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$362$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$321$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$357$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 265 millones y la vendi&#243; ganando 58 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$599$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$558$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$573$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$554$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 502 millones y la vendi&#243; ganando 97 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$335$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$342$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$356$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$360$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 270 millones y la vendi&#243; ganando 65 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$573$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$574$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$542$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$540$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 475 millones y la vendi&#243; ganando 98 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$436$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$457$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$450$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$473$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 385 millones y la vendi&#243; ganando 51 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$361$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$392$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$352$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$359$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 297 millones y la vendi&#243; ganando 64 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$418$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$458$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$448$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$439$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 368 millones y la vendi&#243; ganando 50 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$544$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$569$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$538$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$537$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 484 millones y la vendi&#243; ganando 60 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$332$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$312$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$329$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$298$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 243 millones y la vendi&#243; ganando 89 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$546$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$534$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$545$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$549$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 478 millones y la vendi&#243; ganando 68 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$634$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$636$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$653$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$659$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 580 millones y la vendi&#243; ganando 54 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$415$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$386$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$403$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$410$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 333 millones y la vendi&#243; ganando 82 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$465$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$419$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$458$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$443$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 368 millones y la vendi&#243; ganando 97 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$386$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$365$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$392$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$349$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 296 millones y la vendi&#243; ganando 90 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$590$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$629$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$628$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$609$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 530 millones y la vendi&#243; ganando 60 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$553$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$525$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$523$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$557$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 470 millones y la vendi&#243; ganando 83 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$434$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$428$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$414$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$432$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 337 millones y la vendi&#243; ganando 97 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$354$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$361$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$352$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$360$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 299 millones y la vendi&#243; ganando 55 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$525$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$493$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$491$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$509$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 436 millones y la vendi&#243; ganando 89 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$310$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$305$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$293$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$331$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 238 millones y la vendi&#243; ganando 72 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$449$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$413$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$445$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$414$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 351 millones y la vendi&#243; ganando 98 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$604$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$597$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$615$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$606$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 533 millones y la vendi&#243; ganando 71 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$514$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$532$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$522$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$520$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 444 millones y la vendi&#243; ganando 70 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$421$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$435$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$440$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$453$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 370 millones y la vendi&#243; ganando 51 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$340$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$334$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$347$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$333$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 255 millones y la vendi&#243; ganando 85 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$494$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$480$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$464$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$472$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 395 millones y la vendi&#243; ganando 99 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$321$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$307$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$322$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$311$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 234 millones y la vendi&#243; ganando 87 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$550$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$564$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$573$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$584$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 486 millones y la vendi&#243; ganando 64 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$318$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$310$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$331$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$314$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Alberto compr&#243; una finca por 257 millones y la vendi&#243; ganando 61 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$568$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$544$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$579$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$574$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 484 millones y la vendi&#243; ganando 84 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$494$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$469$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$489$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$452$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 398 millones y la vendi&#243; ganando 96 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$514$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$524$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$496$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$512$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 439 millones y la vendi&#243; ganando 75 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$297$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$318$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$332$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$323$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Vicente compr&#243; una finca por 242 millones y la vendi&#243; ganando 55 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$405$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$425$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$400$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$406$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Esteban compr&#243; una finca por 334 millones y la vendi&#243; ganando 71 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }, 
+            {
+                "@type": "multichoice", 
+                "answer": [
+                    {
+                        "@format": "html", 
+                        "@fraction": "100", 
+                        "text": "$651$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$676$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$673$  millones"
+                    }, 
+                    {
+                        "@format": "html", 
+                        "@fraction": "0", 
+                        "text": "$654$  millones"
+                    }
+                ], 
+                "name": {
+                    "text": "Seleccion Multiple"
+                }, 
+                "questiontext": {
+                    "@format": "html", 
+                    "text": "<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script><script type='text/javascript'src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>Pedro compr&#243; una finca por 577 millones y la vendi&#243; ganando 74 millones, el valor obtenido por la venta es"
+                }, 
+                "shuffleanswers": "\"1\""
+            }
+        ]
+    }
+}
