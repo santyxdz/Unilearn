@@ -8,6 +8,9 @@ from app import models, app, db
 def home():
     return render_template('home.html')
 
+@app.route("/register")
+def register():
+    return render_template("register.html")
 @app.after_request
 def add_header(response):
     """
