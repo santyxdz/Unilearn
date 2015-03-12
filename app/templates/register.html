@@ -2,25 +2,25 @@
 {% block main %}
 <div class="col-lg-6 col-lg-offset-3">
 <div class="well bs-component">
-<form class="form-horizontal">
+<form class="form-horizontal" action="{{ url_for("register")}}" method="post">
     <fieldset>
         <legend>Registro de Usuario</legend>
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">Nombre de Usuario</label>
             <div class="col-lg-10">
-                <input type="text" class="form-control" id="inputUsername" placeholder="username">
+                <input type="text" class="form-control" id="inputUsername" placeholder="username" name="username">
             </div>
         </div>
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">Correo</label>
             <div class="col-lg-10">
-                <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com">
+                <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" name="email">
             </div>
         </div>
         <div class="form-group">
             <label for="inputPassword" class="col-lg-2 control-label">Contraseña</label>
             <div class="col-lg-10">
-                <input type="password" class="form-control" id="inputPassword" placeholder="contraseña"><br/>
+                <input type="password" class="form-control" id="inputPassword" placeholder="contraseña" name="password"><br/>
                 <input type="password" class="form-control" id="inputPassword" placeholder="contraseña de nuevo">
                 <div class="checkbox">
                     <label>
