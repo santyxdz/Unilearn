@@ -1,12 +1,8 @@
 from app import db
 from app import app
-<<<<<<< HEAD
-from flask.ext.social import Social
-from flask.ext.social.datastore import SQLAlchemyConnectionDatastore
 
 app.config['SECURITY_POST_LOGIN'] = '/profile'
 #db = SQLAlchemy(app)
-=======
 
 
 class Team(db.Model):
@@ -41,4 +37,3 @@ class User(db.Model):
 
     def __repr__(self):
         return "<User @"+self.username+">"
->>>>>>> 3975da2cc914af3774f5646c427369c04b7f642d
