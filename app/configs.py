@@ -1,4 +1,6 @@
+
 from os import path
+
 
 secret_key = 'this_should_be_configured'
 
