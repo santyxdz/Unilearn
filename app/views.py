@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 from flask import render_template, redirect, session, url_for, request, json, g
 from facebook import get_user_from_cookie, GraphAPI
 from app import app
 from app import api
 from app import models
 #,db
+=======
+# -*- coding: utf8 -*-
+from flask import render_template, redirect, session, url_for, request, json
+from app import models, app, db, rest
+>>>>>>> 3975da2cc914af3774f5646c427369c04b7f642d
 
 
 
@@ -12,6 +18,28 @@ from app import models
 @app.route('/')
 def home():
     return render_template('home.html')
+
+
+@app.route("/register", methods=['POST', 'GET'])
+def register():
+    error = None
+    if request.method == "POST":
+        users = models.User.query.filter_by(username=request.form["username"].lower()).all()
+        if len(users) > 0:
+            return "ERROR: El Nombre de Usuario ya esta Registrado"
+        else:
+            user = models.User(request.form["username"], request.form["email"], request.form["password"])
+            db.session.add(user)
+            db.session.commit()
+            return redirect(url_for("home"))
+    return render_template("register.html")
+
+
+@app.route("/users")
+def users():
+    users_list = models.User.query.all()
+    return render_template("users.html", users=users_list)
+
 
 @app.after_request
 def add_header(response):
