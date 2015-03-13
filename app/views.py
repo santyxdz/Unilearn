@@ -1,15 +1,11 @@
-<<<<<<< HEAD
 from flask import render_template, redirect, session, url_for, request, json, g
 from facebook import get_user_from_cookie, GraphAPI
 from app import app
 from app import api
 from app import models
-#,db
-=======
 # -*- coding: utf8 -*-
 from flask import render_template, redirect, session, url_for, request, json
-from app import models, app, db, rest
->>>>>>> 3975da2cc914af3774f5646c427369c04b7f642d
+from app import models, app, db, rest, configs
 
 
 
