@@ -3,8 +3,7 @@ from facebook import get_user_from_cookie, GraphAPI
 from app import app
 from app import api
 from app import models
-from flask_oauth
-
+from app import db
 
 @app.route("/main")
 @app.route('/index')
