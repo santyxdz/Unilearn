@@ -1,6 +1,7 @@
 from app import db
 from app import app
 
+app.config['SECURITY_POST_LOGIN'] = '/profile'
 
 class Team(db.Model):
     username = db.Column(db.String(140), unique=True, primary_key=True)
@@ -36,13 +37,13 @@ class User(db.Model):
         return "<User @"+self.username+">"
 
 
+
 class QuestionModel(db.Model):
     cod = db.Column(db.Integer,  primary_key=True)
     #area = db.Column(db.String(15), primary_key=True)
     statement = db.Column(db.Text)
 
-    def __init__(self, cod, statement):
-        self.cod = cod
+    def __init__(self, statement):
         self.statement = statement
         print "Question: "+self.__repr__()
 
@@ -51,16 +52,16 @@ class QuestionModel(db.Model):
 
 class Answers(db.Model):
     cod = db.Column(db.Integer, unique = True, primary_key = True)
-    estado = db.Column(db.Booleand, unique = True)
+    estado = db.Column(db.Boolean, unique = True)
     text= db.Column(db.Text)
     pregunta_cod = db.Column(db.Integer, db.ForeignKey('QuestionModel.cod'))
     pregunta = db.relationship('QuestionModel', backref=db.backref('answers', lazy='dynamic'))
 
-    def __init__(self, cod, estado, text, pregunta):
-        self.cod = cod
+    def __init__(self, estado, text, pregunta):
         self.estado = estado
-        self.textR = text
+        self.text = text
         self.pregunta = pregunta
+        print "Answers: "+self.__repr__()
 
     def __repr__(self):
         return "Answers @"+self.cod
@@ -68,3 +69,4 @@ class Answers(db.Model):
 
 class QuestionSMU(QuestionModel):
     pass
+

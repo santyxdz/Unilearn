@@ -1,6 +1,9 @@
-# -*- coding: utf8 -*-
-from flask import render_template, redirect, session, url_for, request, json
-from app import models, app, db, rest
+from flask import render_template, redirect, session, url_for, request, json, g
+from facebook import get_user_from_cookie, GraphAPI
+from app import app
+from app import api
+from app import models
+from app import db
 
 @app.route("/main")
 @app.route('/index')
@@ -45,3 +48,4 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
+
