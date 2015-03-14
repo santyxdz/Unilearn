@@ -17,6 +17,14 @@ twitter = oauth.remote_app('twitter',
     consumer_key=configs.TW_APP_ID,
     consumer_secret=configs.TW_APP_SECRET,
 )
+@app.template_global()
+def is_empty(item):
+    if isinstance(item, type(None)):
+        return True
+    elif item == "":
+        return True
+    return False
+
 
 @app.route("/main")
 @app.route('/index')
@@ -89,11 +97,11 @@ def logout():
 def oauthorized():
     resp = twitter.authorized_response()
     if resp is None:
-        flask.flash('You denied the reques to sign in')
+        flask.flash('You denied the request to sign in')
     else:
         flask.session['twitter_oauth'] = resp
     return flask.redirect(flask.url_for('success'))
 
 @app.route('/success')
 def success():
-    return flask.render_template("login.html")
+    return flask.render_template("register.html")
