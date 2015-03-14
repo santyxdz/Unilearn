@@ -1,51 +1,49 @@
-from flask import render_template, redirect, session, url_for, request, json, g
-from facebook import get_user_from_cookie, GraphAPI
-from app import app
-from app import api
-from app import models
-# ,db
 # -*- coding: utf8 -*-
-from flask import render_template, redirect, session, url_for, request, json
-from app import models, app, db, rest, configs
-from flask_oauth import OAuth, OAuthException
+from flask import Flask
+import flask
+from flask import redirect,render_template
+from flask_oauthlib.client import OAuth
 
-oauth = OAuth()
-facebook = oauth.remote_app('facebook',
-                            base_url='https://graph.facebook.com/',
-                            request_token_url=None,
-                            access_token='/oauth/access_token',
-                            authorize_url='https://www.facebook.com/dialog/oauth',
-                            consumer_key=configs.FB_APP_ID,
-                            consumer_secret=configs.FB_APP_SECRET,
-                            request_token_params={'scope': 'email'})
+from app import models, app, configs
+from app import db
 
+
+oauth = OAuth(app)
+twitter = oauth.remote_app('twitter',
+    base_url='https://api.twitter.com/1.1/',
+    request_token_url='https://api.twitter.com/oauth/request_token',
+    access_token_url='https://api.twitter.com/oauth/access_token',
+    authorize_url='https://api.twitter.com/oauth/authenticate',
+    consumer_key=configs.TW_APP_ID,
+    consumer_secret=configs.TW_APP_SECRET,
+)
 
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return flask.render_template('home.html')
 
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
     error = None
-    if request.method == "POST":
-        users = models.User.query.filter_by(username=request.form["username"].lower()).all()
+    if flask.request.method == "POST":
+        users = models.User.query.filter_by(username=flask.request.form["username"].lower()).all()
         if len(users) > 0:
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
-            user = models.User(request.form["username"], request.form["email"], request.form["password"])
+            user = models.User(flask.request.form["username"], flask.request.form["email"], flask.request.form["password"])
             db.session.add(user)
             db.session.commit()
-            return redirect(url_for("home"))
-    return render_template("register.html")
+            return flask.redirect(flask.url_for("home"))
+    return flask.render_template("register.html")
 
 
 @app.route("/users")
 def users():
     users_list = models.User.query.all()
-    return render_template("users.html", users=users_list)
+    return flask.render_template("users.html", users=users_list)
 
 
 @app.after_request
@@ -62,35 +60,40 @@ def add_header(response):
 @app.errorhandler(404)
 def page_not_found(error):
     """Custom 404 page."""
-    return render_template('404.html'), 404
+    return flask.render_template('404.html'), 404
+
+@twitter.tokengetter
+def get_twitter_token():
+    if 'twitter_oauth' in flask.session:
+        resp = flask.session['twitter_oauth']
+        return resp['oauth_token'], resp['oauth_token_secret']
 
 
-@app.route("/login")
+@app.before_request
+def before_request():
+    flask.g.user = None
+    if 'twitter_oauth' in flask.session:
+        flask.g.user = flask.session['twitter_oauth']
+
+@app.route('/login')
 def login():
-    callback = url_for(
-        'facebook_authorized',
-        next=request.args.get('next') or request.referrer or None,
-        _external=True
-    )
-    return facebook.authorize(callback=callback)
+    callback_url = flask.url_for('oauthorized', next=flask.request.args.get('next'))
+    return twitter.authorize(callback=callback_url or flask.request.referrer or None)
 
+@app.route('/logout')
+def logout():
+    flask.session.pop('twitter_oauth', None)
+    return redirect(flask.url_for('index'))
 
-@app.route('/login/authorized')
-def facebook_authorized():
-    resp = facebook.authorized_response()
+@app.route('/oauthorized')
+def oauthorized():
+    resp = twitter.authorized_response()
     if resp is None:
-        return 'Access denied: reason=%s error=%s' % (
-            request.args['error_reason'],
-            request.args['error_description']
-        )
-    if isinstance(resp, OAuthException):
-        return 'Access denied: %s' % resp.message
-    session['oauth_token'] = (resp['access_token'], '')
-    me = facebook.get('/me')
-    return 'Logged in as id=%s name=%s redirect=%s' % \
-           (me.data['id'], me.data['name'], request.args.get('next'))
+        flask.flash('You denied the reques to sign in')
+    else:
+        flask.session['twitter_oauth'] = resp
+    return flask.redirect(flask.url_for('success'))
 
-
-@facebook.tokengetter
-def get_facebook_oauth_token():
-    return session.get('oauth_token')
+@app.route('/success')
+def success():
+    return flask.render_template("login.html")

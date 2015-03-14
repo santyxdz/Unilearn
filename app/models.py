@@ -2,7 +2,7 @@ from app import db
 from app import app
 
 app.config['SECURITY_POST_LOGIN'] = '/profile'
-#db = SQLAlchemy(app)
+
 
 
 class Team(db.Model):
@@ -37,3 +37,4 @@ class User(db.Model):
 
     def __repr__(self):
         return "<User @"+self.username+">"
+
