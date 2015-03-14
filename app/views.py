@@ -5,6 +5,16 @@ from app import api
 from app import models
 from app import db
 
+
+@app.template_global()
+def is_empty(item):
+    if isinstance(item, type(None)):
+        return True
+    elif item == "":
+        return True
+    return False
+
+
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
