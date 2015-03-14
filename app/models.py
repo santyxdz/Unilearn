@@ -52,9 +52,9 @@ class QuestionModel(db.Model):
 
 class Answers(db.Model):
     cod = db.Column(db.Integer, unique = True, primary_key = True)
-    estado = db.Column(db.Boolean, unique = True)
+    estado = db.Column(db.Boolean)
     text= db.Column(db.Text)
-    pregunta_cod = db.Column(db.Integer, db.ForeignKey('QuestionModel.cod'))
+    pregunta_cod = db.Column(db.Integer, db.ForeignKey('question_model.cod'))
     pregunta = db.relationship('QuestionModel', backref=db.backref('answers', lazy='dynamic'))
 
     def __init__(self, estado, text, pregunta):

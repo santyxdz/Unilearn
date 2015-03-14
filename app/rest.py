@@ -47,4 +47,4 @@ class CheckUser(Resource):
 
 
 api.add_resource(Error, '/api', "/api/")
-api.add_resource(CheckUser, "/api/checkuser.json")
+api.add_resource(CheckUser, "/api/checkuser/<username>")
