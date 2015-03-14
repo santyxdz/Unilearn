@@ -3,11 +3,21 @@ from facebook import get_user_from_cookie, GraphAPI
 from app import app
 from app import api
 from app import models
-#,db
+# ,db
 # -*- coding: utf8 -*-
 from flask import render_template, redirect, session, url_for, request, json
-from app import models, app, db, rest
-from flask_oauth
+from app import models, app, db, rest, configs
+from flask_oauth import OAuth, OAuthException
+
+oauth = OAuth()
+facebook = oauth.remote_app('facebook',
+                            base_url='https://graph.facebook.com/',
+                            request_token_url=None,
+                            access_token='/oauth/access_token',
+                            authorize_url='https://www.facebook.com/dialog/oauth',
+                            consumer_key=configs.FB_APP_ID,
+                            consumer_secret=configs.FB_APP_SECRET,
+                            request_token_params={'scope': 'email'})
 
 
 @app.route("/main")
@@ -54,3 +64,33 @@ def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
 
+
+@app.route("/login")
+def login():
+    callback = url_for(
+        'facebook_authorized',
+        next=request.args.get('next') or request.referrer or None,
+        _external=True
+    )
+    return facebook.authorize(callback=callback)
+
+
+@app.route('/login/authorized')
+def facebook_authorized():
+    resp = facebook.authorized_response()
+    if resp is None:
+        return 'Access denied: reason=%s error=%s' % (
+            request.args['error_reason'],
+            request.args['error_description']
+        )
+    if isinstance(resp, OAuthException):
+        return 'Access denied: %s' % resp.message
+    session['oauth_token'] = (resp['access_token'], '')
+    me = facebook.get('/me')
+    return 'Logged in as id=%s name=%s redirect=%s' % \
+           (me.data['id'], me.data['name'], request.args.get('next'))
+
+
+@facebook.tokengetter
+def get_facebook_oauth_token():
+    return session.get('oauth_token')
