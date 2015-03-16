@@ -37,21 +37,43 @@ class User(db.Model):
         return "<User @"+self.username+">"
 
 
+class Topic(db.Model):
+    id = db.Column(db.Integer, primary_key=True, unique=True)
+    name = db.Column(db.String(100))
+    description = db.Column(db.Text)
+    icon = db.Column(db.Text)
+    #questions & quiestions.all()
+
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
+        print "New: "+self.__repr__()
+
+    def __repr__(self):
+        return "<Area @"+self.name+">"
+
 
 class QuestionModel(db.Model):
-    cod = db.Column(db.Integer,  primary_key=True)
-    #area = db.Column(db.String(15), primary_key=True)
+    cod = db.Column(db.Integer,  primary_key=True, unique=True)
     statement = db.Column(db.Text)
-
-    def __init__(self, statement):
+    topic_cod = db.Column(db.Integer, db.ForeignKey('topic.id'))
+    topic = db.relationship('Topic', backref=db.backref('questions'))
+    #answers & answers.all()
+    __mapper_args__ = {
+        'polymorphic_on': None,
+        'polymorphic_identity': 'question_model',
+        'with_polymorphic': '*'
+    }
+    def __init__(self, statement, topic):
         self.statement = statement
+        self.topic = topic
         print "Question: "+self.__repr__()
 
     def __repr__(self):
-        return "<QuestionModel @"+self.cod
+        return "<QuestionModel @"+self.statement
 
 class Answers(db.Model):
-    cod = db.Column(db.Integer, unique = True, primary_key = True)
+    cod = db.Column(db.Integer, unique=True, primary_key=True)
     estado = db.Column(db.Boolean)
     text= db.Column(db.Text)
     pregunta_cod = db.Column(db.Integer, db.ForeignKey('question_model.cod'))
@@ -64,9 +86,13 @@ class Answers(db.Model):
         print "Answers: "+self.__repr__()
 
     def __repr__(self):
-        return "Answers @"+self.cod
+        return "Answers @"+self.text
 
 
 class QuestionSMU(QuestionModel):
-    pass
+    __tablename__ = 'question_smu'
+    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
+    __mapper_args__ = {
+        'polymorphic_identity': 'question_smu',
+    }
 
