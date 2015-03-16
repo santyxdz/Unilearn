@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+Unilearn | Cursos.
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+{% block main %}
+    <ul id="courses">
+    {% for course in courses %}
+        <li><img src="{{ course.icon }}" alt="Icono del Curso de {{ course.name }}"/><a href="#">{{ course.name }}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

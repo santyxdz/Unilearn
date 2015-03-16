@@ -43,6 +43,11 @@ def users():
     return render_template("users.html", users=users_list)
 
 
+@app.route("/courses")
+def courses():
+    return render_template("courses.html", courses=models.Topic.query.all())
+
+
 @app.after_request
 def add_header(response):
     """

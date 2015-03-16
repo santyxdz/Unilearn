@@ -32,7 +32,7 @@ class Error(Resource):
 class CheckUser(Resource):
     def get(self, username):
         user = models.User.query.filter_by(username=username).first()
-        if views.is_empty(username):
+        if views.is_empty(user):
             return {
                 "result": False,
                 "status": "error",
