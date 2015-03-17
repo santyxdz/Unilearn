@@ -95,4 +95,25 @@ class QuestionSMU(QuestionModel):
     __mapper_args__ = {
         'polymorphic_identity': 'question_smu',
     }
+    def ValidateAnswer(self, selection):
+        if (selection.estado == True):
+            """ aqui va la todo lo que tiene que ver con Gamificacion"""
+            print "Respuesta Correcta"
+        else:
+            print "Respuesta Incorrecta"
 
+
+
+class QuestionCompletation(QuestionModel):
+    __tablename__ = 'question_completation'
+    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
+    __mapper_args__ = {
+        'polymorphic_identity': 'question_completation',
+    }
+    def ValidateAnswer(self, selection, text):
+        if (selection.text == str(text)):
+            """ en este condicional creo que es mejor comparar el .tetx
+            aqui va la todo lo que tiene que ver con Gamificacion """
+            print "Respuesta Correcta"
+        else:
+            print "Respuesta Incorrecta"
