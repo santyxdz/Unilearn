@@ -1,4 +1,18 @@
-{% extends "base.html" %}
-{% block fb %}
-<a href ="{{ url_for('login') }}">Facebook</a>
-{% end block %}
+<html>
+<head>
+
+</head>
+<body>
+TWITTER CONNECTED.
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul>>
+    {% for message in messages%}
+    <li>{{ message }}
+    </li>
+      {% endfor %}
+    {%endif%}
+    {%endwith%}
+</ul>
+</body>
+</html>
