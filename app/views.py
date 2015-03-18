@@ -112,14 +112,15 @@ def oauthorized():
         flash('You denied the request to sign in')
     else:
         session['twitter_oauth'] = resp
-    return redirect(url_for('yeah'))
+    return render_template("register.html", username=resp['screen_name'])
 
-
+"""
 @app.route('/auth')
 def yeah():
     resp = twitter.get('account/verify_credentials.json')
-    #user = json.load(resp.data)
-    #BETA
     if resp.status == 200:
-        flash(resp.data)
+        data = json.loads(resp)[0]
+        username = data['screen_name']
+        flash(username)
     return render_template("login.html")
+"""
