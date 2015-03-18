@@ -117,3 +117,23 @@ class QuestionCompletation(QuestionModel):
             print "Respuesta Correcta"
         else:
             print "Respuesta Incorrecta"
+
+class QuestionSMM(QuestionModel):
+    __tablename__ = 'question_smm'
+    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
+    __mapper_args__ ={
+        'polymorphic_identity': 'question_smm',
+    }
+    def ValidateAnswer(self, answerSaved, selection):
+        cont=0
+        for i in selection:
+            if i.estado == True:
+                cont +=1
+        score = float((1.0/float(answerSaved))*cont - (1.0/float(answerSaved))*(len(selection)-cont))
+        if (score >= 0):
+            print cont," Respuesta(s) correctas",len(selection)-cont, "Respuesta(s) falsas"
+            print "Puntaje: ", score
+        else:
+            print float(0.0)
+
+
