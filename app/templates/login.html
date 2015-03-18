@@ -1,11 +1,18 @@
 <html>
-  <head>
-    <title>Your data</title>
-  </head>
-  <body>
-    Nombre: {{name}}
-    El link de tu perfil: {{profile}}
-    Access Token: {{acces_token}}
-    Id: {{id}}
-  </body>
+<head>
+
+</head>
+<body>
+TWITTER CONNECTED.
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul>>
+    {% for message in messages%}
+    <li>{{ message }}
+    </li>
+      {% endfor %}
+    {%endif%}
+    {%endwith%}
+</ul>
+</body>
 </html>

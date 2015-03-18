@@ -1,9 +1,22 @@
-from flask import render_template, redirect, session, url_for, request, json, g
-from facebook import get_user_from_cookie, GraphAPI
-from app import app
-from app import api
-from app import models
+# -*- coding: utf8 -*-
+from flask import Flask, g, url_for, request,render_template, flash, json, session
+import flask
+from flask import redirect, render_template
+from flask_oauthlib.client import OAuth
+
+from app import models, app, configs
 from app import db
+
+
+oauth = OAuth(app)
+twitter = oauth.remote_app('twitter',
+                           base_url=configs.tw['base_url'],
+                           request_token_url=configs.tw['request_token_url'],
+                           access_token_url=configs.tw['access_token_url'],
+                           authorize_url=configs.tw['authorize_utl'],
+                           consumer_key=configs.tw['ID'],
+                           consumer_secret=configs.tw['SECRET']
+                           )
 
 
 @app.template_global()
@@ -26,14 +39,15 @@ def home():
 def register():
     error = None
     if request.method == "POST":
-        users = models.User.query.filter_by(username=request.form["username"].lower()).all()
+        users = models.User.query.filter_by(username=flask.request.form["username"].lower()).all()
         if len(users) > 0:
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
-            user = models.User(request.form["username"], request.form["email"], request.form["password"])
+            user = models.User(request.form["username"], request.form["email"],
+                               request.form["password"])
             db.session.add(user)
             db.session.commit()
-            return redirect(url_for("home"))
+            return redirect(flask.url_for("home"))
     return render_template("register.html")
 
 
@@ -64,3 +78,49 @@ def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
 
+
+@twitter.tokengetter
+def get_twitter_token():
+    if 'twitter_oauth' in session:
+        resp = session['twitter_oauth']
+        return resp['oauth_token'], resp['oauth_token_secret']
+
+
+@app.before_request
+def before_request():
+    g.user = None
+    if 'twitter_oauth' in session:
+        g.user = session['twitter_oauth']
+
+
+@app.route('/login')
+def login():
+    callback_url = url_for('oauthorized', next=request.args.get('next'))
+    return twitter.authorize(callback=callback_url or request.referrer or None)
+
+
+@app.route('/logout')
+def logout():
+    session.pop('twitter_oauth', None)
+    return redirect(url_for('index'))
+
+
+@app.route('/oauthorized')
+def oauthorized():
+    resp = twitter.authorized_response()
+    if resp is None:
+        flash('You denied the request to sign in')
+    else:
+        session['twitter_oauth'] = resp
+    return render_template("register.html", username=resp['screen_name'])
+
+"""
+@app.route('/auth')
+def yeah():
+    resp = twitter.get('account/verify_credentials.json')
+    if resp.status == 200:
+        data = json.loads(resp)[0]
+        username = data['screen_name']
+        flash(username)
+    return render_template("login.html")
+"""
