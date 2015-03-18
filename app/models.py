@@ -39,14 +39,15 @@ class User(db.Model):
 
 class Topic(db.Model):
     id = db.Column(db.Integer, primary_key=True, unique=True)
-    name = db.Column(db.String(100))
+    name = db.Column(db.String(100), unique=True)
     description = db.Column(db.Text)
     icon = db.Column(db.Text)
     #questions & quiestions.all()
 
-    def __init__(self, name, description):
+    def __init__(self, name, description, icon=""):
         self.name = name
         self.description = description
+        self.icon = icon
         print "New: "+self.__repr__()
 
     def __repr__(self):
