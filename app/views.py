@@ -11,7 +11,7 @@ from app import db
 oauth = OAuth(app)
 twitter = oauth.remote_app('twitter',
                            base_url=configs.tw['base_url'],
-                           request_token_url=configs.tw['request_token_url'],
+                           request_https://d13yacurqjgara.cloudfront.net/users/31796/screenshots/1358062/buttons_teaser.pngEcuacionestoken_url=configs.tw['request_token_url'],
                            access_token_url=configs.tw['access_token_url'],
                            authorize_url=configs.tw['authorize_utl'],
                            consumer_key=configs.tw['ID'],
