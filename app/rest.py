@@ -60,9 +60,10 @@ class User(Resource):
         else:
             return {"error": "What are you trying to do?"}
 
+
 class Topic(Resource):
-    def get(self, topic):
-        topic = models.Topic.query.filter_by(name=topic).first()
+    def get(self, topic_name):
+        topic = models.Topic.query.filter_by(name=topic_name).first()
         if views.is_empty(topic):
             return {
                 "result": False,
@@ -72,22 +73,23 @@ class Topic(Resource):
         else:
             return {
                 "result": True,
-                "topic": topic.username,
+                "topic": topic.name,
                 "status": "Successful, Topic is on DB"
             }
 
-    def post(self, topic):
+    def post(self, topic_name):
         if "update" in request.form["method"]:
             return {"result": True}
         elif "create" in request.form["method"]:
-            if self.get(topic)["result"]:
+            if self.get(topic_name)["result"]:
                 return {"error": "Username already exist"}
             else:
-                user = models.User(username, request.form["email"], request.form["password"])
-                db.session.add(user)
+                topic = models.Topic(topic_name, request.form["description"], request.form["icon"])
+                db.session.add(topic)
                 db.session.commit()
                 return {"status": "Successful, User Created"}
         else:
             return {"error": "What are you trying to do?"}
 api.add_resource(Error, '/api', "/api/")
 api.add_resource(User, "/api/user/<username>")
+api.add_resource(Topic, "/api/topic/<topic_name>")
