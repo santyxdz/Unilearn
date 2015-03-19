@@ -1,5 +1,5 @@
 # -*- coding: utf8 -*-
-from flask import Flask, g, url_for, request,render_template, flash, json, session
+from flask import Flask, g, url_for, request, render_template, flash, json, session
 import flask
 from flask import redirect, render_template
 from flask_oauthlib.client import OAuth, OAuthException
@@ -135,8 +135,34 @@ def facebook_authorized():
 
 @app.route('/logout')
 def logout():
-    session.pop('twitter_oauth', None)
-    return redirect(url_for('index'))
+    #try:
+    #    session.pop('twitter_oauth', None)
+    #    session.pop("user")
+    session.clear()
+    #except KeyError:
+    #    pass
+    return redirect(url_for("login"))
+
+
+@app.route("/login", methods=['POST', 'GET'])
+def login():
+    if request.method == "POST":
+        user = models.User.query.filter_by(username=request.form["username"]).first()
+        if is_empty(user):
+            return "Usuario no encontrado"
+        else:
+            if user.password == request.form["password"]:
+                session["user"] = user.username
+                return redirect(url_for("home"))
+            else:
+                return "Contraseña incorrecta"
+
+    return render_template("login.html")
+
+
+@app.route("/forgot_password")
+def forgot_password():
+    return render_template("login.html")
 
 
 @app.route('/oauthorized')
