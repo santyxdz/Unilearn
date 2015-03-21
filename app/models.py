@@ -4,18 +4,6 @@ from app import app
 
 app.config['SECURITY_POST_LOGIN'] = '/profile'
 
-class Team(db.Model):
-    username = db.Column(db.String(140), unique=True, primary_key=True)
-    age = db.Column(db.Integer)
-
-    def __init__(self, user, age):
-        self.username = user
-        self.age = age
-        print "New User: "+self.__repr__()
-
-    def __repr__(self):
-        return '<Team %r>' % self.username
-
 
 class User(db.Model):
     username = db.Column(db.String(15), unique=True, primary_key=True)
@@ -56,6 +44,7 @@ class Topic(db.Model):
 
 
 class QuestionModel(db.Model):
+    __tablename__ = 'question_model'
     cod = db.Column(db.Integer,  primary_key=True, unique=True)
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
@@ -110,11 +99,11 @@ class MSUQuestion(QuestionModel):
 
 
 
-class QuestionCompletation(QuestionModel):
-    __tablename__ = 'question_completation'
+class CompletationQuestion(QuestionModel):
+    __tablename__ = 'completation_question'
     id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
     __mapper_args__ = {
-        'polymorphic_identity': 'question_completation',
+        'polymorphic_identity': 'completation_question',
     }
     def ValidateAnswer(self, selection, text):
         if (selection.text == str(text)):
@@ -151,7 +140,7 @@ class PairingQuestion(QuestionModel):
     }
 
     def ValidateAnswer(self, answers, selected):
-        items = answers.keys()
-
+        #items = answers.keys()
+        pass
 
 
