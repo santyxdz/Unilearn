@@ -139,3 +139,15 @@ class QuestionSMM(QuestionModel):
             print float(0.0)
 
 
+class PairingQuestion(QuestionModel):
+    __tablename__ = "pairing_question"
+    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
+    __mapper_args__ ={
+        'polymorphic_identity': 'question_smm',
+    }
+
+    def ValidateAnswer(self, answers, selected):
+        items = answers.keys()
+
+
+
