@@ -1,6 +1,7 @@
 from app import db
 from app import app
 
+
 app.config['SECURITY_POST_LOGIN'] = '/profile'
 
 class Team(db.Model):
