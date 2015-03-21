@@ -8,30 +8,24 @@ Unilearn | Cursos.
 {% endblock %}
 
 {% block css %}
-<style>
-     .course-list{
-         background-color: transparent;
-         box-shadow: none;
-    }
-    .course-list > .panel-body{
-        background-color: white;
-        box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
-    }
-</style>
-
 {% endblock %}
 {% block main %}
     <div class="row">
-     {% for course in courses %}
+      {% for course in courses %}
+      <div class="item">
          <div class="course-list panel panel-primary col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <div class="panel-heading">
                 <h3 class="panel-title">{{ course.name }}</h3>
             </div>
             <div class="panel-body">
-                <img src="{{ course.icon }}" alt="Icono del Curso de {{ course.name }}"/>
-                {{ course.description }}
+                <div class="aspect">
+                    <div class="aspect-one-one bg-full" style="background-image: url('{{ course.icon }}')">
+                        
+                    </div>
+                </div>
             </div>
-        </div>
+         </div>
+      </div>
     {% endfor %}
     </div>
 

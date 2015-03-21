@@ -6,7 +6,7 @@ from flask_oauthlib.client import OAuth, OAuthException
 
 from app import models, app, configs
 from app import db
-
+import encodings
 
 oauth = OAuth(app)
 twitter = oauth.remote_app('twitter',
@@ -69,6 +69,12 @@ def users():
 @app.route("/courses")
 def courses():
     return render_template("courses.html", courses=models.Topic.query.all())
+
+@app.route("/courses/<course>/q/<int:num>")
+def questions(course, num):
+    topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
+    question = models.QuestionModel.query.filter_by(cod=num, topic=topic).first()
+    return render_template("question.html", question=question)
 
 
 @app.after_request
