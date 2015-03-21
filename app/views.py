@@ -1,5 +1,5 @@
 # -*- coding: utf8 -*-
-from flask import Flask, g, url_for, request,render_template, flash, json, session
+from flask import Flask, g, url_for, request, render_template, flash, json, session
 import flask
 from flask import redirect, render_template
 from flask_oauthlib.client import OAuth, OAuthException
@@ -10,22 +10,23 @@ from app import db
 
 oauth = OAuth(app)
 twitter = oauth.remote_app('twitter',
-    base_url=configs.tw['base_url'],
-    request_token_url=configs.tw['request_token_url'],
-    access_token_url=configs.tw['access_token_url'],
-    authorize_url=configs.tw['authorize_utl'],
-    consumer_key=configs.tw['ID'],
-    consumer_secret=configs.tw['SECRET']
-)
+                           base_url=configs.tw['base_url'],
+                           request_token_url=configs.tw['request_token_url'],
+                           access_token_url=configs.tw['access_token_url'],
+                           authorize_url=configs.tw['authorize_utl'],
+                           consumer_key=configs.tw['ID'],
+                           consumer_secret=configs.tw['SECRET']
+                           )
 facebook = oauth.remote_app('facebook',
-    base_url='http://graph.facebook.com/',
-    request_token_url=None,
-    access_token_url=configs.fb['acces_token_url'],
-    authorize_url=configs.fb['authorize_url'],
-    consumer_key=configs.fb['id'],
-    consumer_secret=configs.fb['secret'],
-    request_token_params={'scope':'email'}
-)
+                            base_url='http://graph.facebook.com/',
+                            request_token_url=None,
+                            access_token_url=configs.fb['acces_token_url'],
+                            authorize_url=configs.fb['authorize_url'],
+                            consumer_key=configs.fb['id'],
+                            consumer_secret=configs.fb['secret'],
+                            request_token_params={'scope': 'email'}
+                            )
+
 
 @app.template_global()
 def is_empty(item):
@@ -93,10 +94,6 @@ def get_twitter_token():
         resp = session['twitter_oauth']
         return resp['oauth_token'], resp['oauth_token_secret']
 
-@facebook.tokengetter
-def get_facebook_oauth_token():
-    return session.get('oauth_token')
-
 @app.before_request
 def before_request():
     g.user = None
@@ -109,11 +106,13 @@ def tw_login():
     callback_url = url_for('oauthorized', next=request.args.get('next'))
     return twitter.authorize(callback=callback_url or request.referrer or None)
 
+
 @app.route('/login/fb')
 def fb_login():
     callback = url_for('facebook_authorized', next=request.args.get('next') or request.referrer or None,
-                           _external=True)
+                       _external=True)
     return facebook.authorize(callback=callback)
+
 
 @app.route('/login/fb/authorized')
 def facebook_authorized():
@@ -133,6 +132,11 @@ def facebook_authorized():
     )
 
 
+@facebook.tokengetter
+def get_facebook_oauth_token():
+    return session.get('oauth_token')
+
+
 @app.route('/logout')
 def logout():
     session.pop('twitter_oauth', None)
@@ -147,14 +151,3 @@ def oauthorized():
     else:
         session['twitter_oauth'] = resp
     return render_template("register.html", username=resp['screen_name'])
-
-"""
-@app.route('/auth')
-def yeah():
-    resp = twitter.get('account/verify_credentials.json')
-    if resp.status == 200:
-        data = json.loads(resp)[0]
-        username = data['screen_name']
-        flash(username)
-    return render_template("login.html")
-"""
