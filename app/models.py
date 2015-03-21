@@ -1,6 +1,7 @@
 from app import db
 from app import app
 
+
 app.config['SECURITY_POST_LOGIN'] = '/profile'
 
 class Team(db.Model):
@@ -43,6 +44,8 @@ class Topic(db.Model):
     description = db.Column(db.Text)
     icon = db.Column(db.Text)
     #questions & quiestions.all()
+
+
 
     def __init__(self, name, description):
         self.name = name

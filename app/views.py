@@ -4,7 +4,7 @@ from app import app
 from app import api
 from app import models
 from app import db
-
+import encodings
 
 @app.template_global()
 def is_empty(item):
@@ -46,6 +46,12 @@ def users():
 @app.route("/courses")
 def courses():
     return render_template("courses.html", courses=models.Topic.query.all())
+
+@app.route("/courses/<course>/q/<int:num>")
+def questions(course, num):
+    topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
+    question = models.QuestionModel.query.filter_by(cod=num, topic=topic).first()
+    return render_template("question.html", question=question)
 
 
 @app.after_request
