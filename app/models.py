@@ -58,6 +58,7 @@ class Topic(db.Model):
 class QuestionModel(db.Model):
     cod = db.Column(db.Integer,  primary_key=True, unique=True)
     statement = db.Column(db.Text)
+    image = db.Column(db.Text)
     topic_cod = db.Column(db.Integer, db.ForeignKey('topic.id'))
     topic = db.relationship('Topic', backref=db.backref('questions'))
     #answers & answers.all()
@@ -66,9 +67,10 @@ class QuestionModel(db.Model):
         'polymorphic_identity': 'question_model',
         'with_polymorphic': '*'
     }
-    def __init__(self, statement, topic):
+    def __init__(self, statement, topic, image=""):
         self.statement = statement
         self.topic = topic
+        self.image = image
         print "Question: "+self.__repr__()
 
     def __repr__(self):
@@ -76,29 +78,31 @@ class QuestionModel(db.Model):
 
 class Answers(db.Model):
     cod = db.Column(db.Integer, unique=True, primary_key=True)
-    estado = db.Column(db.Boolean)
-    text= db.Column(db.Text)
-    pregunta_cod = db.Column(db.Integer, db.ForeignKey('question_model.cod'))
-    pregunta = db.relationship('QuestionModel', backref=db.backref('answers', lazy='dynamic'))
+    state = db.Column(db.Boolean)
+    text = db.Column(db.Text)
+    image = db.Column(db.Text)
+    question_cod = db.Column(db.Integer, db.ForeignKey('question_model.cod'))
+    question = db.relationship('QuestionModel', backref=db.backref('answers', lazy='dynamic'))
 
-    def __init__(self, estado, text, pregunta):
-        self.estado = estado
+    def __init__(self, state, text, question, image=""):
+        self.state = state
         self.text = text
-        self.pregunta = pregunta
+        self.question = question
+        self.image = image
         print "Answers: "+self.__repr__()
 
     def __repr__(self):
         return "Answers @"+self.text
 
 
-class QuestionSMU(QuestionModel):
-    __tablename__ = 'question_smu'
+class MSUQuestion(QuestionModel):
+    __tablename__ = 'msu_question'
     id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
     __mapper_args__ = {
-        'polymorphic_identity': 'question_smu',
+        'polymorphic_identity': 'msu_question',
     }
     def ValidateAnswer(self, selection):
-        if (selection.estado == True):
+        if (selection.state == True):
             """ aqui va la todo lo que tiene que ver con Gamificacion"""
             print "Respuesta Correcta"
         else:
@@ -120,16 +124,16 @@ class QuestionCompletation(QuestionModel):
         else:
             print "Respuesta Incorrecta"
 
-class QuestionSMM(QuestionModel):
-    __tablename__ = 'question_smm'
+class MSMQuestion(QuestionModel):
+    __tablename__ = 'msm_question'
     id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
     __mapper_args__ ={
-        'polymorphic_identity': 'question_smm',
+        'polymorphic_identity': 'msm_question',
     }
     def ValidateAnswer(self, answerSaved, selection):
         cont=0
         for i in selection:
-            if i.estado == True:
+            if i.state == True:
                 cont +=1
         score = float((1.0/float(answerSaved))*cont - (1.0/float(answerSaved))*(len(selection)-cont))
         if (score >= 0):

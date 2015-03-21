@@ -1,6 +1,46 @@
 {% extends "base.html" %}
+
+{% block title %}
+Unilearn | Pregunta
+{% endblock %}
+
+{% block css %}
+<style>
+     .question{
+         background-color: transparent;
+         box-shadow: none;
+    }
+    .question > .panel-body{
+        background-color: white;
+        box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+    }
+    .panel-statement{
+        background-color: khaki;
+        box-shadow: 0 1px 6px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.8);
+    }
+</style>
+{% endblock %}
 {% block main %}
-<ul id="question-list">
-{{ question.statement }}
-</ul>
+
+    <div class="row">
+         <div class="question panel panel-primary col-xs-12 col-sm-6 col-md-4 col-lg-5 ">
+            <div class="panel-heading">
+                <h3 class="panel-title">Pregunta</h3>
+            </div>
+            <div class="panel-body">
+                <div class="panel-statement">
+                    <h4 class="panel-body">Enunciado</h4>
+                    {{ question.statement }}
+                </div>
+                {% for answer in question.answers %}
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">{{answer.text}}</a>
+                        </label>
+                    </div>
+                {% endfor %}
+            </div>
+         </div>
+    </div>
+
 {% endblock %}
