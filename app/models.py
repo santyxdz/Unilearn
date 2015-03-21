@@ -139,7 +139,7 @@ class ClasificationQuestion(QuestionModel):
     __tablename__ = 'clasification_question'
     id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
     __mapper_args__ = {
-        'polymorphic_identity': 'clasificarion_question',
+        'polymorphic_identity': 'clasification_question',
     }
 
     def ValidateAnswer(self, answer_given, answer_stored):
