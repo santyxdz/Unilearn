@@ -2,3 +2,51 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #dde2e6;
 }
+/*Aspect Ratios*/
+.aspect-fully{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.aspect-sixteen-nine{
+    position:relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 56%;
+    padding-top: 50px;
+}
+.aspect-four-one{
+    position:relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 25%;
+    padding-top: 50px;
+}
+.aspect-one-one{
+    position:relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 100%;
+}
+.aspect-twentyone-nine{
+    position:relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 42.857%;
+    padding-top: 50px;
+}
+/* List Styles */
+.course-list{
+	background-color: transparent;
+	box-shadow: none;
+}
+.course-list > .panel-body{
+	background-color: white;
+	box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+}
+/* Background Options */
+.bg-full {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
