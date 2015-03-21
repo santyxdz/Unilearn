@@ -1,7 +1,10 @@
 from app import db
 from app import app
+from json import loads
+from operator import itemgetter
 
 app.config['SECURITY_POST_LOGIN'] = '/profile'
+
 
 class Team(db.Model):
     username = db.Column(db.String(140), unique=True, primary_key=True)
@@ -10,7 +13,7 @@ class Team(db.Model):
     def __init__(self, user, age):
         self.username = user
         self.age = age
-        print "New User: "+self.__repr__()
+        print "New User: " + self.__repr__()
 
     def __repr__(self):
         return '<Team %r>' % self.username
@@ -31,10 +34,10 @@ class User(db.Model):
         self.email = email
         self.password = password
         self.photo = photo
-        print "New User: "+self.__repr__()
+        print "New User: " + self.__repr__()
 
     def __repr__(self):
-        return "<User @"+self.username+">"
+        return "<User @" + self.username + ">"
 
 
 class Topic(db.Model):
@@ -42,41 +45,43 @@ class Topic(db.Model):
     name = db.Column(db.String(100), unique=True)
     description = db.Column(db.Text)
     icon = db.Column(db.Text)
-    #questions & quiestions.all()
+    # questions & quiestions.all()
 
     def __init__(self, name, description, icon=""):
         self.name = name
         self.description = description
         self.icon = icon
-        print "New: "+self.__repr__()
+        print "New: " + self.__repr__()
 
     def __repr__(self):
-        return "<Area @"+self.name+">"
+        return "<Area @" + self.name + ">"
 
 
 class QuestionModel(db.Model):
-    cod = db.Column(db.Integer,  primary_key=True, unique=True)
+    cod = db.Column(db.Integer, primary_key=True, unique=True)
     statement = db.Column(db.Text)
     topic_cod = db.Column(db.Integer, db.ForeignKey('topic.id'))
     topic = db.relationship('Topic', backref=db.backref('questions'))
-    #answers & answers.all()
+    # answers & answers.all()
     __mapper_args__ = {
         'polymorphic_on': None,
         'polymorphic_identity': 'question_model',
         'with_polymorphic': '*'
     }
+
     def __init__(self, statement, topic):
         self.statement = statement
         self.topic = topic
-        print "Question: "+self.__repr__()
+        print "Question: " + self.__repr__()
 
     def __repr__(self):
-        return "<QuestionModel @"+self.statement
+        return "<QuestionModel @" + self.statement
+
 
 class Answers(db.Model):
     cod = db.Column(db.Integer, unique=True, primary_key=True)
     estado = db.Column(db.Boolean)
-    text= db.Column(db.Text)
+    text = db.Column(db.Text)
     pregunta_cod = db.Column(db.Integer, db.ForeignKey('question_model.cod'))
     pregunta = db.relationship('QuestionModel', backref=db.backref('answers', lazy='dynamic'))
 
@@ -84,10 +89,10 @@ class Answers(db.Model):
         self.estado = estado
         self.text = text
         self.pregunta = pregunta
-        print "Answers: "+self.__repr__()
+        print "Answers: " + self.__repr__()
 
     def __repr__(self):
-        return "Answers @"+self.text
+        return "Answers @" + self.text
 
 
 class QuestionSMU(QuestionModel):
@@ -96,6 +101,7 @@ class QuestionSMU(QuestionModel):
     __mapper_args__ = {
         'polymorphic_identity': 'question_smu',
     }
+
     def ValidateAnswer(self, selection):
         if (selection.estado == True):
             """ aqui va la todo lo que tiene que ver con Gamificacion"""
@@ -104,13 +110,13 @@ class QuestionSMU(QuestionModel):
             print "Respuesta Incorrecta"
 
 
-
 class QuestionCompletation(QuestionModel):
     __tablename__ = 'question_completation'
     id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
     __mapper_args__ = {
         'polymorphic_identity': 'question_completation',
     }
+
     def ValidateAnswer(self, selection, text):
         if (selection.text == str(text)):
             """ en este condicional creo que es mejor comparar el .tetx
@@ -119,22 +125,44 @@ class QuestionCompletation(QuestionModel):
         else:
             print "Respuesta Incorrecta"
 
+
 class QuestionSMM(QuestionModel):
     __tablename__ = 'question_smm'
     id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
-    __mapper_args__ ={
+    __mapper_args__ = {
         'polymorphic_identity': 'question_smm',
     }
+
     def ValidateAnswer(self, answerSaved, selection):
-        cont=0
+        cont = 0
         for i in selection:
             if i.estado == True:
-                cont +=1
-        score = float((1.0/float(answerSaved))*cont - (1.0/float(answerSaved))*(len(selection)-cont))
+                cont += 1
+        score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
         if (score >= 0):
-            print cont," Respuesta(s) correctas",len(selection)-cont, "Respuesta(s) falsas"
+            print cont, " Respuesta(s) correctas", len(selection) - cont, "Respuesta(s) falsas"
             print "Puntaje: ", score
         else:
             print float(0.0)
 
 
+class ClasificationQuestion(QuestionModel):
+    __tablename__ = 'clasification_question'
+    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
+    __mapper_args__ = {
+        'polymorphic_identity': 'clasificarion_question',
+    }
+
+    def ValidateAnswer(self, answer_given, answer_stored):
+        user_ans_dict = loads(answer_given)
+        correct_dict = loads(answer_stored)
+        keys = answer_given.keys()
+        correct_ans = 0
+        incorrect_ans = 0
+        for key in keys:
+            if user_ans_dict[key] == correct_dict[key]:
+                correct_ans += 1
+            else:
+                incorrect_ans += 1
+        print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
+        print "Punctuation = %d per cent correct!" % ((correct_ans/(correct_ans+incorrect_ans))*100)

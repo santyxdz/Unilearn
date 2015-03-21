@@ -87,12 +87,15 @@ def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
 
+# Twitter Stuff!
+# ******************************
 
 @twitter.tokengetter
 def get_twitter_token():
     if 'twitter_oauth' in session:
         resp = session['twitter_oauth']
         return resp['oauth_token'], resp['oauth_token_secret']
+
 
 @app.before_request
 def before_request():
@@ -106,6 +109,17 @@ def tw_login():
     callback_url = url_for('oauthorized', next=request.args.get('next'))
     return twitter.authorize(callback=callback_url or request.referrer or None)
 
+@app.route('/login/tw/authorized')
+def oauthorized():
+    resp = twitter.authorized_response()
+    if resp is None:
+        flash('You denied the request to sign in')
+    else:
+        session['twitter_oauth'] = resp
+    return render_template("register.html", username=resp['screen_name'])
+
+# FB Stuff!
+# *************************************
 
 @app.route('/login/fb')
 def fb_login():
@@ -139,7 +153,7 @@ def get_facebook_oauth_token():
 
 @app.route('/logout')
 def logout():
-    #try:
+    # try:
     #    session.pop('twitter_oauth', None)
     #    session.pop("user")
     session.clear()
@@ -147,6 +161,8 @@ def logout():
     #    pass
     return redirect(url_for("login"))
 
+# Other
+# **************************
 
 @app.route("/login", methods=['POST', 'GET'])
 def login():
@@ -169,11 +185,3 @@ def forgot_password():
     return render_template("login.html")
 
 
-@app.route('/oauthorized')
-def oauthorized():
-    resp = twitter.authorized_response()
-    if resp is None:
-        flash('You denied the request to sign in')
-    else:
-        session['twitter_oauth'] = resp
-    return render_template("register.html", username=resp['screen_name'])
