@@ -77,7 +77,7 @@ def course(course):
 @app.route("/courses/<course>/q/<int:num>")
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
-    question = models.QuestionModel.query.filter_by(cod=num, topic=topic).first()
+    question = models.Question.query.filter_by(id=num, topic=topic).first()
     return render_template("question.html", question=question)
 
 
