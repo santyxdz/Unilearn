@@ -1,11 +1,11 @@
-from os import path
+#from os import path
 
 
 secret_key = 'this_should_be_configured'
 
-BASE_DIRECTORY = path.abspath(path.dirname(__file__))
-SQLALCHEMY_DATABASE_URI = '{0}{1}'.format('sqlite:///',
-                                          path.join(BASE_DIRECTORY, 'app.db'))
+#BASE_DIRECTORY = path.abspath(path.dirname(__file__))
+#SQLALCHEMY_DATABASE_URI = '{0}{1}'.format('sqlite:///',
+#                                          path.join(BASE_DIRECTORY, 'app.db'))
 
 fb = {
     'id': '323621904515839',

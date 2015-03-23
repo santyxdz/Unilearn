@@ -31,7 +31,7 @@ class Topic(db.Model):
     name = db.Column(db.String(100), unique=True)
     description = db.Column(db.Text)
     icon = db.Column(db.Text)
-    # questions & quiestions.all()
+    # questions & questions.all()
 
     def __init__(self, name, description, icon=""):
         self.name = name
