@@ -70,10 +70,14 @@ def users():
 def courses():
     return render_template("courses.html", courses=models.Topic.query.all())
 
+@app.route("/courses/<course>")
+def course(course):
+    return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
+
 @app.route("/courses/<course>/q/<int:num>")
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
-    question = models.QuestionModel.query.filter_by(cod=num, topic=topic).first()
+    question = models.Question.query.filter_by(id=num, topic=topic).first()
     return render_template("question.html", question=question)
 
 

@@ -27,11 +27,12 @@ class User(db.Model):
 
 
 class Topic(db.Model):
+    __tablename__ = "topic"
     id = db.Column(db.Integer, primary_key=True, unique=True)
     name = db.Column(db.String(100), unique=True)
     description = db.Column(db.Text)
     icon = db.Column(db.Text)
-    # questions & quiestions.all()
+    questions = db.relationship("Question", backref="topic", cascade='all, delete-orphan')
 
     def __init__(self, name, description, icon=""):
         self.name = name
@@ -43,55 +44,35 @@ class Topic(db.Model):
         return "<Area @" + self.name + ">"
 
 
-class QuestionModel(db.Model):
-
-    __tablename__ = 'question_model'
-    cod = db.Column(db.Integer,  primary_key=True, unique=True)
+class Question(db.Model):
+    __tablename__ = 'question'
+    id = db.Column(db.Integer,  primary_key=True, unique=True)
+    type = db.Column(db.String(20))
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
-    topic_cod = db.Column(db.Integer, db.ForeignKey('topic.id'))
-    topic = db.relationship('Topic', backref=db.backref('questions'))
-    # answers & answers.all()
+    topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
+    answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
     __mapper_args__ = {
-        'polymorphic_on': None,
-        'polymorphic_identity': 'question_model',
+        'polymorphic_on': type,
+        'polymorphic_identity': 'question',
         'with_polymorphic': '*'
     }
+
     def __init__(self, statement, topic, image=""):
         self.statement = statement
-        self.topic = topic
+        self.topic_id = topic
         self.image = image
         print "Question: "+self.__repr__()
 
     def __repr__(self):
-        return "<QuestionModel @" + self.statement
+        return "<Question @" + self.statement
 
 
-class Answers(db.Model):
-    cod = db.Column(db.Integer, unique=True, primary_key=True)
-    state = db.Column(db.Boolean)
-    text = db.Column(db.Text)
-    image = db.Column(db.Text)
-    question_cod = db.Column(db.Integer, db.ForeignKey('question_model.cod'))
-    question = db.relationship('QuestionModel', backref=db.backref('answers', lazy='dynamic'))
 
-    def __init__(self, state, text, question, image=""):
-        self.state = state
-        self.text = text
-        self.question = question
-        self.image = image
-        print "Answers: "+self.__repr__()
-
-    def __repr__(self):
-        return "Answers @" + self.text
-
-
-class MSUQuestion(QuestionModel):
+class MSUQuestion(Question):
     __tablename__ = 'msu_question'
-    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
-    __mapper_args__ = {
-        'polymorphic_identity': 'msu_question',
-    }
+    id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'msu_question'}
 
    # @staticmethod
     def validate_answer(selection):
@@ -101,12 +82,10 @@ class MSUQuestion(QuestionModel):
         else:
             print "Respuesta Incorrecta"
 
-class CompletationQuestion(QuestionModel):
+class CompletationQuestion(Question):
     __tablename__ = 'completation_question'
-    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
-    __mapper_args__ = {
-        'polymorphic_identity': 'completation_question',
-    }
+    id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'completation_question'}
 
     def ValidateAnswer(self, selection, text):
         if (selection.text == str(text)):
@@ -117,12 +96,10 @@ class CompletationQuestion(QuestionModel):
             print "Respuesta Incorrecta"
 
 
-class MSMQuestion(QuestionModel):
+class MSMQuestion(Question):
     __tablename__ = 'msm_question'
-    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
-    __mapper_args__ ={
-        'polymorphic_identity': 'msm_question',
-    }
+    id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'msm_question'}
 
     def ValidateAnswer(self, answerSaved, selection):
         cont = 0
@@ -136,12 +113,10 @@ class MSMQuestion(QuestionModel):
         else:
             print float(0.0)
 
-class ClasificationQuestion(QuestionModel):
+class ClasificationQuestion(Question):
     __tablename__ = 'clasification_question'
-    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
-    __mapper_args__ = {
-        'polymorphic_identity': 'clasification_question',
-    }
+    id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
+    __mapper_args__ = {'polymorphic_identity': 'clasification_question'}
 
     def ValidateAnswer(self, answer_given, answer_stored):
         user_ans_dict = loads(answer_given)
@@ -157,13 +132,28 @@ class ClasificationQuestion(QuestionModel):
         print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
         print "Punctuation = %d per cent correct!" % ((correct_ans/(correct_ans+incorrect_ans))*100)
 
-class PairingQuestion(QuestionModel):
+class PairingQuestion(Question):
     __tablename__ = "pairing_question"
-    id = db.Column(db.Integer, db.ForeignKey('question_model.cod'), primary_key=True)
-    __mapper_args__ ={
-        'polymorphic_identity': 'question_smm',
-    }
+    id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
+    __mapper_args__ ={'polymorphic_identity': 'question_smm'}
 
     def ValidateAnswer(self, answers, selected):
         #items = answers.keys()
         pass
+
+class Answer(db.Model):
+    id = db.Column(db.Integer, unique=True, primary_key=True)
+    state = db.Column(db.Boolean)
+    text = db.Column(db.Text)
+    image = db.Column(db.Text)
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
+
+    def __init__(self, state, text, question, image=""):
+        self.state = state
+        self.text = text
+        self.question_id = question
+        self.image = image
+        print "Answers: "+self.__repr__()
+
+    def __repr__(self):
+        return "Answers @" + self.text

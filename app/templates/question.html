@@ -5,20 +5,6 @@ Unilearn | Pregunta
 {% endblock %}
 
 {% block css %}
-<style>
-     .question{
-         background-color: transparent;
-         box-shadow: none;
-    }
-    .question > .panel-body{
-        background-color: white;
-        box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
-    }
-    .panel-statement{
-        background-color: khaki;
-        box-shadow: 0 1px 6px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.8);
-    }
-</style>
 {% endblock %}
 {% block main %}
 
@@ -30,7 +16,9 @@ Unilearn | Pregunta
             <div class="panel-body">
                 <div class="panel-statement">
                     <h4 class="panel-body">Enunciado</h4>
-                    {{ question.statement }}
+                    <div class="text">
+                        {{ question.statement }}
+                    </div>
                 </div>
                 {% for answer in question.answers %}
                     <div class="checkbox">

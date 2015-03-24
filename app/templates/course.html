@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Unilearn | Cursos.
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+{% block main %}
+<h1>
+    <span>
+        <img src="{{ course.icon }}" width="100px" height="100px"/>
+    </span>
+    {{ course.name }}
+</h1>
+<div class="row">
+    <div class="list-group btn-group-vertical">
+    {% for question in course.questions %}
+        <a href="{{ url_for("questions",course=course.name,num=question.id) }}" class="list-group-item">{{ question.statement }}</a>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}
