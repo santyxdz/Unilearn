@@ -93,8 +93,9 @@ class MSUQuestion(QuestionModel):
         'polymorphic_identity': 'msu_question',
     }
 
-    def ValidateAnswer(self, selection):
-        if (selection.state == True):
+   # @staticmethod
+    def validate_answer(selection):
+        if selection.state == True:
             """ aqui va la todo lo que tiene que ver con Gamificacion"""
             print "Respuesta Correcta"
         else:
