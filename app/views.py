@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 from flask import Flask, g, url_for, request, render_template, flash, json, session
 import flask
-from flask import redirect, render_template
+from flask import redirect, render_template, abort
 from flask_oauthlib.client import OAuth, OAuthException
 
 from app import models, app, configs
@@ -161,33 +161,29 @@ def get_facebook_oauth_token():
     return session.get('oauth_token')
 
 
-@app.route('/logout')
-def logout():
-    # try:
-    #    session.pop('twitter_oauth', None)
-    #    session.pop("user")
-    session.clear()
-    #except KeyError:
-    #    pass
-    return redirect(url_for("login"))
-
-# Other
-# **************************
-
-@app.route("/login", methods=['POST', 'GET'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == "POST":
+    error = None
+    if request.method == 'POST':
         user = models.User.query.filter_by(username=request.form["username"]).first()
         if is_empty(user):
-            return "Usuario no encontrado"
+            error = 'Invalid username'
+        elif request.form['password'] != user.password:
+            error = 'Invalid password'
         else:
-            if user.password == request.form["password"]:
-                session["user"] = user.username
-                return redirect(url_for("home"))
-            else:
-                return "Contraseña incorrecta"
+            session['logged'] = True
+            session['user'] = user.username
+            flash('You were logged in')
+            return redirect(url_for('home'))
+    return render_template('login.html', error=error)
 
-    return render_template("login.html")
+
+@app.route('/logout')
+def logout():
+    session.pop('logged', None)
+    session.pop('user', None)
+    flash('You were logged out')
+    return redirect(url_for('home', reload=True))
 
 
 @app.route("/forgot_password")

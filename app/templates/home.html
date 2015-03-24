@@ -3,8 +3,6 @@
 {% block title %}
 Unilearn | Building...
 {% endblock %}
-{% block js %}
-{% endblock %}
 
 {% block css %}
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -33,3 +31,12 @@ Unilearn | Building...
 	<h3>Made in Medellín, Colombia with &#9829;</h3>
 </div>
 {% endblock %}
+{% block js %}
+    {% if reload %}
+        <script>
+            $( document ).ready(function() {
+                window.location.reload(true);
+            });
+        </script>
+    {% endif %}
+{% endblock%}
