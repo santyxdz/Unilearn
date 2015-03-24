@@ -10,17 +10,26 @@ Unilearn | Cursos.
 {% block css %}
 {% endblock %}
 {% block main %}
-<h1>
-    <span>
-        <img src="{{ course.icon }}" width="100px" height="100px"/>
-    </span>
-    {{ course.name }}
-</h1>
-<div class="row">
-    <div class="list-group btn-group-vertical">
-    {% for question in course.questions %}
-        <a href="{{ url_for("questions",course=course.name,num=question.id) }}" class="list-group-item">{{ question.statement }}</a>
-    {% endfor %}
+<div class="jumbotron">
+    <h1><img src="{{ course.icon }}" width="100px" height="100px"/>{{ course.name }}</h1>
+    <p>{{ course.description }}</p>
+</div>
+<div class="list-group">
+{% for question in course.questions %}
+    <a href="{{ url_for("questions",course=course.name,num=question.id) }}">
+    <div class="list-group-item">
+        <div class="row-picture">
+            <img class="circle" src="{{ question.image }}" alt="icon">
+        </div>
+        <div class="row-content">
+            <div class="least-content">{{ question.id }}</div>
+            <h4 class="list-group-item-heading">Tile with a label</h4>
+            <p class="list-group-item-text">{{ question.statement[:100]+"..." }}</p>
+        </div>
     </div>
+    <div class="list-group-separator">
+    </div>
+    </a>
+{% endfor %}
 </div>
 {% endblock %}
