@@ -190,4 +190,7 @@ def logout():
 def forgot_password():
     return render_template("login.html")
 
-
+# Parsing the form structure to the
+@app.route('/clasification/send')
+def validate_clasf():
+    pass

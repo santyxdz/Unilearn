@@ -74,8 +74,9 @@ class MSUQuestion(Question):
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'msu_question'}
 
-    def ValidateAnswer(self, selection):
-        if (selection.state == True):
+   # @staticmethod
+    def validate_answer(selection):
+        if selection.state == True:
             """ aqui va la todo lo que tiene que ver con Gamificacion"""
             print "Respuesta Correcta"
         else:
