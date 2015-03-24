@@ -47,7 +47,7 @@ class Topic(db.Model):
 class Question(db.Model):
     __tablename__ = 'question'
     id = db.Column(db.Integer,  primary_key=True, unique=True)
-    type = db.Column(db.String(20))
+    type = db.Column(db.String(50))
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
