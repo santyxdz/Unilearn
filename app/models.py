@@ -78,9 +78,9 @@ class MSUQuestion(Question):
     def validate_answer(selection):
         if selection.state == True:
             """ aqui va la todo lo que tiene que ver con Gamificacion"""
-            print "Respuesta Correcta"
+            return "Respuesta Correcta"
         else:
-            print "Respuesta Incorrecta"
+            return "Respuesta Incorrecta"
 
 class CompletationQuestion(Question):
     __tablename__ = 'completation_question'
@@ -91,9 +91,9 @@ class CompletationQuestion(Question):
         if (selection.text == str(text)):
             """ en este condicional creo que es mejor comparar el .tetx
             aqui va la todo lo que tiene que ver con Gamificacion """
-            print "Respuesta Correcta"
+            return "Respuesta Correcta"
         else:
-            print "Respuesta Incorrecta"
+            return "Respuesta Incorrecta"
 
 
 class MSMQuestion(Question):
@@ -109,9 +109,9 @@ class MSMQuestion(Question):
         score = float((1.0/float(answerSaved))*cont - (1.0/float(answerSaved))*(len(selection)-cont))
         if (score >= 0):
             print cont, " Respuesta(s) correctas", len(selection) - cont, "Respuesta(s) falsas"
-            print "Puntaje: ", score
+            return "Puntaje: ", score
         else:
-            print float(0.0)
+            return float(0.0)
 
 class ClasificationQuestion(Question):
     __tablename__ = 'clasification_question'

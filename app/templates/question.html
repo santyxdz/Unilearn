@@ -32,12 +32,12 @@ Unilearn | Pregunta
         -o-transition: all 1s;
     }
 
+
 </style>
 {% endblock %}
 {% block main %}
-
     <div class="row">
-         <div class="question panel panel-primary col-xs-12 col-sm-6 col-md-4 col-lg-5 ">
+         <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
             <div class="panel-heading">
                 <h3 class="panel-title">Pregunta</h3>
             </div>
@@ -58,18 +58,19 @@ Unilearn | Pregunta
                         </div>
                     {% endif %}
                      {% if question.type == "msu_question" %}
-                        <div class="radiobutton">
-                            <label><input type="radio"  name="check" value='{{answer.state}}'>{{answer.text}}</a></label>
-                        </div>
-                    {% endif %}
-                    {% if question.type == "completation_question" %}
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="inputanswer" placeholder="Respuesta" name="username"/>
-                        </div>
+                        <div class="radio radio-primary"><label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value='{{answer.state}}' checked="">{{answer.text}}
+                         </label></div>
                     {% endif %}
 
                 {% endfor %}
-                <div class="col-lg-10 col-lg-offset-2">
+                {% if question.type == "completation_question" %}
+                    <div class="inputs">
+                        <input type="text" class="form-control" placeholder="Respuesta">
+                    </div>
+                {% endif %}
+
+                <div class="col-md-6 col-md-offset-3">
                      <button class="btn btn-default">Saltar</button>
                      <button type="submit" class="btn btn-primary">Enviar</button>
 
@@ -77,5 +78,4 @@ Unilearn | Pregunta
             </div>
          </div>
     </div>
-
 {% endblock %}
