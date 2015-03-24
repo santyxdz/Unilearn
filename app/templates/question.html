@@ -5,6 +5,34 @@ Unilearn | Pregunta
 {% endblock %}
 
 {% block css %}
+<style>
+     .question{
+         background-color: transparent;
+         box-shadow: none;
+    }
+    .question > .panel-body{
+        background-color: white;
+        box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+
+    }
+    .panel-statement{
+        background-color: khaki;
+        box-shadow: 0 1px 6px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.8);
+
+        padding: 3px 10px;
+        border: khaki 5px solid;
+        border-radius: 20px;
+    }
+    .round-border-ima {
+        border-radius: 20% / 20%;
+        box-shadow: 0px 0px 5px #000;
+        padding:0;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+    }
+
+</style>
 {% endblock %}
 {% block main %}
 
@@ -16,17 +44,36 @@ Unilearn | Pregunta
             <div class="panel-body">
                 <div class="panel-statement">
                     <h4 class="panel-body">Enunciado</h4>
-                    <div class="text">
-                        {{ question.statement }}
-                    </div>
+                    {{ question.statement }}
+                    {%if question.image != "" %}
+                        <div><center>
+                            <img class="round-border-ima" src={{question.image}} style='width:55%;' border="0" alt="" >
+                        </center></div>
+                    {% endif %}
                 </div>
                 {% for answer in question.answers %}
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">{{answer.text}}
-                        </label>
-                    </div>
+                    {% if question.type == "msm_question" %}
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="{{answer.state}}">{{answer.text}}</a></label>
+                        </div>
+                    {% endif %}
+                     {% if question.type == "msu_question" %}
+                        <div class="radiobutton">
+                            <label><input type="radio"  name="check" value='{{answer.state}}'>{{answer.text}}</a></label>
+                        </div>
+                    {% endif %}
+                    {% if question.type == "completation_question" %}
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="inputanswer" placeholder="Respuesta" name="username"/>
+                        </div>
+                    {% endif %}
+
                 {% endfor %}
+                <div class="col-lg-10 col-lg-offset-2">
+                     <button class="btn btn-default">Saltar</button>
+                     <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </div>
             </div>
          </div>
     </div>
