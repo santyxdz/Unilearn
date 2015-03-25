@@ -82,9 +82,12 @@ class Topic(Resource):
             return {"result": True}
         elif "create" in request.form["method"]:
             if self.get(topic_name)["result"]:
-                return {"error": "Username already exist"}
+                return {"error": "Topic already exist"}
             else:
-                topic = models.Topic(topic_name, request.form["description"], request.form["icon"])
+                if "icon" in request.form:
+                    topic = models.Topic(topic_name, request.form["description"], request.form["icon"])
+                else:
+                    topic = models.Topic(topic_name, request.form["description"])
                 db.session.add(topic)
                 db.session.commit()
                 return {"status": "Successful, User Created"}
