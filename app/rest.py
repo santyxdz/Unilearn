@@ -90,6 +90,60 @@ class Topic(Resource):
                 return {"status": "Successful, User Created"}
         else:
             return {"error": "What are you trying to do?"}
+
+class Question(Resource):
+    def get(self, question_id=None):
+        if question_id is None:
+            questions = models.Question.query.all()
+            return {
+                "questions": [x.id for x in questions]
+            }
+        else:
+            question = models.Question.query.filter_by(id=question_id).first()
+            if views.is_empty(question):
+                return {
+                    "result": False,
+                    "status": "error",
+                    "error": "question not found"
+                }
+            else:
+                return {
+                    "result": True,
+                    "type": question.type,
+                    "topic": question.topic.name,
+                    "status": "Successfull"
+                }
+
+    def post(self, question_id=None):
+        if question_id is None:
+            if "update" in request.form["method"]:
+                return {"result": True}
+            elif "create" in request.form["method"]:
+                if "statement" in request.form and "topic" in request.form:
+                    if "image" in request.form:
+                        question = models.Question(request.form["statement"], request.form["topic"], request.form["image"])
+                    else:
+                        question = models.Question(request.form["statement"], request.form["topic"])
+                    db.session.add(question)
+                    db.session.commit()
+                    return {
+                        "status": True,
+                        "message": "Question creation successful"
+                    }
+                else:
+                    return {
+                        "status": False,
+                        "type": "PANIC",
+                        "error": "no statement or topic specified!"
+                    }
+        else:
+            return {
+                "status": False,
+                "error": "What the hell are you trying to do????"
+            }
+
+
 api.add_resource(Error, '/api', "/api/")
-api.add_resource(User, "/api/user/<username>")
-api.add_resource(Topic, "/api/topic/<topic_name>")
+api.add_resource(User, "/api/users/<username>")
+api.add_resource(Topic, "/api/topics/<topic_name>")
+api.add_resource(Question, "/api/question/<int:question_id>", "/api/question/")

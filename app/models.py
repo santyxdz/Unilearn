@@ -46,7 +46,7 @@ class Topic(db.Model):
 
 class Question(db.Model):
     __tablename__ = 'question'
-    id = db.Column(db.Integer,  primary_key=True, unique=True)
+    id = db.Column(db.Integer, primary_key=True, unique=True)
     type = db.Column(db.String(20))
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
@@ -62,11 +62,10 @@ class Question(db.Model):
         self.statement = statement
         self.topic_id = topic
         self.image = image
-        print "Question: "+self.__repr__()
+        print "Question: " + self.__repr__()
 
     def __repr__(self):
         return "<Question @" + self.statement
-
 
 
 class MSUQuestion(Question):
@@ -74,13 +73,14 @@ class MSUQuestion(Question):
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'msu_question'}
 
-   # @staticmethod
+    # @staticmethod
     def validate_answer(selection):
         if selection.state == True:
             """ aqui va la todo lo que tiene que ver con Gamificacion"""
             print "Respuesta Correcta"
         else:
             print "Respuesta Incorrecta"
+
 
 class CompletationQuestion(Question):
     __tablename__ = 'completation_question'
@@ -105,13 +105,14 @@ class MSMQuestion(Question):
         cont = 0
         for i in selection:
             if i.state == True:
-                cont +=1
-        score = float((1.0/float(answerSaved))*cont - (1.0/float(answerSaved))*(len(selection)-cont))
+                cont += 1
+        score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
         if (score >= 0):
             print cont, " Respuesta(s) correctas", len(selection) - cont, "Respuesta(s) falsas"
             print "Puntaje: ", score
         else:
             print float(0.0)
+
 
 class ClasificationQuestion(Question):
     __tablename__ = 'clasification_question'
@@ -130,16 +131,18 @@ class ClasificationQuestion(Question):
             else:
                 incorrect_ans += 1
         print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
-        print "Punctuation = %d per cent correct!" % ((correct_ans/(correct_ans+incorrect_ans))*100)
+        print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
+
 
 class PairingQuestion(Question):
     __tablename__ = "pairing_question"
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
-    __mapper_args__ ={'polymorphic_identity': 'question_smm'}
+    __mapper_args__ = {'polymorphic_identity': 'question_smm'}
 
     def ValidateAnswer(self, answers, selected):
-        #items = answers.keys()
+        # items = answers.keys()
         pass
+
 
 class Answer(db.Model):
     id = db.Column(db.Integer, unique=True, primary_key=True)
@@ -153,7 +156,7 @@ class Answer(db.Model):
         self.text = text
         self.question_id = question
         self.image = image
-        print "Answers: "+self.__repr__()
+        print "Answers: " + self.__repr__()
 
     def __repr__(self):
         return "Answers @" + self.text
