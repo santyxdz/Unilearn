@@ -114,12 +114,16 @@ class MSMQuestion(Question):
             return float(0.0)
 
 
+
+
+
 class ClasificationQuestion(Question):
     __tablename__ = 'clasification_question'
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'clasification_question'}
 
-    def ValidateAnswer(self, answer_given, answer_stored):
+    @staticmethod
+    def validate_answer(answer_given, answer_stored):
         user_ans_dict = loads(answer_given)
         correct_dict = loads(answer_stored)
         keys = answer_given.keys()
@@ -132,6 +136,7 @@ class ClasificationQuestion(Question):
                 incorrect_ans += 1
         print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
         print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
+
 
 
 class PairingQuestion(Question):

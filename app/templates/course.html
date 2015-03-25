@@ -19,7 +19,11 @@ Unilearn | Cursos.
     <a href="{{ url_for("questions",course=course.name,num=question.id) }}">
     <div class="list-group-item">
         <div class="row-picture">
+            {% if question.image %}
             <img class="circle" src="{{ question.image }}" alt="icon">
+            {% else %}
+            <img class="circle" src="http://i.imgur.com/klGXTYM.png" alt="question" />
+            {% endif %}
         </div>
         <div class="row-content">
             <div class="least-content">{{ question.id }}</div>

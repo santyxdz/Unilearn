@@ -160,6 +160,8 @@ def facebook_authorized():
 def get_facebook_oauth_token():
     return session.get('oauth_token')
 
+# Log-in with forms!
+# *******************************************
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -190,7 +192,16 @@ def logout():
 def forgot_password():
     return render_template("login.html")
 
-# Parsing the form structure to the
-@app.route('/clasification/send')
-def validate_clasf():
-    pass
+# Question validation and sending
+# ***********************
+@app.route('/create/question/clasification', methods=['POST'])
+def create_clasf():
+    question = models.ClasificationQuestion(request.form["statement"], request.form["topic"],
+                                            request.form["image"])
+    db.session.add(question)
+    db.session.commit()
+    answer = models.Answer(True, request.form["data"], question.id, request.form["answer_image"])
+    db.session.add(answer)
+    db.session.commit()
+    flash("You created the question" + question.id + "And its answer is " + answer.__repr__())
+    return render_template("courses.html")

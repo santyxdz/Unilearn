@@ -145,6 +145,9 @@ class Question(Resource):
                 "error": "What the hell are you trying to do????"
             }
 
+# class Answer(Resource):
+  # def get(self, question_id):
+
 
 api.add_resource(Error, '/api', "/api/")
 api.add_resource(User, "/api/users/<username>")
