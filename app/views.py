@@ -196,12 +196,5 @@ def forgot_password():
 # ***********************
 @app.route('/create/question/clasification', methods=['POST'])
 def create_clasf():
-    question = models.ClasificationQuestion(request.form["statement"], request.form["topic"],
-                                            request.form["image"])
-    db.session.add(question)
-    db.session.commit()
-    answer = models.Answer(True, request.form["data"], question.id, request.form["answer_image"])
-    db.session.add(answer)
-    db.session.commit()
-    flash("You created the question" + question.id + "And its answer is " + answer.__repr__())
+    pass
     return render_template("courses.html")

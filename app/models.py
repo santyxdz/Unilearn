@@ -67,6 +67,9 @@ class Question(db.Model):
     def __repr__(self):
         return "<Question @" + self.statement
 
+    def set_image(self, image=""):
+        if image:
+            self.image = image
 
 class MSUQuestion(Question):
     __tablename__ = 'msu_question'
@@ -87,7 +90,7 @@ class CompletationQuestion(Question):
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'completation_question'}
 
-    def ValidateAnswer(self, selection, text):
+    def validate_answer(self, selection, text):
         if (selection.text == str(text)):
             """ en este condicional creo que es mejor comparar el .tetx
             aqui va la todo lo que tiene que ver con Gamificacion """
@@ -101,7 +104,7 @@ class MSMQuestion(Question):
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'msm_question'}
 
-    def ValidateAnswer(self, answerSaved, selection):
+    def validate_answer(self, answerSaved, selection):
         cont = 0
         for i in selection:
             if i.state == True:
@@ -144,9 +147,19 @@ class PairingQuestion(Question):
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'question_smm'}
 
-    def ValidateAnswer(self, answers, selected):
-        # items = answers.keys()
-        pass
+    def validate_answer(self, answer_given, answer_stored):
+        user_ans_dict = loads(answer_given)
+        correct_dict = loads(answer_stored)
+        keys = answer_given.keys()
+        correct_ans = 0
+        incorrect_ans = 0
+        for key in keys:
+            if user_ans_dict[key] == correct_dict[key]:
+                correct_ans += 1
+            else:
+                incorrect_ans += 1
+        print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
+        print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
 
 
 class Answer(db.Model):

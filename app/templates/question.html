@@ -54,12 +54,12 @@ Unilearn | Pregunta
                 {% for answer in question.answers %}
                     {% if question.type == "msm_question" %}
                         <div class="checkbox">
-                            <label><input type="checkbox" value="{{answer.state}}">{{answer.text}}</a></label>
+                            <label><input type="checkbox" value="{{answer}}">{{answer.text}}</a></label>
                         </div>
                     {% endif %}
                      {% if question.type == "msu_question" %}
                         <div class="radio radio-primary"><label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value='{{answer.state}}' checked="">{{answer.text}}
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value='{{answer}}'>{{answer.text}}
                          </label></div>
                     {% endif %}
 
