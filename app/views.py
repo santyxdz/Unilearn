@@ -3,7 +3,7 @@ from flask import Flask, g, url_for, request, render_template, flash, json, sess
 import flask
 from flask import redirect, render_template, abort
 from flask_oauthlib.client import OAuth, OAuthException
-
+import requests
 from app import models, app, configs
 from app import db
 import encodings
@@ -196,5 +196,5 @@ def forgot_password():
 # ***********************
 @app.route('/create/question/clasification', methods=['POST'])
 def create_clasf():
-    pass
+    requests.post("http://localhost:5000/api/question", None ) # the recieved JSON must be sended here.
     return render_template("courses.html")

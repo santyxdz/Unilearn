@@ -123,7 +123,7 @@ class Question(Resource):
             if "update" in request.form["method"]:
                 return {"result": True}
             elif "create" in request.form["method"]:
-                if "statement" in request.form and "topic" in request.form and "type" in request.form:
+                if "statement" in request.form and "topic" in request.form: # and "type" in request.form:
                     type_specified = request.form["type"]
                     if type_specified == "msu":  # for multiple selection unique response questions
                         question = models.MSUQuestion(request.form["statement"], request.form["topic"])
@@ -140,9 +140,16 @@ class Question(Resource):
                             "status": False,
                             "error": "type specified is not supported"
                             }
-                    image = request.form["image"]
-                    if image is not None:
-                        question.set_image(image)
+                    try:
+                        question = models.Question(request.form["statement"], request.form["topic"])
+                    except Exception:
+                        return{
+                            "status": False,
+                            "message": Exception.message
+                        }
+                    #image = request.form["image"]
+                    #if image is not None:
+                    #    question.set_image(image)
                     db.session.add(question)
                     db.session.commit()
                     return {
@@ -173,7 +180,7 @@ class Answer(Resource):
             try:
                 answer = models.Answer.query.filter_by(id=answer_id, question_id=question_id).first()
                 return{
-                    "status": True,
+                    "result": True,
                     "answer": answer.id,
                     "belongs to question": answer.question_id,
                     "state": answer.state
@@ -182,7 +189,6 @@ class Answer(Resource):
                 return{
                     "status": False,
                     "error": Exception.message
-                    # "message": "This answer does not exist for this question" # optional
                 }
         elif question_id:
             try:
@@ -241,4 +247,4 @@ api.add_resource(Error, '/api', "/api/")
 api.add_resource(User, "/api/users/<username>")
 api.add_resource(Topic, "/api/topics/<topic_name>")
 api.add_resource(Question, "/api/question/<int:question_id>", "/api/question/")
-api.add_resource(Answer, "/api/answer/<int:question_id>", "/api/answer/", "/api/answer/<int:answer_id>")
+api.add_resource(Answer, "/api/answer/<int:question_id>", "/api/answer/", "/api/answer/<int:question_id>/<int:answer_id>")

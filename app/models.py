@@ -71,18 +71,17 @@ class Question(db.Model):
         if image:
             self.image = image
 
+# Multiple Selection Unique Response
 class MSUQuestion(Question):
     __tablename__ = 'msu_question'
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'msu_question'}
 
     # @staticmethod
-    def validate_answer(selection):
-        if selection.state == True:
-            """ aqui va la todo lo que tiene que ver con Gamificacion"""
-            return "Respuesta Correcta"
-        else:
-            return "Respuesta Incorrecta"
+    def validate_answer(self, selected, true_one):
+        if selected == true_one:
+            return "Score! You've got 100% correct"
+        return "Ops! Incorrect! But for your trying you've got a 0,01%. Keep trying!"
 
 
 class CompletationQuestion(Question):
@@ -91,14 +90,13 @@ class CompletationQuestion(Question):
     __mapper_args__ = {'polymorphic_identity': 'completation_question'}
 
     def validate_answer(self, selection, text):
-        if (selection.text == str(text)):
-            """ en este condicional creo que es mejor comparar el .tetx
-            aqui va la todo lo que tiene que ver con Gamificacion """
+        if selection.text == str(text):
             return "Respuesta Correcta"
         else:
             return "Respuesta Incorrecta"
 
 
+# Multiple Selection Multiple Response
 class MSMQuestion(Question):
     __tablename__ = 'msm_question'
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
@@ -107,7 +105,7 @@ class MSMQuestion(Question):
     def validate_answer(self, answerSaved, selection):
         cont = 0
         for i in selection:
-            if i.state == True:
+            if i.state:
                 cont += 1
         score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
         if (score >= 0):
