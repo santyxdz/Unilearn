@@ -243,6 +243,36 @@ class Answer(Resource):
                     "message": "method specified is not supported"
                 }
 
+
+class Evaluate(Resource):
+    #ASI SE HACE EN JAVASCRIPT-jQuery PARA El Post los datos son el dicionario despues de la url
+    #En fin la cosa es que como se los enviabamos en postman es viable por rest, las listas
+    #tambien se pueden enviar si tienen el mismo nombre y otra cosa ahi.
+    #Si algo vean el jquery.json
+    #No terminado pueden sergirlo la cosa es que se envie a /evaluate/<int:question>
+    #y esto le devuelva cuando saco (flatante) y como devuelve json se pueden poner mas cosas
+    # $.post("/api/question/",{method:"update"},function(data){console.log(data.result)},"json");
+    def post(self, question_id=None):
+        if question_id is None:
+            return {"error": "Not accessible",
+                    "result": False
+                    }
+        else:
+            question = models.Question.query.filter_by(id=question_id).first()
+            if question is None:
+                return {"error": "Question not found",
+                        "result": False
+                        }
+            else:
+                if "type" in request.form and "selected" in request.form:
+                    pass
+            pass
+        pass
+    pass
+
+
+
+
 api.add_resource(Error, '/api', "/api/")
 api.add_resource(User, "/api/users/<username>")
 api.add_resource(Topic, "/api/topics/<topic_name>")
