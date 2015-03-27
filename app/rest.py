@@ -5,6 +5,7 @@ from app import db
 from app import views
 from app import models
 import json
+
 """
 todos = {}
 
@@ -101,7 +102,7 @@ class Question(Resource):
             questions = models.Question.query.all()
             return {
                 "questions": [x.id for x in questions]
-                }
+            }
         else:
             question = models.Question.query.filter_by(id=question_id).first()
             if views.is_empty(question):
@@ -116,14 +117,14 @@ class Question(Resource):
                     "type": question.type,
                     "topic": question.topic.name,
                     "status": "Successfull"
-                    }
-            
+                }
+
     def post(self, question_id=None):
         if question_id is None:
             if "update" in request.form["method"]:
                 return {"result": True}
             elif "create" in request.form["method"]:
-                if "statement" in request.form and "topic" in request.form: # and "type" in request.form:
+                if "statement" in request.form and "topic" in request.form:  # and "type" in request.form:
                     type_specified = request.form["type"]
                     if type_specified == "msu":  # for multiple selection unique response questions
                         question = models.MSUQuestion(request.form["statement"], request.form["topic"])
@@ -136,18 +137,18 @@ class Question(Resource):
                     elif type_specified == "pairing":
                         question = models.PairingQuestion(request.form["statement"], request.form["topic"])
                     else:
-                        return{
+                        return {
                             "status": False,
                             "error": "type specified is not supported"
-                            }
+                        }
                     try:
                         question = models.Question(request.form["statement"], request.form["topic"])
                     except Exception:
-                        return{
+                        return {
                             "status": False,
                             "message": Exception.message
                         }
-                    #image = request.form["image"]
+                    # image = request.form["image"]
                     #if image is not None:
                     #    question.set_image(image)
                     db.session.add(question)
@@ -155,20 +156,20 @@ class Question(Resource):
                     return {
                         "status": True,
                         "message": "Question creation successful"
-                        }
+                    }
                 else:
                     return {
                         "status": False,
                         "type": "PANIC",
                         "error": "no statement or topic or type specified!"
-                        }
+                    }
             else:
-                return{
+                return {
                     "status": False,
                     "message": "method specified is not supported"
-                    }
+                }
         else:
-            return{
+            return {
                 "status": False,
                 "message": "can't create a specified question, do not tell me the id!"
             }
@@ -179,14 +180,14 @@ class Answer(Resource):
         if question_id and answer_id:
             try:
                 answer = models.Answer.query.filter_by(id=answer_id, question_id=question_id).first()
-                return{
+                return {
                     "result": True,
                     "answer": answer.id,
                     "belongs to question": answer.question_id,
                     "state": answer.state
                 }
             except Exception:
-                return{
+                return {
                     "status": False,
                     "error": Exception.message
                 }
@@ -206,7 +207,7 @@ class Answer(Resource):
                     "error": Exception.message
                 }
         else:
-            return{
+            return {
                 "status": False,
                 "message": "question id or answer id not specified"
             }
@@ -227,25 +228,25 @@ class Answer(Resource):
                         answer = models.Answer(request.form["state"], request.form["text"], request.form["question"])
                     db.session.add(answer)
                     db.commit()
-                    return{
+                    return {
                         "status": True,
                         "message": "Answer created",
                         "question": "And it belongs to" + answer.question_id + "question"
                     }
                 else:
-                    return{
+                    return {
                         "status": False,
                         "message": "Missing information"
                     }
             else:
-                return{
+                return {
                     "status": False,
                     "message": "method specified is not supported"
                 }
 
 
 class Evaluate(Resource):
-    #ASI SE HACE EN JAVASCRIPT-jQuery PARA El Post los datos son el dicionario despues de la url
+    # ASI SE HACE EN JAVASCRIPT-jQuery PARA El Post los datos son el dicionario despues de la url
     #En fin la cosa es que como se los enviabamos en postman es viable por rest, las listas
     #tambien se pueden enviar si tienen el mismo nombre y otra cosa ahi.
     #Si algo vean el jquery.json
@@ -272,6 +273,22 @@ class Evaluate(Resource):
                         return result
                     if request.form["type"] == "msm":
                         pass
+                    if request.form["type"] == "completation":
+                        # Para mandar la respuesta de una completation question se manda con el key de "answer_given"
+                        # Porque no tiene sentido decir que se "selecciono" una respuesta que el usuario escribio
+                        correct = [x.id for x in question.answers if x.state]
+                        selected = json.loads(request.form["answer_given"])
+                        result = question.validate_answer(selected[0], correct[0])
+                        return result
+                    if request.form["type"] == "pairing":
+                        # Se debe mandar la respuesta en formato JSON.
+                        correct = [x.id for x in question.answers if x.state]
+                        result = question.validate_answer(request.form["answer_given"], correct[0])
+                        return result
+                    if request.form["type"] == "clasification":
+                        correct = [ans.id for ans in question.answers if ans.state]
+                        result = question.validate_answer(request.form["answer_given"], correct[0])
+                        return result
                     else:
                         return {
                             "error": "Type Invalid",
@@ -279,11 +296,10 @@ class Evaluate(Resource):
                         }
 
 
-
-
 api.add_resource(Error, '/api', "/api/")
 api.add_resource(User, "/api/users/<username>")
 api.add_resource(Topic, "/api/topics/<topic_name>")
 api.add_resource(Question, "/api/question/<int:question_id>", "/api/question/")
-api.add_resource(Answer, "/api/answer/<int:question_id>", "/api/answer/", "/api/answer/<int:question_id>/<int:answer_id>")
+api.add_resource(Answer, "/api/answer/<int:question_id>", "/api/answer/",
+                 "/api/answer/<int:question_id>/<int:answer_id>")
 api.add_resource(Evaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
