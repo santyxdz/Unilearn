@@ -123,6 +123,7 @@ $("button[name=submit]").click(
     });
     });
 </script>
+{% endif %}
 
 {% if question.type == "clasification_question" or question.type == "pairing_question" %}
 <script type="text/javascript">
@@ -153,4 +154,5 @@ $(document).ready(function()
 );
 </script>
 {% endif %}
+
 {% endblock %}
