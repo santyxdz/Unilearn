@@ -89,10 +89,9 @@ $(document).ready(function()
 {
     $("button[name=submit]").click(function () {
         	if( $("input[name='options']:radio").is(':checked')) {
-                $.getJSON("{{ "/api/answer/"+question.id|string+'/'}}"+$('input:radio[name=options]:checked').val(),
-                function(data){
-                    alert(data.state);
-                });
+                $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
+                                        selected:"["+$('input:radio[name=options]:checked').val()+"]"
+                                        },function(data){alert(data.message)},"json");
             } else{
                 alert("Seleccione una Opción");
             }

@@ -80,9 +80,8 @@ class MSUQuestion(Question):
     # @staticmethod
     def validate_answer(self, selected, true_one):
         if selected == true_one:
-            return "Score! You've got 100% correct"
-        return "Ops! Incorrect! But for your trying you've got a 0,01%. Keep trying!"
-
+            return {"score": 1.0, "message": "Score! You've got 100% correct"}
+        return {"score": 0.0, "message": "Ops! Incorrect! But for your trying you've got a 0,01%. Keep trying!"}
 
 class CompletationQuestion(Question):
     __tablename__ = 'completation_question'

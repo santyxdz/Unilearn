@@ -265,10 +265,18 @@ class Evaluate(Resource):
                         }
             else:
                 if "type" in request.form and "selected" in request.form:
-                    pass
-            pass
-        pass
-    pass
+                    if request.form["type"] == "msu":
+                        trueOne = [x.id for x in question.answers if x.state]
+                        selected = json.loads(request.form["selected"])
+                        result = question.validate_answer(selected[0], trueOne[0])
+                        return result
+                    if request.form["type"] == "msm":
+                        pass
+                    else:
+                        return {
+                            "error": "Type Invalid",
+                            "result": False
+                        }
 
 
 
@@ -278,3 +286,4 @@ api.add_resource(User, "/api/users/<username>")
 api.add_resource(Topic, "/api/topics/<topic_name>")
 api.add_resource(Question, "/api/question/<int:question_id>", "/api/question/")
 api.add_resource(Answer, "/api/answer/<int:question_id>", "/api/answer/", "/api/answer/<int:question_id>/<int:answer_id>")
+api.add_resource(Evaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
