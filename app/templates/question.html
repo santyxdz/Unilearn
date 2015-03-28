@@ -63,7 +63,7 @@ Unilearn | Pregunta
                 {% if question.type == "msm_question" %}
                     {% for answer in question.answers %}
                     <div class="checkbox">
-                        <label><input type="checkbox" value="{{answer}}">{{answer.text}}</label>
+                        <label><input type="checkbox" value="{{answer.id}}">{{answer.text}}</label>
                     </div>
                      {% endfor %}
                 {% endif %}
@@ -76,7 +76,6 @@ Unilearn | Pregunta
                 <div class="col-md-6 col-md-offset-3">
                      <button class="btn btn-default">Saltar</button>
                      <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
-
                 </div>
             </div>
          </div>
@@ -110,6 +109,26 @@ $(document).ready(function()
             } else{
                 alert("Incorrecto");
             }
+    });
+});
+</script>
+{% endif %}
+
+{% if question.type == "msm_question" %}
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button[name=submit]").click(function(){
+        var a = "[";
+        $("input:checkbox:checked").each(function(){
+            a+=$(this).val();
+            a+=", "
+        });
+        a = a.substring(0,a.length-2)+"]";
+        if(a.length<2){
+            a = "[]";
+        }
+        $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msm",
+            selected:a},function(data){alert(data.message)},"json");
     });
 });
 </script>

@@ -271,7 +271,11 @@ class Evaluate(Resource):
                         result = question.validate_answer(selected[0], trueOne[0])
                         return result
                     if request.form["type"] == "msm":
-                        pass
+                        trueOne = [x.id for x in question.answers if x.state]
+                        selected = json.loads(request.form["selected"])
+                        selected_objects = [models.Answer.query.filter_by(id=x).first() for x in selected]
+                        result = question.validate_answer(len(trueOne), selected_objects)
+                        return result
                     else:
                         return {
                             "error": "Type Invalid",

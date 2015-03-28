@@ -108,13 +108,9 @@ class MSMQuestion(Question):
                 cont += 1
         score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
         if (score >= 0):
-            print cont, " Respuesta(s) correctas", len(selection) - cont, "Respuesta(s) falsas"
-            return "Puntaje: ", score
+            return {"score": score, "message": "You've got "+str(score*100)+"% correct"}
         else:
-            return float(0.0)
-
-
-
+            return {"score": 0.0, "message": "You've lost, try it again"}
 
 
 class ClasificationQuestion(Question):
