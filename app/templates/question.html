@@ -93,7 +93,26 @@ Unilearn | Pregunta
                     {% endfor %}
                     </div>
                 {% endif %}
-
+                {% if question.type == "pairing_question" %}
+                    <div class="row">
+                    {% set keys = [] %}
+                    {% set values = [] %}
+                    {% for answer in question.answers %}
+                        {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %}
+                        {% if values.append(to_dic(answer.text).values()[0])%}{% endif %}
+                    {% endfor %}
+                    {% for key in keys %}
+                    <div class="col-sm-6">{{ key }}</div>
+                    <div class="col-sm-6">
+                        <select class="form-control">
+                        {% for value in values %}
+                          <option>{{ value }}</option>
+                        {% endfor %}
+                        </select>
+                    </div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
                 </div>
                 <div class="col-md-6 col-md-offset-3">
                      <button class="btn btn-default">Saltar</button>
