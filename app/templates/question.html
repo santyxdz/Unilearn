@@ -106,15 +106,11 @@ $(document).ready(function()
 $("button[name=submit]").click(
     function () {
     if($("input[name='txt']:text").val() != ""){
-        $.post(
-        "{{"/api/evaluate"+ question.id|string}}",
-         {  type:"completation",
-            selected: $("input[name='txt']:text").val()
-         },
-        function(data){
-            alert(data.message)
-        },
-        "json"
+        $.post("{{"/api/evaluate/"+question.id|string}}",{type:"completation",
+                            selected: "[\""+$("input[name='txt']:text").val()+"\"]"
+                            },function(data){
+                                alert(data.message)
+                            },"json");
     }
     else{
         alert("you must give an answer!");

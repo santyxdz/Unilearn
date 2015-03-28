@@ -88,11 +88,13 @@ class CompletationQuestion(Question):
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'completation_question'}
 
-    def validate_answer(self, selection, text):
-        if str(selection).decode('utf-8').lower() == str(text).decode('utf-8').lower():
-            return {"score": 1.0, "message":"Excelent, correct answer!"}
+    def validate_answer(self, text):
+        #if str(selection).decode('utf-8').lower() == str(text).decode('utf-8').lower():
+        answers = [x.text.lower() for x in self.answers]
+        if text.lower() in answers:
+            return {"score": 1.0, "message": "Excelent, correct answer!"}
         else:
-            return {"score": 0.0, "message":"Bad answer, try again"}
+            return {"score": 0.0, "message": "Bad answer, try again"}
 
 
 # Multiple Selection Multiple Response

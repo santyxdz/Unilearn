@@ -278,11 +278,8 @@ class Evaluate(Resource):
                         result = question.validate_answer(len(trueOne), selected_objects)
                         return result
                     if request.form["type"] == "completation":
-                        # Para mandar la respuesta de una completation question se manda con el key de "answer_given"
-                        # Porque no tiene sentido decir que se "selecciono" una respuesta que el usuario escribio
-                        correct = [x.id for x in question.answers if x.state]
-                        selected = json.loads(request.form["answer_given"])
-                        result = question.validate_answer(selected[0], correct[0])
+                        selected = json.loads(request.form["selected"])
+                        result = question.validate_answer(selected[0])
                         return result
                     if request.form["type"] == "pairing":
                         # Se debe mandar la respuesta en formato JSON.
