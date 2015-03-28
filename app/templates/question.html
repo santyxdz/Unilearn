@@ -103,17 +103,56 @@ $(document).ready(function()
 <script type="text/javascript">
 $(document).ready(function()
 {
-    $("button[name=submit]").click(function () {
-            if($("input[name='txt']:text").val() == '{{question.answers[0].text}}'){
-               alert("Correcto");
-            } else{
-                alert("Incorrecto");
-            }
+$("button[name=submit]").click(
+    function () {
+    if($("input[name='txt']:text").val() != ""){
+        $.post(
+        "{{"/api/evaluate"+ question.id|string}}",
+         {  type:"completation",
+            selected: $("input[name='txt']:text").val()
+         },
+        function(data){
+            alert(data.message)
+        },
+        "json"
+    }
+    else{
+        alert("you must give an answer!");
+    }
     });
-});
+    });
 </script>
 {% endif %}
 
+{% if question.type == "clasification_question" or question.type == "pairing_question" %}
+<script type="text/javascript">
+function answerToJSON(){
+    return "";
+}
+$(document).ready(function()
+{
+    $("button[name=submit]").click(
+        function(){
+            var answer_given = answerToJSON()
+            if(answer_given != ""){
+                $.post(
+                    "{{"/api/evaluate" + question.id|string}}",
+                    answer_given,
+                    function(data){
+                        alert(data.message)
+                    },
+                    "json"
+                );
+            }
+            else{
+                alert("You missed something or you have not match everything yet!");
+            }
+        }
+    );
+}
+);
+</script>
+{% endif %}
 {% if question.type == "msm_question" %}
 <script type="text/javascript">
 $(document).ready(function(){

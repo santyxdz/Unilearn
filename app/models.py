@@ -89,10 +89,10 @@ class CompletationQuestion(Question):
     __mapper_args__ = {'polymorphic_identity': 'completation_question'}
 
     def validate_answer(self, selection, text):
-        if selection.text == str(text):
-            return "Respuesta Correcta"
+        if str(selection).decode('utf-8').lower() == str(text).decode('utf-8').lower():
+            return {"score": 1.0, "message":"Excelent, correct answer!"}
         else:
-            return "Respuesta Incorrecta"
+            return {"score": 0.0, "message":"Bad answer, try again"}
 
 
 # Multiple Selection Multiple Response
@@ -132,6 +132,10 @@ class ClasificationQuestion(Question):
                 incorrect_ans += 1
         print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
         print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
+        return {
+            "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
+            "message": "This was your punctuation"
+        }
 
 
 
@@ -153,6 +157,10 @@ class PairingQuestion(Question):
                 incorrect_ans += 1
         print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
         print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
+        return {
+            "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
+            "message": "This was your punctuation"
+        }
 
 
 class Answer(db.Model):
