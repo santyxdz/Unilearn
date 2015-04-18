@@ -12,6 +12,12 @@ class User(db.Model):
     email = db.Column(db.String(300), unique=True)
     password = db.Column(db.String(300))
     photo = db.Column(db.Text)
+    cur_topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))  # Curso publico actual
+    cur_topic = db.relationship("Topic")
+    scores = db.relationship("UserScore", backref="topic", cascade='all, delete-orphan')
+    life = db.Column(db.Integer)
+    type = db.Column(db.String(50))  # Profesor | Estudiante
+    
 
     def __init__(self, username, email, password, first_name="", last_name="", photo=""):
         self.username = username
@@ -22,6 +28,8 @@ class User(db.Model):
         self.photo = photo
         print "New User: " + self.__repr__()
 
+    def score(self):
+        return 5
     def __repr__(self):
         return "<User @" + self.username + ">"
 
