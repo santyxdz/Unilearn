@@ -36,6 +36,14 @@ def is_empty(item):
         return True
     return False
 
+@app.template_global()
+def to_dic(item):
+    return json.loads(item)
+
+@app.template_global()
+def no_repeated(item):
+    return list(set(item))
+
 
 @app.route("/main")
 @app.route('/index')
