@@ -61,7 +61,7 @@ def register():
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
             user = models.User(request.form["username"], request.form["email"],
-                               request.form["password"])
+                               request.form["password"], tw_un=request.form["tw_username"])
             db.session.add(user)
             db.session.commit()
             return redirect(flask.url_for("home"))
@@ -134,7 +134,15 @@ def oauthorized():
         flash('You denied the request to sign in')
     else:
         session['twitter_oauth'] = resp
-    return render_template("register.html", username=resp['screen_name'])
+    users = models.User.query.filter_by(tw_username=resp['screen_name'].lower()).all()
+    if len(users) > 0:
+        session['logged'] = True
+        cur_user = users[0]
+        session['user'] = cur_user.username
+        flash('You were logged in')
+        return redirect(url_for('home'))
+
+    return render_template("register.html", username=resp['screen_name'], tw_username=resp['screen_name'])
 
 # FB Stuff!
 # *************************************
@@ -204,5 +212,5 @@ def forgot_password():
 # ***********************
 @app.route('/create/question/clasification', methods=['POST'])
 def create_clasf():
-    requests.post("http://localhost:5000/api/question", None ) # the recieved JSON must be sended here.
+    requests.post("http://localhost:5000/api/question", None)# the recieved JSON must be sended here.
     return render_template("courses.html")
