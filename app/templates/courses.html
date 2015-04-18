@@ -9,12 +9,14 @@ Unilearn | Cursos.
     function register(id){
         {% if session["logged"] %}
         $.post("/api/register/{{session["user"]}}/id");
+        {% endif %}
     }
 </script>
 {% endblock %}
 
 {% block css %}
 {% endblock %}
+
 {% block main %}
 <div class="row">
 {% for course in courses %}
@@ -36,6 +38,4 @@ Unilearn | Cursos.
 </div>
 {% endfor %}
 </div>
-
-
 {% endblock %}

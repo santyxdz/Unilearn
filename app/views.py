@@ -36,8 +36,15 @@ def is_empty(item):
         return True
     return False
 
-@
-set_default
+
+@app.template_global()
+def set_default(item, replacement):
+    if is_empty(item):
+        return replacement
+    else:
+        return item
+
+
 @app.template_global()
 def to_dic(item):
     return json.loads(item)
