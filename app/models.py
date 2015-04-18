@@ -19,6 +19,7 @@ class User(db.Model):
     type = db.Column(db.String(50))  # Profesor | Estudiante
     
 
+
     def __init__(self, username, email, password, first_name="", last_name="", photo=""):
         self.username = username
         self.first_name = first_name
@@ -60,6 +61,7 @@ class Question(db.Model):
     image = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
+    users = db.relationship("UserScore", backref="score", cascade='all, delete-orphan')
     __mapper_args__ = {
         'polymorphic_on': type,
         'polymorphic_identity': 'question',
@@ -189,3 +191,18 @@ class Answer(db.Model):
 
     def __repr__(self):
         return "Answers @" + self.text
+
+class UserScore(db.Model):
+    __tablename__ = "userscore"
+    id = db.Column(db.Integer, unique=True, primary_key=True)
+    user = db.Column(db.Integer, db.ForeignKey('user.username'))
+    question = db.Column(db.Integer, db.ForeignKey('question.id'))
+    score = db.Column(db.Integer)
+
+    def __init__(self, user, question, score):
+        self.user = user
+        self.question = question
+        self.score = score
+
+    def __repr__(self):
+        return "Score @" + self.score
