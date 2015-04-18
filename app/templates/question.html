@@ -4,6 +4,8 @@
 Unilearn | Pregunta
 {% endblock %}
 
+
+
 {% block css %}
 <style>
      .question{
@@ -44,7 +46,11 @@ Unilearn | Pregunta
 
          <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
              <div class="panel-user">
-                <img src="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/heart-128.png" style='...' border="0" alt="0">
+                 <div><center>
+                     <img width="70" height = "70" src="https://cdn0.iconfinder.com/data/icons/creative-process-4/155/vector_298_02-128.png" border="0">
+                 </center></div>
+                 {{session["user"]}}
+                <img width="30" height = "30" src="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/heart-128.png" style='...' border="0" alt="0">
             </div>
 
             <div class="panel-heading">
@@ -187,6 +193,15 @@ $(document).ready(function()
                     function(data){
                         alert(data.message)
                     },
+2
+3
+4
+
+
+$.get( "ajax/test.html", function( data ) {
+$( ".result" ).html( data );
+alert( "Load was performed." );
+});
                     "json"
                 );
             }

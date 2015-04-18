@@ -44,6 +44,7 @@ class User(Resource):
             return {
                 "result": True,
                 "user": user.username,
+                "lifes": user.life,
                 "status": "Successful, User is on DB"
             }
 
