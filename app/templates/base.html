@@ -60,11 +60,18 @@
                     {% endif %}
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ url_for("login") }}">Iniciar Sesion</a></li>
-                        <li><a href="javascript:void(0)">Another action</a></li>
+                        {% if session["logged"] %}
+                            <li><a href="javascript:void(0)">Another action</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{ url_for("logout") }}">Cerrar Sesion</a></li>
+                        {% else %}
+                            <li><a href="javascript:void(0)">Another action</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{{ url_for("login") }}">Iniciar Sesion</a></li>
+                        {%endif%}
 
-                        <li class="divider"></li>
-                        <li><a href="{{ url_for("logout") }}">Cerrar Sesion</a></li>
+
+
                     </ul>
                 </li>
             </ul>

@@ -16,7 +16,7 @@ Unilearn | Cursos.
 </div>
 <div class="list-group">
 {% for question in course.questions %}
-    <a href="{{ url_for("questions",course=course.name,num=question.id) }}">
+    <a href="{{ url_for("questions", course=course.name,num=question.id) }}">
     <div class="list-group-item">
         <div class="row-picture">
             {% if question.image %}
