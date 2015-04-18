@@ -9,19 +9,31 @@ class User(db.Model):
     username = db.Column(db.String(15), unique=True, primary_key=True)
     first_name = db.Column(db.String(150))
     last_name = db.Column(db.String(200))
+    tw_username = db.Column(db.String(200))
+    # fb_id = db.Column(db.String(250))
+    # gl_username = db.Column(db.String(250))
     email = db.Column(db.String(300), unique=True)
     password = db.Column(db.String(300))
     photo = db.Column(db.Text)
+    cur_topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))  # Curso publico actual
+    cur_topic = db.relationship("Topic")
+    scores = db.relationship("UserScore", backref="topic", cascade='all, delete-orphan')
+    life = db.Column(db.Integer)
+    type = db.Column(db.String(50))  # Profesor | Estudiante
+    # Cursos = Cursos ... por hacer
 
-
-    def __init__(self, username, email, password, first_name="", last_name="", photo=""):
+    def __init__(self, username, email, password, first_name="", last_name="", photo="", tw_un=""):
         self.username = username
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
         self.password = password
         self.photo = photo
+        self.tw_username = tw_un
         print "New User: " + self.__repr__()
+
+    def score(self):
+        return sum([x.score for x in self.scores])
 
     def __repr__(self):
         return "<User @" + self.username + ">"
@@ -54,7 +66,7 @@ class Question(db.Model):
     icon = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
-    users = db.relationship("UserScore", backref="score", cascade='all, delete-orphan')
+    users = db.relationship("UserScore", backref="question", cascade='all, delete-orphan')
     __mapper_args__ = {
         'polymorphic_on': type,
         'polymorphic_identity': 'question',
@@ -112,7 +124,7 @@ class MSMQuestion(Question):
             if i.state:
                 cont += 1
         score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
-        if (score >= 0):
+        if score >= 0:
             return {"score": score, "message": "You've got "+str(score*100)+"% correct"}
         else:
             return {"score": 0.0, "message": "You've lost, try it again"}
@@ -188,8 +200,8 @@ class Answer(db.Model):
 class UserScore(db.Model):
     __tablename__ = "userscore"
     id = db.Column(db.Integer, unique=True, primary_key=True)
-    user = db.Column(db.Integer, db.ForeignKey('user.username'))
-    question = db.Column(db.Integer, db.ForeignKey('question.id'))
+    user_username = db.Column(db.String(15), db.ForeignKey('user.username'))
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
     score = db.Column(db.Integer)
 
     def __init__(self, user, question, score):
