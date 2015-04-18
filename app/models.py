@@ -35,6 +35,9 @@ class User(db.Model):
     def score(self):
         return sum([x.score for x in self.scores])
 
+    def set_topic(self, topic_id):
+        self.cur_topic_id = topic_id
+
     def __repr__(self):
         return "<User @" + self.username + ">"
 
