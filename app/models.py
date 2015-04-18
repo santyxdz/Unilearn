@@ -17,8 +17,7 @@ class User(db.Model):
     scores = db.relationship("UserScore", backref="topic", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
-    
-
+    # Cursos = Cursos ... por hacer
 
     def __init__(self, username, email, password, first_name="", last_name="", photo=""):
         self.username = username
@@ -30,7 +29,8 @@ class User(db.Model):
         print "New User: " + self.__repr__()
 
     def score(self):
-        return 5
+        return sum([x.score for x in self.scores])
+
     def __repr__(self):
         return "<User @" + self.username + ">"
 
@@ -119,7 +119,7 @@ class MSMQuestion(Question):
             if i.state:
                 cont += 1
         score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
-        if (score >= 0):
+        if score >= 0:
             return {"score": score, "message": "You've got "+str(score*100)+"% correct"}
         else:
             return {"score": 0.0, "message": "You've lost, try it again"}
