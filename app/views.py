@@ -36,6 +36,8 @@ def is_empty(item):
         return True
     return False
 
+@
+set_default
 @app.template_global()
 def to_dic(item):
     return json.loads(item)
@@ -208,9 +210,11 @@ def logout():
 def forgot_password():
     return render_template("login.html")
 
-# Question validation and sending
-# ***********************
-@app.route('/create/question/clasification', methods=['POST'])
-def create_clasf():
-    requests.post("http://localhost:5000/api/question", None)# the recieved JSON must be sended here.
-    return render_template("courses.html")
+
+@app.route("/user/<user>")
+def user_profile(user):
+    user = models.User.query.filter_by(username=user).first()
+    if isinstance(user, type(None)):
+        return abort(404)
+    else:
+        return render_template("user.html", user=user)

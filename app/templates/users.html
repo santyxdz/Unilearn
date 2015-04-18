@@ -2,7 +2,7 @@
 {% block main %}
 <ul id="users-list">
 {% for user in users %}
-        <li><a href="#">{{user.username}}</a></li>
+        <li><a href="{{ url_for("user_profile",user=user.username) }}">{{user.username}}</a></li>
 {% endfor %}
 </ul>
 {% endblock %}
