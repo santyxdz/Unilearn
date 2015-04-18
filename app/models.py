@@ -35,6 +35,9 @@ class User(db.Model):
     def score(self):
         return sum([x.score for x in self.scores])
 
+    def set_topic(self, topic_id):
+        self.cur_topic_id = topic_id
+
     def __repr__(self):
         return "<User @" + self.username + ">"
 
@@ -63,6 +66,7 @@ class Question(db.Model):
     type = db.Column(db.String(50))
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
+    icon = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
     users = db.relationship("UserScore", backref="question", cascade='all, delete-orphan')
