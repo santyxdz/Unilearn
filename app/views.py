@@ -60,8 +60,12 @@ def register():
         if len(users) > 0:
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
-            user = models.User(request.form["username"], request.form["email"],
+            """if request.form["tw_username"]:
+                user = models.User(request.form["username"], request.form["email"],
                                request.form["password"], tw_un=request.form["tw_username"])
+            else:"""
+            user = models.User(request.form["username"], request.form["email"],
+                               request.form["password"])
             db.session.add(user)
             db.session.commit()
             return redirect(flask.url_for("home"))
