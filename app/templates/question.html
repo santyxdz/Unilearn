@@ -36,7 +36,9 @@ Unilearn | Pregunta
         -moz-transition: all 1s;
         -webkit-transition: all 1s;
         -o-transition: all 1s;
+
     }
+}}
 
 
 </style>
@@ -47,11 +49,20 @@ Unilearn | Pregunta
          <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
              <div class="panel-user">
                  <div><center>
-                     <img width="70" height = "70" src="https://cdn0.iconfinder.com/data/icons/creative-process-4/155/vector_298_02-128.png" border="0">
+                     <img width="70" height = "70" src="http://goo.gl/oCecWe" border="0">
                  </center></div>
-                 {{session["user"]}}
-                <img width="30" height = "30" src="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/heart-128.png" style='...' border="0" alt="0">
-            </div>
+                 {%if session["logged"]%}
+                 {%if get_lifes(session["user"]) != 0 %}
+                     {% for num in range(0,(get_lifes(session["user"])/2)|int)%}
+                         <img  width="30" height = "30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
+                     {% endfor %}
+                     {% if get_lifes(session["user"]) % 2 != 0%}
+                        <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
+                     {% endif%}
+                 {% endif %}
+                 {% endif %}
+
+             </div>
 
             <div class="panel-heading">
                 <h3 class="panel-title">Pregunta</h3>
@@ -154,6 +165,11 @@ $(document).ready(function()
 });
 </script>
 {% endif %}
+
+<script>
+    $.get
+
+</script>
 
 {% if question.type == "completation_question" %}
 <script type="text/javascript">
