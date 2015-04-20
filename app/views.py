@@ -150,10 +150,13 @@ def add_header(response):
     return response
 
 
-@app.errorhandler(404)
+@app.errorhandler(404) #Pagina de Error: No Existe
 def page_not_found(error):
-    """Custom 404 page."""
     return render_template('404.html'), 404
+
+@app.errorhandler(401)
+def page_not_found(error): #Pagina de Error: Acceso Denegado
+    return redirect(url_for("login"))
 
 # Twitter Stuff!
 # ******************************
@@ -245,25 +248,13 @@ def login():
             error = u"El usuario seleccionado no existe"
             return render_template('login.html', error=error)
     return render_template('login.html')
-    """error = None
-    if request.method == 'POST':
-        user = models.User.query.filter_by(username=request.form["username"]).first()
-        if is_empty(user):
-            error = 'Invalid username'
-        elif request.form['password'] != user.password:
-            error = 'Invalid password'
-        else:
-            session['user'] = user.username
-            flash('You were logged in')
-            return redirect(url_for('home'))
-    return render_template('login.html', error=error)"""
-
 
 @app.route('/logout')
 @login_required
 def logout():
-    session.pop('user', None)
     logout_user()
+    session.pop('user', None)
+
     return redirect(url_for('home'))
 
 
@@ -271,6 +262,10 @@ def logout():
 def forgot_password():
     return render_template("login.html")
 
+@app.route("/profile")
+@login_required
+def profile():
+    return render_template("user.html", user=current_user)
 
 @app.route("/user/<user>")
 def user(user):
@@ -279,3 +274,8 @@ def user(user):
         return abort(404)
     else:
         return render_template("user.html", user=user)
+
+@app.route("/profile/edit")
+@login_required
+def edit_user():
+    return render_template("edit_user.html")
