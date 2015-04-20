@@ -23,7 +23,7 @@ class TodoSimple(Resource):
 """
 
 
-class Error(Resource):
+class RError(Resource):
     def get(self):
         return {"error": "Not Accesible"}
 
@@ -31,7 +31,7 @@ class Error(Resource):
         return {"error": "Not Accesible"}
 
 
-class User(Resource):
+class RUser(Resource):
     def get(self, username):
         user = models.User.query.filter_by(username=username).first()
         if views.is_empty(user):
@@ -62,7 +62,7 @@ class User(Resource):
             return {"error": "What are you trying to do?"}
 
 
-class Topic(Resource):
+class RTopic(Resource):
     def get(self, topic_name):
         topic = models.Topic.query.filter_by(name=topic_name).first()
         if views.is_empty(topic):
@@ -96,7 +96,7 @@ class Topic(Resource):
             return {"error": "What are you trying to do?"}
 
 
-class Question(Resource):
+class RQuestion(Resource):
     def get(self, question_id=None):
         if question_id is None:
             questions = models.Question.query.all()
@@ -175,7 +175,7 @@ class Question(Resource):
             }
 
 
-class Answer(Resource):
+class RAnswer(Resource):
     def get(self, question_id, answer_id=None):
         if question_id and answer_id:
             try:
@@ -245,7 +245,7 @@ class Answer(Resource):
                 }
 
 
-class Evaluate(Resource):
+class REvaluate(Resource):
     # ASI SE HACE EN JAVASCRIPT-jQuery PARA El Post los datos son el dicionario despues de la url
     #En fin la cosa es que como se los enviabamos en postman es viable por rest, las listas
     #tambien se pueden enviar si tienen el mismo nombre y otra cosa ahi.
@@ -296,11 +296,37 @@ class Evaluate(Resource):
                             "result": False
                         }
 
+class RRegister(Resource):
+    def post(self, username, topic_id):
+        cur_user = models.User.query.filter_by(username=username).first()
+        topic = models.Topic.query.filter_by(topic_id=topic_id).first()
+        if cur_user is None and topic is None:
+            return{
+                "status": False,
+                "message": "User and Topic don't exist"
+            }
+        elif cur_user is None:
+            return {
+                "status": False,
+                "message": "User not found"
+            }
+        elif topic is None:
+            return {
+                "status": False,
+                "message": "Topic not found"
+            }
+        cur_user.set_topic(topic_id)
+        return {
+            "status": True,
+            "message": "User registered successfully"
+        }
 
-api.add_resource(Error, '/api', "/api/")
-api.add_resource(User, "/api/users/<username>")
-api.add_resource(Topic, "/api/topics/<topic_name>")
-api.add_resource(Question, "/api/question/<int:question_id>", "/api/question/")
-api.add_resource(Answer, "/api/answer/<int:question_id>", "/api/answer/",
+
+api.add_resource(RError, '/api', "/api/")
+api.add_resource(RUser, "/api/users/<username>")
+api.add_resource(RTopic, "/api/topics/<topic_name>")
+api.add_resource(RQuestion, "/api/question/<int:question_id>", "/api/question/")
+api.add_resource(RAnswer, "/api/answer/<int:question_id>", "/api/answer/",
                  "/api/answer/<int:question_id>/<int:answer_id>")
-api.add_resource(Evaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
+api.add_resource(REvaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
+api.add_resource(RRegister, "/api/register/<username>/<int:topic_id>")

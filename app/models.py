@@ -15,6 +15,12 @@ class User(db.Model):
     email = db.Column(db.String(300), unique=True)
     password = db.Column(db.String(300))
     photo = db.Column(db.Text)
+    cur_topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))  # Curso publico actual
+    cur_topic = db.relationship("Topic")
+    scores = db.relationship("UserScore", backref="topic", cascade='all, delete-orphan')
+    life = db.Column(db.Integer)
+    type = db.Column(db.String(50))  # Profesor | Estudiante
+    # Cursos = Cursos ... por hacer
 
     def __init__(self, username, email, password, first_name="", last_name="", photo="", tw_un=""):
         self.username = username
@@ -25,6 +31,24 @@ class User(db.Model):
         self.photo = photo
         self.tw_username = tw_un
         print "New User: " + self.__repr__()
+
+    def score(self):
+        return sum([x.score for x in self.scores])
+
+    def set_topic(self, topic_id):
+        self.cur_topic_id = topic_id
+
+    def is_authenticated(self):
+        return True
+
+    def is_active(self):
+        return True
+
+    def is_anonymous(self):
+        return False
+
+    def get_id(self):
+        return self.username
 
     def __repr__(self):
         return "<User @" + self.username + ">"
@@ -54,18 +78,22 @@ class Question(db.Model):
     type = db.Column(db.String(50))
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
+    max_score = db.Column(db.Integer)
+    #icon = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
+    users = db.relationship("UserScore", backref="question", cascade='all, delete-orphan')
     __mapper_args__ = {
         'polymorphic_on': type,
         'polymorphic_identity': 'question',
         'with_polymorphic': '*'
     }
 
-    def __init__(self, statement, topic, image=""):
+    def __init__(self, statement, topic, image="", max_score=0):
         self.statement = statement
         self.topic_id = topic
         self.image = image
+        self.max_score = max_score
         print "Question: " + self.__repr__()
 
     def __repr__(self):
@@ -113,7 +141,7 @@ class MSMQuestion(Question):
             if i.state:
                 cont += 1
         score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
-        if (score >= 0):
+        if score >= 0:
             return {"score": score, "message": "You've got "+str(score*100)+"% correct"}
         else:
             return {"score": 0.0, "message": "You've lost, try it again"}
@@ -185,3 +213,18 @@ class Answer(db.Model):
 
     def __repr__(self):
         return "Answers @" + self.text
+
+class UserScore(db.Model):
+    __tablename__ = "userscore"
+    id = db.Column(db.Integer, unique=True, primary_key=True)
+    user_username = db.Column(db.String(15), db.ForeignKey('user.username'))
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
+    score = db.Column(db.Integer)
+
+    def __init__(self, user, question, score):
+        self.user = user
+        self.question = question
+        self.score = score
+
+    def __repr__(self):
+        return "Score @" + self.score

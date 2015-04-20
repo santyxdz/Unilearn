@@ -2,11 +2,14 @@
 from flask import Flask, g, url_for, request, render_template, flash, json, session
 import flask
 from flask import redirect, render_template, abort
+from flask_login import login_user, logout_user, current_user, login_required
 from flask_oauthlib.client import OAuth, OAuthException
 import requests
-from app import models, app, configs
+from app import models, app, configs, login_manager
 from app import db
+
 import encodings
+
 
 oauth = OAuth(app)
 twitter = oauth.remote_app('twitter',
@@ -28,6 +31,24 @@ facebook = oauth.remote_app('facebook',
                             )
 
 
+from flask import make_response
+from functools import wraps, update_wrapper
+from datetime import datetime
+
+
+def nocache(view):
+    @wraps(view)
+    def no_cache(*args, **kwargs):
+        response = make_response(view(*args, **kwargs))
+        response.headers['Last-Modified'] = datetime.now()
+        response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+        response.headers['Pragma'] = 'no-cache'
+        response.headers['Expires'] = '-1'
+        return response
+
+    return update_wrapper(no_cache, view)
+
+
 @app.template_global()
 def is_empty(item):
     if isinstance(item, type(None)):
@@ -36,18 +57,41 @@ def is_empty(item):
         return True
     return False
 
+
+@app.template_global()
+def set_default(item, replacement):
+    if is_empty(item):
+        return replacement
+    else:
+        return item
+
+
+@app.template_global()
+def get_lifes(username):
+    user = models.User.query.filter_by(username=username).first()
+    return user.life
+
+
 @app.template_global()
 def to_dic(item):
     return json.loads(item)
+
 
 @app.template_global()
 def no_repeated(item):
     return list(set(item))
 
 
+@login_manager.user_loader
+def load_user(user):
+    return models.User.query.get(user)
+
+
+
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
+@nocache
 def home():
     return render_template('home.html')
 
@@ -60,8 +104,13 @@ def register():
         if len(users) > 0:
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
-            user = models.User(request.form["username"], request.form["email"],
+            """if request.form["tw_username"]:
+                user = models.User(request.form["username"], request.form["email"],
                                request.form["password"], tw_un=request.form["tw_username"])
+            else:"""
+            user = models.User(request.form["username"], request.form["email"],
+                               request.form["password"])
+            user.life = 10
             db.session.add(user)
             db.session.commit()
             return redirect(flask.url_for("home"))
@@ -69,6 +118,7 @@ def register():
 
 
 @app.route("/users")
+@nocache
 def users():
     users_list = models.User.query.all()
     return render_template("users.html", users=users_list)
@@ -100,10 +150,13 @@ def add_header(response):
     return response
 
 
-@app.errorhandler(404)
+@app.errorhandler(404) #Pagina de Error: No Existe
 def page_not_found(error):
-    """Custom 404 page."""
     return render_template('404.html'), 404
+
+@app.errorhandler(401)
+def page_not_found(error): #Pagina de Error: Acceso Denegado
+    return redirect(url_for("login"))
 
 # Twitter Stuff!
 # ******************************
@@ -136,7 +189,6 @@ def oauthorized():
         session['twitter_oauth'] = resp
     users = models.User.query.filter_by(tw_username=resp['screen_name'].lower()).all()
     if len(users) > 0:
-        session['logged'] = True
         cur_user = users[0]
         session['user'] = cur_user.username
         flash('You were logged in')
@@ -183,34 +235,47 @@ def get_facebook_oauth_token():
 def login():
     error = None
     if request.method == 'POST':
-        user = models.User.query.filter_by(username=request.form["username"]).first()
-        if is_empty(user):
-            error = 'Invalid username'
-        elif request.form['password'] != user.password:
-            error = 'Invalid password'
+        user = models.User.query.get(unicode(request.form["username"]))
+        if not isinstance(user, type(None)):
+            if request.form['password'] == user.password:
+                login_user(user)
+                session["user"] = user.username
+                return redirect(url_for("home"))
+            else:
+                error = u"Contraseña Incorrecta"
+                return render_template("login.html", error=error)
         else:
-            session['logged'] = True
-            session['user'] = user.username
-            flash('You were logged in')
-            return redirect(url_for('home'))
-    return render_template('login.html', error=error)
-
+            error = u"El usuario seleccionado no existe"
+            return render_template('login.html', error=error)
+    return render_template('login.html')
 
 @app.route('/logout')
+@login_required
 def logout():
-    session.pop('logged', None)
+    logout_user()
     session.pop('user', None)
-    flash('You were logged out')
-    return redirect(url_for('home', reload=True))
+
+    return redirect(url_for('home'))
 
 
 @app.route("/forgot_password")
 def forgot_password():
     return render_template("login.html")
 
-# Question validation and sending
-# ***********************
-@app.route('/create/question/clasification', methods=['POST'])
-def create_clasf():
-    requests.post("http://localhost:5000/api/question", None)# the recieved JSON must be sended here.
-    return render_template("courses.html")
+@app.route("/profile")
+@login_required
+def profile():
+    return render_template("user.html", user=current_user)
+
+@app.route("/user/<user>")
+def user(user):
+    user = models.User.query.filter_by(username=user).first()
+    if isinstance(user, type(None)):
+        return abort(404)
+    else:
+        return render_template("user.html", user=user)
+
+@app.route("/profile/edit")
+@login_required
+def edit_user():
+    return render_template("edit_user.html")
