@@ -110,6 +110,7 @@ def register():
 
 
 @app.route("/users")
+@nocache
 def users():
     users_list = models.User.query.all()
     return render_template("users.html", users=users_list)
@@ -177,7 +178,6 @@ def oauthorized():
         session['twitter_oauth'] = resp
     users = models.User.query.filter_by(tw_username=resp['screen_name'].lower()).all()
     if len(users) > 0:
-        session['logged'] = True
         cur_user = users[0]
         session['user'] = cur_user.username
         flash('You were logged in')
@@ -230,7 +230,6 @@ def login():
         elif request.form['password'] != user.password:
             error = 'Invalid password'
         else:
-            session['logged'] = True
             session['user'] = user.username
             flash('You were logged in')
             return redirect(url_for('home'))
@@ -239,10 +238,9 @@ def login():
 
 @app.route('/logout')
 def logout():
-    session.pop('logged', None)
     session.pop('user', None)
     flash('You were logged out')
-    return redirect(url_for('home', reload=True))
+    return redirect(url_for('home'))
 
 
 @app.route("/forgot_password")
