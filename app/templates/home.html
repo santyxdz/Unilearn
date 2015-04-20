@@ -26,6 +26,9 @@ Unilearn | Building...
 {% endblock %}
 {% block main %}
 <div class="center">
+{% if current_user.is_authenticated() %}
+  Hola {{ current_user.username }}! <br/>
+{% endif %}
 	<img src="//i.imgur.com/QNKJHrt.png" alt="Logotipo Unilearn" height="200px">
 	<h1>Unilearn</h1>
 	<h3>Made in Medellín, Colombia with &#9829;</h3>

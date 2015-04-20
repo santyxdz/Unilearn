@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}
+Unilearn | Cursos.
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block main %}
+<div class="panel panel-default">
+    <div class="panel-heading">Editar Perfil</div>
+    <div class="panel-body">
+        <h1 class="center">
+        {{ current_user.username }}
+        </h1>
+        <hr/>
+        <div class="container-fluid">
+        <form class="form-horizontal">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="aspect">
+                        <div class="aspect-one-one bg-full" style="background-image: url({{ set_default(current_user.photo,
+                        "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png") }})">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <input type="url" class="form-control" id="inputImage" placeholder="Url Imagen"
+                                    value="{{ current_user.image }}">
+                    </div>
+                </div>
+                <div class="col-md-7">
+
+                        <fieldset>
+                            <legend>{{ current_user.score() }} pts</legend>
+                            <div class="form-group">
+                                <label for="inputUsername" class="col-lg-2 control-label">Nombre de Usuario</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputUsername" placeholder="Usuario"
+                                    value="{{ current_user.username }}" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputFirst" class="col-lg-2 control-label">Nombre</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputFirst" placeholder="Nombre"
+                                    value="{{ current_user.first_name }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLast" class="col-lg-2 control-label">Apellido</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="inputLast" placeholder="Apellido"
+                                    value="{{ current_user.last_name }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label">Correo</label>
+                                <div class="col-lg-10">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email"
+                                    value="{{ current_user.email }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNewPassword" class="col-lg-2 control-label">Nueva Contraseña</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputNewPassword" placeholder="Nueva Contraseña">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Actual Contraseña">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Acepto ToS
+                                        </label>
+                                    </div>
+                                    <br>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button class="btn btn-default">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
