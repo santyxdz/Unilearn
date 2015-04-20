@@ -28,8 +28,8 @@ Unilearn | Cursos.
         <div class="row-content">
             <div class="least-content">{{ question.id }}</div>
             <h4 class="list-group-item-heading">Tile with a label</h4>
-            {%if session["logged"]%}
-            {%if question_made(session["user"],question)%}
+            {%if current_user.is_authenticated()%}
+            {%if question_made(current_user.username,question)%}
                 <img  width="50px" height = "50px" class="least-content" src="http://goo.gl/Gaa2Ob" alt="0" />
             {%endif%}
             {% endif %}
