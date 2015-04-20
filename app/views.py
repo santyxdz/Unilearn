@@ -6,7 +6,9 @@ from flask_oauthlib.client import OAuth, OAuthException
 import requests
 from app import models, app, configs
 from app import db
+
 import encodings
+
 
 oauth = OAuth(app)
 twitter = oauth.remote_app('twitter',
@@ -26,6 +28,24 @@ facebook = oauth.remote_app('facebook',
                             consumer_secret=configs.fb['secret'],
                             request_token_params={'scope': 'email'}
                             )
+
+
+from flask import make_response
+from functools import wraps, update_wrapper
+from datetime import datetime
+
+
+def nocache(view):
+    @wraps(view)
+    def no_cache(*args, **kwargs):
+        response = make_response(view(*args, **kwargs))
+        response.headers['Last-Modified'] = datetime.now()
+        response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+        response.headers['Pragma'] = 'no-cache'
+        response.headers['Expires'] = '-1'
+        return response
+
+    return update_wrapper(no_cache, view)
 
 
 @app.template_global()
@@ -63,6 +83,7 @@ def no_repeated(item):
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
+@nocache
 def home():
     return render_template('home.html')
 
@@ -230,7 +251,7 @@ def forgot_password():
 
 
 @app.route("/user/<user>")
-def user_profile(user):
+def user(user):
     user = models.User.query.filter_by(username=user).first()
     if isinstance(user, type(None)):
         return abort(404)
