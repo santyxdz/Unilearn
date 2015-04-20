@@ -66,6 +66,7 @@ class Question(db.Model):
     type = db.Column(db.String(50))
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
+    max_score = db.Column(db.Integer)
     #icon = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
@@ -76,10 +77,11 @@ class Question(db.Model):
         'with_polymorphic': '*'
     }
 
-    def __init__(self, statement, topic, image=""):
+    def __init__(self, statement, topic, image="", max_score=0):
         self.statement = statement
         self.topic_id = topic
         self.image = image
+        self.max_score = max_score
         print "Question: " + self.__repr__()
 
     def __repr__(self):

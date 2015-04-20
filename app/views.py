@@ -46,6 +46,12 @@ def set_default(item, replacement):
 
 
 @app.template_global()
+def get_lifes(username):
+    user = models.User.query.filter_by(username=username).first()
+    return user.life
+
+
+@app.template_global()
 def to_dic(item):
     return json.loads(item)
 
@@ -75,6 +81,7 @@ def register():
             else:"""
             user = models.User(request.form["username"], request.form["email"],
                                request.form["password"])
+            user.life = 10
             db.session.add(user)
             db.session.commit()
             return redirect(flask.url_for("home"))
