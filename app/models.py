@@ -17,7 +17,7 @@ class User(db.Model):
     photo = db.Column(db.Text)
     cur_topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))  # Curso publico actual
     cur_topic = db.relationship("Topic")
-    scores = db.relationship("UserScore", backref="topic", cascade='all, delete-orphan')
+    scores = db.relationship("UserScore", backref="user", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
     # Cursos = Cursos ... por hacer
@@ -77,7 +77,7 @@ class Question(db.Model):
         'with_polymorphic': '*'
     }
 
-    def __init__(self, statement, topic, image="", max_score=0):
+    def __init__(self, statement, topic, image="", max_score=""):
         self.statement = statement
         self.topic_id = topic
         self.image = image

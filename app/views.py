@@ -50,6 +50,25 @@ def to_dic(item):
 def no_repeated(item):
     return list(set(item))
 
+@app.template_global()
+def question_made(user, question):
+    userscore = models.UserScore.query.filter_by(user_username=user, question_id=question.id).first()
+    if userscore:
+        return True
+
+@app.template_global()
+def new_question(username, question, score):
+    user = models.User.query.filter_by(username=username).first()
+    previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
+    if (previousScore == None):
+                userscore = models.UserScore(user, question, score)
+                db.session.add(userscore)
+                db.session.commit()
+    else:
+        if score > previousScore.score:
+            previousScore.score = score
+            db.session.commit()
+
 
 @app.route("/main")
 @app.route('/index')

@@ -49,23 +49,32 @@ Unilearn | Pregunta
          <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
              <div class="panel-user">
                  <div><center>
-                     <img width="70" height = "70" src="http://goo.gl/oCecWe" border="0">
+                     {%if session["logged"]%}
+                     {%if question_made(session["user"],question)%}
+                        <img width="70" height = "70" src="http://goo.gl/UcynvW" border="0">
+                      {% endif %}
+                     {%else%}
+                         <img width="70" height = "70" src="http://goo.gl/G4awJq" border="0">
+                     {% endif %}
                  </center></div>
                  {%if session["logged"]%}
-                 {%if get_lifes(session["user"]) != 0 %}
-                     {% for num in range(0,(get_lifes(session["user"])/2)|int)%}
-                         <img  width="30" height = "30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
-                     {% endfor %}
-                     {% if get_lifes(session["user"]) % 2 != 0%}
-                        <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
-                     {% endif%}
+                     {%if get_lifes(session["user"]) != 0 %}
+                         {%if get_lifes(session["user"]) != 1 %}
+                             {% for num in range(0,(get_lifes(session["user"])/2)|int)%}
+                                 <img  width="30" height = "30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
+                             {% endfor %}
+                             {% if get_lifes(session["user"]) % 2 != 0%}
+                                <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
+                             {% endif%}
+                         {%else%}
+                            <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
+                         {% endif %}
+                     {% endif %}
                  {% endif %}
-                 {% endif %}
-
              </div>
 
             <div class="panel-heading">
-                <h3 class="panel-title">Pregunta</h3>
+                <h3 class="panel-title">Pregunta [{{question.max_score}} puntos]</h3>
             </div>
             <div class="panel-body">
                 <div class="panel-statement">
@@ -158,6 +167,9 @@ $(document).ready(function()
                 $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
                                         selected:"["+$('input:radio[name=options]:checked').val()+"]"
                                         },function(data){alert(data.message)},"json");
+                                        {%if session["logged"]%}
+                                            {{new_question(session["user"],question,question.max_score)}}
+                                        {% endif%}
             } else{
                 alert("Seleccione una Opción");
             }
@@ -166,10 +178,7 @@ $(document).ready(function()
 </script>
 {% endif %}
 
-<script>
-    $.get
 
-</script>
 
 {% if question.type == "completation_question" %}
 <script type="text/javascript">
