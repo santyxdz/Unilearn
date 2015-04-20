@@ -5,6 +5,13 @@ Unilearn | Cursos.
 {% endblock %}
 
 {% block js %}
+<script type="javascript">
+    function register(var topic_id){
+        {% if session["logged"] %}
+            $.post("/api/register/{{ session.user }}/topic_id)
+        {% endif %}
+    }
+</script>
 {% endblock %}
 
 {% block css %}
@@ -25,6 +32,7 @@ Unilearn | Cursos.
             </div>
         </div>
     </div>
+    <input type="button" value="Join couser" onclick="register({{ course.id }})" id="registerbut"/>
     </a>
 </div>
 {% endfor %}
@@ -32,3 +40,4 @@ Unilearn | Cursos.
 
 
 {% endblock %}
+ |
