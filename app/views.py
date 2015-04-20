@@ -2,9 +2,10 @@
 from flask import Flask, g, url_for, request, render_template, flash, json, session
 import flask
 from flask import redirect, render_template, abort
+from flask_login import login_user, logout_user, current_user, login_required
 from flask_oauthlib.client import OAuth, OAuthException
 import requests
-from app import models, app, configs
+from app import models, app, configs, login_manager
 from app import db
 
 import encodings
@@ -75,9 +76,16 @@ def get_lifes(username):
 def to_dic(item):
     return json.loads(item)
 
+
 @app.template_global()
 def no_repeated(item):
     return list(set(item))
+
+
+@login_manager.user_loader
+def load_user(user):
+    return models.User.query.get(user)
+
 
 
 @app.route("/main")
@@ -224,6 +232,21 @@ def get_facebook_oauth_token():
 def login():
     error = None
     if request.method == 'POST':
+        user = models.User.query.get(unicode(request.form["username"]))
+        if not isinstance(user, type(None)):
+            if request.form['password'] == user.password:
+                login_user(user)
+                session["user"] = user.username
+                return redirect(url_for("home"))
+            else:
+                error = u"Contraseña Incorrecta"
+                return render_template("login.html", error=error)
+        else:
+            error = u"El usuario seleccionado no existe"
+            return render_template('login.html', error=error)
+    return render_template('login.html')
+    """error = None
+    if request.method == 'POST':
         user = models.User.query.filter_by(username=request.form["username"]).first()
         if is_empty(user):
             error = 'Invalid username'
@@ -233,13 +256,14 @@ def login():
             session['user'] = user.username
             flash('You were logged in')
             return redirect(url_for('home'))
-    return render_template('login.html', error=error)
+    return render_template('login.html', error=error)"""
 
 
 @app.route('/logout')
+@login_required
 def logout():
     session.pop('user', None)
-    flash('You were logged out')
+    logout_user()
     return redirect(url_for('home'))
 
 

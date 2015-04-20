@@ -64,8 +64,8 @@
                     {% endif %}
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        {% if session["logged"] %}
-                            <li><a href="javascript:void(0)">Another action</a></li>
+                        {% if session["user"] %}
+                            <li><a href="javascript:void(0)"></a></li>
                             <li class="divider"></li>
                             <li><a href="{{ url_for("logout") }}">Cerrar Sesion</a></li>
                         {% else %}
