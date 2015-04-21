@@ -4,6 +4,7 @@ from app import api
 from app import db
 from app import views
 from app import models
+from flask_login import login_user, logout_user, current_user, login_required
 import json
 
 """
@@ -270,31 +271,40 @@ class REvaluate(Resource):
                         trueOne = [x.id for x in question.answers if x.state]
                         selected = json.loads(request.form["selected"])
                         result = question.validate_answer(selected[0], trueOne[0])
+                        result["points"] = result["score"]*question.max_score
+                        views.new_question(current_user.username, question, result["points"])
                         return result
                     if request.form["type"] == "msm":
                         trueOne = [x.id for x in question.answers if x.state]
                         selected = json.loads(request.form["selected"])
                         selected_objects = [models.Answer.query.filter_by(id=x).first() for x in selected]
                         result = question.validate_answer(len(trueOne), selected_objects)
+                        result["points"] = result["score"]*question.max_score
+                        views.new_question(current_user.username, question, result["points"])
                         return result
                     if request.form["type"] == "completation":
                         selected = json.loads(request.form["selected"])
                         result = question.validate_answer(selected[0])
+                        result["points"] = result["score"]*question.max_score
+                        views.new_question(current_user.username, question, result["points"])
                         return result
                     if request.form["type"] == "pairing":
                         # Se debe mandar la respuesta en formato JSON.
                         correct = [x.id for x in question.answers if x.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
+                        result["points"] = result["score"]*question.max_score
                         return result
                     if request.form["type"] == "clasification":
                         correct = [ans.id for ans in question.answers if ans.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
+                        result["points"] = result["score"]*question.max_score
                         return result
                     else:
                         return {
                             "error": "Type Invalid",
                             "result": False
                         }
+
 
 class RRegister(Resource):
     def post(self, username, topic_id):
