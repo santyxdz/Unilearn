@@ -144,6 +144,7 @@ def users():
 
 
 @app.route("/courses")
+@nocache
 def courses():
     return render_template("courses.html", courses=models.Topic.query.all())
 
@@ -273,7 +274,6 @@ def login():
 def logout():
     logout_user()
     session.pop('user', None)
-
     return redirect(url_for('home'))
 
 
@@ -294,7 +294,45 @@ def user(user):
     else:
         return render_template("user.html", user=user)
 
-@app.route("/profile/edit")
+@app.route("/profile/edit", methods=['GET', 'POST'])
 @login_required
 def edit_user():
+    if request.method == 'POST':
+        try:
+            if request.form["tos"] == "on":
+                pass
+        except:
+            return render_template("edit_user.html", error=u"Aceptar TOS")
+        if request.form["password"] == current_user.password:
+            #Si Cambio de Email
+            if request.form["email"] != current_user.email:
+                if isinstance(models.User.query.filter_by(email=request.form["email"]).first(), type(None)):
+                    email = request.form["email"]
+                else:
+                    return render_template("edit_user.html", error=u"Correo ya usado por otro usuario")
+            else:
+                email = current_user.email
+            #Si Cambio la Contraseña
+            if is_empty(request.form["new_password"]):
+                password = current_user.password
+            else:
+                password = request.form["new_password"]
+            first_name = request.form["first_name"]
+            last_name = request.form["last_name"]
+            if is_empty(request.form["image"]):
+                photo = current_user.photo
+            else:
+                photo = request.form["image"]
+            #Actualizar usuario
+            current_user.first_name = first_name
+            current_user.last_name = last_name
+            current_user.email = email
+            current_user.password = password
+            current_user.photo = photo
+            db.session.commit()
+            return redirect(url_for("user", user=current_user.username))
+        else:
+            logout_user()
+            session.pop('user', None)
+            return render_template("login.html", error=u"Contraseña Incorrecta En El Formulario")
     return render_template("edit_user.html")

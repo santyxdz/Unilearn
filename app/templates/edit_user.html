@@ -11,6 +11,13 @@ Unilearn | Cursos.
 {% endblock %}
 
 {% block main %}
+    {% if error %}
+<div class="alert alert-dismissable alert-danger">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4>ERROR!</h4>
+    <p>{{ error }}</p>
+</div>
+    {% endif %}
 <div class="panel panel-default">
     <div class="panel-heading">Editar Perfil</div>
     <div class="panel-body">
@@ -19,7 +26,7 @@ Unilearn | Cursos.
         </h1>
         <hr/>
         <div class="container-fluid">
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="{{ url_for("edit_user") }}" method="post">
             <div class="row">
                 <div class="col-md-3 col-md-offset-1">
                     <div class="aspect">
@@ -29,7 +36,7 @@ Unilearn | Cursos.
                     </div>
                     <div class="form-group">
                     <input type="url" class="form-control" id="inputImage" placeholder="Url Imagen"
-                                    value="{{ current_user.image }}">
+                                    value="{{ current_user.image }}" name="image">
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -47,36 +54,38 @@ Unilearn | Cursos.
                                 <label for="inputFirst" class="col-lg-2 control-label">Nombre</label>
                                 <div class="col-lg-10">
                                     <input type="text" class="form-control" id="inputFirst" placeholder="Nombre"
-                                    value="{{ current_user.first_name }}">
+                                    value="{{ current_user.first_name }}" name="first_name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputLast" class="col-lg-2 control-label">Apellido</label>
                                 <div class="col-lg-10">
                                     <input type="text" class="form-control" id="inputLast" placeholder="Apellido"
-                                    value="{{ current_user.last_name }}">
+                                    value="{{ current_user.last_name }}" name="last_name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputEmail" class="col-lg-2 control-label">Correo</label>
                                 <div class="col-lg-10">
                                     <input type="email" class="form-control" id="inputEmail" placeholder="Email"
-                                    value="{{ current_user.email }}">
+                                    value="{{ current_user.email }}" name="email">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputNewPassword" class="col-lg-2 control-label">Nueva Contraseña</label>
                                 <div class="col-lg-10">
-                                    <input type="password" class="form-control" id="inputNewPassword" placeholder="Nueva Contraseña">
+                                    <input type="password" class="form-control" id="inputNewPassword" placeholder="Nueva Contraseña"
+                                    name="new_password">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword" class="col-lg-2 control-label">Password</label>
                                 <div class="col-lg-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Actual Contraseña">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Actual Contraseña"
+                                    name="password">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox"> Acepto ToS
+                                            <input type="checkbox" name="tos"> Acepto ToS
                                         </label>
                                     </div>
                                     <br>
@@ -90,7 +99,6 @@ Unilearn | Cursos.
                                 </div>
                             </div>
                         </fieldset>
-
                 </div>
             </div>
         </form>
