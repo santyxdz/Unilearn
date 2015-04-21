@@ -45,33 +45,38 @@ Unilearn | Pregunta
 {% endblock %}
 {% block main %}
     <div class="row">
-
-         <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
-             <div class="panel-user">
+        <div class="panel-user col-md-6 col-md-offset-3 ">
                  <div><center>
                      {%if current_user.is_authenticated()%}
-                     {%if question_made(current_user.username,question)%}
-                        <img width="70" height = "70" src="http://goo.gl/UcynvW" border="0">
-                      {% endif %}
-                     {%else%}
+                         {%if question_made(current_user.username,question)%}
+                            <img width="70" height = "70" src="http://goo.gl/UcynvW" border="0">
+                        {% else %}
+                            <img width="70" height = "70" src="http://goo.gl/G4awJq" border="0">
+                         {% endif %}
+                     {% else %}
                          <img width="70" height = "70" src="http://goo.gl/G4awJq" border="0">
                      {% endif %}
                  </center></div>
                  {%if current_user.is_authenticated()%}
-                     {%if get_lifes(current_user.username) != 0 %}
-                         {%if get_lifes(current_user.username) != 1 %}
-                             {% for num in range(0,(get_lifes(session["user"])/2)|int)%}
-                                 <img  width="30" height = "30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
-                             {% endfor %}
-                             {% if get_lifes(current_user.username) % 2 != 0%}
+                         <div  class="least-content" align="right">Puntos: {{ total_score(current_user.username) }}</div>
+                        <div class="col-md-5">
+                         {%if get_lifes(current_user.username) != 0 %}
+                             {%if get_lifes(current_user.username) != 1 %}
+                                 {% for num in range(0,(get_lifes(session["user"])/2)|int)%}
+                                     <img  width="30" height = "30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
+                                 {% endfor %}
+                                 {% if get_lifes(current_user.username) % 2 != 0%}
+                                    <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
+                                 {% endif%}
+                             {%else%}
                                 <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
-                             {% endif%}
-                         {%else%}
-                            <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
-                         {% endif %}
+                             {% endif %}
+                      </div>
                      {% endif %}
                  {% endif %}
              </div>
+         </div>
+         <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
 
             <div class="panel-heading">
                 <h3 class="panel-title">Pregunta [{{question.max_score}} puntos]</h3>
@@ -167,9 +172,6 @@ $(document).ready(function()
                 $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
                                         selected:"["+$('input:radio[name=options]:checked').val()+"]"
                                         },function(data){alert(data.message)},"json");
-                                        {%if current_user.is_authenticated()%}
-                                            {{new_question(current_user.username,question,question.max_score)}}
-                                        {% endif%}
             } else{
                 alert("Seleccione una Opción");
             }
