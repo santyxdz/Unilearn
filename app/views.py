@@ -142,10 +142,12 @@ def courses():
     return render_template("courses.html", courses=models.Topic.query.all())
 
 @app.route("/courses/<course>")
+@nocache
 def course(course):
     return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
 
 @app.route("/courses/<course>/q/<int:num>")
+@nocache
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
@@ -245,6 +247,7 @@ def get_facebook_oauth_token():
 # *******************************************
 
 @app.route('/login', methods=['GET', 'POST'])
+@nocache
 def login():
     error = None
     if request.method == 'POST':
@@ -271,15 +274,18 @@ def logout():
 
 
 @app.route("/forgot_password")
+@nocache
 def forgot_password():
-    return render_template("login.html")
+    return render_template("login.html", error=u"Funcionalidad todavia no implementada")
 
 @app.route("/profile")
+@nocache
 @login_required
 def profile():
     return render_template("user.html", user=current_user)
 
 @app.route("/user/<user>")
+@nocache
 def user(user):
     user = models.User.query.filter_by(username=user).first()
     if isinstance(user, type(None)):
@@ -288,6 +294,7 @@ def user(user):
         return render_template("user.html", user=user)
 
 @app.route("/profile/edit", methods=['GET', 'POST'])
+@nocache
 @login_required
 def edit_user():
     if request.method == 'POST':
