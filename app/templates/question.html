@@ -4,8 +4,6 @@
 Unilearn | Pregunta
 {% endblock %}
 
-
-
 {% block css %}
 <style>
      .question{
@@ -38,126 +36,116 @@ Unilearn | Pregunta
         -o-transition: all 1s;
 
     }
-}}
-
-
 </style>
 {% endblock %}
 {% block main %}
-    <div class="row">
-
-         <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
-             <div class="panel-user">
-                 <div><center>
-                     {%if current_user.is_authenticated()%}
-                     {%if question_made(current_user.username,question)%}
-                        <img width="70" height = "70" src="http://goo.gl/UcynvW" border="0">
-                      {% endif %}
-                     {%else%}
-                         <img width="70" height = "70" src="http://goo.gl/G4awJq" border="0">
-                     {% endif %}
-                 </center></div>
-                 {%if current_user.is_authenticated()%}
-                     {%if get_lifes(current_user.username) != 0 %}
-                         {%if get_lifes(current_user.username) != 1 %}
-                             {% for num in range(0,(get_lifes(session["user"])/2)|int)%}
-                                 <img  width="30" height = "30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
-                             {% endfor %}
-                             {% if get_lifes(current_user.username) % 2 != 0%}
-                                <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
-                             {% endif%}
-                         {%else%}
-                            <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
-                         {% endif %}
-                     {% endif %}
-                 {% endif %}
-             </div>
-
-            <div class="panel-heading">
-                <h3 class="panel-title">Pregunta [{{question.max_score}} puntos]</h3>
-            </div>
-            <div class="panel-body">
-                <div class="panel-statement">
-                    <h4 class="panel-body">Enunciado</h4>
-                    {{ question.statement }}
-                    {%if question.image != "" %}
-                        <div><center>
-                            <img class="round-border-ima" src={{question.image}} style='width:55%;' border="0" alt="" >
-                        </center></div>
+<div class="row">
+    <div class="panel-user col-md-6 col-md-offset-3 ">
+        <div class="row">
+            <div class="col-md-5">
+            {%if current_user.is_authenticated()%}
+                {%if current_user.life != 0 %}
+                    {%if current_user.life != 1 %}
+                        {% for num in range(0,(current_user.life/2)|int)%}
+                <img width="30" height="30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
+                        {% endfor %}
                     {% endif %}
-                </div>
-                <div id="answers">
-                {% if question.type == "msu_question" %}
-                    {% for answer in question.answers %}
-                    <div class="radio radio-primary"><label>
-                    <input type="radio" name="options" id="optionsRadios" value='{{answer.id}}'>{{answer.text}}
-                     </label>
-                     </div>
-                     {% endfor %}
+                    {% if current_user.life % 2 != 0%}
+                <img width="15" height="30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
+                    {% endif%}
+                {%else%}
+                <img width="15" height="30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
                 {% endif %}
-                {% if question.type == "msm_question" %}
-                    {% for answer in question.answers %}
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="{{answer.id}}">{{answer.text}}</label>
-                    </div>
-                     {% endfor %}
-                {% endif %}
-                {% if question.type == "completation_question" %}
-                    <div class="inputs">
-                        <br><input type="text" name="txt" class="form-control" placeholder="Respuesta">
-                    </div>
-                {% endif %}
-                {% if question.type == "clasification_question" %}
-                    <div class="row">
-                    {% set keys = [] %}
-                    {% set values = [] %}
-                    {% for answer in question.answers %}
-                        {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %}
-                        {% if values.append(to_dic(answer.text).values()[0])%}{% endif %}
-                    {% endfor %}
-                    {% set values = no_repeated(values) %}
-                    {% for key in keys %}
-                    <div class="col-sm-4">{{ key }}</div>
-                    <div class="col-sm-8">
-                        <select class="form-control">
-                        {% for value in values %}
-                          <option>{{ value }}</option>
-                        {% endfor %}
-                        </select>
-                    </div>
-                    {% endfor %}
-                    </div>
-                {% endif %}
-                {% if question.type == "pairing_question" %}
-                    <div class="row">
-                    {% set keys = [] %}
-                    {% set values = [] %}
-                    {% for answer in question.answers %}
-                        {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %}
-                        {% if values.append(to_dic(answer.text).values()[0])%}{% endif %}
-                    {% endfor %}
-                    {% for key in keys %}
-                    <div class="col-sm-6">{{ key }}</div>
-                    <div class="col-sm-6">
-                        <select class="form-control">
-                        {% for value in values %}
-                          <option>{{ value }}</option>
-                        {% endfor %}
-                        </select>
-                    </div>
-                    {% endfor %}
-                    </div>
-                {% endif %}
-                </div>
-                <div class="col-md-6 col-md-offset-3">
-                     <button class="btn btn-default">Saltar</button>
-                     <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
-                </div>
+            {% endif %}
             </div>
-         </div>
+            <div class="col-md-2">
+            {%if current_user.is_authenticated()%}
+                {%if question_made(current_user.username,question)%}
+            <img width="70" height="70" src="http://goo.gl/UcynvW" border="0">
+                {% else %}
+            <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
+                {% endif %}
+            {% else %}
+            <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
+            {% endif %}
+            </div>
+            {%if current_user.is_authenticated()%}
+            <div class="col-md-5 least-content h3" align="right">Puntos: {{ current_user.score() }}</div>
+            {% endif %}
+        </div>
     </div>
+</div>
+<br/>
+<div class="question panel panel-primary col-md-6 col-md-offset-3 ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Pregunta [{{question.max_score}} puntos]</h3>
+    </div>
+    <div class="panel-body">
+        <div class="panel-statement">
+            <h4 class="panel-body">Enunciado</h4> {{ question.statement }} {%if question.image != "" %}
+            <div>
+                <center>
+                    <img class="round-border-ima" src={{question.image}} style='width:55%;' border="0" alt="">
+                </center>
+            </div>
+            {% endif %}
+        </div>
+        <div id="answers">
+            {% if question.type == "msu_question" %} {% for answer in question.answers %}
+            <div class="radio radio-primary">
+                <label>
+                    <input type="radio" name="options" id="optionsRadios" value='{{answer.id}}'>{{answer.text}}
+                </label>
+            </div>
+            {% endfor %} {% endif %} {% if question.type == "msm_question" %} {% for answer in question.answers %}
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="{{answer.id}}">{{answer.text}}</label>
+            </div>
+            {% endfor %} {% endif %} {% if question.type == "completation_question" %}
+            <div class="inputs">
+                <br>
+                <input type="text" name="txt" class="form-control" placeholder="Respuesta">
+            </div>
+            {% endif %} {% if question.type == "clasification_question" %}
+            <div class="row">
+                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %} {% set values = no_repeated(values) %} {% for key in keys %}
+                <div class="col-sm-4">{{ key }}</div>
+                <div class="col-sm-8">
+                    <select class="form-control">
+                        {% for value in values %}
+                        <option>{{ value }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %} {% if question.type == "pairing_question" %}
+            <div class="row">
+                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %} {% for key in keys %}
+                <div class="col-sm-6">{{ key }}</div>
+                <div class="col-sm-6">
+                    <select class="form-control">
+                        {% for value in values %}
+                        <option>{{ value }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <button class="btn btn-default">Saltar</button>
+            <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
+        </div>
+    </div>
+</div>
+</div>
+
 {% endblock %}
 {% block js %}
+
 {% if question.type == "msu_question" %}
 <script type="text/javascript">
 $(document).ready(function()
@@ -167,9 +155,6 @@ $(document).ready(function()
                 $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
                                         selected:"["+$('input:radio[name=options]:checked').val()+"]"
                                         },function(data){alert(data.message)},"json");
-                                        {%if current_user.is_authenticated()%}
-                                            {{new_question(current_user.username,question,question.max_score)}}
-                                        {% endif%}
             } else{
                 alert("Seleccione una Opción");
             }
@@ -177,8 +162,6 @@ $(document).ready(function()
 });
 </script>
 {% endif %}
-
-
 
 {% if question.type == "completation_question" %}
 <script type="text/javascript">
@@ -218,11 +201,6 @@ $(document).ready(function()
                     function(data){
                         alert(data.message)
                     },
-2
-3
-4
-
-
 $.get( "ajax/test.html", function( data ) {
 $( ".result" ).html( data );
 alert( "Load was performed." );
@@ -239,6 +217,7 @@ alert( "Load was performed." );
 );
 </script>
 {% endif %}
+
 {% if question.type == "msm_question" %}
 <script type="text/javascript">
 $(document).ready(function(){
@@ -258,4 +237,5 @@ $(document).ready(function(){
 });
 </script>
 {% endif %}
+
 {% endblock %}

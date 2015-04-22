@@ -65,13 +65,6 @@ def set_default(item, replacement):
     else:
         return item
 
-
-@app.template_global()
-def get_lifes(username):
-    user = models.User.query.filter_by(username=username).first()
-    return user.life
-
-
 @app.template_global()
 def to_dic(item):
     return json.loads(item)
@@ -87,11 +80,11 @@ def question_made(user, question):
     if userscore:
         return True
 
-@app.template_global()
+
 def new_question(username, question, score):
     user = models.User.query.filter_by(username=username).first()
     previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
-    if (previousScore == None):
+    if isinstance(previousScore, type(None)):
                 userscore = models.UserScore(user, question, score)
                 db.session.add(userscore)
                 db.session.commit()
@@ -144,6 +137,7 @@ def users():
 
 
 @app.route("/courses")
+@nocache
 def courses():
     if current_user.is_authenticated():
         inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id)
@@ -156,6 +150,7 @@ def course(course):
     return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
 
 @app.route("/courses/<course>/q/<int:num>")
+@nocache
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
@@ -277,7 +272,6 @@ def login():
 def logout():
     logout_user()
     session.pop('user', None)
-
     return redirect(url_for('home'))
 
 
@@ -298,7 +292,45 @@ def user(user):
     else:
         return render_template("user.html", user=user)
 
-@app.route("/profile/edit")
+@app.route("/profile/edit", methods=['GET', 'POST'])
 @login_required
 def edit_user():
+    if request.method == 'POST':
+        try:
+            if request.form["tos"] == "on":
+                pass
+        except:
+            return render_template("edit_user.html", error=u"Aceptar TOS")
+        if request.form["password"] == current_user.password:
+            #Si Cambio de Email
+            if request.form["email"] != current_user.email:
+                if isinstance(models.User.query.filter_by(email=request.form["email"]).first(), type(None)):
+                    email = request.form["email"]
+                else:
+                    return render_template("edit_user.html", error=u"Correo ya usado por otro usuario")
+            else:
+                email = current_user.email
+            #Si Cambio la Contraseña
+            if is_empty(request.form["new_password"]):
+                password = current_user.password
+            else:
+                password = request.form["new_password"]
+            first_name = request.form["first_name"]
+            last_name = request.form["last_name"]
+            if is_empty(request.form["image"]):
+                photo = current_user.photo
+            else:
+                photo = request.form["image"]
+            #Actualizar usuario
+            current_user.first_name = first_name
+            current_user.last_name = last_name
+            current_user.email = email
+            current_user.password = password
+            current_user.photo = photo
+            db.session.commit()
+            return redirect(url_for("user", user=current_user.username))
+        else:
+            logout_user()
+            session.pop('user', None)
+            return render_template("login.html", error=u"Contraseña Incorrecta En El Formulario")
     return render_template("edit_user.html")

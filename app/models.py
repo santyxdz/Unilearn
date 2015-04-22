@@ -53,6 +53,15 @@ class User(db.Model):
     def __repr__(self):
         return "<User @" + self.username + ">"
 
+    def remove_life(self):
+        if self.life > 0:
+            self.life -= 1
+
+    def give_life(self):
+        if self.life < 10:
+            self.life += 1
+
+
 
 class Topic(db.Model):
     __tablename__ = "topic"
@@ -113,7 +122,8 @@ class MSUQuestion(Question):
     def validate_answer(self, selected, true_one):
         if selected == true_one:
             return {"score": 1.0, "message": "Score! You've got 100% correct"}
-        return {"score": 0.0, "message": "Ops! Incorrect! But for your trying you've got a 0,01%. Keep trying!"}
+        else:
+            return {"score": 0.0, "message": "Ops! Incorrect! But for your trying you've got a 0,01%. Keep trying!"}
 
 class CompletationQuestion(Question):
     __tablename__ = 'completation_question'
@@ -164,8 +174,6 @@ class ClasificationQuestion(Question):
                 correct_ans += 1
             else:
                 incorrect_ans += 1
-        print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
-        print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
         return {
             "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
             "message": "This was your punctuation"
@@ -189,8 +197,6 @@ class PairingQuestion(Question):
                 correct_ans += 1
             else:
                 incorrect_ans += 1
-        print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
-        print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
         return {
             "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
             "message": "This was your punctuation"
