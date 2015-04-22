@@ -174,8 +174,6 @@ class ClasificationQuestion(Question):
                 correct_ans += 1
             else:
                 incorrect_ans += 1
-        print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
-        print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
         return {
             "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
             "message": "This was your punctuation"
@@ -199,8 +197,6 @@ class PairingQuestion(Question):
                 correct_ans += 1
             else:
                 incorrect_ans += 1
-        print "You've got %d correct matches and %d incorrect ones" % (correct_ans, incorrect_ans)
-        print "Punctuation = %d per cent correct!" % ((correct_ans / (correct_ans + incorrect_ans)) * 100)
         return {
             "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
             "message": "This was your punctuation"

@@ -146,6 +146,7 @@ def course(course):
     return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
 
 @app.route("/courses/<course>/q/<int:num>")
+@nocache
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
