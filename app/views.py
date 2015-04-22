@@ -140,9 +140,9 @@ def users():
 @nocache
 def courses():
     if current_user.is_authenticated():
-        inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id)
+        inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id).first();
         if inscribed is not None:
-            return render_template("courses.html", courses=models.Topic.query.all(), active_topic=inscribed)
+            return render_template("courses.html", courses=models.Topic.query.all(), active_topic=inscribed.name)
     return render_template("courses.html", courses=models.Topic.query.all())
 
 @app.route("/courses/<course>")

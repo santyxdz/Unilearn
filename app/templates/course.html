@@ -5,6 +5,15 @@ Unilearn | Cursos.
 {% endblock %}
 
 {% block js %}
+<script>
+    $(document).ready(function(){
+        $("button[name=butregister]").click(
+    function () {
+        alert("{{current_user.username}}");
+        $.post("/api/register/", { user: "{{current_user.username}}", topic_id: {{ course.id }} }, function(data){alert(data.message)}, "json");
+    });
+    });
+</script>
 {% endblock %}
 
 {% block css %}
@@ -12,6 +21,7 @@ Unilearn | Cursos.
 {% block main %}
 <div class="jumbotron">
     <h1><img src="{{ course.icon }}" width="100px" height="100px"/>{{ course.name }}</h1>
+    <button type="submit" id="butregister" name="butregister">Unirse a este curso</button>
     <p>{{ course.description }}</p>
 </div>
 <div class="list-group">

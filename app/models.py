@@ -20,6 +20,7 @@ class User(db.Model):
     scores = db.relationship("UserScore", backref="user", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
+    #level = db.Column(db.Integer) # el topic que puede tomar despues de haber hecho el test de nivelacion
     # Cursos = Cursos ... por hacer
 
     def __init__(self, username, email, password, first_name="", last_name="", photo="", tw_un=""):
@@ -30,6 +31,7 @@ class User(db.Model):
         self.password = password
         self.photo = photo
         self.tw_username = tw_un
+        #self.level = 1
         print "New User: " + self.__repr__()
 
     def score(self):
@@ -60,7 +62,6 @@ class User(db.Model):
     def give_life(self):
         if self.life < 10:
             self.life += 1
-
 
 
 class Topic(db.Model):
