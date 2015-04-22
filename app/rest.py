@@ -286,7 +286,7 @@ class REvaluate(Resource):
                         selected = json.loads(request.form["selected"])
                         selected_objects = [models.Answer.query.filter_by(id=x).first() for x in selected]
                         result = question.validate_answer(len(trueOne), selected_objects)
-                        result["points"] = result["score"]*question.max_score
+                        result["points"] = int(result["score"]*question.max_score)
                         views.new_question(current_user.username, question, result["points"])
                         if result["score"] == 0.0:
                             user.remove_life()
