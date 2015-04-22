@@ -4,8 +4,6 @@
 Unilearn | Pregunta
 {% endblock %}
 
-
-
 {% block css %}
 <style>
      .question{
@@ -38,9 +36,6 @@ Unilearn | Pregunta
         -o-transition: all 1s;
 
     }
-}}
-
-
 </style>
 {% endblock %}
 {% block main %}
@@ -163,6 +158,7 @@ Unilearn | Pregunta
     </div>
 {% endblock %}
 {% block js %}
+
 {% if question.type == "msu_question" %}
 <script type="text/javascript">
 $(document).ready(function()
@@ -179,8 +175,6 @@ $(document).ready(function()
 });
 </script>
 {% endif %}
-
-
 
 {% if question.type == "completation_question" %}
 <script type="text/javascript">
@@ -220,11 +214,6 @@ $(document).ready(function()
                     function(data){
                         alert(data.message)
                     },
-2
-3
-4
-
-
 $.get( "ajax/test.html", function( data ) {
 $( ".result" ).html( data );
 alert( "Load was performed." );
@@ -241,6 +230,7 @@ alert( "Load was performed." );
 );
 </script>
 {% endif %}
+
 {% if question.type == "msm_question" %}
 <script type="text/javascript">
 $(document).ready(function(){
@@ -260,4 +250,5 @@ $(document).ready(function(){
 });
 </script>
 {% endif %}
+
 {% endblock %}

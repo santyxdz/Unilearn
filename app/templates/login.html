@@ -7,11 +7,15 @@
     <p>{{ error }}</p>
 </div>
     {% endif %}
+<div class="col-lg-6 col-lg-offset-3 text-center" style="margin-top: 1em;margin-bottom: 3em">
+<img src="http://i.imgur.com/QNKJHrt.png" alt="Logotipo" height="150dp" style="display: inline-block"/>
+<h1 style="display: inline-block;font-family: 'Open Sans';font-size: 3em">Unilearn : Login</h1>
+</div>
 <div class="col-lg-6 col-lg-offset-3">
 <div class="well bs-component">
 <form class="form-horizontal" action="{{ url_for("login")}}" method="post">
     <fieldset>
-        <legend>Inicio de sesión</legend>
+        <legend class="text-center">Inicio de sesión</legend>
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">Usuario</label>
             <div class="col-lg-10">
@@ -29,12 +33,45 @@
             </div>
         </div>
         <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
+            <div class="col-lg-10 col-lg-offset-2 text-center">
               <button type="submit" class="btn btn-primary">Entrar</button>
-              <button class="btn btn-default">Registarse</button>
-              <a class="btn btn-default" href="{{url_for("forgot_password")}}">Contraseña Olvidada</a>
-              <a href="{{url_for('tw_login')}}"><img src="https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-with-twitter-gray.png" /></a>
-                <a href="{{url_for('fb_login')}}"><img src="http://i.stack.imgur.com/Vk9SO.png"/></a>
+              <a href="{{ url_for("register") }}" class="btn btn-default">Registarse</a>
+              <br/><a class="btn btn-default" href="{{url_for("forgot_password")}}">Contraseña Olvidada</a>
+            </div>
+            <hr/>
+            <div class="col-sm-2 text-center" style="font-weight: bold;">Redes Sociales</div>
+            <div class="col-sm-10">
+                <div class="row">
+                <div class="col-sm-2"></div>
+                <a href="{{url_for('fb_login')}}">
+                <div class="col-sm-2">
+                    <div class="aspect">
+                        <div class="aspect-one-one bg-full"
+                        style="background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-128.png');"></div>
+                    </div>
+                </div>
+                </a>
+                <a href="{{url_for('tw_login')}}">
+                <div class="col-sm-2">
+                    <div class="aspect">
+                        <div class="aspect-one-one bg-full"
+                        style="background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-128.png');"></div>
+                    </div>
+                </div>
+                </a>
+                <div class="col-sm-2">
+                    <div class="aspect">
+                        <div class="aspect-one-one bg-full"
+                        style="background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/square-google-plus-128.png');"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="aspect">
+                        <div class="aspect-one-one bg-full"
+                        style="background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-128.png');"></div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </fieldset>
