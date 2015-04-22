@@ -146,6 +146,7 @@ def courses():
     return render_template("courses.html", courses=models.Topic.query.all())
 
 @app.route("/courses/<course>")
+@nocache
 def course(course):
     return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
 
@@ -208,9 +209,9 @@ def oauthorized():
     users = models.User.query.filter_by(tw_username=resp['screen_name'].lower()).all()
     if len(users) > 0:
         cur_user = users[0]
-        session['user'] = cur_user.username
+        login_user(cur_user)
         flash('You were logged in')
-        return redirect(url_for('home'))
+        return render_template('login.html')
 
     return render_template("register.html", username=resp['screen_name'], tw_username=resp['screen_name'])
 
@@ -257,7 +258,7 @@ def login():
         if not isinstance(user, type(None)):
             if request.form['password'] == user.password:
                 login_user(user)
-                session["user"] = user.username
+                # session["user"] = user.username
                 return redirect(url_for("home"))
             else:
                 error = u"Contraseña Incorrecta"
