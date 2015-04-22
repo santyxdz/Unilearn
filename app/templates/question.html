@@ -171,7 +171,10 @@ $(document).ready(function()
         	if( $("input[name='options']:radio").is(':checked')) {
                 $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
                                         selected:"["+$('input:radio[name=options]:checked').val()+"]"
-                                        },function(data){alert(data.message)},"json");
+                                        },function(data){
+                                            alert(data.message);
+                                            location.reload(true);
+                                        },"json");
             } else{
                 alert("Seleccione una Opción");
             }
