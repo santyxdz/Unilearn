@@ -34,7 +34,12 @@ Unilearn | Pregunta
         -moz-transition: all 1s;
         -webkit-transition: all 1s;
         -o-transition: all 1s;
-
+    }
+    .panel-message{
+      background-color: #a4c639;
+      box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
+      padding: 3px 10px;
+      border-radius: 15%;
     }
 </style>
 {% endblock %}
@@ -42,7 +47,7 @@ Unilearn | Pregunta
 <div class="row">
     <div class="panel-user col-md-6 col-md-offset-3 ">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-xs-5">
             {%if current_user.is_authenticated()%}
                 {%if current_user.life != 0 %}
                     {%if current_user.life != 1 %}
@@ -58,7 +63,7 @@ Unilearn | Pregunta
                 {% endif %}
             {% endif %}
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-2">
             {%if current_user.is_authenticated()%}
                 {%if question_made(current_user.username,question)%}
             <img width="70" height="70" src="http://goo.gl/UcynvW" border="0">
@@ -70,7 +75,7 @@ Unilearn | Pregunta
             {% endif %}
             </div>
             {%if current_user.is_authenticated()%}
-            <div class="col-md-5 least-content h3" align="right">Puntos: {{ current_user.score() }}</div>
+            <div class="col-xs-5 least-content h3" align="right">Puntos: {{ current_user.score() }}</div>
             {% endif %}
         </div>
     </div>
@@ -142,10 +147,24 @@ Unilearn | Pregunta
     </div>
 </div>
 </div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;" >
+
+        <div class="panel-message"><br>
+            <center>
+                 <img width="70" height="70" src="http://goo.gl/NaSTRx" style='...' border="0" alt="0">
+                <h2 class="modal-title" id="message"></h2>
+                    <h3 class="modal-title" id="points"></h3>
+            </center>
+        </div>
+
+    </div>
+  </div>
+</div>
 
 {% endblock %}
 {% block js %}
-
 {% if question.type == "msu_question" %}
 <script type="text/javascript">
 $(document).ready(function()
@@ -154,7 +173,14 @@ $(document).ready(function()
         	if( $("input[name='options']:radio").is(':checked')) {
                 $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
                                         selected:"["+$('input:radio[name=options]:checked').val()+"]"
-                                        },function(data){alert(data.message)},"json");
+                                        },function(data){
+                                            var m = data.message;
+                                            var s = data.points;
+                                            document.getElementById("message").innerHTML = m;
+                                            document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                                            $('.bs-example-modal-sm').modal('show')
+
+                                        },"json");
             } else{
                 alert("Seleccione una Opción");
             }
@@ -173,7 +199,11 @@ $("button[name=submit]").click(
         $.post("{{"/api/evaluate/"+question.id|string}}",{type:"completation",
                             selected: "[\""+$("input[name='txt']:text").val()+"\"]"
                             },function(data){
-                                alert(data.message)
+                                var m = data.message;
+                                var s = data.points;
+                                document.getElementById("message").innerHTML = m;
+                                document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                                $('.bs-example-modal-sm').modal('show')
                             },"json");
     }
     else{
@@ -232,7 +262,14 @@ $(document).ready(function(){
             a = "[]";
         }
         $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msm",
-            selected:a},function(data){alert(data.message)},"json");
+            selected:a},function(data){
+                    var m = data.message;
+                    var s = data.points;
+                    document.getElementById("message").innerHTML = m;
+                    document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                    $('.bs-example-modal-sm').modal('show')
+
+            },"json");
     });
 });
 </script>
