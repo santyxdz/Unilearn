@@ -22,7 +22,7 @@ Unilearn | Cursos.
 <div class="jumbotron">
     <h1><img src="{{ course.icon }}" width="100px" height="100px"/>{{ course.name }}</h1>
     {% if current_user %}
-    <button type="submit" id="butregister" name="butregister">Unirse a este curso</button>
+    <button class="btn btn-primary" type="submit" id="butregister" name="butregister">Unirse a este curso</button>
     {% endif %}
     <p>{{ course.description }}</p>
 </div>
