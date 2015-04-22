@@ -65,13 +65,6 @@ def set_default(item, replacement):
     else:
         return item
 
-
-@app.template_global()
-def get_lifes(username):
-    user = models.User.query.filter_by(username=username).first()
-    return user.life
-
-
 @app.template_global()
 def to_dic(item):
     return json.loads(item)
@@ -87,10 +80,6 @@ def question_made(user, question):
     if userscore:
         return True
 
-@app.template_global()
-def total_score(username):
-    user = models.User.query.filter_by(username=username).first()
-    return user.score()
 
 def new_question(username, question, score):
     user = models.User.query.filter_by(username=username).first()

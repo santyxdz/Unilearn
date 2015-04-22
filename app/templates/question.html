@@ -53,14 +53,14 @@ Unilearn | Pregunta
                      {% endif %}
                  </center></div>
                  {%if current_user.is_authenticated()%}
-                         <div  class="least-content" align="right">Puntos: {{ total_score(current_user.username) }}</div>
+                         <div  class="least-content" align="right">Puntos: {{ current_user.score() }}</div>
                         <div class="col-md-5">
-                         {%if get_lifes(current_user.username) != 0 %}
-                             {%if get_lifes(current_user.username) != 1 %}
-                                 {% for num in range(0,(get_lifes(session["user"])/2)|int)%}
+                         {%if current_user.life != 0 %}
+                             {%if current_user.life != 1 %}
+                                 {% for num in range(0,(current_user.life/2)|int)%}
                                      <img  width="30" height = "30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
                                  {% endfor %}
-                                 {% if get_lifes(current_user.username) % 2 != 0%}
+                                 {% if current_user.life % 2 != 0%}
                                     <img  width="15" height = "30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
                                  {% endif%}
                              {%else%}
