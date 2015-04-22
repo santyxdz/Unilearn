@@ -298,8 +298,9 @@ class REvaluate(Resource):
 
 class RRegister(Resource):
     def post(self, username, topic_id):
+        
         cur_user = models.User.query.filter_by(username=username).first()
-        topic = models.Topic.query.filter_by(topic_id=topic_id).first()
+        topic = models.Topic.query.filter_by(id=topic_id).first()
         if cur_user is None and topic is None:
             return{
                 "status": False,

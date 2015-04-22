@@ -145,6 +145,10 @@ def users():
 
 @app.route("/courses")
 def courses():
+    if current_user.is_authenticated():
+        inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id)
+        if inscribed is not None:
+            return render_template("courses.html", courses=models.Topic.query.all(), active_topic=inscribed)
     return render_template("courses.html", courses=models.Topic.query.all())
 
 @app.route("/courses/<course>")

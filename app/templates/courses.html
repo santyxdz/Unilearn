@@ -7,9 +7,7 @@ Unilearn | Cursos.
 {% block js %}
 <script type="javascript">
     function register(var topic_id){
-        {% if session["logged"] %}
-            $.post("/api/register/{{ session.user }}/topic_id)
-        {% endif %}
+        //missing implementation
     }
 </script>
 {% endblock %}
@@ -18,13 +16,17 @@ Unilearn | Cursos.
 {% endblock %}
 
 {% block main %}
+{% if active_topic%}
+    <h3>Curso actual: <a href="{{ url_for("course", course=active_topic.name) }}"> {{ active_topic.name }} </a></h3>
+{% endif %}
 <div class="row">
 {% for course in courses %}
 <div class="item">
-    <a href="{{ url_for("course",course=course.name) }}">
     <div class="course-list panel panel-primary col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <a href="{{ url_for("course",course=course.name) }}">
         <div class="panel-heading">
-            <h3 class="panel-title">{{ course.name }}</h3>
+            <h3 class="panel-title">{{ course.name }}
+            </h3>
         </div>
         <div class="panel-body">
             <div class="aspect">
@@ -32,9 +34,9 @@ Unilearn | Cursos.
                 </div>
             </div>
         </div>
+        </a>
     </div>
-    <input type="button" value="Join couser" onclick="register({{ course.id }})" id="registerbut"/>
-    </a>
+
 </div>
 {% endfor %}
 </div>
