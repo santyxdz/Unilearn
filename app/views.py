@@ -116,11 +116,11 @@ def register():
         if len(users) > 0:
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
-            """if request.form["tw_username"]:
+            if request.form["tw_username"]:
                 user = models.User(request.form["username"], request.form["email"],
                                request.form["password"], tw_un=request.form["tw_username"])
-            else:"""
-            user = models.User(request.form["username"], request.form["email"],
+            else:
+                user = models.User(request.form["username"], request.form["email"],
                                request.form["password"])
             user.life = 10
             db.session.add(user)
@@ -207,11 +207,12 @@ def oauthorized():
     else:
         session['twitter_oauth'] = resp
     users = models.User.query.filter_by(tw_username=resp['screen_name'].lower()).all()
+    print len(users)
     if len(users) > 0:
         cur_user = users[0]
         login_user(cur_user)
         flash('You were logged in')
-        return render_template('login.html')
+        return redirect(url_for("home"))
 
     return render_template("register.html", username=resp['screen_name'], tw_username=resp['screen_name'])
 
