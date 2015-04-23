@@ -9,8 +9,8 @@ Unilearn | Cursos.
     $(document).ready(function(){
         $("button[name=butregister]").click(
     function () {
-        alert("{{current_user.username}}");
         $.post("/api/register/", { user: "{{current_user.username}}", topic_id: {{ course.id }} }, function(data){alert(data.message)}, "json");
+        location.reload();
     });
     });
 </script>
@@ -22,10 +22,17 @@ Unilearn | Cursos.
 <div class="jumbotron">
     <h1><img src="{{ course.icon }}" width="100px" height="100px"/>{{ course.name }}</h1>
     {% if current_user %}
+    {% if current_user.cur_topic_id %}
+    {% if not current_user.cur_topic_id == course.id %}
     <button class="btn btn-primary" type="submit" id="butregister" name="butregister">Unirse a este curso</button>
+    {% endif %}
+    {% else %}
+    <button class="btn btn-primary" type="submit" id="butregister" name="butregister">Unirse a este curso</button>
+    {% endif %}
     {% endif %}
     <p>{{ course.description }}</p>
 </div>
+{% if current_user.cur_topic_id == course.id %}
 <div class="list-group">
 {% for question in course.questions %}
     <a href="{{ url_for("questions", course=course.name,num=question.id) }}">
@@ -53,4 +60,5 @@ Unilearn | Cursos.
     </a>
 {% endfor %}
 </div>
+{% endif %}
 {% endblock %}
