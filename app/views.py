@@ -78,7 +78,9 @@ def no_repeated(item):
 def question_made(user, question):
     userscore = models.UserScore.query.filter_by(user_username=user, question_id=question.id).first()
     if userscore:
-        return True
+        return userscore.score
+
+
 
 
 def new_question(username, question, score):

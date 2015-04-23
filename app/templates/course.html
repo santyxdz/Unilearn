@@ -29,8 +29,12 @@ Unilearn | Cursos.
             <div class="least-content">{{ question.id }}</div>
             <h4 class="list-group-item-heading">Tile with a label</h4>
             {%if current_user.is_authenticated()%}
-            {%if question_made(current_user.username,question)%}
-                <img  width="50px" height = "50px" class="least-content" src="http://goo.gl/Gaa2Ob" alt="0" />
+            {%if question_made(current_user.username,question) != None %}
+                 {%if question_made(current_user.username,question) > 0 %}
+                    <img  width="40px" height = "50px" class="least-content" src="http://goo.gl/Gaa2Ob" alt="0" />
+                 {%else%}
+                    <img  width="30px" height = "30px" class="least-content" src="http://goo.gl/Lu8Gkz" alt="0" />
+                 {%endif%}
             {%endif%}
             {% endif %}
             <p class="list-group-item-text">{{ question.statement[:100]+"..." }}</p>

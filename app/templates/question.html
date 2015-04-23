@@ -48,31 +48,33 @@ Unilearn | Pregunta
     <div class="panel-user col-md-6 col-md-offset-3 ">
         <div class="row">
             <div class="col-xs-5">
-            {%if current_user.is_authenticated()%}
-                {%if current_user.life != 0 %}
-                    {%if current_user.life != 1 %}
-                        {% for num in range(0,(current_user.life/2)|int)%}
-                <img width="30" height="30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
-                        {% endfor %}
+                {%if current_user.is_authenticated()%}
+                    {%if current_user.life != 0 %}
+                        {%if current_user.life != 1 %}
+                            {% for num in range(0,(current_user.life/2)|int)%}
+                                <img width="30" height="30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
+                            {% endfor %}
+                        {% endif %}
+                        {% if current_user.life % 2 != 0%}
+                            <img width="15" height="30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
+                        {% endif%}
                     {% endif %}
-                    {% if current_user.life % 2 != 0%}
-                <img width="15" height="30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
-                    {% endif%}
-                {%else%}
-                <img width="15" height="30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
                 {% endif %}
-            {% endif %}
             </div>
             <div class="col-xs-2">
-            {%if current_user.is_authenticated()%}
-                {%if question_made(current_user.username,question)%}
-            <img width="70" height="70" src="http://goo.gl/UcynvW" border="0">
+                {%if current_user.is_authenticated()%}
+                    {%if question_made(current_user.username,question) != None%}
+                        {%if question_made(current_user.username,question) > 0 %}
+                            <img width="70" height="70" src="http://goo.gl/UcynvW" border="0">
+                        {% else %}
+                            <img width="70" height="70" src="http://goo.gl/bcgzZ8" border="0">
+                        {% endif %}
+                    {% else %}
+                        <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
+                    {% endif %}
                 {% else %}
-            <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
+                <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
                 {% endif %}
-            {% else %}
-            <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
-            {% endif %}
             </div>
             {%if current_user.is_authenticated()%}
             <div class="col-xs-5 least-content h3" align="right">Puntos: {{ current_user.score() }}</div>
@@ -148,14 +150,16 @@ Unilearn | Pregunta
 </div>
 </div>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog modal-sm" style="opacity: 0.93;">
     <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;" >
-
         <div class="panel-message"><br>
             <center>
-                 <img width="70" height="70" src="http://goo.gl/NaSTRx" style='...' border="0" alt="0">
+                <img width="70" height="70" src="http://goo.gl/NaSTRx" style='...' border="0" alt="0">
                 <h2 class="modal-title" id="message"></h2>
-                    <h3 class="modal-title" id="points"></h3>
+                <h3 class="modal-title" id="points"></h3>
+                <h3 class="modal-title" id="life"></h3>
+                <button type="submit" class="btn btn-primary" name="seguir" style="background-color: rgba(0,0,0,0);">Seguir</button>
+                <button type="submit" class="btn btn-primary" name="regresar" style="background-color: rgba(0,0,0,0);">Regresar al curso</button>
             </center>
         </div>
 
@@ -176,10 +180,12 @@ $(document).ready(function()
                                         },function(data){
                                             var m = data.message;
                                             var s = data.points;
+                                            if (s == {{question.max_score}}){
+                                                document.getElementById("life").innerHTML = "+ 1 vida";
+                                            }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
                                             document.getElementById("message").innerHTML = m;
                                             document.getElementById("points").innerHTML = "+ "+s+" puntos";
                                             $('.bs-example-modal-sm').modal('show')
-
                                         },"json");
             } else{
                 alert("Seleccione una Opción");
@@ -201,6 +207,7 @@ $("button[name=submit]").click(
                             },function(data){
                                 var m = data.message;
                                 var s = data.points;
+                                if (s > 0){document.getElementById("life").innerHTML = "+ 1 vida";}
                                 document.getElementById("message").innerHTML = m;
                                 document.getElementById("points").innerHTML = "+ "+s+" puntos";
                                 $('.bs-example-modal-sm').modal('show')
@@ -265,6 +272,7 @@ $(document).ready(function(){
             selected:a},function(data){
                     var m = data.message;
                     var s = data.points;
+                    if (s > 0){document.getElementById("life").innerHTML = "+ 1 vida";}
                     document.getElementById("message").innerHTML = m;
                     document.getElementById("points").innerHTML = "+ "+s+" puntos";
                     $('.bs-example-modal-sm').modal('show')
