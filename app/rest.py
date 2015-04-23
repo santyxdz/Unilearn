@@ -312,11 +312,25 @@ class REvaluate(Resource):
                         correct = [x.id for x in question.answers if x.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
+                        views.new_question(current_user.username, question, result["points"])
+                        if result["score"] == 0.0:
+                            user.remove_life()
+                            db.session.commit()
+                        if result["score"] == 1.0:
+                            user.give_life()
+                            db.session.commit()
                         return result
                     if request.form["type"] == "clasification":
                         correct = [ans.id for ans in question.answers if ans.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
+                        views.new_question(current_user.username, question, result["points"])
+                        if result["score"] == 0.0:
+                            user.remove_life()
+                            db.session.commit()
+                        if result["score"] == 1.0:
+                            user.give_life()
+                            db.session.commit()
                         return result
                     else:
                         return {
