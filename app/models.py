@@ -164,11 +164,10 @@ class ClasificationQuestion(Question):
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'clasification_question'}
 
-    @staticmethod
-    def validate_answer(answer_given, answer_stored):
+    def validate_answer(self, answer_given, answer_stored):
         user_ans_dict = loads(answer_given)
         correct_dict = loads(answer_stored)
-        keys = answer_given.keys()
+        keys = user_ans_dict.keys()
         correct_ans = 0
         incorrect_ans = 0
         for key in keys:
@@ -177,7 +176,7 @@ class ClasificationQuestion(Question):
             else:
                 incorrect_ans += 1
         return {
-            "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
+            "score": ((float(correct_ans) / (float(correct_ans) + float(incorrect_ans)))),
             "message": "This was your punctuation"
         }
 
@@ -191,7 +190,7 @@ class PairingQuestion(Question):
     def validate_answer(self, answer_given, answer_stored):
         user_ans_dict = loads(answer_given)
         correct_dict = loads(answer_stored)
-        keys = answer_given.keys()
+        keys = user_ans_dict.keys()
         correct_ans = 0
         incorrect_ans = 0
         for key in keys:
@@ -200,7 +199,7 @@ class PairingQuestion(Question):
             else:
                 incorrect_ans += 1
         return {
-            "score": ((correct_ans / (correct_ans + incorrect_ans)) * 100),
+            "score": ((float(correct_ans) / (float(correct_ans) + float(incorrect_ans)))),
             "message": "This was your punctuation"
         }
 

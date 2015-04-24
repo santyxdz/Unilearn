@@ -35,6 +35,12 @@ from flask import make_response
 from functools import wraps, update_wrapper
 from datetime import datetime
 
+def json_results(question):
+    result = {}
+    for x in question.answers:
+        result.update(json.loads(x.text))
+    return json.dumps(result)
+
 
 def nocache(view):
     @wraps(view)

@@ -242,35 +242,23 @@ $("button[name=submit]").click(
 </script>
 {% endif %}
 
-{% if question.type == "clasification_question" or question.type == "pairing_question" %}
+{% if question.type == "clasification_question" %}
 <script type="text/javascript">
-$(document).ready(function()
-{
+$(document).ready(function(){
     $("button[name=submit]").click(
         function(){
-            alert({{ selected_values }});
-            {% if selected_values|length %}
             var jsondata= {};
             $.each($("select"),function(i,k){jsondata[k.name]=k.value});
             var answer_given = JSON.stringify(jsondata);
-            if(answer_given != ""){
-                $.post(
-                    "{{"/api/evaluate" + question.id|string}}",
-                    answer_given,
-                    function(data){
-                        alert(data);
-                    },
-                    $.get( "ajax/test.html", function( data ) {
-                    $( ".result" ).html( data );
-                    alert( "Load was performed." );
-                    });
-                    "json"
-                );
-            }
-            else{
-                alert("You missed something or you have not matched everything yet!");
-            }
-            {% endif %}
+            $.post(
+                "{{"/api/evaluate/" + question.id|string}}",
+                {"type":"clasification",
+                "selected":answer_given},
+                function(data){
+                    alert(data["points"]);
+                },
+                "json"
+            );
         }
     );
 }

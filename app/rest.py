@@ -7,7 +7,6 @@ from app import models
 from flask_login import login_user, logout_user, current_user, login_required
 import json
 
-
 class RError(Resource):
     def get(self):
         return {"error": "Not Accesible"}
@@ -168,9 +167,11 @@ class RAnswer(Resource):
                 answer = models.Answer.query.filter_by(id=answer_id, question_id=question_id).first()
                 return {
                     "result": True,
-                    "answer": answer.id,
+                    "answer": "{}",
+                    "id": answer.id,
                     "belongs to question": answer.question_id,
-                    "state": answer.state
+                    "state": answer.state,
+                    "text": answer.text
                 }
             except Exception:
                 return {
@@ -185,7 +186,8 @@ class RAnswer(Resource):
                     "status": True,
                     "question": question_id,
                     "statement": question.statement,
-                    "answers": [ans.id for ans in answers]
+                    "answers": [ans.id for ans in answers],
+                    "results": views.json_results(question)
                 }
             except Exception:
                 return {
@@ -241,7 +243,7 @@ class REvaluate(Resource):
             question = models.Question.query.filter_by(id=question_id).first()
             if current_user.is_authenticated():
                 user = models.User.query.filter_by(username=current_user.username).first()
-            if question is None:
+            if isinstance(question,type(None)):
                 return {"error": "Question not found",
                         "result": False
                         }
@@ -290,9 +292,8 @@ class REvaluate(Resource):
                                 db.session.commit()
                         return result
                     if request.form["type"] == "pairing":
-                        # Se debe mandar la respuesta en formato JSON.
-                        correct = [x.id for x in question.answers if x.state]
-                        result = question.validate_answer(request.form["answer_given"], correct[0])
+                        correct = views.json_results(question)
+                        result = question.validate_answer(request.form["selected"], correct)
                         result["points"] = result["score"]*question.max_score
                         if current_user.is_authenticated():
                             views.new_question(current_user.username, question, result["points"])
@@ -304,9 +305,9 @@ class REvaluate(Resource):
                                 db.session.commit()
                         return result
                     if request.form["type"] == "clasification":
-                        correct = [ans.id for ans in question.answers if ans.state]
-                        result = question.validate_answer(request.form["answer_given"], correct[0])
-                        result["points"] = result["score"]*question.max_score
+                        correct = views.json_results(question)
+                        result = question.validate_answer(request.form["selected"], correct)
+                        result["points"] = int(result["score"]*question.max_score)
                         if current_user.is_authenticated():
                             views.new_question(current_user.username, question, result["points"])
                             if result["score"] == 0.0:
