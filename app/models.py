@@ -20,6 +20,7 @@ class User(db.Model):
     scores = db.relationship("UserScore", backref="user", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
+    # level = db.Column(db.Integer) # el topic que puede tomar despues de haber hecho el test de nivelacion
     # Cursos = Cursos ... por hacer
 
     def __init__(self, username, email, password, first_name="", last_name="", photo="", tw_un=""):
@@ -30,6 +31,8 @@ class User(db.Model):
         self.password = password
         self.photo = photo
         self.tw_username = tw_un
+        # self.cur_topic_id = 1
+        # self.level = 1
         print "New User: " + self.__repr__()
 
     def score(self):
@@ -60,7 +63,6 @@ class User(db.Model):
     def give_life(self):
         if self.life < 10:
             self.life += 1
-
 
 
 class Topic(db.Model):
@@ -121,9 +123,9 @@ class MSUQuestion(Question):
     # @staticmethod
     def validate_answer(self, selected, true_one):
         if selected == true_one:
-            return {"score": 1.0, "message": "Score! You've got 100% correct"}
+            return {"score": 1.0, "message": "FELICITACIONES"}
         else:
-            return {"score": 0.0, "message": "Ops! Incorrect! But for your trying you've got a 0,01%. Keep trying!"}
+            return {"score": 0.0, "message": "INTENTA DE NUEVO"}
 
 class CompletationQuestion(Question):
     __tablename__ = 'completation_question'
@@ -134,9 +136,9 @@ class CompletationQuestion(Question):
         #if str(selection).decode('utf-8').lower() == str(text).decode('utf-8').lower():
         answers = [x.text.lower() for x in self.answers]
         if text.lower() in answers:
-            return {"score": 1.0, "message": "Excelent, correct answer!"}
+            return {"score": 1.0, "message": "FELICITACIONES"}
         else:
-            return {"score": 0.0, "message": "Bad answer, try again"}
+            return {"score": 0.0, "message": "INTENTA DE NUEVO"}
 
 
 # Multiple Selection Multiple Response
@@ -152,9 +154,9 @@ class MSMQuestion(Question):
                 cont += 1
         score = float((1.0 / float(answerSaved)) * cont - (1.0 / float(answerSaved)) * (len(selection) - cont))
         if score >= 0:
-            return {"score": score, "message": "You've got "+str(score*100)+"% correct"}
+            return {"score": score, "message": "OBTUVISTE "+str(score*100)+"% CORRECTO"}
         else:
-            return {"score": 0.0, "message": "You've lost, try it again"}
+            return {"score": 0.0, "message": "INTENTA DE NUEVO"}
 
 
 class ClasificationQuestion(Question):

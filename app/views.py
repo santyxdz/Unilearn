@@ -78,7 +78,9 @@ def no_repeated(item):
 def question_made(user, question):
     userscore = models.UserScore.query.filter_by(user_username=user, question_id=question.id).first()
     if userscore:
-        return True
+        return userscore.score
+
+
 
 
 def new_question(username, question, score):
@@ -116,11 +118,11 @@ def register():
         if len(users) > 0:
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
-            """if request.form["tw_username"]:
+            if request.form["tw_username"]:
                 user = models.User(request.form["username"], request.form["email"],
                                request.form["password"], tw_un=request.form["tw_username"])
-            else:"""
-            user = models.User(request.form["username"], request.form["email"],
+            else:
+                user = models.User(request.form["username"], request.form["email"],
                                request.form["password"])
             user.life = 10
             db.session.add(user)
@@ -139,9 +141,14 @@ def users():
 @app.route("/courses")
 @nocache
 def courses():
+    if current_user.is_authenticated():
+        inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id).first();
+        if inscribed is not None:
+            return render_template("courses.html", courses=models.Topic.query.all(), active_topic=inscribed.name)
     return render_template("courses.html", courses=models.Topic.query.all())
 
 @app.route("/courses/<course>")
+@nocache
 def course(course):
     return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
 
@@ -198,11 +205,12 @@ def oauthorized():
     else:
         session['twitter_oauth'] = resp
     users = models.User.query.filter_by(tw_username=resp['screen_name'].lower()).all()
+    print len(users)
     if len(users) > 0:
         cur_user = users[0]
-        session['user'] = cur_user.username
+        login_user(cur_user)
         flash('You were logged in')
-        return redirect(url_for('home'))
+        return redirect(url_for("home"))
 
     return render_template("register.html", username=resp['screen_name'], tw_username=resp['screen_name'])
 
@@ -249,7 +257,7 @@ def login():
         if not isinstance(user, type(None)):
             if request.form['password'] == user.password:
                 login_user(user)
-                session["user"] = user.username
+                # session["user"] = user.username
                 return redirect(url_for("home"))
             else:
                 error = u"Contraseña Incorrecta"

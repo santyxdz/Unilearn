@@ -286,7 +286,7 @@ class REvaluate(Resource):
                         selected = json.loads(request.form["selected"])
                         selected_objects = [models.Answer.query.filter_by(id=x).first() for x in selected]
                         result = question.validate_answer(len(trueOne), selected_objects)
-                        result["points"] = result["score"]*question.max_score
+                        result["points"] = int(result["score"]*question.max_score)
                         views.new_question(current_user.username, question, result["points"])
                         if result["score"] == 0.0:
                             user.remove_life()
@@ -312,11 +312,25 @@ class REvaluate(Resource):
                         correct = [x.id for x in question.answers if x.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
+                        views.new_question(current_user.username, question, result["points"])
+                        if result["score"] == 0.0:
+                            user.remove_life()
+                            db.session.commit()
+                        if result["score"] == 1.0:
+                            user.give_life()
+                            db.session.commit()
                         return result
                     if request.form["type"] == "clasification":
                         correct = [ans.id for ans in question.answers if ans.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
+                        views.new_question(current_user.username, question, result["points"])
+                        if result["score"] == 0.0:
+                            user.remove_life()
+                            db.session.commit()
+                        if result["score"] == 1.0:
+                            user.give_life()
+                            db.session.commit()
                         return result
                     else:
                         return {
@@ -326,29 +340,59 @@ class REvaluate(Resource):
 
 
 class RRegister(Resource):
-    def post(self, username, topic_id):
-        cur_user = models.User.query.filter_by(username=username).first()
-        topic = models.Topic.query.filter_by(topic_id=topic_id).first()
-        if cur_user is None and topic is None:
-            return{
-                "status": False,
-                "message": "User and Topic don't exist"
+    def post(self):
+        if "user" in request.form and "topic_id" in request.form:
+            cur_user = models.User.query.filter_by(username=request.form["user"]).first()
+            topic = models.Topic.query.filter_by(id=int(request.form["topic_id"])).first()
+            if cur_user is None and topic is None:
+                return{
+                    "status": False,
+                    "message": "User and Topic don't exist"
+                }
+            elif cur_user is None:
+                return {
+                    "status": False,
+                    "message": "User not found"
+                }
+            elif topic is None:
+                return {
+                    "status": False,
+                    "message": "Topic not found"
+                }
+            cur_user.set_topic(request.form["topic_id"])
+            db.session.commit()
+            return {
+                "status": True,
+                "message": "User registered successfully"
             }
-        elif cur_user is None:
+        else:
             return {
                 "status": False,
-                "message": "User not found"
+                "message": "Operation un-supported"
             }
-        elif topic is None:
+
+    def get(self, username):
+        user = models.User.query.filter_by(username=username).first()
+        if views.is_empty(user):
             return {
-                "status": False,
-                "message": "Topic not found"
+                "result": False,
+                "status": "error",
+                "error": "Username doesn't exit"
             }
-        cur_user.set_topic(topic_id)
-        return {
-            "status": True,
-            "message": "User registered successfully"
-        }
+        else:
+            topic = models.Topic.query.filter_by(id=user.cur_topic_id).first()
+            if views.is_empty(topic):
+                return{
+                    "result": False,
+                    "message": "User is not inscribed in any topic"
+                }
+            else:
+                return {
+                    "result": True,
+                    "topic": topic.name,
+                    "status": "User has a Topic"
+                }
+
 
 
 api.add_resource(RError, '/api', "/api/")
@@ -358,4 +402,4 @@ api.add_resource(RQuestion, "/api/question/<int:question_id>", "/api/question/")
 api.add_resource(RAnswer, "/api/answer/<int:question_id>", "/api/answer/",
                  "/api/answer/<int:question_id>/<int:answer_id>")
 api.add_resource(REvaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
-api.add_resource(RRegister, "/api/register/<username>/<int:topic_id>")
+api.add_resource(RRegister, "/api/register/", "/api/register/<username>")

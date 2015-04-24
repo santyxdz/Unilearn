@@ -1,11 +1,21 @@
 {% extends "base.html" %}
-{% block title %} Unilearn | Cursos. {% endblock %}
-{% block js %} {% endblock %}
+{% block title %}
+Unilearn | Curso de {{course.name}}
+{% endblock %}
+{% block js %}
+<script>
+    $(document).ready(function(){
+        $("button[name=butregister]").click(
+    function () {
+        $.post("/api/register/", { user: "{{current_user.username}}", topic_id: {{ course.id }} }, function(data){alert(data.message)}, "json");
+        location.reload();
+    });
+    });
+</script>
+{% endblock %}
 {% block css %}
 <style>
     .list-group-item{
-
-
     }    
     .list-white{
         padding-top: 0.6em;
@@ -17,8 +27,27 @@
     }
 </style>{% endblock %}
 {% block main %}
-<div class="text-center"><img src="{{ course.icon }}" width="100px" height="100px" />
-    <h1>{{ course.name }}</h1></div>
+<div class="text-center">
+    <img src="{{ course.icon }}" width="100px" height="100px" />
+    <h1>{{ course.name }}</h1>
+</div>
+    <div class="text-center" id="join_course">
+    {% if current_user.username %}
+        {% if current_user.cur_topic_id %}
+            {% if not current_user.cur_topic_id == course.id %}
+                <button class="btn btn-danger" type="submit" id="butregister" name="butregister">Unirse a este curso</button>
+            {% endif %}
+        {% else %}
+            <button class="btn btn-danger" type="submit" id="butregister" name="butregister">Unirse a este curso</button>
+        {% endif %}
+    {% endif %}
+    {% if not current_user.username %}
+        {%set free_use = true %}
+    {% else %}
+        {%set free_use = false %}
+    {% endif %}
+    </div>
+{% if current_user.cur_topic_id == course.id or free_use%}
 <ul class="nav nav-tabs" style="margin-bottom: 0px;">
     <li class="active"><a href="#problems" data-toggle="tab">Ejercicios</a></li>
     <li><a href="#users" data-toggle="tab">Usuarios</a></li>
@@ -53,9 +82,9 @@
                         <div class="least-content" style="color:rgba(0,0,0,0.35);margin-top:1em;">{{ question.id }}</div>
                         <h4 class="list-group-item-heading">{{ question.statement[:35]+"..."}}</h4>
                         {%if current_user.is_authenticated()%}
-                        {%if question_made(current_user.username,question)%}
+                            {%if question_made(current_user.username,question)%}
                         <img width="50px" height="50px" class="least-content" src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-128.png" alt="0" style="margin-right:1em;" />
-                        {%endif%}
+                            {%endif%}
                         {%endif%}
                         <p class="list-group-item-text">{{ question.statement[35:]+"..." }}</p>
                     </div>
@@ -79,7 +108,7 @@
 </div>
 <div class="col-sm-4">
     <div class="panel panel-default text-center">
-        {%if current_user.is_authenticated() %}
+    {%if current_user.is_authenticated() %}
         <div class="panel-heading text-center" style="background-color:rgba(0,0,0,0);">Progreso</div>
         <div class="panel-body text-center">
             <img src="{{current_user.photo}}" style="max-width:200px;max-height:200px;" class="img-reponsive img-rounded"><br><br>
@@ -89,7 +118,7 @@
                 <div class="progress-bar progress-bar-success" style="width: 45%"></div>
             </div>
         </div>
-        {% else %}
+    {% else %}
         <br/><br/>
         <p>Si te Registras obtendras muchas ventajas como poder guardar tu proceso, acceder a preguntas, entras otras.</p>
         <p>Ademas <b>¡Es Totalmente Gratis!</b> registrate ahora y descubre todas las ventajas de hacer parte de Unilearn</p>
@@ -103,8 +132,10 @@
         <a href="{{ url_for("login") }}" class="btn btn-success">Entrar</a>
         <br/>
         <br/>
-        {% endif %}
+    {% endif %}
     </div>
 </div>
 </div>
+{% endif %}
+
 {% endblock %}
