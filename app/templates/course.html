@@ -7,7 +7,7 @@ Unilearn | Curso de {{course.name}}
     $(document).ready(function(){
         $("button[name=butregister]").click(
     function () {
-        $.post("/api/register/", { user: "{{current_user.username}}", topic_id: {{ course.id }} }, function(data){alert(data.message)}, "json");
+        $.post("/api/register/", { user: "{{current_user.username}}", topic_id: {{ course.id }} }, function(data){}, "json");
         location.reload();
     });
     });
