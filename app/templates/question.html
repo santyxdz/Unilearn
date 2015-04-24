@@ -142,8 +142,8 @@ Unilearn | Pregunta
             </div>
             {% endif %}
         </div>
-        <div class="col-md-6 col-md-offset-3">
-            <button class="btn btn-default">Saltar</button>
+        <div class="text-center">
+            <button id="send" class="btn btn-default">Siguiente</button>
             <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
         </div>
     </div>
@@ -298,5 +298,19 @@ $(document).ready(function(){
 });
 </script>
 {% endif %}
-
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button#send").click(
+        function(){
+            $.getJSON("{{
+            "/api/next/"+question.topic_id|string+"/"+question.id|string }}",
+            function(data){
+                var url = data["url"];
+                window.location.href = url;
+                });
+        }
+    );
+}
+);
+</script>
 {% endblock %}

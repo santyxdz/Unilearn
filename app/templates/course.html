@@ -66,7 +66,7 @@ Unilearn | Curso de {{course.name}}
 <div class="row">
 <div id="myTabContent" class="tab-content col-sm-8">
     <div class="tab-pane fade active in" id="problems">
-        <div class="list-group">
+        <div class="list-group">{{ sort_topic(course) }}
             {% for question in course.questions %}
             <a href="{{ url_for("questions", course=course.name,num=question.id) }}">
                 <div class="list-white">
