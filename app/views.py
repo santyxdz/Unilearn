@@ -79,21 +79,24 @@ def question_made(user, question):
     userscore = models.UserScore.query.filter_by(user_username=user, question_id=question.id).first()
     if userscore:
         return userscore.score
-
-
+@app.template_global()
+def sort_topic(topic):
+    topic.questions.sort(key=lambda x: x.id)
+    return ""
 
 
 def new_question(username, question, score):
-    user = models.User.query.filter_by(username=username).first()
-    previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
-    if isinstance(previousScore, type(None)):
-                userscore = models.UserScore(user, question, score)
-                db.session.add(userscore)
+        user = models.User.query.filter_by(username=username).first()
+        previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
+        if isinstance(previousScore, type(None)):
+                    userscore = models.UserScore(user, question, score)
+                    db.session.add(userscore)
+                    db.session.commit()
+        else:
+            if score > previousScore.score:
+                previousScore.score = score
                 db.session.commit()
-    else:
-        if score > previousScore.score:
-            previousScore.score = score
-            db.session.commit()
+
 
 
 @login_manager.user_loader
@@ -142,10 +145,10 @@ def users():
 @nocache
 def courses():
     if current_user.is_authenticated():
-        inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id).first();
+        inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id).first()
         if inscribed is not None:
-            return render_template("courses.html", courses=models.Topic.query.all(), active_topic=inscribed.name)
-    return render_template("courses.html", courses=models.Topic.query.all())
+            return render_template("courses.html", courses=models.Topic.query.order_by(models.Topic.id).all(), active_topic=inscribed.name)
+    return render_template("courses.html", courses=models.Topic.query.order_by(models.Topic.id).all())
 
 @app.route("/courses/<course>")
 @nocache

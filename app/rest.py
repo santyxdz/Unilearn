@@ -7,22 +7,6 @@ from app import models
 from flask_login import login_user, logout_user, current_user, login_required
 import json
 
-"""
-todos = {}
-
-class TodoSimple(Resource):
-    def get(self, todo_id=""):
-        if todos[todo_id] is None:
-            return {"error": "Not Found"}
-        return {todo_id: todos[todo_id]}
-
-    def put(self, todo_id):
-        if todo_id == "" or request.form['data'] is not None:
-            return {"error": "Not Data found"}
-        todos[todo_id] = request.form['data']
-        return {todo_id: todos[todo_id]}
-"""
-
 
 class RError(Resource):
     def get(self):
@@ -247,13 +231,6 @@ class RAnswer(Resource):
 
 
 class REvaluate(Resource):
-    # ASI SE HACE EN JAVASCRIPT-jQuery PARA El Post los datos son el dicionario despues de la url
-    #En fin la cosa es que como se los enviabamos en postman es viable por rest, las listas
-    #tambien se pueden enviar si tienen el mismo nombre y otra cosa ahi.
-    #Si algo vean el jquery.json
-    #No terminado pueden sergirlo la cosa es que se envie a /evaluate/<int:question>
-    #y esto le devuelva cuando saco (flatante) y como devuelve json se pueden poner mas cosas
-    # $.post("/api/question/",{method:"update"},function(data){console.log(data.result)},"json");
     def post(self, question_id=None):
         if question_id is None:
             return {"error": "Not accessible",
@@ -261,7 +238,8 @@ class REvaluate(Resource):
                     }
         else:
             question = models.Question.query.filter_by(id=question_id).first()
-            user = models.User.query.filter_by(username=current_user.username).first()
+            if current_user.is_authenticated():
+                user = models.User.query.filter_by(username=current_user.username).first()
             if question is None:
                 return {"error": "Question not found",
                         "result": False
@@ -273,13 +251,14 @@ class REvaluate(Resource):
                         selected = json.loads(request.form["selected"])
                         result = question.validate_answer(selected[0], trueOne[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "msm":
                         trueOne = [x.id for x in question.answers if x.state]
@@ -287,50 +266,54 @@ class REvaluate(Resource):
                         selected_objects = [models.Answer.query.filter_by(id=x).first() for x in selected]
                         result = question.validate_answer(len(trueOne), selected_objects)
                         result["points"] = int(result["score"]*question.max_score)
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "completation":
                         selected = json.loads(request.form["selected"])
                         result = question.validate_answer(selected[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "pairing":
                         # Se debe mandar la respuesta en formato JSON.
                         correct = [x.id for x in question.answers if x.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "clasification":
                         correct = [ans.id for ans in question.answers if ans.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     else:
                         return {
@@ -394,6 +377,39 @@ class RRegister(Resource):
                 }
 
 
+class RNextQuestion(Resource):
+    def get(self, topic_id, question_id):
+        topic = models.Topic.query.get(topic_id)
+        questions = [x.id for x in topic.questions]
+        if question_id in questions:
+            pass
+        else:
+            return {
+                "error": "Question Not Found",
+                "return": False
+            }
+        questions.sort()
+        try:
+            next = questions[questions.index(question_id)+1]
+            return {
+                "url": views.url_for("questions", course=topic.name, num=next),
+                "return": True
+            }
+        except IndexError:
+            topics = models.Topic.query.all()
+            topic_ids = [x.id for x in topics]
+            topic_ids.sort()
+            try:
+                next = topic_ids[topic_ids.index(topic_id)+1]
+            except IndexError:
+                return {
+                    "url": views.url_for("home")
+                }
+            topic = models.Topic.query.get(next)
+            return {
+                "url": views.url_for("course", course=topic.name)
+            }
+
 
 api.add_resource(RError, '/api', "/api/")
 api.add_resource(RUser, "/api/users/<username>")
@@ -403,3 +419,4 @@ api.add_resource(RAnswer, "/api/answer/<int:question_id>", "/api/answer/",
                  "/api/answer/<int:question_id>/<int:answer_id>")
 api.add_resource(REvaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
 api.add_resource(RRegister, "/api/register/", "/api/register/<username>")
+api.add_resource(RNextQuestion, "/api/next/<int:topic_id>/<int:question_id>")

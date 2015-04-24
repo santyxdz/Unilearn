@@ -156,8 +156,8 @@ Unilearn | Pregunta
             </div>
             {% endif %}
         </div>
-        <div class="col-md-6 col-md-offset-3">
-            <button class="btn btn-default">Saltar</button>
+        <div class="text-center">
+            <button id="send" class="btn btn-default">Siguiente</button>
             <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
         </div>
     </div>
@@ -172,7 +172,7 @@ Unilearn | Pregunta
                 <h2 class="modal-title" id="message"></h2>
                 <h3 class="modal-title" id="points"></h3>
                 <h3 class="modal-title" id="life"></h3>
-                <button type="submit" class="btn btn-primary" name="seguir" style="background-color: rgba(0,0,0,0);">Seguir</button>
+                <button id="send" class="btn btn-primary" name="seguir" style="background-color: rgba(0,0,0,0);">Seguir</button>
                 <button type="submit" class="btn btn-primary" name="regresar" style="background-color: rgba(0,0,0,0);">Regresar al curso</button>
             </center>
         </div>
@@ -194,11 +194,15 @@ $(document).ready(function()
                                         },function(data){
                                             var m = data.message;
                                             var s = data.points;
-                                            if (s == {{question.max_score}}){
-                                                document.getElementById("life").innerHTML = "+ 1 vida";
-                                            }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                                            {%if current_user.is_authenticated()%}
+                                                if (s == {{question.max_score}}){
+                                                    document.getElementById("life").innerHTML = "+ 1 vida";
+                                                }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                                                document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                                            {%else%}
+                                                document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                                            {% endif %}
                                             document.getElementById("message").innerHTML = m;
-                                            document.getElementById("points").innerHTML = "+ "+s+" puntos";
                                             $('.bs-example-modal-sm').modal('show')
                                         },"json");
             } else{
@@ -219,13 +223,17 @@ $("button[name=submit]").click(
         $.post("{{"/api/evaluate/"+question.id|string}}",{type:"completation",
                             selected: "[\""+$("input[name='txt']:text").val()+"\"]"
                             },function(data){
-                                var m = data.message;
+                               var m = data.message;
                                 var s = data.points;
-                                if (s == {{question.max_score}}){
-                                    document.getElementById("life").innerHTML = "+ 1 vida";
-                                }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                                {%if current_user.is_authenticated()%}
+                                    if (s == {{question.max_score}}){
+                                        document.getElementById("life").innerHTML = "+ 1 vida";
+                                    }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                                    document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                                {%else%}
+                                    document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                                {% endif %}
                                 document.getElementById("message").innerHTML = m;
-                                document.getElementById("points").innerHTML = "+ "+s+" puntos";
                                 $('.bs-example-modal-sm').modal('show')
                             },"json");
     }
@@ -295,19 +303,37 @@ $(document).ready(function(){
         }
         $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msm",
             selected:a},function(data){
-                    var m = data.message;
-                    var s = data.points;
+                 var m = data.message;
+                var s = data.points;
+                {%if current_user.is_authenticated()%}
                     if (s == {{question.max_score}}){
                         document.getElementById("life").innerHTML = "+ 1 vida";
                     }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
-                    document.getElementById("message").innerHTML = m;
                     document.getElementById("points").innerHTML = "+ "+s+" puntos";
-                    $('.bs-example-modal-sm').modal('show')
+                {%else%}
+                    document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                {% endif %}
+                document.getElementById("message").innerHTML = m;
+                $('.bs-example-modal-sm').modal('show')
 
             },"json");
     });
 });
 </script>
 {% endif %}
-
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button#send").click(
+        function(){
+            $.getJSON("{{
+            "/api/next/"+question.topic_id|string+"/"+question.id|string }}",
+            function(data){
+                var url = data["url"];
+                window.location.href = url;
+                });
+        }
+    );
+}
+);
+</script>
 {% endblock %}

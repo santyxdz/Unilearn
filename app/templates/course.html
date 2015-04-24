@@ -28,7 +28,7 @@ Unilearn | Curso de {{course.name}}
 </style>{% endblock %}
 {% block main %}
 <div class="text-center">
-    <img src="{{ course.icon }}" width="100px" height="100px" />
+    <img src="{{ course.icon }}" width="100px" height="100px" alt="{{ course.id }}"/>
     <h1>{{ course.name }}</h1>
 </div>
     <div class="text-center" id="join_course">
@@ -66,7 +66,7 @@ Unilearn | Curso de {{course.name}}
 <div class="row">
 <div id="myTabContent" class="tab-content col-sm-8">
     <div class="tab-pane fade active in" id="problems">
-        <div class="list-group">
+        <div class="list-group">{{ sort_topic(course) }}
             {% for question in course.questions %}
             <a href="{{ url_for("questions", course=course.name,num=question.id) }}">
                 <div class="list-white">
@@ -82,8 +82,11 @@ Unilearn | Curso de {{course.name}}
                         <div class="least-content" style="color:rgba(0,0,0,0.35);margin-top:1em;">{{ question.id }}</div>
                         <h4 class="list-group-item-heading">{{ question.statement[:35]+"..."}}</h4>
                         {%if current_user.is_authenticated()%}
-                            {%if question_made(current_user.username,question)%}
-                        <img width="50px" height="50px" class="least-content" src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-128.png" alt="0" style="margin-right:1em;" />
+                            {%if question_made(current_user.username,question) > 0%}
+                                <img width="50px" height="50px" class="least-content" src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-128.png" alt="0" style="margin-right:1em;" />
+                            {%endif%}
+                            {%if question_made(current_user.username,question) == 0%}
+                                <img width="50px" height="50px" class="least-content" src="https://cdn4.iconfinder.com/data/icons/sibcode-line-simple/512/cancel-128.png" alt="0" style="margin-right:1em;" />
                             {%endif%}
                         {%endif%}
                         <p class="list-group-item-text">{{ question.statement[35:]+"..." }}</p>
