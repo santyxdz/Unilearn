@@ -261,7 +261,8 @@ class REvaluate(Resource):
                     }
         else:
             question = models.Question.query.filter_by(id=question_id).first()
-            user = models.User.query.filter_by(username=current_user.username).first()
+            if current_user.is_authenticated():
+                user = models.User.query.filter_by(username=current_user.username).first()
             if question is None:
                 return {"error": "Question not found",
                         "result": False
@@ -273,13 +274,14 @@ class REvaluate(Resource):
                         selected = json.loads(request.form["selected"])
                         result = question.validate_answer(selected[0], trueOne[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "msm":
                         trueOne = [x.id for x in question.answers if x.state]
@@ -287,50 +289,54 @@ class REvaluate(Resource):
                         selected_objects = [models.Answer.query.filter_by(id=x).first() for x in selected]
                         result = question.validate_answer(len(trueOne), selected_objects)
                         result["points"] = int(result["score"]*question.max_score)
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "completation":
                         selected = json.loads(request.form["selected"])
                         result = question.validate_answer(selected[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "pairing":
                         # Se debe mandar la respuesta en formato JSON.
                         correct = [x.id for x in question.answers if x.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     if request.form["type"] == "clasification":
                         correct = [ans.id for ans in question.answers if ans.state]
                         result = question.validate_answer(request.form["answer_given"], correct[0])
                         result["points"] = result["score"]*question.max_score
-                        views.new_question(current_user.username, question, result["points"])
-                        if result["score"] == 0.0:
-                            user.remove_life()
-                            db.session.commit()
-                        if result["score"] == 1.0:
-                            user.give_life()
-                            db.session.commit()
+                        if current_user.is_authenticated():
+                            views.new_question(current_user.username, question, result["points"])
+                            if result["score"] == 0.0:
+                                user.remove_life()
+                                db.session.commit()
+                            if result["score"] == 1.0:
+                                user.give_life()
+                                db.session.commit()
                         return result
                     else:
                         return {

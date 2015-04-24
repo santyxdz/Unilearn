@@ -84,16 +84,17 @@ def question_made(user, question):
 
 
 def new_question(username, question, score):
-    user = models.User.query.filter_by(username=username).first()
-    previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
-    if isinstance(previousScore, type(None)):
-                userscore = models.UserScore(user, question, score)
-                db.session.add(userscore)
+        user = models.User.query.filter_by(username=username).first()
+        previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
+        if isinstance(previousScore, type(None)):
+                    userscore = models.UserScore(user, question, score)
+                    db.session.add(userscore)
+                    db.session.commit()
+        else:
+            if score > previousScore.score:
+                previousScore.score = score
                 db.session.commit()
-    else:
-        if score > previousScore.score:
-            previousScore.score = score
-            db.session.commit()
+
 
 
 @login_manager.user_loader
