@@ -44,6 +44,7 @@ Unilearn | Pregunta
 </style>
 {% endblock %}
 {% block main %}
+{% set selected_values = []%}
 <div class="row">
     <div class="panel-user col-md-6 col-md-offset-3 ">
         <div class="row">
@@ -114,14 +115,23 @@ Unilearn | Pregunta
                 <br>
                 <input type="text" name="txt" class="form-control" placeholder="Respuesta">
             </div>
-            {% endif %} {% if question.type == "clasification_question" %}
+            {% endif %}
+            {% if question.type == "clasification_question" %}
             <div class="row">
-                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %} {% set values = no_repeated(values) %} {% for key in keys %}
+                {% set keys = [] %} {% set values = [] %}
+                {% for answer in question.answers %}
+                    {% if keys.append(to_dic(answer.text).keys()[0]) %}
+                    {% endif %}
+                    {% if values.append(to_dic(answer.text).values()[0])%}
+                    {% endif %}
+                {% endfor %}
+                {% set values = no_repeated(values) %}
+                {% for key in keys %}
                 <div class="col-sm-4">{{ key }}</div>
                 <div class="col-sm-8">
-                    <select class="form-control">
+                    <select id="options" class="form-control" name="{{key}}">
                         {% for value in values %}
-                        <option>{{ value }}</option>
+                        <option value="{{value}}">{{ value }}</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -129,12 +139,16 @@ Unilearn | Pregunta
             </div>
             {% endif %} {% if question.type == "pairing_question" %}
             <div class="row">
-                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %} {% for key in keys %}
+                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %} 
+		        {% set selected_values = [] %}
+		        {% for key in keys %}
                 <div class="col-sm-6">{{ key }}</div>
                 <div class="col-sm-6">
-                    <select class="form-control">
+                    <select id="options" class="form-control">
                         {% for value in values %}
-                        <option>{{ value }}</option>
+			            {% set value_pair= (value, key) %}
+			            {% if selected_values.append(value_pair) %} {% endif %}
+                        <option value="{{ value }}">{{ value }}</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -226,13 +240,21 @@ $("button[name=submit]").click(
 {% if question.type == "clasification_question" or question.type == "pairing_question" %}
 <script type="text/javascript">
 function answerToJSON(){
-    return "";
+    var jsondata = 
 }
 $(document).ready(function()
 {
     $("button[name=submit]").click(
         function(){
-            var answer_given = answerToJSON()
+            alert({{ selected_values }});
+            {% if selected_values|length %}
+            var jsondata;
+            {% set iter = 0 %}
+            $( "select option:selected" ).each(function() {
+                jsondata[{{ list(selected_values[iter])[1] }}] = $(this).text();
+                {% set iter = iter + 1 %}
+            });
+            var answer_given = JSON.stringify(jsondata);
             if(answer_given != ""){
                 $.post(
                     "{{"/api/evaluate" + question.id|string}}",
@@ -250,6 +272,7 @@ $(document).ready(function()
             else{
                 alert("You missed something or you have not matched everything yet!");
             }
+            {% endif %}
         }
     );
 }
