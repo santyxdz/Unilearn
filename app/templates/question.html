@@ -139,15 +139,12 @@ Unilearn | Pregunta
             </div>
             {% endif %} {% if question.type == "pairing_question" %}
             <div class="row">
-                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %} 
-		        {% set selected_values = [] %}
+                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %}
 		        {% for key in keys %}
                 <div class="col-sm-6">{{ key }}</div>
                 <div class="col-sm-6">
-                    <select id="options" class="form-control">
+                    <select id="options" class="form-control" name="{{key}}">
                         {% for value in values %}
-			            {% set value_pair= (value, key) %}
-			            {% if selected_values.append(value_pair) %} {% endif %}
                         <option value="{{ value }}">{{ value }}</option>
                         {% endfor %}
                     </select>
@@ -247,28 +244,21 @@ $("button[name=submit]").click(
 
 {% if question.type == "clasification_question" or question.type == "pairing_question" %}
 <script type="text/javascript">
-function answerToJSON(){
-    var jsondata = 
-}
 $(document).ready(function()
 {
     $("button[name=submit]").click(
         function(){
             alert({{ selected_values }});
             {% if selected_values|length %}
-            var jsondata;
-            {% set iter = 0 %}
-            $( "select option:selected" ).each(function() {
-                jsondata[{{ list(selected_values[iter])[1] }}] = $(this).text();
-                {% set iter = iter + 1 %}
-            });
+            var jsondata= {};
+            $.each($("select"),function(i,k){jsondata[k.name]=k.value});
             var answer_given = JSON.stringify(jsondata);
             if(answer_given != ""){
                 $.post(
                     "{{"/api/evaluate" + question.id|string}}",
                     answer_given,
                     function(data){
-                        alert(data.message)
+                        alert(data);
                     },
                     $.get( "ajax/test.html", function( data ) {
                     $( ".result" ).html( data );

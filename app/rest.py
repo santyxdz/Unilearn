@@ -104,7 +104,8 @@ class RQuestion(Resource):
                     "status": "Successfull"
                 }
 
-    def post(self, question_id=None):
+    def post(self):
+        question_id = request.form["id"]
         if question_id is None:
             if "update" in request.form["method"]:
                 return {"result": True}
