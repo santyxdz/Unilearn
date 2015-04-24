@@ -1,44 +1,110 @@
 {% extends "base.html" %}
-
-{% block title %}
-Unilearn | Cursos.
-{% endblock %}
-
-{% block js %}
-{% endblock %}
-
+{% block title %} Unilearn | Cursos. {% endblock %}
+{% block js %} {% endblock %}
 {% block css %}
-{% endblock %}
+<style>
+    .list-group-item{
+
+
+    }    
+    .list-white{
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;  
+        border-bottom: 1px solid rgba(0,0,0,0.4);      
+    }
+    .list-white:hover{
+        background-color: rgba(255,255,255,0.8);
+    }
+</style>{% endblock %}
 {% block main %}
-<div class="jumbotron">
-    <h1><img src="{{ course.icon }}" width="100px" height="100px"/>{{ course.name }}</h1>
-    <p>{{ course.description }}</p>
+<div class="text-center"><img src="{{ course.icon }}" width="100px" height="100px" />
+    <h1>{{ course.name }}</h1></div>
+<ul class="nav nav-tabs" style="margin-bottom: 0px;">
+    <li class="active"><a href="#problems" data-toggle="tab">Ejercicios</a></li>
+    <li><a href="#users" data-toggle="tab">Usuarios</a></li>
+    <li><a href="#theory" data-toggle="tab">Teoría</a></li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="bootstrap-elements.html" data-target="#">
+            Opciones <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#dropdown" data-toggle="tab">Action</a></li>
+            <li class="divider"></li>
+            <li><a href="#" data-toggle="tab">Another action</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="row">
+<div id="myTabContent" class="tab-content col-sm-8">
+    <div class="tab-pane fade active in" id="problems">
+        <div class="list-group">
+            {% for question in course.questions %}
+            <a href="{{ url_for("questions", course=course.name,num=question.id) }}">
+                <div class="list-white">
+                <div class="list-group-item">
+                    <div class="row-picture">
+                        {% if question.image %}
+                        <img class="circle" src="{{ question.image }}" alt="icon">
+                        {% else %}
+                        <img class="circle" src="http://i.imgur.com/klGXTYM.png" alt="question" />
+                        {% endif %}
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content" style="color:rgba(0,0,0,0.35);margin-top:1em;">{{ question.id }}</div>
+                        <h4 class="list-group-item-heading">{{ question.statement[:35]+"..."}}</h4>
+                        {%if current_user.is_authenticated()%}
+                        {%if question_made(current_user.username,question)%}
+                        <img width="50px" height="50px" class="least-content" src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-128.png" alt="0" style="margin-right:1em;" />
+                        {%endif%}
+                        {%endif%}
+                        <p class="list-group-item-text">{{ question.statement[35:]+"..." }}</p>
+                    </div>
+                </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="tab-pane fade" id="users">
+        users
+    </div>
+    <div class="tab-pane fade" id="theory">
+        <div class="jumbotron">
+            <p>{{ course.description }}</p>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="dropdown">
+        Soon..
+    </div>
 </div>
-<div class="list-group">
-{% for question in course.questions %}
-    <a href="{{ url_for("questions", course=course.name,num=question.id) }}">
-    <div class="list-group-item">
-        <div class="row-picture">
-            {% if question.image %}
-            <img class="circle" src="{{ question.image }}" alt="icon">
-            {% else %}
-            <img class="circle" src="http://i.imgur.com/klGXTYM.png" alt="question" />
-            {% endif %}
+<div class="col-sm-4">
+    <div class="panel panel-default text-center">
+        {%if current_user.is_authenticated() %}
+        <div class="panel-heading text-center" style="background-color:rgba(0,0,0,0);">Progreso</div>
+        <div class="panel-body text-center">
+            <img src="{{current_user.photo}}" style="max-width:200px;max-height:200px;" class="img-reponsive img-rounded"><br><br>
+            <span class="h1">45%</span><br>
+            <span class="h2">Completado</span><br><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 45%"></div>
+            </div>
         </div>
-        <div class="row-content">
-            <div class="least-content">{{ question.id }}</div>
-            <h4 class="list-group-item-heading">Tile with a label</h4>
-            {%if current_user.is_authenticated()%}
-            {%if question_made(current_user.username,question)%}
-                <img  width="50px" height = "50px" class="least-content" src="http://goo.gl/Gaa2Ob" alt="0" />
-            {%endif%}
-            {% endif %}
-            <p class="list-group-item-text">{{ question.statement[:100]+"..." }}</p>
-        </div>
+        {% else %}
+        <br/><br/>
+        <p>Si te Registras obtendras muchas ventajas como poder guardar tu proceso, acceder a preguntas, entras otras.</p>
+        <p>Ademas <b>¡Es Totalmente Gratis!</b> registrate ahora y descubre todas las ventajas de hacer parte de Unilearn</p>
+        <br/>
+        <span class="h1">¿Registrarse?</span>
+        <br/>
+        <a href="{{ url_for("register") }}" class="btn btn-success">Registarse</a>
+        <br/>
+        <span class="h1">¿Entrar?</span>
+        <br/>
+        <a href="{{ url_for("login") }}" class="btn btn-success">Entrar</a>
+        <br/>
+        <br/>
+        {% endif %}
     </div>
-    <div class="list-group-separator">
-    </div>
-    </a>
-{% endfor %}
+</div>
 </div>
 {% endblock %}
