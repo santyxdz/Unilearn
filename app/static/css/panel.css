@@ -1,19 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
 body {
 	background: #212c33;
 }
 
 #wrap,
 .unilearn-top {
-	color: #fff;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #wrap {
 	margin: 0 auto;
-	padding: 12em 2em;
-	background: rgba(0,0,0,0.05);
+	padding: 6em 2em;
 }
 
 #wrap a {
@@ -73,7 +69,7 @@ body {
 }
 
 .unilearn-icon:before {
-	font-family: 'codropsicons';
+	font-family: 'Material-Design-Icons';
 	margin: 0 4px;
 	speak: none;
 	font-style: normal;

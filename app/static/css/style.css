@@ -43,25 +43,23 @@ body{
 }
 .course-list > .panel-body{
 	background-color: white;
-	box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+	/*box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);*/
 }
-/* Background Options */
 .bg-full {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*Questions*/
 .question{
      background-color: transparent;
      box-shadow: none;
 }
 .question > .panel-body{
     background-color: white;
-    box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+    /*box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);*/
 }
 .panel-statement{
     background-color: khaki;
-    box-shadow: 0 1px 6px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.8);
+    /*box-shadow: 0 1px 6px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.8);*/
 }
 .panel-statement > .text{
     padding: 1em;
