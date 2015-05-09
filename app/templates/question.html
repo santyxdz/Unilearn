@@ -154,8 +154,9 @@ Unilearn | Pregunta
             {% endif %}
         </div>
         <div class="text-center">
-            <button id="send" class="btn btn-default">Siguiente</button>
+            <a href="{{url_for('course', course=question.topic.name )}}" class="btn btn-default">Volver a curso</a>
             <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
+            <button id="send" class="btn btn-default">Siguiente</button>
         </div>
     </div>
 </div>
@@ -242,7 +243,7 @@ $("button[name=submit]").click(
 </script>
 {% endif %}
 
-{% if question.type == "clasification_question" %}
+{% if question.type == "clasification_question" or question.type == "pairing_question" %}
 <script type="text/javascript">
 $(document).ready(function(){
     $("button[name=submit]").click(
@@ -252,10 +253,29 @@ $(document).ready(function(){
             var answer_given = JSON.stringify(jsondata);
             $.post(
                 "{{"/api/evaluate/" + question.id|string}}",
+
+                {% if question.type == "clasification_question" %}
                 {"type":"clasification",
+
+                {%else %}
+                {"type":"pairing",
+
+                {%endif%}
+
                 "selected":answer_given},
                 function(data){
-                    alert(data["points"]);
+                    var m = data.message;
+                    var s = data.points;
+                    {%if current_user.is_authenticated()%}
+                    if (s == {{question.max_score}}){
+                        document.getElementById("life").innerHTML = "+ 1 vida";
+                    }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                    document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                    {%else%}
+                    document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                    {% endif %}
+                    document.getElementById("message").innerHTML = m;
+                    $('.bs-example-modal-sm').modal('show')
                 },
                 "json"
             );
