@@ -53,7 +53,13 @@ Unilearn | Pregunta
         font-size: inherit;
         line-height: inherit;
         position: absolute;
-        top: -37px;
+        top: -50px;
+    }
+    .panel-equations{
+        background-color: #D8DAD9;
+        box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
+        padding: 3px 10px;
+        border-radius: 10px;
     }
 </style>
 {% endblock %}
@@ -175,12 +181,12 @@ Unilearn | Pregunta
 
     </div>
     <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-4">
                   <input class="help" type="image" width="80" height="80" data-toggle="modal" data-target=".helps" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
             </div>
     </div>
 </div>
+
 </div>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm" style="opacity: 0.93;">
@@ -191,7 +197,7 @@ Unilearn | Pregunta
                 <h2 class="modal-title" id="message"></h2>
                 <h3 class="modal-title" id="points"></h3>
                 <h3 class="modal-title" id="life"></h3>
-                <button id="send" class="btn btn-primary" name="seguir" style="background-color: rgba(0,0,0,0);">Seguir</button>
+                <button id="send" class="btn btn-default" name="seguir" style="background-color: rgba(0,0,0,0);">Seguir</button>
                 <button type="submit" class="btn btn-primary" name="regresar" style="background-color: rgba(0,0,0,0);">Regresar al curso</button>
             </center>
         </div>
@@ -213,7 +219,7 @@ Unilearn | Pregunta
           <div class = "row">
               <div class="col-md-1"></div>
               <div class="col-md-4">
-                  <input type="image" width="80" height="80" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/060-128.png" style='...' border="0" alt="0">
+                  <input type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".equations" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/060-128.png" style='...' border="0" alt="0">
                   <h3>Formulas</h3>
                   <input type="image" width="80" height="80" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Video-128.png" style='...' border="0" alt="0">
                   <h3>Videos</h3>
@@ -226,6 +232,23 @@ Unilearn | Pregunta
               </div>
           </div>
       </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade equations" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+        <div class="panel-equations">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Ecuaciones</h4>
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
     </div>
   </div>
 </div>

@@ -72,7 +72,7 @@ class Topic(db.Model):
     icon = db.Column(db.Text)
     questions = db.relationship("Question", backref="topic", cascade='all, delete-orphan')
     helptheory = db.relationship("HelpTheory", backref="topic", cascade='all, delete-orphan')
-    helpequation = db.relationship("HelpEquations", backref="topic", cascade="all, delete-orphan")
+    helpequation = db.relationship("HelpEquations", backref="topic", cascade='all, delete-orphan')
 
 
     def __init__(self, name, description, icon=""):

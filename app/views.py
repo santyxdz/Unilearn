@@ -85,6 +85,12 @@ def question_made(user, question):
     userscore = models.UserScore.query.filter_by(user_username=user, question_id=question.id).first()
     if userscore:
         return userscore.score
+
+@app.template_global()
+def help_equation(topic):
+    helps = models.HelpEquations.query.filter_by(topic_id=topic.id)
+    return helps
+
 @app.template_global()
 def sort_topic(topic):
     topic.questions.sort(key=lambda x: x.id)
