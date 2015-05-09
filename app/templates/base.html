@@ -7,18 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="">
-    <!-- HTML5 shim, for IE 6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material.min.css"/>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/ripples.min.css"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% include "css.html" %}
     {% block css %}{% endblock %}
 </head>
-
 <body>
     <div class="navbar navbar-default">
         <div class="navbar-header">
@@ -74,9 +65,6 @@
                             <li><a href="javascript:void(0)">Privacidad</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Terminos y Condiciones</a></li>
-
-
-
                     </ul>
                 </li>
             </ul>
@@ -85,40 +73,13 @@
     <header>
     {% include "header.html" %}
     </header>
-
     <div id="main" role="main" class="container">
     {% block main %}{% endblock %}
     </div>
-
     <footer>
     {% include "footer.html" %}
     </footer>
-
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/ripples.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/material.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $.material.init();
-        });
-    </script>
+    {% include "js.html" %}
     {% block js %}{% endblock %}
-
-
-    <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
-    <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>-->
-    <!-- Prompt IE < 8 users to install Chrome Frame.  -->
-    <!--[if lt IE 8 ]>
-        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-        <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-    <![endif]-->
 </body>
 </html>

@@ -64,7 +64,6 @@ class User(db.Model):
         if self.life < 10:
             self.life += 1
 
-
 class Topic(db.Model):
     __tablename__ = "topic"
     id = db.Column(db.Integer, primary_key=True, unique=True)

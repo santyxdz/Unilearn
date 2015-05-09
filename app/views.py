@@ -343,3 +343,8 @@ def edit_user():
             session.pop('user', None)
             return render_template("login.html", error=u"Contraseña Incorrecta En El Formulario")
     return render_template("edit_user.html")
+
+@app.route("/panel")
+@login_required
+def panel():
+    return render_template("panel_base.html")
