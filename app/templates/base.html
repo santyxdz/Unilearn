@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     {% include "css.html" %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/panel.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/component.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
@@ -18,7 +17,6 @@
     <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
 </head>
 <body>
-<div class="container">
     <ul id="gn-menu" class="gn-menu-main" style="z-index: 1000;">
         <li class="gn-trigger">
             <a class="gn-icon gn-icon-menu">
@@ -74,6 +72,7 @@
             </li>
         {% endif %}
     </ul>
+    <div class="container">
     <div id="wrap">
             {% block main %}{% endblock %}
     </div>

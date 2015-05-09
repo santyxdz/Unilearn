@@ -9,7 +9,7 @@ body {
 
 #wrap {
 	margin: 0 auto;
-	padding: 6em 2em;
+	padding: 6em 0;
 }
 
 #wrap a {
@@ -115,7 +115,7 @@ body {
 @media screen and (max-width: 1025px) {
 	#wrap{
 		margin: 0 auto;
-		padding: 120px 50px;
+		padding: 120px 0;
 		font-size: 70%;
 		text-align: right;
 	}
