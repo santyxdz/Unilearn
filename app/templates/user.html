@@ -31,6 +31,9 @@
                         <div class="aspect">
                             <div class="aspect-one-one bg-full">
                                 <h3>Sacaste {{user_scores[i]}} de {{max_scores[i]}}</h3>
+                                <div id="canvas-holer">
+                                    <canvas id="chart-area{{i}}" width="75em" height="75em"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -38,4 +41,31 @@
                 {% endfor %}
     </div>
 </div>
+{% endblock %}
+
+{% block js %}
+<script src="../static/js/Chart.js"></script>
+<script>
+{% set size = max_scores|length %}
+    {%for i in range(0,size) %}
+        var ctx = document.getElementById("chart-area{{i}}").getContext("2d");
+        var data = [
+            {
+            value: {{user_scores[i]}},
+            color: "#F7464A",
+            highlight: "#FF5A5E",
+            label: "Correcto"
+            },
+            {
+            value: {{max_scores[i] - user_scores[i]}},
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Incorrecto"
+            }
+        ]
+        var chart = new Chart(ctx).Pie(data, {
+            animateScale: true
+        });
+    {% endfor %}
+</script>
 {% endblock %}
