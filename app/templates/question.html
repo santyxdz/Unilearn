@@ -41,6 +41,20 @@ Unilearn | Pregunta
       padding: 3px 10px;
       border-radius: 15%;
     }
+    .panel-helps{
+      background-color: rgba(57, 198, 113, 0.89);
+      box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
+      padding: 3px 10px;
+      border-radius: 10px;
+
+    }
+    .help{
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        position: absolute;
+        top: -37px;
+    }
 </style>
 {% endblock %}
 {% block main %}
@@ -158,6 +172,13 @@ Unilearn | Pregunta
             <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
             <button id="send" class="btn btn-default">Siguiente</button>
         </div>
+
+    </div>
+    <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 col-md-offset-4">
+                  <input class="help" type="image" width="80" height="80" data-toggle="modal" data-target=".helps" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
+            </div>
     </div>
 </div>
 </div>
@@ -179,6 +200,35 @@ Unilearn | Pregunta
   </div>
 </div>
 
+<div class="modal fade helps" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" style="opacity: 0.93;">
+    <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+      <div class="panel-helps"><br>
+
+          <center>
+              <img width="70" height="70" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
+              <h4>¿Como puedo ayudarte?</h4>
+              <hr size=1.5 width="250"><br>
+          </center>
+          <div class = "row">
+              <div class="col-md-1"></div>
+              <div class="col-md-4">
+                  <input type="image" width="80" height="80" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/060-128.png" style='...' border="0" alt="0">
+                  <h3>Formulas</h3>
+                  <input type="image" width="80" height="80" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Video-128.png" style='...' border="0" alt="0">
+                  <h3>Videos</h3>
+              </div>
+              <div class="col-md-4 col-md-offset-1">
+                <input  type="image" width="80" height="80" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Design-128.png" style='...' border="0" alt="0">
+                <h3>Teoria</h3>
+                  <input  type="image" width="80" height="80" src="https://cdn2.iconfinder.com/data/icons/danger-problems/512/bankrupt-128.png" style='...' border="0" alt="0">
+                <h3>Reportar</h3>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
 {% block js %}
 {% if question.type == "msu_question" %}
