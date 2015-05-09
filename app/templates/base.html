@@ -1,85 +1,90 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{% block title %}Unilearn{% endblock %}</title>
+    <meta name="description" content="Unilearn, Plataforma (Aplicacion) de Aprendizaje de Matematicas en Linea" />
+    <meta name="keywords" content="Unilearn, Juego, Matematicas, EAFIT" />
+    <meta name="author" content="Juan Daniel Arboleda, Santiago Montoya, Santiago Su&acute;rez" />
+    <link rel="shortcut icon" href="../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="">
     {% include "css.html" %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/panel.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/component.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
     {% block css %}{% endblock %}
+    <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
 </head>
 <body>
-    <div class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for("home") }}">Unilearn</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ url_for("courses") }}">Cursos</a></li>
-                <li class="dropdown">
-                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Listas<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url_for("users") }}">Usuarios</a></li>
-                        <li><a href="javascript:void(0)">Another action</a></li>
-                        <li><a href="javascript:void(0)">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Dropdown header</li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
-                        <li><a href="javascript:void(0)">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-left">
-                <input type="text" class="form-control col-lg-8" placeholder="Buscar">
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-            {% if not current_user.is_authenticated() %}
-                <li><a href="{{ url_for("register") }}">Registro</a></li>
-                <li><a href="{{ url_for("login") }}">Inicio de Sesion</a></li>
-            {% else %}
-                <li><a href="{{ url_for("user",user=current_user.username) }}">Perfil</a></li>
-            {% endif %}
-                <li class="dropdown">
-                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
-                    {% if current_user.is_authenticated() %}
-                        {{ current_user.username }}
-                    {% else %}
-                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    {% endif %}
-                        <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+<div class="container">
+    <ul id="gn-menu" class="gn-menu-main" style="z-index: 1000;">
+        <li class="gn-trigger">
+            <a class="gn-icon gn-icon-menu">
+                <span>Menu</span></a>
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller">
+                    <ul class="gn-menu">
+                        <li>
+                            <input placeholder="Buscar..." type="search" class="gn-search">
+                            <a class="gn-icon gn-icon-search"><span>Buscar</span></a>
+                        </li>
+                        <li><a class="gn-icon gn-icon-user" href="{{ url_for("users") }}">Usuarios</a></li>
                         {% if current_user.is_authenticated() %}
-                            <li><a href="{{ url_for("edit_user") }}">Editar Perfil</a></li>
-                            <li><a href="{{ url_for("logout") }}">Cerrar Sesion</a></li>
-                            <li class="divider"></li>
+                        <li>
+                            <a class="gn-icon gn-icon-alter">Usuario</a>
+                            <ul class="gn-submenu">
+                                <li class="gn-submenu">
+                                    <a href="{{ url_for("edit_user") }}" class="gn-icon gn-icon-alter">
+                                        Editar Perfil
+                                    </a>
+                                </li>
+                                <li class="gn-submenu">
+                                    <a href="{{ url_for("edit_user") }}" class="gn-icon gn-icon-alter">
+                                        Editar Perfil
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="gn-icon gn-icon-user" href="{{ url_for("logout") }}">Cerrar Sesion</a></li>
                         {% else %}
-
                         {%endif%}
-                            <li><a href="javascript:void(0)">Privacidad</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Terminos y Condiciones</a></li>
+
+                        <li><a class="gn-icon gn-icon-alter">Help</a></li>
+                        <li>
+                            <a class="gn-icon gn-icon-alter">Archives</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-alter">Articles</a></li>
+                                <li><a class="gn-icon gn-icon-alter">Images</a></li>
+                                <li><a class="gn-icon gn-icon-alter">Videos</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </div>
+                </div>
+            </nav>
+        </li>
+        <li><a href="{{ url_for("home") }}">Unilearn</a></li>
+        <li><a href="{{ url_for("courses") }}">Cursos</a></li>
+        {% if not current_user.is_authenticated() %}
+            <li><a href="{{ url_for("login") }}"><span class="mdi-action-perm-contact-cal"></span><span>Entrar</span></a></li>
+        {% else %}
+            <li><a href="{{ url_for("user",user=current_user.username) }}">
+                <span class="mdi-action-perm-contact-cal"></span><span>Perfil</span></a>
+            </li>
+        {% endif %}
+    </ul>
+    <div id="wrap">
+            {% block main %}{% endblock %}
     </div>
-    <header>
-    {% include "header.html" %}
-    </header>
-    <div id="main" role="main" class="container">
-    {% block main %}{% endblock %}
-    </div>
-    <footer>
     {% include "footer.html" %}
-    </footer>
-    {% include "js.html" %}
-    {% block js %}{% endblock %}
+</div><!-- /container -->
+        {% include "js.html" %}
+		<script src="{{ url_for('static', filename='js/classie.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/gnmenu.js') }}"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+        {% block js %}{% endblock %}
 </body>
 </html>
