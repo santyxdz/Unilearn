@@ -19,5 +19,23 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        {% set size = max_scores|length %}
+                {% for i in range(0,size) %}
+                    <div class="course-list panel panel-primary col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{ topics[i].name}}
+                            </h3>
+                        </div>
+                    <div class="panel-body">
+                        <div class="aspect">
+                            <div class="aspect-one-one bg-full">
+                                <h3>Sacaste {{user_scores[i]}} de {{max_scores[i]}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                {% endfor %}
+    </div>
 </div>
 {% endblock %}

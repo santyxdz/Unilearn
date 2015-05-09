@@ -13,22 +13,22 @@ import encodings
 
 oauth = OAuth(app)
 twitter = oauth.remote_app('twitter',
-                           base_url=configs.tw['base_url'],
-                           request_token_url=configs.tw['request_token_url'],
-                           access_token_url=configs.tw['access_token_url'],
-                           authorize_url=configs.tw['authorize_utl'],
-                           consumer_key=configs.tw['ID'],
-                           consumer_secret=configs.tw['SECRET']
-                           )
+    base_url=configs.tw['base_url'],
+    request_token_url=configs.tw['request_token_url'],
+    access_token_url=configs.tw['access_token_url'],
+    authorize_url=configs.tw['authorize_utl'],
+    consumer_key=configs.tw['ID'],
+    consumer_secret=configs.tw['SECRET']
+    )
 facebook = oauth.remote_app('facebook',
-                            base_url='http://graph.facebook.com/',
-                            request_token_url=None,
-                            access_token_url=configs.fb['acces_token_url'],
-                            authorize_url=configs.fb['authorize_url'],
-                            consumer_key=configs.fb['id'],
-                            consumer_secret=configs.fb['secret'],
-                            request_token_params={'scope': 'email'}
-                            )
+    base_url='https://graph.facebook.com/',
+    request_token_url=None,
+    access_token_url='/oauth/access_token',
+    authorize_url='https://www.facebook.com/dialog/oauth',
+    consumer_key=configs.fb['id'],
+    consumer_secret=configs.fb['secret'],
+    request_token_params={'scope': 'email'}
+)
 
 
 from flask import make_response
@@ -234,8 +234,8 @@ def fb_login():
 
 
 @app.route('/login/fb/authorized')
-def facebook_authorized():
-    resp = facebook.authorized_response()
+@facebook.authorized_handler
+def facebook_authorized(resp):
     if resp is None:
         return 'Access denied: reason=%s error=%s' % (
             request.args['error_reason'],
@@ -299,7 +299,18 @@ def user(user):
     if isinstance(user, type(None)):
         return abort(404)
     else:
-        return render_template("user.html", user=user)
+        user_scores = [] # sorted by topic id
+        topics = models.Topic.query.all()
+        for topic in topics:
+            scores = models.UserScore.query.filter_by(user_username=user.username)
+            numbers = [x.score for x in scores if x.question.topic.id==topic.id]
+            user_scores.append(sum(numbers))
+        max_scores = [] # must be sorted by topic id too
+        for topic in topics:
+            questions = models.Question.query.filter_by(topic_id=topic.id)
+            numbers = [x.max_score for x in questions]
+            max_scores.append(sum(numbers))
+        return render_template("user.html", user=user, user_scores=user_scores, max_scores=max_scores, topics=topics)
 
 @app.route("/profile/edit", methods=['GET', 'POST'])
 @login_required
