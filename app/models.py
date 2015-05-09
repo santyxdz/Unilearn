@@ -72,6 +72,9 @@ class Topic(db.Model):
     description = db.Column(db.Text)
     icon = db.Column(db.Text)
     questions = db.relationship("Question", backref="topic", cascade='all, delete-orphan')
+    helptheory = db.relationship("HelpTheory", backref="topic", cascade='all, delete-orphan')
+    helpequation = db.relationship("HelpEquations", backref="topic", cascade="all, delete-orphan")
+
 
     def __init__(self, name, description, icon=""):
         self.name = name
@@ -235,3 +238,30 @@ class UserScore(db.Model):
 
     def __repr__(self):
         return "Score @" + self.score
+
+class HelpTheory(db.Model):
+    __tablename__ = "helptheory"
+    id = db.Column(db.Integer, unique=True, primary_key=True)
+    statement = db.Column(db.Text)
+    topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
+
+    def __init__(self, statement, topic):
+        self.statement = statement
+        self.topic = topic
+
+    def __repr__(self):
+        return "HelpTheory @" + self.topic
+
+class HelpEquations(db.Model):
+    __tablename__ = "helpequations"
+    id = db.Column(db.Integer, unique = True, primary_key=True)
+    equation = db.Column(db.Text)
+    topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
+
+    def __init__(self, equation, topic):
+        self.equation = equation
+        self.topic = topic
+
+    def __repr__(self):
+        return "HelpEquation @" + self.topic
+
