@@ -11,7 +11,7 @@
 		margin: 0;
 		padding: 0;
 		background: #009688;
-		color: #5f6f81;
+		color: #ffffff;
 		list-style: none;
 		text-transform: none;
 		font-weight: 300;
@@ -39,8 +39,8 @@
 .no-touch .gn-menu-main a:hover,
 .no-touch .gn-menu li.gn-search-item:hover,
 .no-touch .gn-menu li.gn-search-item:hover a {
-		background: #5f6f81;
-		color: white;
+		background: #ffffff;
+		color: #000000;
 }
 
 .gn-menu-main > li {
@@ -70,7 +70,7 @@
 }
 
 .gn-menu-main > li > a {
-		padding: 0 30px;
+		padding: 0 15px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-weight: bold;
@@ -107,14 +107,14 @@
 }
 
 .gn-menu {
-		border-bottom: 1px solid #c6d0da;
+		border-bottom: 1px solid rgba(255,255,255,0.4);
 		text-align: left;
 		font-size: 18px;
 }
 
 .gn-menu li:not(:first-child),
 .gn-menu li li {
-		box-shadow: 0 1px rgba(255,255,255,0.3);
+		box-shadow: 0 1px rgba(255,255,255,0.4);
 }
 
 .gn-submenu li {
@@ -136,7 +136,7 @@ input.gn-search {
 		outline: none;
 		border: none;
 		background: transparent;
-		color: #5f6f81;
+		color: #ffffff;
 		font-weight: 300;
 		font-family: 'Open Sans', sans-serif;
 		cursor: pointer;
@@ -144,19 +144,19 @@ input.gn-search {
 
 
 .gn-search::-webkit-input-placeholder {
-		color: #ffffff;
+		color: #e0e0e0;
 }
 
 .gn-search:-moz-placeholder {
-		color: #ffffff;
+		color: #e0e0e0;
 }
 
 .gn-search::-moz-placeholder {
-		color: #ffffff;
+		color: #e0e0e0;
 }
 
 .gn-search:-ms-input-placeholder {
-		color: #ffffff;
+		color: #e0e0e0;
 }
 
 
@@ -231,8 +231,8 @@ input.gn-search:focus {
 }
 
 .gn-icon-menu::before {
-		margin-left: -15px;
-		vertical-align: -2px;
+		margin-left: 0;
+		vertical-align: -3px;
 		width: 30px;
 		height: 3px;
 		background: #ffffff;
@@ -242,8 +242,8 @@ input.gn-search:focus {
 
 .no-touch .gn-icon-menu:hover::before,
 .no-touch .gn-icon-menu.gn-selected:hover::before {
-		background: #ffffff;
-		box-shadow: 0 3px transparent, 0 -6px white, 0 -9px transparent, 0 -12px white;
+		background: #000000;
+		box-shadow: 0 3px transparent, 0 -6px black, 0 -9px transparent, 0 -12px black;
 }
 
 .gn-icon-menu.gn-selected::before {
