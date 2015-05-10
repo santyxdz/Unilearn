@@ -262,5 +262,5 @@ class HelpEquations(db.Model):
         self.topic = topic
 
     def __repr__(self):
-        return "HelpEquation @" + self.topic
+        return "HelpEquation @" + self.equation
 
