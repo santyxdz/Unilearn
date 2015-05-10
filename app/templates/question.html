@@ -61,6 +61,12 @@ Unilearn | Pregunta
         padding: 3px 10px;
         border-radius: 10px;
     }
+    .equa{
+        width:100%;
+        height:400px;
+        overflow: scroll;
+
+    }
 </style>
 {% endblock %}
 {% block main %}
@@ -243,7 +249,13 @@ Unilearn | Pregunta
             <h4 class="modal-title" id="myModalLabel">Ecuaciones</h4>
           </div>
           <div class="modal-body">
-
+            <div class="equa">
+                  {%set equations = help_equation(question.topic)%}
+                  {%for equation in equations%}
+                    {{equation.equation |safe}}
+                     <hr size=1.5><br>
+                  {%endfor%}
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
