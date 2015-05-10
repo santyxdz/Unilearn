@@ -1,1 +1,17 @@
 {% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/panel.css') }}" />
+{% endblock %}
+{% block pre_main %}
+<div class="container-fluid" style="margin-top: 60px;">
+<div class="row" id="#div-title" style="background-color: #ffffff;">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11">
+        <div class="control-panel-title">
+            <h1>Panel de Control</h1>
+        </div>
+    </div>
+</div>
+{% block content %}{% endblock %}
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "panel_base.html" %}
+{% block content %}
+<div class="row" id="div-stats">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11">
+        <div class="control-panel-stats">
+            <ul>
+                <li id="num-students">
+                    <div>
+                        <span class="h1">5000</span><br/>
+                        <span class="h4">Estudiantes</span>
+                    </div>
+                </li>
+                <li id="num-teachers">
+                    <div>
+                        <span class="h1">5000</span><br/>
+                        <span class="h4">Profesores</span>
+                    </div>
+                </li>
+                <li id="num-topics">
+                    <div>
+                        <span class="h1">5000</span><br/>
+                        <span class="h4">Cursos</span>
+                    </div>
+                </li>
+                <li id="num-questions">
+                    <div>
+                        <span class="h1">5000</span><br/>
+                        <span class="h4">Preguntas</span>
+                    </div>
+                </li>
+                <li id="num-points">
+                    <div>
+                        <span class="h1">5000</span><br/>
+                        <span class="h4">Puntos de </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row" id="div-users">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <br/><span class="h4">Top Usuarios</span><hr/><br/>
+            </div>
+            <div class="row">
+            {% for user in users %}
+            <a href="{{ url_for('user',user=user.username) }}">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="aspect col-md-5">
+                        <div class="aspect-one-one bg-full"
+                             style="background-image: url('{{ set_default(user.photo,
+                                     "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png")}}');
+                                     border-radius: 50%;border:solid 1px rgba(0,0,0,0.5);margin-bottom: 1em;">
+                        </div>
+                    </div>
+                    <div class="col-md-7">@{{ user.username }}</div>
+                </div>
+            </div>
+            </a>
+            {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-6">XD</div>
+    </div>
+    </div>
+</div>
+{% endblock %}

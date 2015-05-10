@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     {% include "css.html" %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/panel.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wrap.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/component.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
     {% block css %}{% endblock %}
@@ -28,36 +28,41 @@
                             <input placeholder="Buscar..." type="search" class="gn-search">
                             <a class="gn-icon gn-icon-search"><span>Buscar</span></a>
                         </li>
+                        <li><a class="gn-icon gn-icon-user" href="{{ url_for("courses") }}"
+                                style="border-top: 1px solid rgba(255,255,255,0.3);">Cursos</a></li>
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("users") }}">Usuarios</a></li>
                         {% if current_user.is_authenticated() %}
-                        <li>
-                            <a class="gn-icon gn-icon-alter">Usuario</a>
-                            <ul class="gn-submenu">
-                                <li class="gn-submenu">
-                                    <a href="{{ url_for("edit_user") }}" class="gn-icon gn-icon-alter">
-                                        Editar Perfil
-                                    </a>
-                                </li>
-                                <li class="gn-submenu">
-                                    <a href="{{ url_for("edit_user") }}" class="gn-icon gn-icon-alter">
-                                        Editar Perfil
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="gn-icon gn-icon-user" href="{{ url_for("logout") }}">Cerrar Sesion</a></li>
-                        {% else %}
-                        {%endif%}
-
-                        <li><a class="gn-icon gn-icon-alter">Help</a></li>
+                        <li><a class="gn-icon gn-icon-user" href="{{ url_for("profile") }}">Perfil</a></li>
                         <li>
                             <a class="gn-icon gn-icon-alter">Archives</a>
                             <ul class="gn-submenu">
                                 <li><a class="gn-icon gn-icon-alter">Articles</a></li>
                                 <li><a class="gn-icon gn-icon-alter">Images</a></li>
                                 <li><a class="gn-icon gn-icon-alter">Videos</a></li>
+                                <li><a class="gn-icon gn-icon-alter">Videos</a></li>
+                                <li><a class="gn-icon gn-icon-alter">Videos</a></li>
                             </ul>
                         </li>
+                        {% else %}
+                        {%endif%}
+                        {% if current_user.is_authenticated() %}
+                        <li>
+                            <a class="gn-icon gn-icon-user" href="{{ url_for("logout") }}" style="background-color: #ff1120">
+                                Cerrar Sesion
+                            </a>
+                        </li>
+                        {% else %}
+                        <li>
+                            <a class="gn-icon gn-icon-user" href="{{ url_for("register") }}">
+                                Registrarse
+                            </a>
+                        </li>
+                        <li>
+                            <a class="gn-icon gn-icon-user" href="{{ url_for("login") }}">
+                                Iniciar Sesion
+                            </a>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
             </nav>
@@ -65,13 +70,14 @@
         <li><a href="{{ url_for("home") }}">Unilearn</a></li>
         <li><a href="{{ url_for("courses") }}">Cursos</a></li>
         {% if not current_user.is_authenticated() %}
-            <li><a href="{{ url_for("login") }}"><span class="mdi-action-perm-contact-cal"></span><span>Entrar</span></a></li>
+            <li><a href="{{ url_for("login") }}"><span>Entrar</span></a></li>
         {% else %}
             <li><a href="{{ url_for("user",user=current_user.username) }}">
-                <span class="mdi-action-perm-contact-cal"></span><span>Perfil</span></a>
+                <span>Perfil</span></a>
             </li>
         {% endif %}
     </ul>
+    {% block pre_main %}{% endblock %}
     <div class="container">
     <div id="wrap">
             {% block main %}{% endblock %}

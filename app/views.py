@@ -364,4 +364,4 @@ def edit_user():
 @app.route("/panel")
 @login_required
 def panel():
-    return render_template("panel_base.html")
+    return render_template("panel.html", users=models.User.query.all())

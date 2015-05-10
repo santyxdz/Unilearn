@@ -1,128 +1,43 @@
-body {
-	background: #212c33;
+#div-stats{
+    background-color: rgba(255,255,255,0.3);
 }
-
-#wrap,
-.unilearn-top {
-	font-family: 'Open Sans', sans-serif;
+.control-panel-title{
+    padding: 1em 0;
 }
-
-#wrap {
-	margin: 0 auto;
-	padding: 6em 0;
+.control-panel-title h1{
+    font-size: 1.5em;
+    color: #7a7a7a;
 }
-
-#wrap a {
-	color: #566473;
-	text-decoration: none;
-	outline: none;
+.control-panel-stats ul{
+    list-style-type: none;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    padding: 1em 0;
 }
-
-#wrap a:hover {
-	color: #4f7bab;
+.control-panel-stats ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5em;
+    border-left: solid 4px whitesmoke;
+    padding-left: 0.5em;
 }
-
-#wrap h1 {
-	font-size: 3.2em;
-	line-height: 1.3;
-	margin: 0;
-	font-weight: 300;
+#num-students{
+    border-left-color: #ff1120;
 }
-
-#wrap span {
-	display: block;
-	font-size: 55%;
-	color: #74818e;
-	padding: 0 0 0.6em 0.1em;
+#num-teachers{
+    border-left-color: #1c906b;
 }
-
-/* To Navigation Style */
-.unilearn-top {
-	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
-	text-transform: uppercase;
-	width: 100%;
-	font-size: 0.69em;
-	line-height: 2.2;
+#num-topics{
+    border-left-color: #ff5722;
 }
-
-.unilearn-top a {
-	text-decoration: none;
-	padding: 0 1em;
-	letter-spacing: 0.1em;
-	color: #888;
-	display: inline-block;
+#num-questions{
+    border-left-color: #4caf50;
 }
-
-.unilearn-top a:hover {
-	background: rgba(255,255,255,0.95);
-	color: #333;
+#num-points{
+    border-left-color: #03a9f4;
 }
-
-.unilearn-top span.right {
-	float: right;
-}
-
-.unilearn-top span.right a {
-	float: left;
-	display: block;
-}
-
-.unilearn-icon:before {
-	font-family: 'Material-Design-Icons';
-	margin: 0 4px;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-
-.unilearn-icon-drop:before {
-	content: "\e001";
-}
-
-.unilearn-icon-prev:before {
-	content: "\e004";
-}
-
-/* Demo Buttons Style */
-.unilearn-demos {
-	padding-top: 1em;
-	font-size: 0.9em;
-}
-
-.unilearn-demos a {
-	text-decoration: none;
-	outline: none;
-	display: inline-block;
-	margin: 0.5em;
-	padding: 0.7em 1.1em;
-	border: 3px solid #b1aea6;
-	color: #b1aea6;
-	font-weight: 700;
-}
-
-.unilearn-demos a:hover,
-.unilearn-demos a.current-demo,
-.unilearn-demos a.current-demo:hover {
-	border-color: #89867e;
-	color: #89867e;
-}
-
-@media screen and (max-width: 1025px) {
-	#wrap{
-		margin: 0 auto;
-		padding: 120px 0;
-	}
-}
-
-@media screen and (max-width: 740px) {
-
-	.unilearn-icon span {
-		display: none;
-	}
-
+hr{
+    border-top: 1px solid #555555;
 }
