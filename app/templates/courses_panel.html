@@ -1,0 +1,32 @@
+{% extends "panel_base.html" %}
+{% block content %}
+    <div class="row">
+        <br/>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Cursos</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        {% for course in courses %}
+                            <div class="list-group-item">
+                                <div class="row-picture">
+                                    <img class="circle" src="{{ course.icon }}" alt="icon" width="56" height="56">
+                                </div>
+                                <div class="row-content">
+                                    <h4 class="list-group-item-heading">{{ course.name }}</h4>
+                                    <p class="list-group-item-text">{{ course.description[:20] }}</p>
+                                </div>
+                            </div>
+                            <div class="list-group-separator"></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

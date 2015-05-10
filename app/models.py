@@ -31,6 +31,7 @@ class User(db.Model):
         self.password = password
         self.photo = photo
         self.tw_username = tw_un
+        self.type = "student"
         # self.cur_topic_id = 1
         # self.level = 1
         print "New User: " + self.__repr__()

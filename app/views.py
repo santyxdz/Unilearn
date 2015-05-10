@@ -365,3 +365,8 @@ def edit_user():
 @login_required
 def panel():
     return render_template("panel.html", users=models.User.query.all())
+
+@app.route("/panel/courses")
+@login_required
+def courses_panel():
+    return render_template("courses_panel.html", courses=models.Topic.query.all())

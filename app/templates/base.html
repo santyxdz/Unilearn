@@ -33,18 +33,22 @@
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("users") }}">Usuarios</a></li>
                         {% if current_user.is_authenticated() %}
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("profile") }}">Perfil</a></li>
+                        {% else %}
+                        {%endif%}
+                        {% if current_user.is_authenticated() and current_user.type == "admin" %}
                         <li>
-                            <a class="gn-icon gn-icon-alter">Archives</a>
+                            <a class="gn-icon gn-icon-alter" href="{{ url_for("panel") }}">Panel</a>
                             <ul class="gn-submenu">
-                                <li><a class="gn-icon gn-icon-alter">Articles</a></li>
+                                <li>
+                                    <a class="gn-icon gn-icon-alter" href="{{ url_for("courses_panel") }}">
+                                        Editar Cursos
+                                    </a>
+                                </li>
                                 <li><a class="gn-icon gn-icon-alter">Images</a></li>
-                                <li><a class="gn-icon gn-icon-alter">Videos</a></li>
-                                <li><a class="gn-icon gn-icon-alter">Videos</a></li>
                                 <li><a class="gn-icon gn-icon-alter">Videos</a></li>
                             </ul>
                         </li>
-                        {% else %}
-                        {%endif%}
+                        {% endif %}
                         {% if current_user.is_authenticated() %}
                         <li>
                             <a class="gn-icon gn-icon-user" href="{{ url_for("logout") }}" style="background-color: #ff1120">
