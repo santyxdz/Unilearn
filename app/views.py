@@ -371,3 +371,19 @@ def panel():
 @login_required
 def courses_panel():
     return render_template("courses_panel.html", courses=models.Topic.query.all())
+
+@app.route("/panel/courses/new")
+@login_required
+def new_course():
+    return render_template("new_course.html")
+
+@app.route("/panel/courses/edit/<int:course_id>")
+@login_required
+def edit_course(course_id=None):
+    if isinstance(course_id,type(None)):
+        return abort(404)
+    topic = models.Topic.query.get(course_id)
+    if isinstance(topic,type(None)):
+        return abort(404)
+    return render_template("delete_course.html", topic=topic)
+

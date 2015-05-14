@@ -59,25 +59,42 @@ class RTopic(Resource):
             return {
                 "result": True,
                 "topic": topic.name,
-                "status": "Successful, Topic is on DB"
+                "status": "Successful, Topic is on DB",
+                "id": topic.id
             }
 
-    def post(self, topic_name):
+    def post(self, topic_name=None):
+        if isinstance(topic_name,type(None)):
+            if "create" in request.form["method"]:
+                if views.is_empty(request.form["name"]):
+                    return {"status":"error",
+                            "error":"Name Empty"}
+                if self.get(request.form["name"])["result"]:
+                    return {"status":"error",
+                            "error":"Topic already exist"}
+                else:
+                    if "icon" in request.form:
+                        topic = models.Topic(request.form["name"], request.form["description"], request.form["icon"])
+                    else:
+                        topic = models.Topic(request.form["name"], request.form["description"])
+                    db.session.add(topic)
+                    db.session.commit()
+                    return {"status": "Successful, Topic Created"}
         if "update" in request.form["method"]:
             return {"result": True}
-        elif "create" in request.form["method"]:
-            if self.get(topic_name)["result"]:
-                return {"error": "Topic already exist"}
+
+        elif "delete" in request.form["method"]:
+            if self.get("topic_name")["result"]:
+                try:
+                    db.session.delete(models.Topic.query.filter_by(name=topic_name).first())
+                    db.session.commit()
+                    return {"status": "Successful, Topic Deleted"}
+                except:
+                    return {"status": "error","error":"O.o"}
             else:
-                if "icon" in request.form:
-                    topic = models.Topic(topic_name, request.form["description"], request.form["icon"])
-                else:
-                    topic = models.Topic(topic_name, request.form["description"])
-                db.session.add(topic)
-                db.session.commit()
-                return {"status": "Successful, User Created"}
+                return {"error": "Topic doesn't exist","status":"error"}
         else:
-            return {"error": "What are you trying to do?"}
+            return {"error": "What are you trying to do?","status":"error"}
 
 
 class RQuestion(Resource):
@@ -415,7 +432,7 @@ class RNextQuestion(Resource):
 
 api.add_resource(RError, '/api', "/api/")
 api.add_resource(RUser, "/api/users/<username>")
-api.add_resource(RTopic, "/api/topics/<topic_name>")
+api.add_resource(RTopic, "/api/topics/<topic_name>", "/api/topics/")
 api.add_resource(RQuestion, "/api/question/<int:question_id>", "/api/question/")
 api.add_resource(RAnswer, "/api/answer/<int:question_id>", "/api/answer/",
                  "/api/answer/<int:question_id>/<int:answer_id>")

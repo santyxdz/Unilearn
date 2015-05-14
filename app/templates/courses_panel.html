@@ -13,15 +13,17 @@
                 <div class="panel-body">
                     <div class="list-group">
                         {% for course in courses %}
-                            <div class="list-group-item">
-                                <div class="row-picture">
-                                    <img class="circle" src="{{ course.icon }}" alt="icon" width="56" height="56">
+                            <a href="{{ url_for("edit_course",course_id=course.id) }}">
+                                <div class="list-group-item">
+                                    <div class="row-picture">
+                                        <img class="circle" src="{{ course.icon }}" alt="icon" width="56" height="56">
+                                    </div>
+                                    <div class="row-content">
+                                        <h4 class="list-group-item-heading">{{ course.name }}</h4>
+                                        <p class="list-group-item-text">{{ course.description[:20] }}</p>
+                                    </div>
                                 </div>
-                                <div class="row-content">
-                                    <h4 class="list-group-item-heading">{{ course.name }}</h4>
-                                    <p class="list-group-item-text">{{ course.description[:20] }}</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="list-group-separator"></div>
                         {% endfor %}
                     </div>
