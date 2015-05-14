@@ -92,6 +92,11 @@ def help_equation(topic):
     return helps
 
 @app.template_global()
+def help_theory(topic):
+    helps = models.HelpTheory.query.filter_by(topic_id=topic.id)
+    return helps
+
+@app.template_global()
 def sort_topic(topic):
     topic.questions.sort(key=lambda x: x.id)
     return ""

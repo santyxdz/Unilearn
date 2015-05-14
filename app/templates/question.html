@@ -54,9 +54,10 @@ Unilearn | Pregunta
         line-height: inherit;
         position: absolute;
         top: -50px;
+
     }
-    .panel-equations{
-        background-color: #D8DAD9;
+    .panel-help{
+        background-color: #99A2A0;
         box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
         padding: 3px 10px;
         border-radius: 10px;
@@ -65,7 +66,14 @@ Unilearn | Pregunta
         width:100%;
         height:400px;
         overflow: scroll;
+        border-radius: 10px;
 
+    }
+    .panel-theory{
+        width:100%;
+        height:400px;
+        overflow: scroll;
+        border-radius: 10px;
     }
 </style>
 {% endblock %}
@@ -146,10 +154,10 @@ Unilearn | Pregunta
             <div class="row">
                 {% set keys = [] %} {% set values = [] %}
                 {% for answer in question.answers %}
-                    {% if keys.append(to_dic(answer.text).keys()[0]) %}
-                    {% endif %}
-                    {% if values.append(to_dic(answer.text).values()[0])%}
-                    {% endif %}
+                {% if keys.append(to_dic(answer.text).keys()[0]) %}
+                {% endif %}
+                {% if values.append(to_dic(answer.text).values()[0])%}
+                {% endif %}
                 {% endfor %}
                 {% set values = no_repeated(values) %}
                 {% for key in keys %}
@@ -166,7 +174,7 @@ Unilearn | Pregunta
             {% endif %} {% if question.type == "pairing_question" %}
             <div class="row">
                 {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %}
-		        {% for key in keys %}
+                {% for key in keys %}
                 <div class="col-sm-6">{{ key }}</div>
                 <div class="col-sm-6">
                     <select id="options" class="form-control" name="{{key}}">
@@ -187,13 +195,12 @@ Unilearn | Pregunta
 
     </div>
     <div class="row">
-            <div class="col-md-4">
-                  <input class="help" type="image" width="80" height="80" data-toggle="modal" data-target=".helps" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
-            </div>
+        <div class="col-md-4">
+            <input class="help" type="image" width="70" height="70" data-toggle="modal" data-target=".helps" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
+        </div>
     </div>
 </div>
 
-</div>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm" style="opacity: 0.93;">
     <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;" >
@@ -211,11 +218,10 @@ Unilearn | Pregunta
     </div>
   </div>
 </div>
-
 <div class="modal fade helps" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm" style="opacity: 0.93;">
-    <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
-      <div class="panel-helps"><br>
+    <div class="modal-dialog modal-sm" style="opacity: 0.93;">
+        <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+            <div class="panel-helps"><br>
 
           <center>
               <img width="70" height="70" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
@@ -239,16 +245,17 @@ Unilearn | Pregunta
           </div>
       </div>
     </div>
-  </div>
+    </div>
 </div>
 <div class="modal fade equations" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
-            <div class="panel-equations">
+            <div class="panel-help">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Ecuaciones</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal_eq">Ecuaciones de {{question.topic.name}}</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="padding:10px;">
                     <div class="equa">
                         {%set equations = help_equation(question.topic)%}
                         {%for equation in equations%}
@@ -270,7 +277,7 @@ Unilearn | Pregunta
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Mostrando un Video</h4>
+        <h4 class="modal-title" id="modal_vid">Mostrando un Video</h4>
       </div>
       <div class="modal-body">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -318,6 +325,30 @@ Unilearn | Pregunta
   </div>
 </div>
 <!-- endmodal -->
+<div class="modal fade helptheory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:60%;height:50%;">
+        <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+            <div class="panel-help">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal_th">Teoria de {{question.topic.name}}</h4>
+                </div>
+                <div class="modal-body" style="padding:10px;">
+                    <div class="panel-theory">
+                        {%set theory = help_theory(question.topic)%}
+                        {%for theory in theory%}
+                            {{theory.statement |safe}}
+                            <hr size=1.5><br>
+                        {%endfor%}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 {% block js %}
 {% if question.type == "msu_question" %}

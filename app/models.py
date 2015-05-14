@@ -93,6 +93,7 @@ class Question(db.Model):
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
     max_score = db.Column(db.Integer)
+    title = db.Column(db.String(70))
     #icon = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
