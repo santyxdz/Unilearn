@@ -412,6 +412,51 @@ class RNextQuestion(Resource):
                 "url": views.url_for("course", course=topic.name)
             }
 
+class RVideo(Resource):
+    def get(self, question_id):
+        videos = models.HelpVideos.query.filter_by(question_id=question_id)
+        list = []
+        for video in videos:
+            list.append(video.video)
+        question = models.Question.query.filter_by(id=question_id).first()
+        return dict(status=True, videos=list.__repr__(), topic=question.topic)
+
+    def post(self):
+        if "video" in request.form and "question_id" in request.form and "action" in request.form:
+            question = models.Question.query.filter_by(id=request.form["question_id"])
+            if views.is_empty(question):
+                return{
+                    "status": False,
+                    "error": "Question not found, verify again"
+                }
+            if request.form["action"] == "insert":
+                vh = models.HelpVideos(request.form["video"], request.form["question_id"])
+                db.session.add(vh)
+            elif request.form["action"] == "delete":
+                v = models.HelpVideos.query.filter_by(video_url=request.form["video"]).first()
+                if v:
+                    db.session.delete(v)
+                else:
+                    return{
+                        "status": False,
+                        "message": "This video was not found"
+                    }
+            else:
+                return{
+                    "status": False,
+                    "message": "You must say only 'insert' or 'delete'"
+                }
+            db.session.commit()
+            return{
+                "status": True,
+                "message": "Video inserted successfully"
+            }
+        else:
+            return{
+                "status": False,
+                "message": "The information provided is not correct, must have 'video', 'question_id', and 'action'"
+            }
+
 
 api.add_resource(RError, '/api', "/api/")
 api.add_resource(RUser, "/api/users/<username>")
@@ -422,3 +467,4 @@ api.add_resource(RAnswer, "/api/answer/<int:question_id>", "/api/answer/",
 api.add_resource(REvaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
 api.add_resource(RRegister, "/api/register/", "/api/register/<username>")
 api.add_resource(RNextQuestion, "/api/next/<int:topic_id>/<int:question_id>")
+api.add_resource(RVideo, "/api/video/<int:question_id>", "/api/video/")
