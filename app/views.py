@@ -302,7 +302,8 @@ def forgot_password():
 @app.route("/profile")
 @login_required
 def profile():
-    return render_template("user.html", user=current_user)
+    user(current_user)
+    # return render_template("user.html", user=current_user)
 
 @app.route("/user/<user>")
 def user(user):
@@ -370,3 +371,8 @@ def edit_user():
 @login_required
 def panel():
     return render_template("panel.html", users=models.User.query.all())
+
+@app.route("/panel/courses")
+@login_required
+def courses_panel():
+    return render_template("courses_panel.html", courses=models.Topic.query.all())

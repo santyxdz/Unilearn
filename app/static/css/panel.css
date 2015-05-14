@@ -41,3 +41,7 @@
 hr{
     border-top: 1px solid #555555;
 }
+.panel-white{
+    background-color: #ffffff;
+    padding: 1em 1em 1em 1em;
+}
