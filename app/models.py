@@ -93,10 +93,12 @@ class Question(db.Model):
     statement = db.Column(db.Text)
     image = db.Column(db.Text)
     max_score = db.Column(db.Integer)
+    title = db.Column(db.String(70))
     #icon = db.Column(db.Text)
     topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
     users = db.relationship("UserScore", backref="question", cascade='all, delete-orphan')
+    helpvideo = db.relationship("HelpVideos", backref="question", cascade='all, delete-orphan')
     __mapper_args__ = {
         'polymorphic_on': type,
         'polymorphic_identity': 'question',
@@ -265,3 +267,15 @@ class HelpEquations(db.Model):
     def __repr__(self):
         return "HelpEquation @" + self.equation
 
+class HelpVideos(db.Model):
+    __tablename__= "helpvideos"
+    id = db.Column(db.Integer, unique=True, primary_key=True)
+    video_url = db.Column(db.Text) # aqui se guarda el link
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
+
+    def __init__(self, video, question):
+        self.video_url = video
+        self.question = question
+
+    def __repr__(self):
+        return "HelpVideo (link) @" + self.video

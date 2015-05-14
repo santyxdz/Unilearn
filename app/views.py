@@ -92,6 +92,11 @@ def help_equation(topic):
     return helps
 
 @app.template_global()
+def help_theory(topic):
+    helps = models.HelpTheory.query.filter_by(topic_id=topic.id)
+    return helps
+
+@app.template_global()
 def sort_topic(topic):
     topic.questions.sort(key=lambda x: x.id)
     return ""
@@ -172,7 +177,8 @@ def course(course):
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
-    return render_template("question.html", question=question)
+    videos = models.HelpVideos.query.filter_by(question_id=question.id)
+    return render_template("question.html", question=question, videos=videos)
 
 
 @app.after_request
