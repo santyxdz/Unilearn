@@ -9,6 +9,7 @@ Unilearn | Curso de {{course.name}}
     function () {
         $.post("/api/register/", { user: "{{current_user.username}}", topic_id: {{ course.id }} }, function(data){}, "json");
         location.reload();
+        location.reload();
     });
     });
 </script>

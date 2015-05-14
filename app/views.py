@@ -297,7 +297,8 @@ def forgot_password():
 @app.route("/profile")
 @login_required
 def profile():
-    return render_template("user.html", user=current_user)
+    user(current_user)
+    # return render_template("user.html", user=current_user)
 
 @app.route("/user/<user>")
 def user(user):
