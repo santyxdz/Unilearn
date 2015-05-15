@@ -5,6 +5,7 @@ Unilearn | Pregunta
 {% endblock %}
 
 {% block css %}
+<link rel="stylesheet" type="text/css" href="../../../static/css/assets/owl.carousel.css"/>
 <style>
      .question{
          background-color: transparent;
@@ -60,7 +61,6 @@ Unilearn | Pregunta
         background-color: rgba(65, 189, 161, 0.77);
         box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
         padding: 3px 10px;
-        border-radius: 10px;
         border-radius: 10px;
         border: solid 2px rgba(255,255,255,0.15);
     }
@@ -276,51 +276,19 @@ Unilearn | Pregunta
     </div>
 </div>
 <!-- modal de los videos -->
-<div class="modal fade video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow: scroll">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="modal_vid">Mostrando un Video</h4>
+        <h4 class="modal-title" id="modal_vid">Videos de ayuda para esta pregunta:</h4>
       </div>
       <div class="modal-body">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                  {% set it=0 %}
-                  {%for video in videos %}
-                  {%if it==0 %}
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  {%endif%}
-                  {%if it!=0 %}
-                  <li data-target="#carousel-example-generic" data-slide-to="{{it}}"></li>
-                  {%endif%}
-                  {%set it=it+1 %}
-                  {%endfor%}
-              </ol>
-
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                  {% for video in videos %}
-                  <div class="item">
-                    <iframe width="560" height="315" src="{{video.video_url}}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                      <div class="carousel-caption">
-                      </div>
-                  </div>
-                  {% endfor %}
-              </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
+          <div class="videos">
+          {% for video in question.helpvideo %}
+            <iframe src="{{video.video_url}}"></iframe> <br> <br> <br>
+          {%endfor%}
           </div>
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -355,6 +323,29 @@ Unilearn | Pregunta
 </div>
 {% endblock %}
 {% block js %}
+<script src="../../../static/js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            loop: false,
+            merge: false,
+            margin: 10,
+            video: true,
+            lazyLoad: true,
+            center: true,
+            responsive:{
+                480:{
+                    items:2
+                },
+                600:{
+                    items:4
+                }
+            }
+        });
+    });
+
+</script>
 {% if question.type == "msu_question" %}
 <script type="text/javascript">
 $(document).ready(function()

@@ -162,8 +162,7 @@ def course(course):
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
-    videos = models.HelpVideos.query.filter_by(question_id=question.id)
-    return render_template("question.html", question=question, videos=videos)
+    return render_template("question.html", question=question)
 
 
 @app.after_request
