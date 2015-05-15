@@ -1,0 +1,27 @@
+{% extends "panel_base.html" %}
+{% block content %}
+<h1>{{ question.title }}</h1>
+<small>{{ question.statement }}</small>
+    <a href="{{ url_for("edit_question",course_id=question.topic.id,question_id=question.id) }}">Editar Curso</a>
+<h2>Respuestas</h2>
+    <ul>
+        {% for answer in question.answers %}
+        <li><a href="#">{{ answer.text }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for("new_question",course_id=question.id) }}">Añadir Pregunta</a>
+<h2>Teorias O.o</h2>
+    <ul>
+        {% for theory in question.helptheory %}
+        <li><a href="#">{{ theory.statement[:20] }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="#">Añadir Teoria</a>
+<h2>Equaciones</h2>
+    <ul>
+        {% for equation in question.helpequation %}
+        <li><a href="#">{{ equation.equation }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="#">Añadir Ecuacion</a>
+{% endblock %}
