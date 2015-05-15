@@ -177,8 +177,7 @@ def course(course):
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
-    videos = models.HelpVideos.query.filter_by(question_id=question.id)
-    return render_template("question.html", question=question, videos=videos)
+    return render_template("question.html", question=question)
 
 
 @app.after_request
@@ -391,5 +390,5 @@ def edit_course(course_id=None):
     topic = models.Topic.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("delete_course.html", topic=topic)
+    return render_template("edit_course.html", topic=topic)
 

@@ -287,7 +287,7 @@ Unilearn | Pregunta
               <!-- Indicators -->
               <ol class="carousel-indicators">
                   {% set it=0 %}
-                  {%for video in videos %}
+                  {%for video in question.helpvideo %}
                   {%if it==0 %}
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                   {%endif%}
@@ -300,7 +300,7 @@ Unilearn | Pregunta
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
-                  {% for video in videos %}
+                  {% for video in question.helpvideo %}
                   <div class="item">
                     <iframe width="560" height="315" src="{{video.video_url}}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                       <div class="carousel-caption">
