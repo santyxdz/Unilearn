@@ -58,7 +58,6 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("button[name=submit]").click(function () {
-                alert("Entro");
                 $.post(
                     "/api/question/",
                     {
@@ -67,7 +66,8 @@
                     statement:$("textarea#statement").val(),
                     image:$("input[name='image']:text").val(),
                     type:$('select').find(":selected").val(),
-                    max_score:$("input[name='score']:text").val()
+                    max_score:$("input[name='score']").val(),
+                    topic:"{{ topic.id }}"
                     },
                     function(data){
                         alert(data.status);

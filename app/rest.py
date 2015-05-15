@@ -158,39 +158,64 @@ class RQuestion(Resource):
                 if views.is_empty(request.form["title"]):
                     return {"status":"error2",
                             "error":"Not Valid Title"}
-                if isinstance(models.Topic.query.get(int(request.form["topic"])),type(None)):
-                    return {"status":"error3",
-                            "error":"Not Valid Topic"}
                 max_score = views.set_default(int(request.form["max_score"]), 10)
                 type_specified = request.form["type"]
-                question = None;
+                def_image = "https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-2/512/help_support_question_mark-128.png"
                 if type_specified == "msu":  # for multiple selection unique response questions
-                    question = models.MSUQuestion(request.form["title"], request.form["statement"],
+                    try:
+                        question = models.MSUQuestion(request.form["title"], request.form["statement"],
                                                   request.form["topic"], max_score)
+                        question.image = views.set_default(request.form["image"],def_image)
+                        db.session.add(question)
+                        db.session.commit()
+                        return {"status":"Question Created"}
+                    except Exception, e:
+                        return {"status":str(e)}
                 elif type_specified == "msm":  # multiple selection multiple response
-                    question = models.MSMQuestion(request.form["title"], request.form["statement"],
+                    try:
+                        question = models.MSMQuestion(request.form["title"], request.form["statement"],
                                                   request.form["topic"], max_score)
+                        question.image = views.set_default(request.form["image"],def_image)
+                        db.session.add(question)
+                        db.session.commit()
+                        return {"status":"Question Created"}
+                    except Exception, e:
+                        return {"status":str(e)}
                 elif type_specified == "completation":
-                    question = models.CompletationQuestion(request.form["title"], request.form["statement"],
+                    try:
+                        question = models.CompletationQuestion(request.form["title"], request.form["statement"],
                                                            request.form["topic"], max_score)
+                        question.image = views.set_default(request.form["image"],def_image)
+                        db.session.add(question)
+                        db.session.commit()
+                        return {"status":"Question Created"}
+                    except Exception, e:
+                        return {"status":str(e)}
                 elif type_specified == "clasification":
-                    question = models.ClasificationQuestion(request.form["title"], request.form["statement"],
+                    try:
+                        question = models.ClasificationQuestion(request.form["title"], request.form["statement"],
                                                             request.form["topic"], max_score)
+                        question.image = views.set_default(request.form["image"],def_image)
+                        db.session.add(question)
+                        db.session.commit()
+                        return {"status":"Question Created"}
+                    except Exception, e:
+                        return {"status":str(e)}
                 elif type_specified == "pairing":
-                    question = models.PairingQuestion(request.form["title"], request.form["statement"],
+                    try:
+                        question = models.PairingQuestion(request.form["title"], request.form["statement"],
                                                       request.form["topic"], max_score)
+                        question.image = views.set_default(request.form["image"],def_image)
+                        db.session.add(question)
+                        db.session.commit()
+                        return {"status":"Question Created"}
+                    except Exception, e:
+                        return {"status":str(e)}
                 else:
                     return {
                         "status": "error1",
                         "error": "type specified is not supported"
                     }
-                image = views.set_default(request.form["image"],"https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-2/512/help_support_question_mark-128.png")
-                question.image = image
-                db.session.add(question)
-                db.session.commit()
-                return {
-                    "status": "Question creation successful",
-                }
             else:
                 return {
                     "status": "error",
