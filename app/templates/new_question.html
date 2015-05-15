@@ -1,0 +1,82 @@
+{% extends "panel_base.html" %}
+{% block content %}
+<br/><br/>
+<div class="panel panel-primary" style="max-width: 700px;margin:0 auto;">
+    <div class="panel-heading">
+        <h3 class="panel-title">Añadir Nueva Pregunta</h3>
+    </div>
+    <div class="panel-body">
+        <fieldset>
+            <legend>{{ topic.name }} >>> <small>Creacion de nueva pregunta</small></legend>
+            <div class="form-group">
+                <label for="inputTitle" class="col-lg-2 control-label">Titulo</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputTitle" placeholder="Titulo" type="text" name="title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="statement" class="col-lg-2 control-label">Enunciado</label>
+                <div class="col-lg-10">
+                    <textarea class="form-control" rows="3" id="statement" placeholder="Enunciado..."></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputImagen" class="col-lg-2 control-label">Imagen</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputImagen" placeholder="Imagen" type="text" name="image">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputScore" class="col-lg-2 control-label">Puntos</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputScore" value="10" type="number" name="score">
+                </div>
+            </div>
+            <div class="form-group">
+            <label for="select" class="col-lg-2 control-label">Tipo</label>
+            <div class="col-lg-10">
+                <select class="form-control" id="type">
+                    <option value="msu">Seleccion Multiple con Unica Respuesta</option>
+                    <option value="msn">Seleccion Multiple con Multiple Respuesta</option>
+                    <option value="completation">Completacion</option>
+                    <option value="clasification">Clasificacion</option>
+                    <option value="pairing">Apareamiento</option>
+                </select>
+            </div>
+        </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button class="btn btn-default">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" name="submit">Agregar</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button[name=submit]").click(function () {
+                alert("Entro");
+                $.post(
+                    "/api/question/",
+                    {
+                    method:"create",
+                    title:$("input[name='title']:text").val(),
+                    statement:$("textarea#statement").val(),
+                    image:$("input[name='image']:text").val(),
+                    type:$('select').find(":selected").val(),
+                    max_score:$("input[name='score']:text").val()
+                    },
+                    function(data){
+                        alert(data.status);
+                        window.location.href = "{{ url_for("view_course",course_id=topic.id) }}";
+                    },
+                    "json"
+                );
+            });
+
+        });
+    </script>
+{% endblock %}

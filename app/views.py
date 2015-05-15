@@ -101,21 +101,6 @@ def sort_topic(topic):
     topic.questions.sort(key=lambda x: x.id)
     return ""
 
-
-def new_question(username, question, score):
-        user = models.User.query.filter_by(username=username).first()
-        previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
-        if isinstance(previousScore, type(None)):
-                    userscore = models.UserScore(user, question, score)
-                    db.session.add(userscore)
-                    db.session.commit()
-        else:
-            if score > previousScore.score:
-                previousScore.score = score
-                db.session.commit()
-
-
-
 @login_manager.user_loader
 def load_user(user):
     return models.User.query.get(user)
@@ -383,7 +368,7 @@ def courses_panel():
 def new_course():
     return render_template("new_course.html")
 
-@app.route("/panel/courses/edit/<int:course_id>")
+@app.route("/panel/courses/<int:course_id>/edit")
 @login_required
 def edit_course(course_id=None):
     if isinstance(course_id,type(None)):
@@ -393,3 +378,20 @@ def edit_course(course_id=None):
         return abort(404)
     return render_template("edit_course.html", topic=topic)
 
+@app.route("/panel/courses/<int:course_id>")
+def view_course(course_id=None):
+    if isinstance(course_id,type(None)):
+        return abort(404)
+    topic = models.Topic.query.get(course_id)
+    if isinstance(topic,type(None)):
+        return abort(404)
+    return render_template("view_course.html", topic=topic)
+
+@app.route("/panel/courses/<int:course_id>/question/new")
+def new_question(course_id=None):
+    if isinstance(course_id,type(None)):
+        return abort(404)
+    topic = models.Topic.query.get(course_id)
+    if isinstance(topic,type(None)):
+        return abort(404)
+    return render_template("new_question.html",topic=topic)
