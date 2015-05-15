@@ -453,9 +453,11 @@ class RVideo(Resource):
         videos = models.HelpVideos.query.filter_by(question_id=question_id)
         list = []
         for video in videos:
-            list.append(video.video_url)
+            print video.video_url
+            if video.video_url:
+                list.append(video.video_url)
         question = models.Question.query.filter_by(id=question_id).first()
-        return dict(status=True, videos=list.__repr__(), topic=question.topic)
+        return dict(status=True, videos=list, topic=question.topic)
 
     def post(self):
         if "video" in request.form and "question_id" in request.form and "action" in request.form:
