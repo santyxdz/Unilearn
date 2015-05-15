@@ -31,7 +31,7 @@ gl = {
 }
 
 secret_key = 'Unilearn-SMS-YouWillNeverGuess'
-SQLALCHEMY_DATABASE_URI = "postgres://uumeqpfnmvqyou:3_qL1AEWBrHC8XCmp5PG2bfJqF@ec2-23-21-96-129.compute-1.amazonaws.com:5432/dbtla9hjh2jsa8"
+SQLALCHEMY_DATABASE_URI = "postgres://idiwawpfwpsylb:vnrsS492ZpRsKlInkgVAceN-nR@ec2-23-21-96-129.compute-1.amazonaws.com:5432/dbtla9hjh2jsa8"
 appName = "Unilearn"
 version = "0.0.2"
 versionName = "Bulbasaur"
