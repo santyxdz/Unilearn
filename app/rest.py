@@ -84,7 +84,10 @@ class RTopic(Resource):
             return {"result": True}
 
         elif "delete" in request.form["method"]:
-            if self.get("topic_name")["result"]:
+            if isinstance(topic_name,type(None)):
+                return {"status":"Error! You can't delete a topic without a name",
+                        "error":"Not name found"}
+            if self.get(topic_name)["result"]:
                 try:
                     db.session.delete(models.Topic.query.filter_by(name=topic_name).first())
                     db.session.commit()

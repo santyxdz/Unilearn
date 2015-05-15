@@ -1,0 +1,45 @@
+{% extends "panel_base.html" %}
+{% block content %}
+    {{ topic.name }}
+    <a href="javascript:showDeleteDialog()" class="btn btn-danger">Danger</a>
+    <div class="modal deleteDialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">¿Esta seguro que desea eliminar este curso?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Toda la información de este curso sera eliminada.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" id="delete"><b>Eliminar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script>
+        function showDeleteDialog(){
+            $(".deleteDialog").modal("show")
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+                    $("button#delete").click(
+                            function(){
+                                $.post("/api/topics/"+"{{ topic.name }}",
+                                        {"method":"delete"},
+                                        function(data){
+                                            alert(data.status);
+                                            window.location.href = "/panel";
+                                        },
+                                        "json");
+                            }
+                    );
+                }
+        );
+    </script>
+{% endblock %}

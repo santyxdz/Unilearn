@@ -391,5 +391,5 @@ def edit_course(course_id=None):
     topic = models.Topic.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("delete_course.html", topic=topic)
+    return render_template("edit_course.html", topic=topic)
 
