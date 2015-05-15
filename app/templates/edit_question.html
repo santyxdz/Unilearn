@@ -6,10 +6,10 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">¿Esta seguro que desea eliminar este curso?</h4>
+                    <h4 class="modal-title">¿Esta seguro que desea eliminar esta pregunta?</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Toda la información de este curso sera eliminada.</p>
+                    <p>Toda la información de esta pregunta sera eliminada.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -28,29 +28,35 @@
                 </div>
                 <div class="panel-body">
                     <fieldset>
-                        <legend>{{ question.name }}</legend>
+                        <legend>{{ question.title }}:{{ question.type }}</legend>
                         <div class="form-group">
-                            <label for="inputName" class="col-lg-2 control-label">Nombre</label>
+                            <label for="inputTitle" class="col-lg-2 control-label">Titulo</label>
                             <div class="col-lg-10">
-                                <input class="form-control" id="inputName" value="{{ question.name }}" name="name">
+                                <input class="form-control" id="inputTitle" value="{{ question.title }}" name="title">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputIcon" class="col-lg-2 control-label">Icono</label>
+                            <label for="inputImage" class="col-lg-2 control-label">Imagen</label>
                             <div class="col-lg-10">
-                                <input class="form-control" id="inputIcon" value="{{ question.icon }}" name="icon">
+                                <input class="form-control" id="inputImage" value="{{ question.image }}" name="image">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+                            <label for="statement" class="col-lg-2 control-label">Enunciado</label>
                             <div class="col-lg-10">
-                                <textarea class="form-control" rows="3" id="description">{{ question.description }}
+                                <textarea class="form-control" rows="3" id="statement">{{ question.statement }}
                                 </textarea>
                             </div>
                         </div>
                         <div class="form-group">
+                            <label for="inputScore" class="col-lg-2 control-label">Puntos</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputScore" value="{{ question.max_score }}" type="number" name="score">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
-                                <button class="btn btn-default">Cancelar</button>
+                                <a class="btn btn-default" href="{{ url_for("view_question",course_id=question.topic_id,question_id=question.id) }}">Cancelar</a>
                                 <button type="submit" class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
                             </div>
                         </div>
@@ -72,22 +78,23 @@
         $(document).ready(function(){
                     $("button#delete").click(
                             function(){
-                                $.post("/api/questions/"+"{{ question.name }}",
+                                $.post("/api/question/"+"{{ question.id }}",
                                         {"method":"delete"},
                                         function(data){
                                             alert(data.status);
-                                            window.location.href = "/panel/courses";
+                                            window.location.href = "{{ url_for("view_course",course_id=question.topic_id) }}";
                                         },
                                         "json");
                             }
                     );
                     $("button#saveChanges").click(
                             function(){
-                                $.post("/api/questions/"+"{{ question.name }}",
+                                $.post("/api/question/"+"{{ question.id }}",
                                         {"method":"update",
-                                        "name":$("input[name=name]").val(),
-                                        "icon":$("input[name=icon]").val(),
-                                        "description":$("textarea#description").val()},
+                                            "title":$("input[name=title]").val(),
+                                            "image":$("input[name=image]").val(),
+                                            "score":$("input[name=score]").val(),
+                                            "statement":$("textarea#statement").val()},
                                         function(data){
                                             alert(data.status);
                                             window.location.href = window.location.href;

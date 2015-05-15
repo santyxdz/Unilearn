@@ -218,20 +218,44 @@ class RQuestion(Resource):
                     }
             else:
                 return {
-                    "status": "error",
+                    "status": "error2",
                     "error": "method specified is not supported"
                 }
         else: #Specific Question Methods
             question = models.Question.query.get(question_id)
             if isinstance(question,type(None)):
-                return {"status":"error",
+                return {"status":"errorA",
                         "error":"Question Not Found"}
             if "update" == request.form["method"]:
-                return {"status":True}
+                if isinstance(question_id,type(None)):
+                    return {"status":"Error! You can't update a question without a name",
+                            "error":"Not name found"}
+                if views.is_empty(request.form["title"]):
+                    return {"status":"Error! title empty",
+                            "error":"Give a fucking valid title"}
+                if not isinstance(question,type(None)):
+                    try:
+                        question.title = request.form["title"]
+                        question.image = request.form["image"]
+                        question.description = request.form["statement"]
+                        question.max_score = request.form["score"]
+                        db.session.commit()
+                        return {"status": "Successful, Topic Update"}
+                    except:
+                        return {"status": "error1","error":"O.o"}
+                else:
+                    return {"status":"error",
+                            "error":"Question Not Found"}
             elif "delete" == request.form["method"]:
-                return {"status":True}
+                try:
+                    db.session.delete(question)
+                    db.session.commit()
+                except Exception, e:
+                    return {"status":"error",
+                            "error":str(e)}
+                return {"status":"Question Deleted"}
             else:
-                return{"status":"error",
+                return{"status":"errorB",
                        "error":"Not Valid Method"}
 
 
