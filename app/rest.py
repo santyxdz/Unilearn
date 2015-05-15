@@ -81,8 +81,24 @@ class RTopic(Resource):
                     db.session.commit()
                     return {"status": "Successful, Topic Created"}
         if "update" in request.form["method"]:
-            return {"result": True}
-
+            if isinstance(topic_name,type(None)):
+                return {"status":"Error! You can't update a topic without a name",
+                        "error":"Not name found"}
+            if views.is_empty(request.form["name"]):
+                return {"status":"Error! Name empty",
+                        "error":"Give a fucking valid name"}
+            if self.get(topic_name)["result"]:
+                try:
+                    course = models.Topic.query.filter_by(name=topic_name).first()
+                    course.name = request.form["name"]
+                    course.icon = request.form["icon"]
+                    course.description = request.form["description"]
+                    db.session.commit()
+                    return {"status": "Successful, Topic Update"}
+                except:
+                    return {"status": "error1","error":"O.o"}
+            else:
+                return {"error": "Topic doesn't exist","status":"error2"}
         elif "delete" in request.form["method"]:
             if isinstance(topic_name,type(None)):
                 return {"status":"Error! You can't delete a topic without a name",
@@ -95,9 +111,9 @@ class RTopic(Resource):
                 except:
                     return {"status": "error","error":"O.o"}
             else:
-                return {"error": "Topic doesn't exist","status":"error"}
+                return {"error": "Topic doesn't exist","status":"error1"}
         else:
-            return {"error": "What are you trying to do?","status":"error"}
+            return {"error": "What are you trying to do?","status":"error2"}
 
 
 class RQuestion(Resource):
