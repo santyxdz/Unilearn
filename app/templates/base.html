@@ -7,7 +7,7 @@
     <meta name="description" content="Unilearn, Plataforma (Aplicacion) de Aprendizaje de Matematicas en Linea" />
     <meta name="keywords" content="Unilearn, Juego, Matematicas, EAFIT" />
     <meta name="author" content="Juan Daniel Arboleda, Santiago Montoya, Santiago Su&acute;rez" />
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     {% include "css.html" %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wrap.css') }}" />
@@ -33,6 +33,7 @@
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("users") }}">Usuarios</a></li>
                         {% if current_user.is_authenticated() %}
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("profile") }}">Perfil</a></li>
+                        <li><a class="gn-icon gn-icon-user" href="{{ url_for("edit_user") }}">Editar Perfil</a></li>
                         {% else %}
                         {%endif%}
                         {% if current_user.is_authenticated() and current_user.type == "admin" %}
