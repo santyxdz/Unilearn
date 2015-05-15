@@ -5,7 +5,6 @@ Unilearn | Pregunta
 {% endblock %}
 
 {% block css %}
-<link rel="stylesheet" type="text/css" href="../../../static/css/assets/owl.carousel.css"/>
 <style>
      .question{
          background-color: transparent;
@@ -243,7 +242,7 @@ Unilearn | Pregunta
               <div class="col-md-4 col-md-offset-1">
                 <input  type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".helptheory" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Design-128.png" style='...' border="0" alt="0">
                 <h3>Teoria</h3>
-                  <input  type="image" width="80" height="80" src="https://cdn2.iconfinder.com/data/icons/danger-problems/512/bankrupt-128.png" style='...' border="0" alt="0">
+                  <input  type="image" width="80" height="80" data-toggle="modal" data-dismiss="modal" data-target=".report" src="https://cdn2.iconfinder.com/data/icons/danger-problems/512/bankrupt-128.png" style='...' border="0" alt="0">
                 <h3>Reportar</h3>
               </div>
           </div>
@@ -329,18 +328,34 @@ Unilearn | Pregunta
                 <h4 class="modal-title" id="modal_th">Reporta un problema sobre esta pregunta</h4>
             </div>
             <div class="modal-body" style="padding:10px;">
+                <input type="text" class="form-control" id="inputreport" placeholder="Escribe aquí tu problema..." name="inputreport"/>
                 <!-- formulario -->
             </div>
             <div class="modal-footer">
-                <button type="button" name="sendreport" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                <button type="button" name="sendreport" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".reportsent">Enviar</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
-</div>>
+</div>
+<div class="modal fade reportsent" tabindex="-1" role="dialog" aria-labelledby="labelReport" aria-hidden="true">
+    <div class="modal-dialog" style="width:60%;height:60%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal_th">Reporte enviado</h4>
+            </div>
+            <div class="modal-body" style="padding:10px;">
+                Gracias por enviarnos tus opiniones, trabajaremos y aprenderemos de ello.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 {% block js %}
-<script src="../../../static/js/owl.carousel.min.js"></script>
 <script>
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
@@ -362,7 +377,13 @@ Unilearn | Pregunta
         });
         $("button[name=sendreport]").click(
             function(){
-
+                $.post("/api/evaluate/report/", {report: $("input[name='inputreport']:text"), question_id: {{question.id}},
+                {% if current_user.is_authenticated() %}
+                username: {{current_user.username}}
+                 {%else%}
+                 username: "testuser"
+                 {%endif%}
+                 },function(data){$('.reportsent').modal('show')}, "json");
             }
         );
     });
