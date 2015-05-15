@@ -417,7 +417,7 @@ class RVideo(Resource):
         videos = models.HelpVideos.query.filter_by(question_id=question_id)
         list = []
         for video in videos:
-            list.append(video.video)
+            list.append(video.video_url)
         question = models.Question.query.filter_by(id=question_id).first()
         return dict(status=True, videos=list.__repr__(), topic=question.topic)
 
@@ -430,7 +430,8 @@ class RVideo(Resource):
                     "error": "Question not found, verify again"
                 }
             if request.form["action"] == "insert":
-                vh = models.HelpVideos(request.form["video"], request.form["question_id"])
+                q = models.Question.query.filter_by(id=request.form["question_id"]).first()
+                vh = models.HelpVideos(request.form["video"], q)
                 db.session.add(vh)
             elif request.form["action"] == "delete":
                 v = models.HelpVideos.query.filter_by(video_url=request.form["video"]).first()
