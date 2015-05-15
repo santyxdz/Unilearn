@@ -605,6 +605,38 @@ class RHelpReport(Resource):
                     "message": "User not found!"
                 }
 
+    def post(self):
+        if "username" in request.form and "question_id" in request.form and "report" in request.form:
+            u = models.User.query.get(request.form['username'][1:len(request.form['username'])-1])
+            if u:
+                print "primer filtro pasado"
+                print request.form["question_id"][1:len(request.form['question_id'])-1]
+                q = models.Question.query.filter_by(id=request.form["question_id"][1:len(request.form['question_id'])-1]).first()
+                if q:
+                    print "Entre en q"
+                    r = models.HelpReport(request.form["report"], q, u)
+                    db.session.add(r)
+                    db.session.commit()
+                    return{
+                        "status": True,
+                        "message": "Report generated correctly!"
+                    }
+                else:
+                    return {
+                        "status": False,
+                        "message": "Question not found"
+                    }
+            else:
+                return{
+                    "status": False,
+                    "message": "User not found"
+                }
+        else:
+            return{
+                "status": False,
+                "message": "'username', 'question_id' and 'report' must be given"
+            }
+
 api.add_resource(RError, '/api', "/api/")
 api.add_resource(RUser, "/api/users/<username>")
 api.add_resource(RTopic, "/api/topics/<topic_name>", "/api/topics/")
