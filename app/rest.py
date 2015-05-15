@@ -7,6 +7,19 @@ from app import models
 from flask_login import login_user, logout_user, current_user, login_required
 import json
 
+def new_score(username, question, score):
+        user = models.User.query.filter_by(username=username).first()
+        previousScore = models.UserScore.query.filter_by(user_username=username, question_id=question.id).first()
+        if isinstance(previousScore, type(None)):
+                    userscore = models.UserScore(user, question, score)
+                    db.session.add(userscore)
+                    db.session.commit()
+        else:
+            if score > previousScore.score:
+                previousScore.score = score
+                db.session.commit()
+
+
 class RError(Resource):
     def get(self):
         return {"error": "Not Accesible"}
@@ -32,9 +45,9 @@ class RUser(Resource):
             }
 
     def post(self, username):
-        if "update" in request.form["method"]:
+        if "update" == request.form["method"]:
             return {"result": True}
-        elif "create" in request.form["method"]:
+        elif "create" == request.form["method"]:
             if self.get(username)["result"]:
                 return {"error": "Username already exist"}
             else:
@@ -65,7 +78,7 @@ class RTopic(Resource):
 
     def post(self, topic_name=None):
         if isinstance(topic_name,type(None)):
-            if "create" in request.form["method"]:
+            if "create" == request.form["method"]:
                 if views.is_empty(request.form["name"]):
                     return {"status":"error",
                             "error":"Name Empty"}
@@ -80,7 +93,7 @@ class RTopic(Resource):
                     db.session.add(topic)
                     db.session.commit()
                     return {"status": "Successful, Topic Created"}
-        if "update" in request.form["method"]:
+        if "update" == request.form["method"]:
             if isinstance(topic_name,type(None)):
                 return {"status":"Error! You can't update a topic without a name",
                         "error":"Not name found"}
@@ -99,7 +112,7 @@ class RTopic(Resource):
                     return {"status": "error1","error":"O.o"}
             else:
                 return {"error": "Topic doesn't exist","status":"error2"}
-        elif "delete" in request.form["method"]:
+        elif "delete" == request.form["method"]:
             if isinstance(topic_name,type(None)):
                 return {"status":"Error! You can't delete a topic without a name",
                         "error":"Not name found"}
@@ -139,61 +152,62 @@ class RQuestion(Resource):
                     "status": "Successfull"
                 }
 
-    def post(self):
-        question_id = request.form["id"]
-        if question_id is None:
-            if "update" in request.form["method"]:
-                return {"result": True}
-            elif "create" in request.form["method"]:
-                if "statement" in request.form and "topic" in request.form:  # and "type" in request.form:
-                    type_specified = request.form["type"]
-                    if type_specified == "msu":  # for multiple selection unique response questions
-                        question = models.MSUQuestion(request.form["statement"], request.form["topic"])
-                    elif type_specified == "msm":  # multiple selection multiple response
-                        question = models.MSMQuestion(request.form["statement"], request.form["topic"])
-                    elif type_specified == "completation":
-                        question = models.CompletationQuestion(request.form["statement"], request.form["topic"])
-                    elif type_specified == "clasification":
-                        question = models.ClasificationQuestion(request.form["statement"], request.form["topic"])
-                    elif type_specified == "pairing":
-                        question = models.PairingQuestion(request.form["statement"], request.form["topic"])
-                    else:
-                        return {
-                            "status": False,
-                            "error": "type specified is not supported"
-                        }
-                    try:
-                        question = models.Question(request.form["statement"], request.form["topic"])
-                    except Exception:
-                        return {
-                            "status": False,
-                            "message": Exception.message
-                        }
-                    # image = request.form["image"]
-                    #if image is not None:
-                    #    question.set_image(image)
-                    db.session.add(question)
-                    db.session.commit()
-                    return {
-                        "status": True,
-                        "message": "Question creation successful"
-                    }
+    def post(self, question_id=None):
+        if isinstance(question_id, type(None)):
+            if "create" == request.form["method"]:
+                if views.is_empty(request.form["title"]):
+                    return {"status":"error2",
+                            "error":"Not Valid Title"}
+                if isinstance(models.Topic.query.get(int(request.form["topic"])),type(None)):
+                    return {"status":"error3",
+                            "error":"Not Valid Topic"}
+                max_score = views.set_default(int(request.form["max_score"]), 10)
+                type_specified = request.form["type"]
+                question = None;
+                if type_specified == "msu":  # for multiple selection unique response questions
+                    question = models.MSUQuestion(request.form["title"], request.form["statement"],
+                                                  request.form["topic"], max_score)
+                elif type_specified == "msm":  # multiple selection multiple response
+                    question = models.MSMQuestion(request.form["title"], request.form["statement"],
+                                                  request.form["topic"], max_score)
+                elif type_specified == "completation":
+                    question = models.CompletationQuestion(request.form["title"], request.form["statement"],
+                                                           request.form["topic"], max_score)
+                elif type_specified == "clasification":
+                    question = models.ClasificationQuestion(request.form["title"], request.form["statement"],
+                                                            request.form["topic"], max_score)
+                elif type_specified == "pairing":
+                    question = models.PairingQuestion(request.form["title"], request.form["statement"],
+                                                      request.form["topic"], max_score)
                 else:
                     return {
-                        "status": False,
-                        "type": "PANIC",
-                        "error": "no statement or topic or type specified!"
+                        "status": "error1",
+                        "error": "type specified is not supported"
                     }
+                image = views.set_default(request.form["image"],"https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-2/512/help_support_question_mark-128.png")
+                question.image = image
+                db.session.add(question)
+                db.session.commit()
+                return {
+                    "status": "Question creation successful",
+                }
             else:
                 return {
-                    "status": False,
-                    "message": "method specified is not supported"
+                    "status": "error",
+                    "error": "method specified is not supported"
                 }
-        else:
-            return {
-                "status": False,
-                "message": "can't create a specified question, do not tell me the id!"
-            }
+        else: #Specific Question Methods
+            question = models.Question.query.get(question_id)
+            if isinstance(question,type(None)):
+                return {"status":"error",
+                        "error":"Question Not Found"}
+            if "update" == request.form["method"]:
+                return {"status":True}
+            elif "delete" == request.form["method"]:
+                return {"status":True}
+            else:
+                return{"status":"error",
+                       "error":"Not Valid Method"}
 
 
 class RAnswer(Resource):
@@ -291,7 +305,7 @@ class REvaluate(Resource):
                         result = question.validate_answer(selected[0], trueOne[0])
                         result["points"] = result["score"]*question.max_score
                         if current_user.is_authenticated():
-                            views.new_question(current_user.username, question, result["points"])
+                            new_score(current_user.username, question, result["points"])
                             if result["score"] == 0.0:
                                 user.remove_life()
                                 db.session.commit()
@@ -306,7 +320,7 @@ class REvaluate(Resource):
                         result = question.validate_answer(len(trueOne), selected_objects)
                         result["points"] = int(result["score"]*question.max_score)
                         if current_user.is_authenticated():
-                            views.new_question(current_user.username, question, result["points"])
+                            new_score(current_user.username, question, result["points"])
                             if result["score"] == 0.0:
                                 user.remove_life()
                                 db.session.commit()
@@ -319,7 +333,7 @@ class REvaluate(Resource):
                         result = question.validate_answer(selected[0])
                         result["points"] = result["score"]*question.max_score
                         if current_user.is_authenticated():
-                            views.new_question(current_user.username, question, result["points"])
+                            new_score(current_user.username, question, result["points"])
                             if result["score"] == 0.0:
                                 user.remove_life()
                                 db.session.commit()
@@ -332,7 +346,7 @@ class REvaluate(Resource):
                         result = question.validate_answer(request.form["selected"], correct)
                         result["points"] = result["score"]*question.max_score
                         if current_user.is_authenticated():
-                            views.new_question(current_user.username, question, result["points"])
+                            new_score(current_user.username, question, result["points"])
                             if result["score"] == 0.0:
                                 user.remove_life()
                                 db.session.commit()
@@ -345,7 +359,7 @@ class REvaluate(Resource):
                         result = question.validate_answer(request.form["selected"], correct)
                         result["points"] = int(result["score"]*question.max_score)
                         if current_user.is_authenticated():
-                            views.new_question(current_user.username, question, result["points"])
+                            new_score(current_user.username, question, result["points"])
                             if result["score"] == 0.0:
                                 user.remove_life()
                                 db.session.commit()

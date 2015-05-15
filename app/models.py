@@ -107,7 +107,8 @@ class Question(db.Model):
         'with_polymorphic': '*'
     }
 
-    def __init__(self, statement, topic, image="", max_score=""):
+    def __init__(self, title, statement, topic, max_score, image=""):
+        self.title = title
         self.statement = statement
         self.topic_id = topic
         self.image = image
@@ -116,10 +117,6 @@ class Question(db.Model):
 
     def __repr__(self):
         return "<Question @" + self.statement
-
-    def set_image(self, image=""):
-        if image:
-            self.image = image
 
 # Multiple Selection Unique Response
 class MSUQuestion(Question):
