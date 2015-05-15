@@ -321,6 +321,23 @@ Unilearn | Pregunta
         </div>
     </div>
 </div>
+<div class="modal fade report" tabindex="-1" role="dialog" aria-labelledby="labelReport" aria-hidden="true">
+    <div class="modal-dialog" style="width:60%;height:60%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal_th">Reporta un problema sobre esta pregunta</h4>
+            </div>
+            <div class="modal-body" style="padding:10px;">
+                <!-- formulario -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" name="sendreport" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>>
 {% endblock %}
 {% block js %}
 <script src="../../../static/js/owl.carousel.min.js"></script>
@@ -343,6 +360,11 @@ Unilearn | Pregunta
                 }
             }
         });
+        $("button[name=sendreport]").click(
+            function(){
+
+            }
+        );
     });
 
 </script>

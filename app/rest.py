@@ -535,6 +535,132 @@ class RVideo(Resource):
                 "message": "The information provided is not correct, must have 'video', 'question_id', and 'action'"
             }
 
+class RHelpReport(Resource):
+    def get(self):
+        if "question_id" in request.form and "user_username" in request.form and "report_id" in request.form:
+            return {
+                "status": False,
+                "message": "Too much information!"
+            }
+        elif "question_id" in request.form and "user_username" in request.form:
+            qs = models.Question.query.filter_by(id=request.form["question_id"])
+            q = None
+            if len(qs)>0:
+                q = qs.first()
+            else:
+                return{
+                    "status": False,
+                    "message": "Question not found"
+                }
+            us = models.User.query.filter_by(username=request.form["user_username"])
+            u = None
+            if len(us)>0:
+                u = us.first()
+            else:
+                return{
+                    "status": False,
+                    "message": "User not found"
+                }
+            reports = models.HelpReport.query.filter_by(user_username=request.form["user_username"])
+            if len(reports)>0:
+                list = []
+                for report in reports:
+                    if report.question == q:
+                        list.append(report)
+
+                return{
+                    "status": True,
+                    "reports": list
+                }
+            else:
+                return{
+                    "status": False,
+                    "message": "No reports found"
+                }
+        elif "report_id" in request.form:
+            r = models.HelpReport.query.filter_by(id=request.form["report_id"]).first()
+            if r:
+                return{
+                    "status": True,
+                    "report": r.report,
+                    "for_question": r.question.id,
+                    "by": r.user.username
+                }
+            else:
+                return {
+                    "status": False,
+                    "message": "Report not found"
+                }
+        elif "question_id" in request.form:
+            q = models.Question.query.filter_by(question_id=request.form["question_id"]).first()
+            if q:
+                reports = models.HelpReport.query.filter_by(question_id=request.form["question_id"])
+                if len(reports)>0:
+                    return{
+                        "status": True,
+                        "reports": reports
+                    }
+                else:
+                    return{
+                        "status": False,
+                        "message": "This question doesn't have reports"
+                    }
+            else:
+                return{
+                    "status": False,
+                    "message": "Question not found"
+                }
+        elif "user_username" in request.form:
+            u = models.User.query.filter_by(username=request.form["user_username"])
+            if u:
+                reports = models.HelpReport.query.filter_by(user_username=request.form["user_username"])
+                if len(reports)>0:
+                    return{
+                        "status": True,
+                        "reports": reports
+                    }
+                else:
+                    return {
+                        "status": False,
+                        "message": "This user hasn't made any reports!"
+                    }
+            else:
+                return{
+                    "status": False,
+                    "message": "User not found!"
+                }
+
+    def post(self):
+        if "username" in request.form and "question_id" in request.form and "report" in request.form:
+            u = models.User.query.get(request.form['username'][1:len(request.form['username'])-1])
+            if u:
+                print "primer filtro pasado"
+                print request.form["question_id"][1:len(request.form['question_id'])-1]
+                q = models.Question.query.filter_by(id=request.form["question_id"][1:len(request.form['question_id'])-1]).first()
+                if q:
+                    print "Entre en q"
+                    r = models.HelpReport(request.form["report"], q, u)
+                    db.session.add(r)
+                    db.session.commit()
+                    return{
+                        "status": True,
+                        "message": "Report generated correctly!"
+                    }
+                else:
+                    return {
+                        "status": False,
+                        "message": "Question not found"
+                    }
+            else:
+                return{
+                    "status": False,
+                    "message": "User not found"
+                }
+        else:
+            return{
+                "status": False,
+                "message": "'username', 'question_id' and 'report' must be given"
+            }
 
 api.add_resource(RError, '/api', "/api/")
 api.add_resource(RUser, "/api/users/<username>")
@@ -546,3 +672,4 @@ api.add_resource(REvaluate, "/api/evaluate/", "/api/evaluate/<question_id>")
 api.add_resource(RRegister, "/api/register/", "/api/register/<username>")
 api.add_resource(RNextQuestion, "/api/next/<int:topic_id>/<int:question_id>")
 api.add_resource(RVideo, "/api/video/<int:question_id>", "/api/video/")
+api.add_resource(RHelpReport, "/api/report/")

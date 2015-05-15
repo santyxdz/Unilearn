@@ -18,6 +18,7 @@ class User(db.Model):
     cur_topic_id = db.Column(db.Integer, db.ForeignKey('topic.id'))  # Curso publico actual
     cur_topic = db.relationship("Topic")
     scores = db.relationship("UserScore", backref="user", cascade='all, delete-orphan')
+    helpreport = db.relationship("HelpReport", backref="user", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
     # level = db.Column(db.Integer) # el topic que puede tomar despues de haber hecho el test de nivelacion
@@ -99,6 +100,7 @@ class Question(db.Model):
     answers = db.relationship("Answer", backref="question", cascade='all, delete-orphan')
     users = db.relationship("UserScore", backref="question", cascade='all, delete-orphan')
     helpvideo = db.relationship("HelpVideos", backref="question", cascade='all, delete-orphan')
+    helpreport = db.relationship("HelpReport", backref="question", cascade='all, delete-orphan')
     __mapper_args__ = {
         'polymorphic_on': type,
         'polymorphic_identity': 'question',
@@ -276,3 +278,18 @@ class HelpVideos(db.Model):
 
     def __repr__(self):
         return "HelpVideo (link) @" + self.video
+
+class HelpReport(db.Model):
+    __tablename__= "helpreport"
+    id = db.Column(db.Integer, unique=True, primary_key=True)
+    report = db.Column(db.Text)
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
+    user_username = db.Column(db.String(15), db.ForeignKey('user.username'))
+
+    def __init__(self, report, question, user):
+        self.report = report
+        self.question = question
+        self.user = user
+
+    def __repr__(self):
+        return "HelpReport @" + self.report
