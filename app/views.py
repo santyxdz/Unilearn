@@ -123,7 +123,7 @@ def register():
         if len(users) > 0:
             return "ERROR: El Nombre de Usuario ya esta Registrado"
         else:
-            if request.form["tw_username"]:
+            if "tw_username" in request.form:
                 user = models.User(request.form["username"], request.form["email"],
                                request.form["password"], tw_un=request.form["tw_username"])
             else:

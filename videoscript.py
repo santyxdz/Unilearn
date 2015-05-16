@@ -35,7 +35,7 @@ api_url = 'http://localhost:5000/api/video/'
 questions = app.models.Question.query.all()
 for question in questions:
   try:
-    videos = youtube_search(question.statement, 10)
+    videos = youtube_search(question.statement, 5)
     for video in videos:
         data_json = {"video": video, "question_id": question.id, "action": "insert"}
         print "Sending '%s'" % json.dumps(data_json)
