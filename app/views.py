@@ -284,12 +284,6 @@ def logout():
 def forgot_password():
     return render_template("login.html")
 
-@app.route("/profile")
-@login_required
-def profile():
-    user(current_user)
-    # return render_template("user.html", user=current_user)
-
 @app.route("/user/<user>")
 def user(user):
     user = models.User.query.filter_by(username=user).first()
