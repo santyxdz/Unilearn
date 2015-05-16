@@ -1,8 +1,32 @@
 {% extends "base.html" %}
+{% block css %}
+    <style>
+    .panel-body{
+        padding: 0;
+    }
+    </style>
+{% endblock %}
 {% block main %}
-<ul id="users-list">
+<div class="row">
 {% for user in users %}
-        <li><a href="{{ url_for("user",user=user.username) }}">{{user.username}}</a></li>
+<div class="item">
+    <a href="{{ url_for("user",user=user.username) }}">
+    <div class="course-list panel panel-primary col-xs-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                {{user.username}}
+            </h3>
+        </div>
+        <div class="panel-body">
+            <div class="aspect">
+                <div class="aspect-one-one bg-full" style="background-image: url('{{
+                        set_default(user.photo,"http://i.imgur.com/4gMfBfi.png") }}')">
+                </div>
+            </div>
+        </div>
+    </div>
+    </a>
+</div>
 {% endfor %}
-</ul>
+</div>
 {% endblock %}
