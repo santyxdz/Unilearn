@@ -378,6 +378,7 @@ def edit_course(course_id=None):
     return render_template("edit_course.html", topic=topic)
 
 @app.route("/panel/courses/<int:course_id>")
+@login_required
 def view_course(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
@@ -387,6 +388,7 @@ def view_course(course_id=None):
     return render_template("view_course.html", topic=topic)
 
 @app.route("/panel/courses/<int:course_id>/question/new")
+@login_required
 def new_question(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
@@ -396,6 +398,7 @@ def new_question(course_id=None):
     return render_template("new_question.html",topic=topic)
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>")
+@login_required
 def view_question(course_id=None,question_id=None):
     if isinstance(course_id,type(None)) or isinstance(question_id,type(None)):
         return abort(404)
@@ -405,6 +408,7 @@ def view_question(course_id=None,question_id=None):
     return render_template("view_question.html",question=question)
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>/edit")
+@login_required
 def edit_question(course_id=None,question_id=None):
     if isinstance(course_id,type(None)) or isinstance(question_id,type(None)):
         return abort(404)

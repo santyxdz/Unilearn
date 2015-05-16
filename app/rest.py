@@ -300,35 +300,48 @@ class RAnswer(Resource):
             }
 
     def post(self, question_id=None, answer_id=None):
-        if question_id is not None or answer_id is not None:
+        if isinstance(question_id,type(None)):
             return {
-                "status": False,
+                "status": "error1",
                 "error": "This doesn't make sense..."
             }
         else:
             if "create" in request.form["method"]:
                 if "text" in request.form and "state" in request.form and "question" in request.form:
                     if "image" in request.form:
-                        answer = models.Answer(request.form["state"], request.form["text"], request.form["question"],
+                        answer = models.Answer(request.form["state"], request.form["text"], question_id,
                                                request.form["image"])
                     else:
-                        answer = models.Answer(request.form["state"], request.form["text"], request.form["question"])
+                        answer = models.Answer(request.form["state"], request.form["text"], question_id)
                     db.session.add(answer)
-                    db.commit()
+                    db.session.commit()
                     return {
-                        "status": True,
-                        "message": "Answer created",
-                        "question": "And it belongs to" + answer.question_id + "question"
+                        "status": "Answer created",
                     }
                 else:
                     return {
-                        "status": False,
-                        "message": "Missing information"
+                        "status": "error2",
+                        "error": "Missing information"
+                    }
+            elif not isinstance(answer_id,type(None)):
+                if "delete" == request.form["method"]:
+                    answer = models.Answer.query.filter_by(id=answer_id,question_id=question_id).first()
+                    if isinstance(answer,type(None)):
+                        return {"status":"error","error":"Not Answer Obtained"}
+                    db.session.delete(answer)
+                    db.session.commit()
+                    return {
+                        "status": "Answer Deleted"
+                    }
+                else:
+                    return {
+                        "status": "error",
+                        "error": "Not more methods"
                     }
             else:
                 return {
-                    "status": False,
-                    "message": "method specified is not supported"
+                    "status": "error3",
+                    "error": "method specified is not supported"
                 }
 
 

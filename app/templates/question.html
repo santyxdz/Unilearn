@@ -127,7 +127,7 @@ Unilearn | Pregunta
     </div>
     <div class="panel-body">
         <div class="panel-statement">
-            <h4 class="panel-body">Enunciado</h4> {{ question.statement }} {%if question.image != "" %}
+            <h4 class="panel-body">{{ question.title }}</h4> {{ question.statement }} {%if question.image != "" %}
             <div>
                 <center>
                     <img class="round-border-ima" src={{question.image}} style='width:55%;' border="0" alt="">

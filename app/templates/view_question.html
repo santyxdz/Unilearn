@@ -1,26 +1,133 @@
 {% extends "panel_base.html" %}
 {% block content %}
-<h1>{{ question.title }}:{{ question.type }}</h1>
-<small>{{ question.statement }}</small>
+    <div class="modal addQuestionDialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Añadir Respuesta</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputAnswer" class="col-lg-2 control-label">Respuesta</label>
+                        <div class="col-lg-10">
+                            <input class="form-control" id="inputAnswer" placeholder="Respuesta..." name="answer">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="answer_state"> Esta Respuesta es Verdadera.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputImage" class="col-lg-2 control-label">Imagen</label>
+                        <div class="col-lg-10">
+                            <input class="form-control" id="inputImage" placeholder="ej: http://example.com/icon.png" name="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="add"><b>Agregar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>{{ question.title }}:{{ question.type }}</h1>
+    <small>{{ question.statement }}</small>
     <a href="{{ url_for("edit_question",course_id=question.topic.id,question_id=question.id) }}">Editar Pregunta</a>
-<h2>Respuestas</h2>
-    <ul>
-        {% for answer in question.answers %}
-        <li><a href="#">{{ answer.text }}</a></li>
-        {% endfor %}
-    </ul>
-    <a href="#">Añadir Respuesta</a>
-<h2>Videos</h2>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Respuestas</h3>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                {% for answer in question.answers %}
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        {% if answer.state %}
+                        <i class="mdi-navigation-check" style="color: #ffffff;background-color: #4caf50;"></i>
+                        {% else %}
+                        <i class="mdi-navigation-close" style="color: #ffffff;background-color: #f44336;"></i>
+                        {% endif %}
+                    </div>
+                    <div class="row-content">
+                        <div class="action-secondary">
+                            <a href="javascript:deleteAnswer({{ answer.id }})" class="btn btn-danger">
+                                <i class="mdi-navigation-close" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                        <h4 class="list-group-item-heading">{{ answer.text }}</h4>
+                        <p class="list-group-item-text">{{ answer.image }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="list-group-separator"></div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" id="add_question">Añadir Respuesta</button>
+    <h2>Videos</h2>
     <ul>
         {% for video in question.helpvideo %}
-        <li><a href="#">{{ video.url }}</a></li>
+            <li><a href="#">{{ video.url }}</a></li>
         {% endfor %}
     </ul>
     <a href="#">Añadir Video</a>
-<h2>Equaciones</h2>
+    <h2>Equaciones</h2>
     <ul>
         {% for report in question.helpreport %}
-        <li><a href="#">{{ report.user_username }}{{ report.report[:20] }}</a></li>
+            <li><a href="#">{{ report.user_username }}{{ report.report[:20] }}</a></li>
         {% endfor %}
     </ul>
+{% endblock %}
+{% block js %}
+    <script>
+        function deleteAnswer(id){
+            $.post("/api/answer/"+"{{ question.id }}"+"/"+id,
+                    {"method":"delete"},function(data){
+                        alert(data.status);
+                        window.location.href = window.location.href;
+                    },"json");
+        }
+        $(document).ready(function(){
+                    $("button#add_question").click(
+                            function(){
+                                $(".addQuestionDialog").modal("show")
+                            }
+                    );
+                    $("button#add").click(
+                            function(){
+                                $.post("/api/answer/"+"{{ question.id }}",
+                                        {"method":"create",
+                                            "state": $("#answer_state")[0].checked,
+                                            "text": $("input[name='answer']").val(),
+                                            "question": {{ question.id }},
+                                            "image":$("input[name='image']").val()
+                                        },
+                                        function(data){
+                                            alert(data.status);
+                                            window.location.href = window.location.href;
+                                        },
+                                        "json");
+                            }
+                    );
+                    $("button#saveChanges").click(
+                            function(){
+                                $.post("/api/question/"+"{{ question.id }}",
+                                        {"method":"update",
+                                            "title":$("input[name=title]").val(),
+                                            "image":$("input[name=image]").val(),
+                                            "score":$("input[name=score]").val(),
+                                            "statement":$("textarea#statement").val()},
+                                        function(data){
+                                            alert(data.status);
+                                            window.location.href = window.location.href;
+                                        },
+                                        "json");
+                            }
+                    );
+                }
+        );
+    </script>
 {% endblock %}
