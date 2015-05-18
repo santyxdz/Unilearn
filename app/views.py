@@ -101,6 +101,10 @@ def sort_topic(topic):
     topic.questions.sort(key=lambda x: x.id)
     return ""
 
+@app.template_global()
+def total_scores():
+    return sum([x.score for x in models.UserScore.query.all()])
+
 @login_manager.user_loader
 def load_user(user):
     return models.User.query.get(user)
@@ -349,7 +353,7 @@ def edit_user():
 @app.route("/panel")
 @login_required
 def panel():
-    return render_template("panel.html", users=models.User.query.all())
+    return render_template("panel.html", models=models)
 
 @app.route("/panel/courses")
 @login_required

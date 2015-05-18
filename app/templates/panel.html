@@ -7,32 +7,38 @@
                 <ul>
                     <li id="num-students">
                         <div>
-                            <span class="h1">5000</span><br/>
+                            <span class="h1">{{ models.User.query.filter_by(type="student").count() }}</span><br/>
                             <span class="h4">Estudiantes</span>
                         </div>
                     </li>
                     <li id="num-teachers">
                         <div>
-                            <span class="h1">5000</span><br/>
+                            <span class="h1">{{ models.User.query.filter_by(type="teacher").count() }}</span><br/>
                             <span class="h4">Profesores</span>
                         </div>
                     </li>
                     <li id="num-topics">
                         <div>
-                            <span class="h1">5000</span><br/>
+                            <span class="h1">{{ models.Topic.query.count() }}</span><br/>
                             <span class="h4">Cursos</span>
                         </div>
                     </li>
                     <li id="num-questions">
                         <div>
-                            <span class="h1">5000</span><br/>
+                            <span class="h1">{{ models.Question.query.count() }}</span><br/>
                             <span class="h4">Preguntas</span>
                         </div>
                     </li>
                     <li id="num-points">
                         <div>
-                            <span class="h1">5000</span><br/>
-                            <span class="h4">Puntos de </span>
+                            <span class="h1">{{ total_scores() }}</span><br/>
+                            <span class="h4">Puntos Conseguidos</span>
+                        </div>
+                    </li>
+                    <li id="num-students">
+                        <div>
+                            <span class="h1">{{ models.User.query.filter_by(type="admin").count() }}</span><br/>
+                            <span class="h4">Administradores</span>
                         </div>
                     </li>
                 </ul>
@@ -54,7 +60,7 @@
                                 <br/><span class="h4">Top Usuarios</span><hr/><br/>
                             </div>
                             <div class="row">
-                                {% for user in users %}
+                                {% for user in models.User.query.all() %}
                                     <a href="{{ url_for('user',user=user.username) }}">
                                         <div class="col-sm-4">
                                             <div class="row">
