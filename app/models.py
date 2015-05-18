@@ -86,7 +86,6 @@ class Topic(db.Model):
     def __repr__(self):
         return "<Area @" + self.name + ">"
 
-
 class Question(db.Model):
     __tablename__ = 'question'
     id = db.Column(db.Integer,  primary_key=True, unique=True)
@@ -118,7 +117,6 @@ class Question(db.Model):
     def __repr__(self):
         return "<Question @" + self.statement
 
-# Multiple Selection Unique Response
 class MSUQuestion(Question):
     __tablename__ = 'msu_question'
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
@@ -144,8 +142,6 @@ class CompletationQuestion(Question):
         else:
             return {"score": 0.0, "message": "INTENTA DE NUEVO"}
 
-
-# Multiple Selection Multiple Response
 class MSMQuestion(Question):
     __tablename__ = 'msm_question'
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
@@ -161,7 +157,6 @@ class MSMQuestion(Question):
             return {"score": score, "message": "OBTUVISTE "+str(score*100)+"% CORRECTO"}
         else:
             return {"score": 0.0, "message": "INTENTA DE NUEVO"}
-
 
 class ClasificationQuestion(Question):
     __tablename__ = 'clasification_question'
@@ -184,8 +179,6 @@ class ClasificationQuestion(Question):
             "message": "This was your punctuation"
         }
 
-
-
 class PairingQuestion(Question):
     __tablename__ = "pairing_question"
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
@@ -206,7 +199,6 @@ class PairingQuestion(Question):
             "score": ((float(correct_ans) / (float(correct_ans) + float(incorrect_ans)))),
             "message": "This was your punctuation"
         }
-
 
 class Answer(db.Model):
     id = db.Column(db.Integer, unique=True, primary_key=True)

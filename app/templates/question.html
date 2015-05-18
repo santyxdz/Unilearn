@@ -1,553 +1,571 @@
 {% extends "base.html" %}
 
 {% block title %}
-Unilearn | Pregunta
+    Unilearn | Pregunta
 {% endblock %}
 
 {% block css %}
-<style>
-     .question{
-         background-color: transparent;
-         box-shadow: none;
-    }
-    .question > .panel-body{
-        background-color: white;
-        box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+    <link rel="stylesheet"  href="{{ url_for("static",filename="slider/css/lightslider.css") }}"/>
+    <style>
+        .question{
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .question > .panel-body{
+            background-color: white;
+            box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
 
-    }
-    .panel-statement{
-        background-color: khaki;
-        box-shadow: 0 1px 6px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.8);
+        }
+        .panel-statement{
+            background-color: khaki;
+            box-shadow: 0 1px 6px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.8);
 
-        padding: 3px 10px;
-        border: khaki 5px solid;
-        border-radius: 20px;
-    }
-    .panel-user{
-        padding: 3px 10px;
-        border-radius: 20px;
-    }
-    .round-border-ima {
-        border-radius: 20% / 20%;
-        box-shadow: 0px 0px 5px #000;
-        padding:0;
-        -moz-transition: all 1s;
-        -webkit-transition: all 1s;
-        -o-transition: all 1s;
-    }
-    .panel-message{
-      background-color: #a4c639;
-      box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
-      padding: 3px 10px;
-      border-radius: 15%;
-    }
-    .panel-helps{
-      background-color: rgba(57, 198, 113, 0.89);
-      box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
-      padding: 3px 10px;
-      border-radius: 10px;
+            padding: 3px 10px;
+            border: khaki 5px solid;
+            border-radius: 20px;
+        }
+        .panel-user{
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .round-border-ima {
+            border-radius: 20% / 20%;
+            box-shadow: 0px 0px 5px #000;
+            padding:0;
+            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+        }
+        .panel-message{
+            background-color: #a4c639;
+            box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
+            padding: 3px 10px;
+            border-radius: 15%;
+        }
+        .panel-helps{
+            background-color: rgba(57, 198, 113, 0.89);
+            box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
+            padding: 3px 10px;
+            border-radius: 10px;
 
-    }
-    .help{
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-        position: absolute;
-        top: -50px;
+        }
+        .help{
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            position: absolute;
+            top: -50px;
 
-    }
-    .panel-help{
-        background-color: rgba(65, 189, 161, 0.77);
-        box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
-        padding: 3px 10px;
-        border-radius: 10px;
-        border: solid 2px rgba(255,255,255,0.15);
-    }
-    .equa{
-        background-color: #FFF;
-        width:100%;
-        height:400px;
-        overflow: scroll;
-        border-radius: 10px;
+        }
+        .panel-help{
+            background-color: rgba(65, 189, 161, 0.77);
+            box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
+            padding: 3px 10px;
+            border-radius: 10px;
+            border: solid 2px rgba(255,255,255,0.15);
+        }
+        .equa{
+            background-color: #FFF;
+            width:100%;
+            height:400px;
+            overflow: scroll;
+            border-radius: 10px;
 
-    }
-    .panel-theory{
-        background-color: #FFF;
-        width:100%;
-        height:400px;
-        overflow: scroll;
-        border-radius: 10px;
-    }
-</style>
+        }
+        .panel-theory{
+            background-color: #FFF;
+            width:100%;
+            height:400px;
+            overflow: scroll;
+            border-radius: 10px;
+        }
+    </style>
+    <style>
+        .video_modal {
+           position: relative;
+           padding-bottom: 56.25%;
+           overflow: hidden;
+        }
+        .video_modal iframe
+         {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 {% endblock %}
 {% block main %}
-{% set selected_values = []%}
-<div class="row">
-    <div class="panel-user col-md-6 col-md-offset-3 ">
-        <div class="row">
-            <div class="col-xs-5">
-                {%if current_user.is_authenticated()%}
-                    {%if current_user.life != 0 %}
-                        {%if current_user.life != 1 %}
-                            {% for num in range(0,(current_user.life/2)|int)%}
-                                <img width="30" height="30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
-                            {% endfor %}
+    {% set selected_values = []%}
+    <div class="row">
+        <div class="panel-user col-md-6 col-md-offset-3 ">
+            <div class="row">
+                <div class="col-xs-5">
+                    {%if current_user.is_authenticated()%}
+                        {%if current_user.life != 0 %}
+                            {%if current_user.life != 1 %}
+                                {% for num in range(0,(current_user.life/2)|int)%}
+                                    <img width="30" height="30" src="http://goo.gl/HsCPe8" style='...' border="0" alt="0">
+                                {% endfor %}
+                            {% endif %}
+                            {% if current_user.life % 2 != 0%}
+                                <img width="15" height="30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
+                            {% endif%}
                         {% endif %}
-                        {% if current_user.life % 2 != 0%}
-                            <img width="15" height="30" src="http://i.imgur.com/uzyDc3c.png" style='...' border="0" alt="0">
-                        {% endif%}
                     {% endif %}
-                {% endif %}
-            </div>
-            <div class="col-xs-2">
-                {%if current_user.is_authenticated()%}
-                    {%if question_made(current_user.username,question) != None%}
-                        {%if question_made(current_user.username,question) > 0 %}
-                            <img width="70" height="70" src="http://goo.gl/UcynvW" border="0">
+                </div>
+                <div class="col-xs-2">
+                    {%if current_user.is_authenticated()%}
+                        {%if question_made(current_user.username,question) != None%}
+                            {%if question_made(current_user.username,question) > 0 %}
+                                <img width="70" height="70" src="http://goo.gl/UcynvW" border="0">
+                            {% else %}
+                                <img width="70" height="70" src="http://goo.gl/bcgzZ8" border="0">
+                            {% endif %}
                         {% else %}
-                            <img width="70" height="70" src="http://goo.gl/bcgzZ8" border="0">
+                            <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
                         {% endif %}
                     {% else %}
                         <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
                     {% endif %}
-                {% else %}
-                <img width="70" height="70" src="http://goo.gl/G4awJq" border="0">
+                </div>
+                {%if current_user.is_authenticated()%}
+                    <div class="col-xs-5 least-content h3" align="right">Puntos: {{ current_user.score() }}</div>
                 {% endif %}
             </div>
-            {%if current_user.is_authenticated()%}
-            <div class="col-xs-5 least-content h3" align="right">Puntos: {{ current_user.score() }}</div>
-            {% endif %}
         </div>
     </div>
-</div>
-<br/>
-<div class="question panel panel-primary col-md-6 col-md-offset-3 ">
-    <div class="panel-heading">
-        <h3 class="panel-title">Pregunta [{{question.max_score}} puntos]</h3>
-    </div>
-    <div class="panel-body">
-        <div class="panel-statement">
-            <h4 class="panel-body">{{ question.title }}</h4> {{ question.statement }} {%if question.image != "" %}
-            <div>
-                <center>
-                    <img class="round-border-ima" src={{question.image}} style='width:55%;' border="0" alt="">
-                </center>
-            </div>
-            {% endif %}
+    <br/>
+    <div class="question panel panel-primary col-md-6 col-md-offset-3 ">
+        <div class="panel-heading">
+            <h3 class="panel-title">Pregunta [{{question.max_score}} puntos]</h3>
         </div>
-        <div id="answers">
-            {% if question.type == "msu_question" %} {% for answer in question.answers %}
-            <div class="radio radio-primary">
-                <label>
-                    <input type="radio" name="options" id="optionsRadios" value='{{answer.id}}'>{{answer.text}}
-                </label>
+        <div class="panel-body">
+            <div class="panel-statement">
+                <h4 class="panel-body">{{ question.title }}</h4> {{ question.statement }} {%if question.image != "" %}
+                <div>
+                    <center>
+                        <img class="round-border-ima" src={{question.image}} style='width:55%;' border="0" alt="">
+                    </center>
+                </div>
+            {% endif %}
             </div>
-            {% endfor %} {% endif %} {% if question.type == "msm_question" %}
-            <div class="col-sm-12">
-            {% for answer in question.answers %}
-            <div class="checkbox">
-                    <label><input type="checkbox" value="{{answer.id}}"></label>
-                    <label>{{answer.text}}</label>
-            </div>
-            {% endfor %}</div>
+            <div id="answers">
+                {% if question.type == "msu_question" %} {% for answer in question.answers %}
+                    <div class="radio radio-primary">
+                        <label>
+                            <input type="radio" name="options" id="optionsRadios" value='{{answer.id}}'>{{answer.text}}
+                        </label>
+                    </div>
+                {% endfor %} {% endif %} {% if question.type == "msm_question" %}
+                <div class="col-sm-12">
+                    {% for answer in question.answers %}
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="{{answer.id}}"></label>
+                            <label>{{answer.text}}</label>
+                        </div>
+                    {% endfor %}</div>
             {% endif %} {% if question.type == "completation_question" %}
-            <div class="inputs">
-                <br>
-                <input type="text" name="txt" class="form-control" placeholder="Respuesta">
-            </div>
+                <div class="inputs">
+                    <br>
+                    <input type="text" name="txt" class="form-control" placeholder="Respuesta">
+                </div>
             {% endif %}
-            {% if question.type == "clasification_question" %}
-            <div class="row">
-                {% set keys = [] %} {% set values = [] %}
-                {% for answer in question.answers %}
-                {% if keys.append(to_dic(answer.text).keys()[0]) %}
-                {% endif %}
-                {% if values.append(to_dic(answer.text).values()[0])%}
-                {% endif %}
-                {% endfor %}
-                {% set values = no_repeated(values) %}
-                {% for key in keys %}
-                <div class="col-sm-4">{{ key }}</div>
-                <div class="col-sm-8">
-                    <select id="options" class="form-control" name="{{key}}">
-                        {% for value in values %}
-                        <option value="{{value}}">{{ value }}</option>
+                {% if question.type == "clasification_question" %}
+                    <div class="row">
+                        {% set keys = [] %} {% set values = [] %}
+                        {% for answer in question.answers %}
+                            {% if keys.append(to_dic(answer.text).keys()[0]) %}
+                            {% endif %}
+                            {% if values.append(to_dic(answer.text).values()[0])%}
+                            {% endif %}
                         {% endfor %}
-                    </select>
-                </div>
-                {% endfor %}
-            </div>
-            {% endif %} {% if question.type == "pairing_question" %}
-            <div class="row">
-                {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %}
-                {% for key in keys %}
-                <div class="col-sm-6">{{ key }}</div>
-                <div class="col-sm-6">
-                    <select id="options" class="form-control" name="{{key}}">
-                        {% for value in values %}
-                        <option value="{{ value }}">{{ value }}</option>
+                        {% set values = no_repeated(values) %}
+                        {% for key in keys %}
+                            <div class="col-sm-4">{{ key }}</div>
+                            <div class="col-sm-8">
+                                <select id="options" class="form-control" name="{{key}}">
+                                    {% for value in values %}
+                                        <option value="{{value}}">{{ value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
                         {% endfor %}
-                    </select>
+                    </div>
+                {% endif %} {% if question.type == "pairing_question" %}
+                <div class="row">
+                    {% set keys = [] %} {% set values = [] %} {% for answer in question.answers %} {% if keys.append(to_dic(answer.text).keys()[0]) %}{% endif %} {% if values.append(to_dic(answer.text).values()[0])%}{% endif %} {% endfor %}
+                    {% for key in keys %}
+                        <div class="col-sm-6">{{ key }}</div>
+                        <div class="col-sm-6">
+                            <select id="options" class="form-control" name="{{key}}">
+                                {% for value in values %}
+                                    <option value="{{ value }}">{{ value }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
-            </div>
             {% endif %}
-        </div>
-        <div class="text-center">
-            <a href="{{url_for('course', course=question.topic.name )}}" class="btn btn-default">Volver a curso</a>
-            <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
-            <button id="send" class="btn btn-default">Siguiente</button>
-        </div>
+            </div>
+            <div class="text-center">
+                <a href="{{url_for('course', course=question.topic.name )}}" class="btn btn-default">Volver a curso</a>
+                <button type="submit" class="btn btn-primary" name="submit">Enviar</button>
+                <button id="send" class="btn btn-default">Siguiente</button>
+            </div>
 
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <input class="help" type="image" width="70" height="70" data-toggle="modal" data-target=".helps" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <input class="help" type="image" width="70" height="70" data-toggle="modal" data-target=".helps" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm" style="opacity: 0.93;">
-    <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;" >
-        <div class="panel-message"><br>
-            <center>
-                <img width="70" height="70" src="http://goo.gl/NaSTRx" style='...' border="0" alt="0">
-                <h2 class="modal-title" id="message"></h2>
-                <h3 class="modal-title" id="points"></h3>
-                <h3 class="modal-title" id="life"></h3>
-                <button id="send" class="btn btn-default" name="seguir" style="background-color: rgba(0,0,0,0);">Seguir</button>
-                <button type="submit" class="btn btn-primary" name="regresar" style="background-color: rgba(0,0,0,0);">Regresar al curso</button>
-            </center>
-        </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade helps" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm" style="opacity: 0.93;">
-        <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
-            <div class="panel-helps"><br>
-
-          <center>
-              <img width="70" height="70" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
-              <h4>¿Como puedo ayudarte?</h4>
-              <hr size=1.5 width="250"><br>
-          </center>
-          <div class = "row">
-              <div class="col-md-1"></div>
-              <div class="col-md-4">
-                  <input type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".equations" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/060-128.png" style='...' border="0" alt="0">
-                  <h3>Formulas</h3>
-                  <input type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".video" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Video-128.png" style='...' border="0" alt="0">
-                  <h3>Videos</h3>
-              </div>
-              <div class="col-md-4 col-md-offset-1">
-                <input  type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".helptheory" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Design-128.png" style='...' border="0" alt="0">
-                <h3>Teoria</h3>
-                  <input  type="image" width="80" height="80" data-toggle="modal" data-dismiss="modal" data-target=".report" src="https://cdn2.iconfinder.com/data/icons/danger-problems/512/bankrupt-128.png" style='...' border="0" alt="0">
-                <h3>Reportar</h3>
-              </div>
-          </div>
-      </div>
-    </div>
-    </div>
-</div>
-<div class="modal fade equations" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
-            <div class="panel-help">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="modal_eq">Ecuaciones de {{question.topic.name}}</h4>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="opacity: 0.93;">
+            <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;" >
+                <div class="panel-message"><br>
+                    <center>
+                        <img width="70" height="70" src="http://goo.gl/NaSTRx" style='...' border="0" alt="0">
+                        <h2 class="modal-title" id="message"></h2>
+                        <h3 class="modal-title" id="points"></h3>
+                        <h3 class="modal-title" id="life"></h3>
+                        <button id="send" class="btn btn-default" name="seguir" style="background-color: rgba(0,0,0,0);">Seguir</button>
+                        <button type="submit" class="btn btn-primary" name="regresar" style="background-color: rgba(0,0,0,0);">Regresar al curso</button>
+                    </center>
                 </div>
-                <div class="modal-body" style="padding:10px;">
-                    <div class="equa">
-                        {%set equations = help_equation(question.topic)%}
-                        {%for equation in equations%}
-                        {{equation.equation |safe}}
-                        <hr size=1.5><br>
-                        {%endfor%}
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade helps" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="opacity: 0.93;">
+            <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+                <div class="panel-helps"><br>
+
+                    <center>
+                        <img width="70" height="70" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Help.png" style='...' border="0" alt="0">
+                        <h4>¿Como puedo ayudarte?</h4>
+                        <hr size=1.5 width="250"><br>
+                    </center>
+                    <div class = "row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <input type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".equations" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/060-128.png" style='...' border="0" alt="0">
+                            <h3>Formulas</h3>
+                            <input type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".video" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Video-128.png" style='...' border="0" alt="0">
+                            <h3>Videos</h3>
+                        </div>
+                        <div class="col-md-4 col-md-offset-1">
+                            <input  type="image" width="80" data-dismiss="modal" height="80" data-toggle="modal" data-target=".helptheory" src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/Design-128.png" style='...' border="0" alt="0">
+                            <h3>Teoria</h3>
+                            <input  type="image" width="80" height="80" data-toggle="modal" data-dismiss="modal" data-target=".report" src="https://cdn2.iconfinder.com/data/icons/danger-problems/512/bankrupt-128.png" style='...' border="0" alt="0">
+                            <h3>Reportar</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- modal de los videos -->
-<div class="modal fade video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow: scroll">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="modal_vid">Videos de ayuda para esta pregunta:</h4>
-      </div>
-      <div class="modal-body">
-          <div class="videos">
-          {% for video in question.helpvideo %}
-            <iframe src="{{video.video_url}}"></iframe> <br> <br> <br>
-          {%endfor%}
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- endmodal -->
-<div class="modal fade helptheory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" style="width:60%;height:50%;">
-        <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
-            <div class="panel-help">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="modal_th">Teoria de {{question.topic.name}}</h4>
-                </div>
-                <div class="modal-body" style="padding:10px;">
-                    <div class="panel-theory">
-                        {%set theory = help_theory(question.topic)%}
-                        {%for theory in theory%}
-                            {{theory.statement |safe}}
-                            <hr size=1.5><br>
-                        {%endfor%}
+    <div class="modal fade equations" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+                <div class="panel-help">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modal_eq">Ecuaciones de {{question.topic.name}}</h4>
+                    </div>
+                    <div class="modal-body" style="padding:10px;">
+                        <div class="equa">
+                            {%set equations = help_equation(question.topic)%}
+                            {%for equation in equations%}
+                                {{equation.equation |safe}}
+                                <hr size=1.5><br>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
+           </div>
+        </div>
+    </div>
+    <!-- modal de los videos -->
+    <div class="modal fade video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow: scroll">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal_vid">Videos de ayuda para esta pregunta:</h4>
+                </div>
+                <div class="modal-body">
+                    <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                        {% for video in question.helpvideo %}
+                        <li data-thumb="//cdn2.iconfinder.com/data/icons/browsers-and-social-media/1024/Youtube-64.png">
+                            <div class="video_modal">
+                                <iframe width="640" height="360" src="{{video.video_url}}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade report" tabindex="-1" role="dialog" aria-labelledby="labelReport" aria-hidden="true">
-    <div class="modal-dialog" style="width:60%;height:60%">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="modal_th">Reporta un problema sobre esta pregunta</h4>
-            </div>
-            <div class="modal-body" style="padding:10px;">
-                <input type="text" class="form-control" id="inputreport" placeholder="Escribe aquí tu problema..." name="inputreport"/>
-                <!-- formulario -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" name="sendreport" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".reportsent">Enviar</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade reportsent" tabindex="-1" role="dialog" aria-labelledby="labelReport" aria-hidden="true">
-    <div class="modal-dialog" style="width:60%;height:60%">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="modal_th">Reporte enviado</h4>
-            </div>
-            <div class="modal-body" style="padding:10px;">
-                Gracias por enviarnos tus opiniones, trabajaremos y aprenderemos de ello.
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    <!-- endmodal -->
+    <div class="modal fade helptheory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:60%;height:50%;">
+            <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+                <div class="panel-help">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modal_th">Teoria de {{question.topic.name}}</h4>
+                    </div>
+                    <div class="modal-body" style="padding:10px;">
+                        <div class="panel-theory">
+                            {%set theory = help_theory(question.topic)%}
+                            {%for theory in theory%}
+                                {{theory.statement |safe}}
+                                <hr size=1.5><br>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="modal fade report" tabindex="-1" role="dialog" aria-labelledby="labelReport" aria-hidden="true">
+        <div class="modal-dialog" style="width:60%;height:60%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal_th">Reporta un problema sobre esta pregunta</h4>
+                </div>
+                <div class="modal-body" style="padding:10px;">
+                    <input type="text" class="form-control" id="inputreport" placeholder="Escribe aquí tu problema..." name="inputreport"/>
+                    <!-- formulario -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" name="sendreport" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".reportsent">Enviar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reportsent" tabindex="-1" role="dialog" aria-labelledby="labelReport" aria-hidden="true">
+        <div class="modal-dialog" style="width:60%;height:60%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal_th">Reporte enviado</h4>
+                </div>
+                <div class="modal-body" style="padding:10px;">
+                    Gracias por enviarnos tus opiniones, trabajaremos y aprenderemos de ello.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {% block js %}
-<script>
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            items:1,
-            loop: false,
-            merge: false,
-            margin: 10,
-            video: true,
-            lazyLoad: true,
-            center: true,
-            responsive:{
-                480:{
-                    items:2
-                },
-                600:{
-                    items:4
+    <script src="{{ url_for("static",filename="slider/js/lightslider.js") }}"></script>
+    <script>
+        $(document).ready(function() {
+                    $('#image-gallery').lightSlider({
+                        gallery:true,
+                        item:1,
+                        thumbItem:9,
+                        slideMargin: 0,
+                        speed:500,
+                        auto:true,
+                        loop:true,
+                        adaptiveHeight:true,
+                        responsive : [],
+                        onSliderLoad: function() {
+                            $('#image-gallery').removeClass('cS-hidden');
+                        }
+                    });
+                    $("button[name=sendreport]").click(
+                            function(){
+                                $.post("/api/evaluate/report/", {report: $("input[name='inputreport']:text"), question_id: {{question.id}},
+                                    {% if current_user.is_authenticated() %}
+                                        username: {{current_user.username}}
+                                                {%else%}
+                                                username: "testuser"
+                                    {%endif%}
+                            },function(data){$('.reportsent').modal('show')}, "json");
                 }
-            }
-        });
-        $("button[name=sendreport]").click(
-            function(){
-                $.post("/api/evaluate/report/", {report: $("input[name='inputreport']:text"), question_id: {{question.id}},
-                {% if current_user.is_authenticated() %}
-                username: {{current_user.username}}
-                 {%else%}
-                 username: "testuser"
-                 {%endif%}
-                 },function(data){$('.reportsent').modal('show')}, "json");
-            }
         );
-    });
-
-</script>
-{% if question.type == "msu_question" %}
-<script type="text/javascript">
-$(document).ready(function()
-{
-    $("button[name=submit]").click(function () {
-        	if( $("input[name='options']:radio").is(':checked')) {
-                $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
-                                        selected:"["+$('input:radio[name=options]:checked').val()+"]"
-                                        },function(data){
-                                            var m = data.message;
-                                            var s = data.points;
-                                            {%if current_user.is_authenticated()%}
-                                                if (s == {{question.max_score}}){
-                                                    document.getElementById("life").innerHTML = "+ 1 vida";
-                                                }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
-                                                document.getElementById("points").innerHTML = "+ "+s+" puntos";
-                                            {%else%}
-                                                document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
-                                            {% endif %}
-                                            document.getElementById("message").innerHTML = m;
-                                            $('.bs-example-modal-sm').modal('show')
-                                        },"json");
-            } else{
-                alert("Seleccione una Opción");
-            }
-    });
-});
-</script>
-{% endif %}
-
-{% if question.type == "completation_question" %}
-<script type="text/javascript">
-$(document).ready(function()
-{
-$("button[name=submit]").click(
-    function () {
-    if($("input[name='txt']:text").val() != ""){
-        $.post("{{"/api/evaluate/"+question.id|string}}",{type:"completation",
-                            selected: "[\""+$("input[name='txt']:text").val()+"\"]"
-                            },function(data){
-                               var m = data.message;
-                                var s = data.points;
-                                {%if current_user.is_authenticated()%}
-                                    if (s == {{question.max_score}}){
-                                        document.getElementById("life").innerHTML = "+ 1 vida";
-                                    }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
-                                    document.getElementById("points").innerHTML = "+ "+s+" puntos";
-                                {%else%}
-                                    document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
-                                {% endif %}
-                                document.getElementById("message").innerHTML = m;
-                                $('.bs-example-modal-sm').modal('show')
-                            },"json");
-    }
-    else{
-        alert("you must give an answer!");
-    }
-    });
-    });
-</script>
-{% endif %}
-
-{% if question.type == "clasification_question" or question.type == "pairing_question" %}
-<script type="text/javascript">
-$(document).ready(function(){
-    $("button[name=submit]").click(
-        function(){
-            var jsondata= {};
-            $.each($("select"),function(i,k){jsondata[k.name]=k.value});
-            var answer_given = JSON.stringify(jsondata);
-            $.post(
-                "{{"/api/evaluate/" + question.id|string}}",
-
-                {% if question.type == "clasification_question" %}
-                {"type":"clasification",
-
-                {%else %}
-                {"type":"pairing",
-
-                {%endif%}
-
-                "selected":answer_given},
-                function(data){
-                    var m = data.message;
-                    var s = data.points;
-                    {%if current_user.is_authenticated()%}
-                    if (s == {{question.max_score}}){
-                        document.getElementById("life").innerHTML = "+ 1 vida";
-                    }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
-                    document.getElementById("points").innerHTML = "+ "+s+" puntos";
-                    {%else%}
-                    document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
-                    {% endif %}
-                    document.getElementById("message").innerHTML = m;
-                    $('.bs-example-modal-sm').modal('show')
-                },
-                "json"
-            );
-        }
-    );
-}
-);
-</script>
-{% endif %}
-
-{% if question.type == "msm_question" %}
-<script type="text/javascript">
-$(document).ready(function(){
-    $("button[name=submit]").click(function(){
-        var a = "[";
-        $("input:checkbox:checked").each(function(){
-            a+=$(this).val();
-            a+=", "
         });
-        a = a.substring(0,a.length-2)+"]";
-        if(a.length<2){
-            a = "[]";
-        }
-        $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msm",
-            selected:a},function(data){
-                 var m = data.message;
-                var s = data.points;
-                {%if current_user.is_authenticated()%}
-                    if (s == {{question.max_score}}){
-                        document.getElementById("life").innerHTML = "+ 1 vida";
-                    }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
-                    document.getElementById("points").innerHTML = "+ "+s+" puntos";
-                {%else%}
-                    document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
-                {% endif %}
-                document.getElementById("message").innerHTML = m;
-                $('.bs-example-modal-sm').modal('show')
 
-            },"json");
-    });
-});
-</script>
-{% endif %}
-<script type="text/javascript">
-$(document).ready(function(){
-    $("button#send").click(
-        function(){
-            $.getJSON("{{
-            "/api/next/"+question.topic_id|string+"/"+question.id|string }}",
-            function(data){
-                var url = data["url"];
-                window.location.href = url;
+    </script>
+    {% if question.type == "msu_question" %}
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("button[name=submit]").click(function () {
+                    if( $("input[name='options']:radio").is(':checked')) {
+                        $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msu",
+                            selected:"["+$('input:radio[name=options]:checked').val()+"]"
+                        },function(data){
+                            var m = data.message;
+                            var s = data.points;
+                            {%if current_user.is_authenticated()%}
+                                if (s == {{question.max_score}}){
+                                    document.getElementById("life").innerHTML = "+ 1 vida";
+                                }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                                document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                            {%else%}
+                                document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                            {% endif %}
+                            document.getElementById("message").innerHTML = m;
+                            $('.bs-example-modal-sm').modal('show')
+                        },"json");
+                    } else{
+                        alert("Seleccione una Opción");
+                    }
                 });
-        }
-    );
-    $(".bs-example-modal-sm").click(
-        function(){
-            location.reload();
-        }
-    );
-}
-);
-</script>
+            });
+        </script>
+    {% endif %}
+
+    {% if question.type == "completation_question" %}
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("button[name=submit]").click(
+                        function () {
+                            if($("input[name='txt']:text").val() != ""){
+                                $.post("{{"/api/evaluate/"+question.id|string}}",{type:"completation",
+                                    selected: "[\""+$("input[name='txt']:text").val()+"\"]"
+                                },function(data){
+                                    var m = data.message;
+                                    var s = data.points;
+                                    {%if current_user.is_authenticated()%}
+                                        if (s == {{question.max_score}}){
+                                            document.getElementById("life").innerHTML = "+ 1 vida";
+                                        }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                                        document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                                    {%else%}
+                                        document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                                    {% endif %}
+                                    document.getElementById("message").innerHTML = m;
+                                    $('.bs-example-modal-sm').modal('show')
+                                },"json");
+                            }
+                            else{
+                                alert("you must give an answer!");
+                            }
+                        });
+            });
+        </script>
+    {% endif %}
+
+    {% if question.type == "clasification_question" or question.type == "pairing_question" %}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                        $("button[name=submit]").click(
+                                function(){
+                                    var jsondata= {};
+                                    $.each($("select"),function(i,k){jsondata[k.name]=k.value});
+                                    var answer_given = JSON.stringify(jsondata);
+                                    $.post(
+                                            "{{"/api/evaluate/" + question.id|string}}",
+
+                                            {% if question.type == "clasification_question" %}
+                                                {"type":"clasification",
+
+                                            {%else %}
+                                                {"type":"pairing",
+
+                                            {%endif%}
+
+                                    "selected":answer_given},
+                                    function(data){
+                                        var m = data.message;
+                                        var s = data.points;
+                                        {%if current_user.is_authenticated()%}
+                                            if (s == {{question.max_score}}){
+                                                document.getElementById("life").innerHTML = "+ 1 vida";
+                                            }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                                            document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                                        {%else%}
+                                            document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                                        {% endif %}
+                                        document.getElementById("message").innerHTML = m;
+                                        $('.bs-example-modal-sm').modal('show')
+                                    },
+                                    "json"
+                                    );
+                                }
+                        );
+                    }
+            );
+        </script>
+    {% endif %}
+
+    {% if question.type == "msm_question" %}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("button[name=submit]").click(function(){
+                    var a = "[";
+                    $("input:checkbox:checked").each(function(){
+                        a+=$(this).val();
+                        a+=", "
+                    });
+                    a = a.substring(0,a.length-2)+"]";
+                    if(a.length<2){
+                        a = "[]";
+                    }
+                    $.post("{{"/api/evaluate/"+question.id|string}}",{type:"msm",
+                        selected:a},function(data){
+                        var m = data.message;
+                        var s = data.points;
+                        {%if current_user.is_authenticated()%}
+                            if (s == {{question.max_score}}){
+                                document.getElementById("life").innerHTML = "+ 1 vida";
+                            }else if(s == 0){ document.getElementById("life").innerHTML = "- 1 vida";}
+                            document.getElementById("points").innerHTML = "+ "+s+" puntos";
+                        {%else%}
+                            document.getElementById("points").innerHTML = "Registrate para ver tu progreso";
+                        {% endif %}
+                        document.getElementById("message").innerHTML = m;
+                        $('.bs-example-modal-sm').modal('show')
+
+                    },"json");
+                });
+            });
+        </script>
+    {% endif %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+                    $("button#send").click(
+                            function(){
+                                $.getJSON("{{
+            "/api/next/"+question.topic_id|string+"/"+question.id|string }}",
+                                        function(data){
+                                            var url = data["url"];
+                                            window.location.href = url;
+                                        });
+                            }
+                    );
+                    $(".bs-example-modal-sm").click(
+                            function(){
+                                location.reload();
+                            }
+                    );
+                }
+        );
+    </script>
 {% endblock %}
