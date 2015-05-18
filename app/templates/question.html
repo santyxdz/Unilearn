@@ -142,12 +142,15 @@ Unilearn | Pregunta
                     <input type="radio" name="options" id="optionsRadios" value='{{answer.id}}'>{{answer.text}}
                 </label>
             </div>
-            {% endfor %} {% endif %} {% if question.type == "msm_question" %} {% for answer in question.answers %}
+            {% endfor %} {% endif %} {% if question.type == "msm_question" %}
+            <div class="col-sm-12">
+            {% for answer in question.answers %}
             <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="{{answer.id}}">{{answer.text}}</label>
+                    <label><input type="checkbox" value="{{answer.id}}"></label>
+                    <label>{{answer.text}}</label>
             </div>
-            {% endfor %} {% endif %} {% if question.type == "completation_question" %}
+            {% endfor %}</div>
+            {% endif %} {% if question.type == "completation_question" %}
             <div class="inputs">
                 <br>
                 <input type="text" name="txt" class="form-control" placeholder="Respuesta">
