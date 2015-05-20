@@ -306,7 +306,9 @@
                         {% for video in question.helpvideo %}
                         <li data-thumb="//cdn2.iconfinder.com/data/icons/browsers-and-social-media/1024/Youtube-64.png">
                             <div class="video_modal">
-                                <iframe width="640" height="360" src="//www.youtube.com/embed/{{video.video_url}}" frameborder="0" allowfullscreen></iframe>
+                                <a href="//youtu.be/{{video.video_url}}" target="_blank">
+                                    <img src="//i.ytimg.com/vi/{{video.video_url}}/hqdefault.jpg" />
+                                </a>
                             </div>
                         </li>
                         {%endfor%}
