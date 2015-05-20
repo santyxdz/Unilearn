@@ -302,14 +302,14 @@
                     <h4 class="modal-title" id="modal_vid">Videos de ayuda para esta pregunta:</h4>
                 </div>
                 <div class="modal-body">
-                    <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <ul id="image-gallery" class="gallery list-unstyled" style="min-height: 400px;">
                         {% for video in question.helpvideo %}
-                        <li data-thumb="//cdn2.iconfinder.com/data/icons/browsers-and-social-media/1024/Youtube-64.png">
-                            <div class="video_modal">
+                        <li data-thumb="//i.ytimg.com/vi/{{video.video_url}}/1.jpg">
+                           <!-- <div class="video_modal">-->
                                 <a href="//youtu.be/{{video.video_url}}" target="_blank">
-                                    <img src="//i.ytimg.com/vi/{{video.video_url}}/hqdefault.jpg" />
+                                    <img src="//i.ytimg.com/vi/{{video.video_url}}/hqdefault.jpg" class="img-responsive" />
                                 </a>
-                            </div>
+                            <!--</div>-->
                         </li>
                         {%endfor%}
                     </ul>
@@ -384,20 +384,20 @@
     <script src="{{ url_for("static",filename="slider/js/lightslider.js") }}"></script>
     <script>
         $(document).ready(function() {
-                    $('#image-gallery').lightSlider({
-                        gallery:true,
-                        item:1,
-                        thumbItem:9,
-                        slideMargin: 0,
-                        speed:500,
-                        auto:true,
-                        loop:true,
-                        adaptiveHeight:true,
-                        responsive : [],
-                        onSliderLoad: function() {
-                            $('#image-gallery').removeClass('cS-hidden');
-                        }
-                    });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                vertical:true,
+                verticalHeight:360,
+                vThumbWidth:64,
+                thumbItem:8,
+                thumbMargin:4,
+                slideMargin:0
+            });
+        });
+
+        $(document).ready(function() {
+
                     $("button[name=sendreport]").click(
                             function(){
                                 $.post("/api/evaluate/report/", {report: $("input[name='inputreport']:text"), question_id: {{question.id}},
