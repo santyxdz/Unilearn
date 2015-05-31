@@ -1,15 +1,11 @@
 # -*- coding: utf8 -*-
 from flask import Flask, g, url_for, request, render_template, flash, json, session
 import flask
-from flask import redirect, render_template, abort
+from flask import redirect, render_template, abort, send_from_directory
 from flask_login import login_user, logout_user, current_user, login_required
 from flask_oauthlib.client import OAuth, OAuthException
-import requests
 from app import models, app, configs, login_manager
 from app import db
-
-import encodings
-
 
 oauth = OAuth(app)
 twitter = oauth.remote_app('twitter',
@@ -121,22 +117,24 @@ def home():
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
-    error = None
-    if request.method == "POST":
-        users = models.User.query.filter_by(username=flask.request.form["username"].lower()).all()
-        if len(users) > 0:
-            return "ERROR: El Nombre de Usuario ya esta Registrado"
-        else:
-            if "tw_username" in request.form:
-                user = models.User(request.form["username"], request.form["email"],
-                               request.form["password"], tw_un=request.form["tw_username"])
+    if request.method == 'POST':
+        if request.form["cpassword"]!=request.form["password"]:
+            return render_template("register.html", error=u"Las contraseñas no coinciden")
+        if request.method == "POST":
+            users = models.User.query.filter_by(username=request.form["username"].lower()).all()
+            if len(users) > 0:
+                return render_template("register.html", error=u"El nombre de usuario ya se encuentra registrado")
             else:
-                user = models.User(request.form["username"], request.form["email"],
-                               request.form["password"])
-            user.life = 10
-            db.session.add(user)
-            db.session.commit()
-            return redirect(flask.url_for("home"))
+                if "tw_username" in request.form:
+                    user = models.User(request.form["username"], request.form["email"],
+                                   request.form["password"], tw_un=request.form["tw_username"])
+                else:
+                    user = models.User(request.form["username"], request.form["email"],
+                                   request.form["password"])
+                user.life = 9
+                db.session.add(user)
+                db.session.commit()
+                return redirect(url_for("home"))
     return render_template("register.html")
 
 
@@ -180,10 +178,14 @@ def add_header(response):
 def page_not_found(error):
     return render_template('404.html'), 404
 
+@app.route('/static/<path:path>')
+def send_image(path):
+    return send_from_directory('static', path)
+"""
 @app.errorhandler(401)
-def page_not_found(error): #Pagina de Error: Acceso Denegado
+def not_access(error): #Pagina de Error: Acceso Denegado
     return redirect(url_for("login"))
-
+"""
 # Twitter Stuff!
 # ******************************
 

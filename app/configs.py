@@ -35,3 +35,9 @@ SQLALCHEMY_DATABASE_URI = "postgres://idiwawpfwpsylb:vnrsS492ZpRsKlInkgVAceN-nR@
 appName = "Unilearn"
 version = "0.0.2"
 versionName = "Bulbasaur"
+
+
+images = {
+    "question_mark":"http://i.imgur.com/7DlGzLH.png",
+
+}
