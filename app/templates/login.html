@@ -7,17 +7,21 @@
     <p>{{ error }}</p>
 </div>
     {% endif %}
+<div class="row">
     <div class="col-lg-6 col-lg-offset-3 text-center" style="margin-top: 1em;margin-bottom: 3em">
         <img src="http://i.imgur.com/QNKJHrt.png" alt="Logotipo" height="150dp" style="display: inline-block"/>
     </div>
-    <div class="col-lg-6 col-lg-offset-3">
+</div>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
         <div class="well bs-component">
             <form class="form-horizontal" action="{{ url_for("login")}}" method="post">
                 <fieldset>
                     <legend class="text-center">Inicio de sesión</legend>
                     <div class="form-group">
-                        <label for="inputEmail" class="col-lg-2 control-label">Usuario</label>
-                        <div class="col-lg-10">
+                        <label for="inputEmail" class="col-sm-2 control-label">Usuario</label>
+                        <div class="col-sm-10">
                             {% if username %}
                                 <input type="text" class="form-control" id="inputUsername" placeholder="username"
                                        name="username" value="{{ username }}" required/>
@@ -28,20 +32,21 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputEmail" class="col-lg-2 control-label">Contraseña</label>
-                        <div class="col-lg-10">
+                        <label for="inputEmail" class="col-sm-2 control-label">Contraseña</label>
+                        <div class="col-sm-10">
                             <input type="password" class="form-control" id="inputEmail" placeholder="contraseña"
                                    name="password" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-lg-10 col-lg-offset-2 text-center">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10 text-center">
                             <button type="submit" class="btn btn-primary">Entrar</button>
-                            <a href="{{ url_for("register") }}" class="btn btn-default">Registarse</a>
-                            <br/><a class="btn btn-default" href="{{url_for("forgot_password")}}">Contraseña Olvidada</a>
+                            <a href="{{ url_for("register") }}" class="btn btn-success" style="color: #fff;">Registarse</a>
+                            <br/><a class="btn btn-default smoke-light" href="{{url_for("forgot_password")}}">Contraseña Olvidada</a>
                         </div>
                         <hr/>
-                        <div class="col-sm-2 text-center" style="font-weight: bold;">Redes Sociales</div>
+                        <div class="col-sm-2 text-center" style="font-weight: bold;">Con Redes Sociales</div>
                         <div class="col-sm-10">
                             <div class="row">
                                 <div class="col-sm-2"></div>
@@ -80,4 +85,6 @@
             </form>
         </div>
     </div>
+    <div class="col-lg-3"></div>
+</div>
 {% endblock %}
