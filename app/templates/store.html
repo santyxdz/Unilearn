@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}
+Unilearn | Tienda
+{% endblock %}
+
+{% block css %}
+<style>
+
+</style>
+{% endblock %}
+
+{%  block main %}
+<div class="row">
+    <div class="text-center">
+        <img  src="https://cdn1.iconfinder.com/data/icons/financial-colored-icons-vol-1/128/105-128.png" style='...' border="0" alt="0"><br>
+        <label class="btn btn-success">Nuestros Paquetes</label>
+    </div><br>
+    <div class="course-list panel panel-primary col-xs-6 col-md-4">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">Monedas</h3>
+            </div>
+            <div class="panel-body" style="background-color: rgba(255, 255, 255, 0.24);">
+                <div class="col-md-6">
+                    <center><img width="110" height="110" src="https://cdn3.iconfinder.com/data/icons/business-icons-4/128/coins-128.png" style='...' border="0" alt="0"></center><br>
+                </div>
+                <div class="col-md-6">
+                    <p>Contiene </p>
+                    <span class="badge badge-warning" style="background-color: rgba(45, 206, 87, 0.76);">100 Coins</span><br>
+                    <span class="badge badge-warning" style="background-color: rgb(239, 199, 94);">Por 1.5$</span>
+                    <button class="btn btn-danger" type="submit" id="buycoins" name="buycoins">Comprar</button>
+                </div>
+            </div>
+    </div>
+    <div class="course-list panel panel-primary col-xs-6 col-md-4">
+            <div class="panel-heading">
+                <h3 class="panel-title">Vidas</h3>
+            </div>
+            <div class="panel-body" style="background-color: rgba(255, 255, 255, 0.24);">
+                <div class="col-md-6">
+                     <center><img  width="110" height="110" src="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/heart-128.png" style='...' border="0" alt="0"></center><br>
+                </div>
+                <div class="col-md-6">
+                    <p>Contiene </p>
+                    <span class="badge badge-warning" style="background-color: rgba(45, 206, 87, 0.76);">10 vidas</span><br>
+                    <span class="badge badge-warning" style="background-color: rgb(239, 199, 94);">Por 1.5$</span>
+                    <button class="btn btn-danger" type="submit" id="buylife" name="buylife">Comprar</button>
+                </div>
+            </div>
+    </div>
+    <div class="course-list panel panel-primary col-xs-6 col-md-4   ">
+            <div class="panel-heading">
+                <h3 class="panel-title">Maestro</h3>
+            </div>
+            <div class="panel-body" style="background-color: rgba(255, 255, 255, 0.24);">
+                <div class="col-md-6">
+                    <center><img  width="110" height="110" src="https://cdn0.iconfinder.com/data/icons/school-medicine-people-1/110/Teacher-128.png" style='...' border="0" alt="0"></center><br>
+                    <span class="badge badge-warning" style="background-color: rgb(239, 199, 94);">Por 1.5$</span>
+                    <button class="btn btn-danger" type="submit" id="newteacher" name="newteacher">Comprar</button>
+                </div>
+                <div class="col-md-6">
+                    <em><p align="justify">Conviértete en un profesor, podrás crear cursos y unir estudiantes o usuarios a este. Además podrás ver las estadísticas de progreso de tus alumnos </p></em>
+
+                </div>
+            </div>
+    </div>
+
+</div>
+
+{% endblock %}
