@@ -19,8 +19,5 @@ itsdangerous==0.24
 psycopg2==2.5.4
 requests==2.4.3
 wsgiref==0.1.2
-facebook-sdk==0.4.0
-oauthlib==0.7.2
-Flask-OAuthlib==0.9.1
-google-api-python-client==1.4.0
 rauth==0.7.1
+urllib3==1.10.4
