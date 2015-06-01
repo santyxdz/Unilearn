@@ -342,7 +342,6 @@ def oauth_authorize(provider):
 
 @app.route('/callback/<provider>')
 def oauth_callback(provider):
-    return "Hola"
     if not current_user.is_anonymous():
         return redirect(url_for('index'))
     oauth = OAuthSignIn.get_provider(provider)
@@ -351,11 +350,11 @@ def oauth_callback(provider):
         flash('Authentication failed.')
         return redirect(url_for('index'))
     user = models.User.query.filter_by(social_id=social_id).first()
-    #if not user:
+    if not user:
         #return redirect(url_for("register",username=username,social_id=social_id,email=email))
-    return "<p>"+social_id+"<br/>"+username+"<br/>"+set_default(email,"Twitter")+"</p>"
+        return "<p>"+social_id+"<br/>"+username+"<br/>"+set_default(email,"Twitter")+"</p>"
         #user = models.User(social_id=social_id, username=username, email=email)
         #db.session.add(user)
         #db.session.commit()
-    #login_user(user, True)
-    #return redirect(url_for('home'))
+    login_user(user, True)
+    return redirect(url_for('home'))
