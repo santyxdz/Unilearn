@@ -338,10 +338,13 @@ def edit_question(course_id=None,question_id=None):
 #SOCIAL WORKING LOGIN!
 @app.route('/authorize/<provider>')
 def oauth_authorize(provider):
-    if not current_user.is_anonymous():
-        return redirect(url_for('index'))
-    oauth = OAuthSignIn.get_provider(provider)
-    return oauth.authorize()
+    try:
+        if not current_user.is_anonymous():
+            return redirect(url_for('index'))
+        oauth = OAuthSignIn.get_provider(provider)
+        return oauth.authorize()
+    except Exception as e:
+        return unicode(e)
 
 @app.route('/callback/<provider>')
 def oauth_callback(provider):
