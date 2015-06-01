@@ -134,6 +134,9 @@ def users():
     users_list = models.User.query.all()
     return render_template("users.html", users=users_list)
 
+@app.route("/store")
+def store():
+    return render_template("store.html")
 
 @app.route("/courses")
 @nocache
