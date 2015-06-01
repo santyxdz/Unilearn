@@ -3,7 +3,6 @@ from flask import Flask, g, url_for, request, flash, json, session,\
     redirect, render_template, abort, send_from_directory
 from flask_login import login_user, logout_user, current_user, login_required
 from sqlalchemy.exc import IntegrityError
-from flask_oauthlib.client import OAuth, OAuthException
 from app import models, app, configs, login_manager
 from app import db
 from oauth import OAuthSignIn
