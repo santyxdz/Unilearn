@@ -22,17 +22,21 @@
 		h3{
 			font-family: 'Open Sans', sans-serif;
 		}
+		#gn-menu{
+			background-color: rgba(0,0,0,0);
+		}
 	</style>
 {% endblock %}
 {% block  pre_main %}
 	<div class="aspect">
-		<div class="aspect-sixteen-nine bg-full visible-lg visible-md" style="background-image: url('http://i.imgur.com/juHnH2m.jpg')">
+		<div class="aspect-sixteen-nine bg-full" style="background-image: url('http://i.imgur.com/juHnH2m.jpg')">
 			<div>
 				<div class="col-sm-2"></div>
 				<div class="col-sm-8">
 					<div class="center">
 						<h1 style="color: #ffffff">Unilearn</h1>
-						<div style="background-color: rgba(255,255,255,0.7);border-radius: 4em;padding: 0.5em;">
+						<div style="background-color: rgba(255,255,255,0.7);border-radius: 4em;padding: 0.5em;"
+						class="visible-lg visible-md">
 							<h3>Made in Medellín, Colombia with <b style="color: red">&#9829;</b></h3>
 							<div id="imgs" style="bottom: 0;">
 								<img src="http://i.imgur.com/sk5HQ4X.png" height="64" width="64" alt="Python"/>
@@ -54,7 +58,7 @@
 							</div>
 							<h3>and more...</h3>
 						</div>
-						<div>
+						<div class="visible-lg visible-md visible-sm">
 							<br/>
 							<br/>
 							<a href="{{ url_for("login") }}" class="btn btn-primary btn-lg">Entrar</a>
@@ -94,6 +98,36 @@
 	</div>
 {% endblock %}
 {% block js %}
+	<script>
+	window.onscroll = fadeNav;
+
+	function fadeNav(){
+		var offset = getScrollXY();
+		offset[1] > 0 ? setNavOpacity("rgb(0,150,136)") : setNavOpacity("rgba(0,0,0,0)");
+	}
+	function setNavOpacity(newOpacity){
+		var navBar = document.getElementById("gn-menu");
+		navBar.style.backgroundColor = newOpacity;
+		//navBar.style.opacity = newOpacity;
+	}
+	function getScrollXY() {
+	  var scrOfX = 0, scrOfY = 0;
+	  if( typeof( window.pageYOffset ) == 'number' ) {
+		//Netscape compliant
+		scrOfY = window.pageYOffset;
+		scrOfX = window.pageXOffset;
+	  } else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
+		//DOM compliant
+		scrOfY = document.body.scrollTop;
+		scrOfX = document.body.scrollLeft;
+	  } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+		//IE6 standards compliant mode
+		scrOfY = document.documentElement.scrollTop;
+		scrOfX = document.documentElement.scrollLeft;
+	  }
+	  return [ scrOfX, scrOfY ];
+	}
+	</script>
     {% if reload %}
 		<script>
 			$( document ).ready(function() {
