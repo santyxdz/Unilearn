@@ -1,17 +1,16 @@
 from app import db
 from app import app
 from json import loads
+from flask_login import UserMixin
 
 app.config['SECURITY_POST_LOGIN'] = '/profile'
 
 
-class User(db.Model):
+class User(UserMixin, db.Model):
     username = db.Column(db.String(15), unique=True, primary_key=True)
     first_name = db.Column(db.String(150))
     last_name = db.Column(db.String(200))
-    tw_username = db.Column(db.String(200))
-    # fb_id = db.Column(db.String(250))
-    # gl_username = db.Column(db.String(250))
+    social_id = db.Column(db.String(100), unique=True)
     email = db.Column(db.String(300), unique=True)
     password = db.Column(db.String(300))
     photo = db.Column(db.Text)

@@ -1,30 +1,12 @@
 # -*- coding: utf8 -*-
-from flask import Flask, g, url_for, request, render_template, flash, json, session
-import flask
-from flask import redirect, render_template, abort, send_from_directory
+from flask import Flask, g, url_for, request, flash, json, session,\
+    redirect, render_template, abort, send_from_directory
 from flask_login import login_user, logout_user, current_user, login_required
+from sqlalchemy.exc import IntegrityError
 from flask_oauthlib.client import OAuth, OAuthException
 from app import models, app, configs, login_manager
 from app import db
-
-oauth = OAuth(app)
-twitter = oauth.remote_app('twitter',
-    base_url=configs.tw['base_url'],
-    request_token_url=configs.tw['request_token_url'],
-    access_token_url=configs.tw['access_token_url'],
-    authorize_url=configs.tw['authorize_utl'],
-    consumer_key=configs.tw['ID'],
-    consumer_secret=configs.tw['SECRET']
-    )
-facebook = oauth.remote_app('facebook',
-    base_url='https://graph.facebook.com/',
-    request_token_url=None,
-    access_token_url='/oauth/access_token',
-    authorize_url='https://www.facebook.com/dialog/oauth',
-    consumer_key=configs.fb['id'],
-    consumer_secret=configs.fb['secret'],
-    request_token_params={'scope': 'email'}
-)
+from oauth import OAuthSignIn
 
 
 from flask import make_response
@@ -106,7 +88,7 @@ def load_user(user):
     return models.User.query.get(user)
 
 
-
+@app.route("/home")
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
@@ -117,6 +99,9 @@ def home():
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
+    username = request.args.get('username')
+    social_id = request.args.get('social_id')
+    email = request.args.get('email')
     if request.method == 'POST':
         if request.form["cpassword"]!=request.form["password"]:
             return render_template("register.html", error=u"Las contraseñas no coinciden")
@@ -125,17 +110,22 @@ def register():
             if len(users) > 0:
                 return render_template("register.html", error=u"El nombre de usuario ya se encuentra registrado")
             else:
-                if "tw_username" in request.form:
+                if "social_id" in request.form:
                     user = models.User(request.form["username"], request.form["email"],
-                                   request.form["password"], tw_un=request.form["tw_username"])
+                                   request.form["password"])
+                    user.social_id = social_id=request.form["social_id"]
                 else:
                     user = models.User(request.form["username"], request.form["email"],
                                    request.form["password"])
                 user.life = 9
-                db.session.add(user)
-                db.session.commit()
+                try:
+                    db.session.add(user)
+                    db.session.commit()
+                    login_user(user)
+                except IntegrityError:
+                    return render_template("register.html",error="El correo seleccionado ya correcponde a otro usuario")
                 return redirect(url_for("home"))
-    return render_template("register.html")
+    return render_template("register.html",username=username,social_id=social_id,email=email)
 
 
 @app.route("/users")
@@ -186,79 +176,6 @@ def send_image(path):
 def not_access(error): #Pagina de Error: Acceso Denegado
     return redirect(url_for("login"))
 """
-# Twitter Stuff!
-# ******************************
-
-@twitter.tokengetter
-def get_twitter_token():
-    if 'twitter_oauth' in session:
-        resp = session['twitter_oauth']
-        return resp['oauth_token'], resp['oauth_token_secret']
-
-
-@app.before_request
-def before_request():
-    g.user = None
-    if 'twitter_oauth' in session:
-        g.user = session['twitter_oauth']
-
-
-@app.route('/login/tw')
-def tw_login():
-    callback_url = url_for('oauthorized', next=request.args.get('next'))
-    return twitter.authorize(callback=callback_url or request.referrer or None)
-
-@app.route('/login/tw/authorized')
-def oauthorized():
-    resp = twitter.authorized_response()
-    if resp is None:
-        flash('You denied the request to sign in')
-    else:
-        session['twitter_oauth'] = resp
-    users = models.User.query.filter_by(tw_username=resp['screen_name'].lower()).all()
-    print len(users)
-    if len(users) > 0:
-        cur_user = users[0]
-        login_user(cur_user)
-        flash('You were logged in')
-        return redirect(url_for("home"))
-
-    return render_template("register.html", username=resp['screen_name'], tw_username=resp['screen_name'])
-
-# FB Stuff!
-# *************************************
-
-@app.route('/login/fb')
-def fb_login():
-    callback = url_for('facebook_authorized', next=request.args.get('next') or request.referrer or None,
-                       _external=True)
-    return facebook.authorize(callback=callback)
-
-
-@app.route('/login/fb/authorized')
-@facebook.authorized_handler
-def facebook_authorized(resp):
-    if resp is None:
-        return 'Access denied: reason=%s error=%s' % (
-            request.args['error_reason'],
-            request.args['error_description']
-        )
-    if isinstance(resp, OAuthException):
-        return 'Access denied %s' % resp.message
-
-    session['oauth_token'] = (resp['access_token'], '')
-    me = facebook.get('/me')
-    return 'logged in as id=%s name=%s redirect=%s' % (
-        me.data['id'], me.data['name'], request.args.get('next')
-    )
-
-
-@facebook.tokengetter
-def get_facebook_oauth_token():
-    return session.get('oauth_token')
-
-# Log-in with forms!
-# *******************************************
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -284,7 +201,6 @@ def logout():
     logout_user()
     session.pop('user', None)
     return redirect(url_for('home'))
-
 
 @app.route("/forgot_password")
 def forgot_password():
@@ -416,3 +332,30 @@ def edit_question(course_id=None,question_id=None):
     if isinstance(question,type(None)):
         return abort(404)
     return render_template("edit_question.html",question=question)
+
+#SOCIAL WORKING LOGIN!
+@app.route('/authorize/<provider>')
+def oauth_authorize(provider):
+    if not current_user.is_anonymous():
+        return redirect(url_for('index'))
+    oauth = OAuthSignIn.get_provider(provider)
+    return oauth.authorize()
+
+@app.route('/callback/<provider>')
+def oauth_callback(provider):
+    if not current_user.is_anonymous():
+        return redirect(url_for('index'))
+    oauth = OAuthSignIn.get_provider(provider)
+    social_id, username, email = oauth.callback()
+    if social_id is None:
+        flash('Authentication failed.')
+        return redirect(url_for('index'))
+    user = models.User.query.filter_by(social_id=social_id).first()
+    if not user:
+        return redirect(url_for("register",username=username,social_id=social_id,email=email))
+        #return "<p>"+social_id+"<br/>"+username+"<br/>"+set_default(email,"Twitter")+"</p>"
+        #user = models.User(social_id=social_id, username=username, email=email)
+        #db.session.add(user)
+        #db.session.commit()
+    login_user(user, True)
+    return redirect(url_for('home'))
