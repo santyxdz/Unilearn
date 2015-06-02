@@ -7,7 +7,6 @@
     <meta name="description" content="Unilearn, Plataforma (Aplicacion) de Aprendizaje de Matematicas en Linea" />
     <meta name="keywords" content="Unilearn, Juego, Matematicas, EAFIT" />
     <meta name="author" content="Juan Daniel Arboleda, Santiago Montoya, Santiago Su&acute;rez" />
-    <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     {% include "css.html" %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wrap.css') }}" />
@@ -34,6 +33,7 @@
                         {% if current_user.is_authenticated() %}
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("user",user=current_user.username) }}">Perfil</a></li>
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("edit_user") }}">Editar Perfil</a></li>
+                        <li><a class="gn-icon gn-icon-user" href="{{ url_for("store") }}">Tienda</a></li>
                         {% else %}
                         {%endif%}
                         {% if current_user.is_authenticated() and current_user.type == "admin" %}
@@ -61,7 +61,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="gn-icon gn-icon-user" href="{{ url_for("login") }}">
+                            <a class="gn-icon gn-icon-login" href="{{ url_for("login") }}">
                                 Iniciar Sesion
                             </a>
                         </li>
@@ -73,6 +73,7 @@
         <li><a href="{{ url_for("home") }}">Unilearn</a></li>
         <li><a href="{{ url_for("courses") }}">Cursos</a></li>
         {% if not current_user.is_authenticated() %}
+            <li style="float: right"><a href="{{ url_for("register") }}"><span>Registrase</span></a></li>
             <li><a href="{{ url_for("login") }}"><span>Entrar</span></a></li>
         {% else %}
             <li><a href="{{ url_for("user",user=current_user.username) }}">
@@ -85,8 +86,8 @@
     <div id="wrap">
             {% block main %}{% endblock %}
     </div>
-    {% include "footer.html" %}
 </div><!-- /container -->
+    {% include "footer.html" %}
         {% include "js.html" %}
 		<script src="{{ url_for('static', filename='js/classie.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/gnmenu.js') }}"></script>

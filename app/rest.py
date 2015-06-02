@@ -6,6 +6,7 @@ from app import views
 from app import models
 from flask_login import login_user, logout_user, current_user, login_required
 import json
+import configs
 
 def new_score(username, question, score):
         user = models.User.query.filter_by(username=username).first()
@@ -22,10 +23,14 @@ def new_score(username, question, score):
 
 class RError(Resource):
     def get(self):
-        return {"error": "Not Accesible"}
+        return {
+        "status": "error",
+        "error": "Not Accesible"}
 
     def put(self):
-        return {"error": "Not Accesible"}
+        return {
+        "status": "error",
+        "error": "Not Accesible"}
 
 
 class RUser(Resource):
@@ -49,14 +54,17 @@ class RUser(Resource):
             return {"result": True}
         elif "create" == request.form["method"]:
             if self.get(username)["result"]:
-                return {"error": "Username already exist"}
+                return {
+                "status": "error",
+                "error": "Username already exist"}
             else:
                 user = models.User(username, request.form["email"], request.form["password"])
                 db.session.add(user)
                 db.session.commit()
                 return {"status": "Successful, User Created"}
         else:
-            return {"error": "What are you trying to do?"}
+            return {"status":"error",
+            "error": "What are you trying to do?"}
 
 
 class RTopic(Resource):
@@ -86,20 +94,24 @@ class RTopic(Resource):
                     return {"status":"error",
                             "error":"Topic already exist"}
                 else:
-                    if "icon" in request.form:
-                        topic = models.Topic(request.form["name"], request.form["description"], request.form["icon"])
-                    else:
-                        topic = models.Topic(request.form["name"], request.form["description"])
-                    db.session.add(topic)
-                    db.session.commit()
-                    return {"status": "Successful, Topic Created"}
+                    try:
+                        if "icon" in request.form:
+                            topic = models.Topic(request.form["name"], request.form["description"], request.form["icon"])
+                        else:
+                            topic = models.Topic(request.form["name"], request.form["description"])
+                        db.session.add(topic)
+                        db.session.commit()
+                        return {"status": "Successful, Topic Created"}
+                    except Exception as e:
+                        return {"status": "error",
+                                "error" : unicode(e)}
         if "update" == request.form["method"]:
             if isinstance(topic_name,type(None)):
-                return {"status":"Error! You can't update a topic without a name",
-                        "error":"Not name found"}
+                return {"status":"error",
+                        "error":"Not name found, You can't update a topic without a name"}
             if views.is_empty(request.form["name"]):
-                return {"status":"Error! Name empty",
-                        "error":"Give a fucking valid name"}
+                return {"status":"error",
+                        "error":"Name empty, Give a fucking valid name"}
             if self.get(topic_name)["result"]:
                 try:
                     course = models.Topic.query.filter_by(name=topic_name).first()
@@ -108,25 +120,25 @@ class RTopic(Resource):
                     course.description = request.form["description"]
                     db.session.commit()
                     return {"status": "Successful, Topic Update"}
-                except:
-                    return {"status": "error1","error":"O.o"}
+                except Exception as e:
+                    return {"status": "error","error":unicode(e)}
             else:
-                return {"error": "Topic doesn't exist","status":"error2"}
+                return {"status":"error","error": "Topic doesn't exist"}
         elif "delete" == request.form["method"]:
             if isinstance(topic_name,type(None)):
-                return {"status":"Error! You can't delete a topic without a name",
-                        "error":"Not name found"}
+                return {"status":"error",
+                        "error":"Not name found, You can't delete a topic without a name"}
             if self.get(topic_name)["result"]:
                 try:
                     db.session.delete(models.Topic.query.filter_by(name=topic_name).first())
                     db.session.commit()
                     return {"status": "Successful, Topic Deleted"}
-                except:
-                    return {"status": "error","error":"O.o"}
+                except Exception as e:
+                    return {"status": "error","error":unicode(e)}
             else:
-                return {"error": "Topic doesn't exist","status":"error1"}
+                return {"status":"error","error": "Topic doesn't exist"}
         else:
-            return {"error": "What are you trying to do?","status":"error2"}
+            return {"status":"error","error": "What are you trying to do?"}
 
 
 class RQuestion(Resource):
@@ -156,83 +168,72 @@ class RQuestion(Resource):
         if isinstance(question_id, type(None)):
             if "create" == request.form["method"]:
                 if views.is_empty(request.form["title"]):
-                    return {"status":"error2",
+                    return {"status":"error",
                             "error":"Not Valid Title"}
                 max_score = views.set_default(int(request.form["max_score"]), 10)
                 type_specified = request.form["type"]
-                def_image = "https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-2/512/help_support_question_mark-128.png"
-                if type_specified == "msu":  # for multiple selection unique response questions
-                    try:
-                        question = models.MSUQuestion(request.form["title"], request.form["statement"],
-                                                  request.form["topic"], max_score)
-                        question.image = views.set_default(request.form["image"],def_image)
-                        db.session.add(question)
-                        db.session.commit()
-                        return {"status":"Question Created"}
-                    except Exception, e:
-                        return {"status":str(e)}
-                elif type_specified == "msm":  # multiple selection multiple response
-                    try:
-                        question = models.MSMQuestion(request.form["title"], request.form["statement"],
-                                                  request.form["topic"], max_score)
-                        question.image = views.set_default(request.form["image"],def_image)
-                        db.session.add(question)
-                        db.session.commit()
-                        return {"status":"Question Created"}
-                    except Exception, e:
-                        return {"status":str(e)}
-                elif type_specified == "completation":
-                    try:
-                        question = models.CompletationQuestion(request.form["title"], request.form["statement"],
-                                                           request.form["topic"], max_score)
-                        question.image = views.set_default(request.form["image"],def_image)
-                        db.session.add(question)
-                        db.session.commit()
-                        return {"status":"Question Created"}
-                    except Exception, e:
-                        return {"status":str(e)}
-                elif type_specified == "clasification":
-                    try:
-                        question = models.ClasificationQuestion(request.form["title"], request.form["statement"],
-                                                            request.form["topic"], max_score)
-                        question.image = views.set_default(request.form["image"],def_image)
-                        db.session.add(question)
-                        db.session.commit()
-                        return {"status":"Question Created"}
-                    except Exception, e:
-                        return {"status":str(e)}
-                elif type_specified == "pairing":
-                    try:
-                        question = models.PairingQuestion(request.form["title"], request.form["statement"],
+                def_image = configs.images["question_mark"]
+                try:
+                    if type_specified == "msu":
+                            question = models.MSUQuestion(request.form["title"], request.form["statement"],
                                                       request.form["topic"], max_score)
-                        question.image = views.set_default(request.form["image"],def_image)
-                        db.session.add(question)
-                        db.session.commit()
-                        return {"status":"Question Created"}
-                    except Exception, e:
-                        return {"status":str(e)}
-                else:
-                    return {
-                        "status": "error1",
-                        "error": "type specified is not supported"
-                    }
+                            question.image = views.set_default(request.form["image"],def_image)
+                            db.session.add(question)
+                            db.session.commit()
+                            return {"status":"Question Created"}
+                    elif type_specified == "msm":
+                            question = models.MSMQuestion(request.form["title"], request.form["statement"],
+                                                      request.form["topic"], max_score)
+                            question.image = views.set_default(request.form["image"],def_image)
+                            db.session.add(question)
+                            db.session.commit()
+                            return {"status":"Question Created"}
+                    elif type_specified == "completation":
+                            question = models.CompletationQuestion(request.form["title"], request.form["statement"],
+                                                               request.form["topic"], max_score)
+                            question.image = views.set_default(request.form["image"],def_image)
+                            db.session.add(question)
+                            db.session.commit()
+                            return {"status":"Question Created"}
+                    elif type_specified == "clasification":
+                            question = models.ClasificationQuestion(request.form["title"], request.form["statement"],
+                                                                request.form["topic"], max_score)
+                            question.image = views.set_default(request.form["image"],def_image)
+                            db.session.add(question)
+                            db.session.commit()
+                            return {"status":"Question Created"}
+                    elif type_specified == "pairing":
+                            question = models.PairingQuestion(request.form["title"], request.form["statement"],
+                                                          request.form["topic"], max_score)
+                            question.image = views.set_default(request.form["image"],def_image)
+                            db.session.add(question)
+                            db.session.commit()
+                            return {"status":"Question Created"}
+                    else:
+                        return {
+                            "status": "error",
+                            "error": "type specified is not supported"
+                        }
+                except Exception as e:
+                    return {"status":"error",
+                            "error":unicode(e)}
             else:
                 return {
-                    "status": "error2",
+                    "status": "error",
                     "error": "method specified is not supported"
                 }
         else: #Specific Question Methods
             question = models.Question.query.get(question_id)
             if isinstance(question,type(None)):
-                return {"status":"errorA",
+                return {"status":"error",
                         "error":"Question Not Found"}
             if "update" == request.form["method"]:
                 if isinstance(question_id,type(None)):
-                    return {"status":"Error! You can't update a question without a name",
-                            "error":"Not name found"}
+                    return {"status":"error",
+                            "error":"Not name found, You can't update a question without a name"}
                 if views.is_empty(request.form["title"]):
-                    return {"status":"Error! title empty",
-                            "error":"Give a fucking valid title"}
+                    return {"status":"error",
+                            "error":"Title empty, Give a fucking valid title"}
                 if not isinstance(question,type(None)):
                     try:
                         question.title = request.form["title"]
@@ -241,8 +242,9 @@ class RQuestion(Resource):
                         question.max_score = request.form["score"]
                         db.session.commit()
                         return {"status": "Successful, Topic Update"}
-                    except:
-                        return {"status": "error1","error":"O.o"}
+                    except Exception as e:
+                        return {"status": "error",
+                                "error":unicode(e)}
                 else:
                     return {"status":"error",
                             "error":"Question Not Found"}
@@ -250,12 +252,12 @@ class RQuestion(Resource):
                 try:
                     db.session.delete(question)
                     db.session.commit()
-                except Exception, e:
+                except Exception as e:
                     return {"status":"error",
-                            "error":str(e)}
+                            "error":unicode(e)}
                 return {"status":"Question Deleted"}
             else:
-                return{"status":"errorB",
+                return{"status":"error",
                        "error":"Not Valid Method"}
 
 
@@ -272,10 +274,10 @@ class RAnswer(Resource):
                     "state": answer.state,
                     "text": answer.text
                 }
-            except Exception:
+            except Exception as e:
                 return {
                     "status": False,
-                    "error": Exception.message
+                    "error": unicode(e)
                 }
         elif question_id:
             try:
@@ -288,48 +290,59 @@ class RAnswer(Resource):
                     "answers": [ans.id for ans in answers],
                     "results": views.json_results(question)
                 }
-            except Exception:
+            except Exception as e:
                 return {
-                    "status": False,
-                    "error": Exception.message
+                    "status": "error",
+                    "error": unicode(e)
                 }
         else:
             return {
-                "status": False,
+                "status": "error",
                 "message": "question id or answer id not specified"
             }
 
     def post(self, question_id=None, answer_id=None):
         if isinstance(question_id,type(None)):
             return {
-                "status": "error1",
+                "status": "error",
                 "error": "This doesn't make sense..."
             }
         else:
             if "create" in request.form["method"]:
                 if "text" in request.form and "state" in request.form and "question" in request.form:
-                    if "image" in request.form:
-                        answer = models.Answer(request.form["state"], request.form["text"], question_id,
+                    try:
+                        if "image" in request.form:
+                            answer = models.Answer(request.form["state"], request.form["text"], question_id,
                                                request.form["image"])
-                    else:
-                        answer = models.Answer(request.form["state"], request.form["text"], question_id)
-                    db.session.add(answer)
-                    db.session.commit()
-                    return {
-                        "status": "Answer created",
-                    }
+                        else:
+                            answer = models.Answer(request.form["state"], request.form["text"], question_id)
+                        db.session.add(answer)
+                        db.session.commit()
+                        return {
+                            "status": "Answer created",
+                        }
+                    except Exception as e:
+                        return {
+                            "status":"error",
+                            "error":unicode(e)
+                        }
                 else:
                     return {
-                        "status": "error2",
+                        "status": "error",
                         "error": "Missing information"
                     }
             elif not isinstance(answer_id,type(None)):
                 if "delete" == request.form["method"]:
                     answer = models.Answer.query.filter_by(id=answer_id,question_id=question_id).first()
                     if isinstance(answer,type(None)):
-                        return {"status":"error","error":"Not Answer Obtained"}
-                    db.session.delete(answer)
-                    db.session.commit()
+                        return {"status":"error",
+                                "error":"Not Answer Obtained"}
+                    try:
+                        db.session.delete(answer)
+                        db.session.commit()
+                    except Exception as e:
+                        return {"status":"error",
+                                "error":unicode(e)}
                     return {
                         "status": "Answer Deleted"
                     }
@@ -340,7 +353,7 @@ class RAnswer(Resource):
                     }
             else:
                 return {
-                    "status": "error3",
+                    "status": "error",
                     "error": "method specified is not supported"
                 }
 

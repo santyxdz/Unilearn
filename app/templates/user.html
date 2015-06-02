@@ -2,15 +2,19 @@
 {% block main %}
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <img class="img-responsive" src="{{ set_default(user.photo, 'https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png') }}" alt="" />
-        </div>
-        <div class="col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Informacion de Usuario</h3>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Informacion de Usuario</h3>
+            </div>
+            <div class="panel-body">
+                <div class="col-sm-3">
+                    <div class="aspect">
+                        <div class="aspect-one-one bg-full" style="background-image:url('{{
+                                set_default(user.photo, 'https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png')
+                                }}');border-radius: 50%"></div>
+                    </div>
                 </div>
-                <div class="panel-body">
+                <div class="col-sm-9">
                     <h1>{{ set_default(user.first_name,"Name")+" "+set_default(user.last_name,"Last Name") }}</h1>
                     <h2>@{{ user.username }}</h2>
                     <h3>{{ user.score() }}pts</h3>
@@ -28,12 +32,10 @@
                             </h3>
                         </div>
                     <div class="panel-body">
-                        <div class="aspect">
-                            <div class="aspect-one-one bg-full">
-                                <h3>Sacaste {{user_scores[i]}} de {{max_scores[i]}}</h3>
-                                <div id="canvas-holer">
-                                    <canvas id="chart-area{{i}}" width="100" height="100"/>
-                                </div>
+                        <p>Sacaste {{user_scores[i]}} de {{max_scores[i]}}</p>
+                        <div id="canvas-holer">
+                            <div class="text-center">
+                                <canvas id="chart-area{{i}}" width="100" height="100"/>
                             </div>
                         </div>
                     </div>
@@ -52,15 +54,15 @@
         var data = [
             {
             value: {{user_scores[i]}},
-            color: "#F7464A",
+            color: "#46BFBD",
             highlight: "#FF5A5E",
-            label: "Correcto"
+            label: "Co"
             },
             {
             value: {{max_scores[i] - user_scores[i]}},
-            color: "#46BFBD",
+            color: "#F7464A",
             highlight: "#5AD3D1",
-            label: "Incorrecto"
+            label: "In"
             }
         ]
         var chart = new Chart(ctx).Pie(data, {

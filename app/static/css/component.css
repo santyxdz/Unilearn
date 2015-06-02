@@ -219,6 +219,9 @@ input.gn-search:focus {
 .gn-icon-user::before {
 		content: "\e604"
 }
+.gn-icon-login::before {
+		content: "\e648"
+}
 
 
 .gn-icon span {

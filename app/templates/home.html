@@ -1,42 +1,141 @@
 {% extends "base.html" %}
 
 {% block title %}
-Unilearn | Building...
+    Unilearn | Building...
 {% endblock %}
 
 {% block css %}
-<link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-<style>
-	body,html{
-		background-color: #dde2e6;
-	}
-	div.center{
-		text-align: center;
-		margin-top: 10%;
-	}
-	h1{
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
-        font-size: 5em;
-	}
-	h3{
-		font-family: 'Open Sans', sans-serif;
-	}
-</style>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<style>
+		#wrap{
+			padding-top: 1em !important;
+		}
+		body,html{
+			background-color: #dde2e6;
+		}
+		div.center{
+			text-align: center;
+			margin-top: 5%;
+		}
+		h1{
+			font-family: 'Open Sans', sans-serif;
+			text-align: center;
+			font-size: 5em;
+		}
+		h3{
+			font-family: 'Open Sans', sans-serif;
+		}
+		#gn-menu{
+			background-color: rgba(0,0,0,0);
+		}
+	</style>
+{% endblock %}
+{% block  pre_main %}
+	<div class="aspect">
+		<div class="aspect-sixteen-nine bg-full" style="background-image: url('http://i.imgur.com/juHnH2m.jpg')">
+			<div>
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div class="center">
+						<h1 style="color: #ffffff">Unilearn</h1>
+						<div style="background-color: rgba(255,255,255,0.7);border-radius: 4em;padding: 0.5em;"
+						class="visible-lg visible-md">
+							<h3>Made in Medellín, Colombia with <b style="color: red">&#9829;</b></h3>
+							<div id="imgs" style="bottom: 0;">
+								<img src="http://i.imgur.com/sk5HQ4X.png" height="64" width="64" alt="Python"/>
+								<img src="http://i.imgur.com/K0cTB31.png" height="64" width="64" alt="Flask"/>
+								<img src="http://i.imgur.com/jd2WF7r.png" height="64" width="64" alt="SQLAlchemy"/>
+								<img src="http://i.imgur.com/5VSzSOK.png" height="64" width="64" alt="Jinja"/>
+								<img src="http://i.imgur.com/RSI5VNY.png" height="64" width="64" alt="PostgreSQL"/>
+								<img src="http://i.imgur.com/Y3eFOPJ.png" height="64" width="64" alt="Gunicorn"/>
+								<img src="http://i.imgur.com/MBuH0pf.png" height="64" width="64" alt="Bootstrap"/>
+								<img src="http://i.imgur.com/d8hYtb8.png" height="64" width="64" alt="jQuery"/>
+								<img src="http://i.imgur.com/yMZlt1B.png" height="64" width="64" alt="HTML5"/>
+								<img src="http://i.imgur.com/VGVIcCN.png" height="64" width="64" alt="CSS3"/>
+								<img src="http://i.imgur.com/qPPsATF.png" height="64" width="64" alt="JavaScript"/>
+								<img src="http://i.imgur.com/WATEkoH.png" height="64" width="64" alt="Werkzeug"/>
+								<img src="http://i.imgur.com/cAXLTL9.png" height="64" width="64" alt="JSON"/>
+								<img src="http://i.imgur.com/KUS0MLf.png" height="64" width="64" alt="Google Fonts"/>
+								<img src="http://i.imgur.com/Ls2PD4C.png" height="64" width="64" alt="Heroku"/>
+								<img src="http://i.imgur.com/pAe89oQ.png" height="64" width="64" alt="PyCharm"/>
+							</div>
+							<h3>and more...</h3>
+						</div>
+						<div class="visible-lg visible-md visible-sm">
+							<br/>
+							<br/>
+							<a href="{{ url_for("login") }}" class="btn btn-primary btn-lg">Entrar</a>
+							<a href="{{ url_for("register") }}" class="btn btn-success btn-lg">Registrarse</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+	</div>
 {% endblock %}
 {% block main %}
-<div class="center">
-	<img src="//i.imgur.com/QNKJHrt.png" alt="Logotipo Unilearn" height="200px">
-	<h1>Unilearn</h1>
-	<h3>Made in Medellín, Colombia with &#9829;</h3>
-</div>
+	<div class="center">
+		<img src="//i.imgur.com/QNKJHrt.png" alt="Logotipo Unilearn" height="200px">
+		<h1>Unilearn</h1>
+		<h3>Made in Medellín, Colombia with <b style="color: red">&#9829;</b></h3>
+		<div id="imgs">
+			<img src="http://i.imgur.com/sk5HQ4X.png" alt="Python"/>
+			<img src="http://i.imgur.com/K0cTB31.png" alt="Flask"/>
+			<img src="http://i.imgur.com/jd2WF7r.png" alt="SQLAlchemy"/>
+			<img src="http://i.imgur.com/5VSzSOK.png" alt="Jinja"/>
+			<img src="http://i.imgur.com/RSI5VNY.png" alt="PostgreSQL"/>
+			<img src="http://i.imgur.com/Y3eFOPJ.png" alt="Gunicorn"/>
+			<img src="http://i.imgur.com/MBuH0pf.png" alt="Bootstrap"/>
+			<img src="http://i.imgur.com/d8hYtb8.png" alt="jQuery"/>
+			<img src="http://i.imgur.com/yMZlt1B.png" alt="HTML5"/>
+			<img src="http://i.imgur.com/VGVIcCN.png" alt="CSS3"/>
+			<img src="http://i.imgur.com/qPPsATF.png" alt="JavaScript"/>
+			<img src="http://i.imgur.com/WATEkoH.png" alt="Werkzeug"/>
+			<img src="http://i.imgur.com/cAXLTL9.png" alt="JSON"/>
+			<img src="http://i.imgur.com/KUS0MLf.png" alt="Google Fonts"/>
+			<img src="http://i.imgur.com/Ls2PD4C.png" alt="Heroku"/>
+			<img src="http://i.imgur.com/pAe89oQ.png" alt="PyCharm"/>
+		</div>
+		<h3>and more...</h3>
+	</div>
 {% endblock %}
 {% block js %}
+	<script>
+	window.onscroll = fadeNav;
+
+	function fadeNav(){
+		var offset = getScrollXY();
+		offset[1] > 0 ? setNavOpacity("rgb(0,150,136)") : setNavOpacity("rgba(0,0,0,0)");
+	}
+	function setNavOpacity(newOpacity){
+		var navBar = document.getElementById("gn-menu");
+		navBar.style.backgroundColor = newOpacity;
+		//navBar.style.opacity = newOpacity;
+	}
+	function getScrollXY() {
+	  var scrOfX = 0, scrOfY = 0;
+	  if( typeof( window.pageYOffset ) == 'number' ) {
+		//Netscape compliant
+		scrOfY = window.pageYOffset;
+		scrOfX = window.pageXOffset;
+	  } else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
+		//DOM compliant
+		scrOfY = document.body.scrollTop;
+		scrOfX = document.body.scrollLeft;
+	  } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+		//IE6 standards compliant mode
+		scrOfY = document.documentElement.scrollTop;
+		scrOfX = document.documentElement.scrollLeft;
+	  }
+	  return [ scrOfX, scrOfY ];
+	}
+	</script>
     {% if reload %}
-        <script>
-            $( document ).ready(function() {
-                location.reload(true);
-            });
-        </script>
+		<script>
+			$( document ).ready(function() {
+				location.reload(true);
+			});
+		</script>
     {% endif %}
 {% endblock%}

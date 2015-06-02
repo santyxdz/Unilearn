@@ -1,5 +1,5 @@
 body {
-	background: #212c33;
+    background: #212c33;
 }
 
 #wrap,
@@ -10,6 +10,7 @@ body {
 #wrap {
 	margin: 0 auto;
 	padding-top: 6em;
+	min-height: 650px;
 }
 
 #wrap a {

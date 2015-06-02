@@ -64,6 +64,9 @@ body{
 .panel-statement > .text{
     padding: 1em;
 }
+.smoke-light{
+    background-color: #E0E0E0 !important;
+}
 footer{
-    bottom: 0;
+
 }
