@@ -5,10 +5,10 @@ from flask_login import UserMixin
 
 app.config['SECURITY_POST_LOGIN'] = '/profile'
 
-#users = db.Table('users',
-#                 db.Column('user_username', db.String(15), db.ForeignKey('user.username')),
-#                 db.Column()
-#                 )
+users = db.Table('users',
+                 db.Column('user_username', db.String(15), db.ForeignKey('user.username')),
+                 db.Column('course_id', db.Integer, db.ForeignKey('course.id'))
+                 )
 
 class User(UserMixin, db.Model):
     username = db.Column(db.String(15), unique=True, primary_key=True)
@@ -24,7 +24,7 @@ class User(UserMixin, db.Model):
     helpreport = db.relationship("HelpReport", backref="user", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
-
+    #.courses dinamicamente enlazado
     def __init__(self, username, email, password, first_name="", last_name="", photo="", tw_un=""):
         self.username = username
         self.first_name = first_name
@@ -90,6 +90,7 @@ class Course(Topic):
     __tablename__ = "course"
     id = db.Column(db.Integer, db.ForeignKey('topic.id'), primary_key=True)
     board = db.Column(db.Text)
+    users = db.relationship('User', secondary=users, backref=db.backref('courses', lazy='dynamic'))
 
 class Question(db.Model):
     __tablename__ = 'question'
