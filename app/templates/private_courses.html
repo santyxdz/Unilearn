@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Unilearn | Cursos.
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-md-10">
+            <h2>Cursos:</h2>
+            <div class="row">
+                {% for course in courses %}
+                    <div class="item">
+                        <a href="{{ url_for("course",course=course.name) }}">
+                            <div class="course-list panel panel-primary col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{{ course.name }}
+                                    </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="aspect">
+                                        <div class="aspect-one-one bg-full" style="background-image: url('{{ course.icon }}')">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% if current_user.type == "teacher" or current_user.type == "admin" %}
+        <div class="col-md-2" style="border-left: solid 1px rgba(0,0,0,0.2)">
+            <h2>Profesor:</h2>
+            <div class="row">
+                {% for course in subjects %}
+                    <div class="item">
+                        <a href="{{ url_for("course",course=course.name) }}">
+                            <div class="course-list panel panel-primary col-xs-6 col-sm-3 col-md-12 col-lg-12">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{{ course.name }}
+                                    </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="aspect">
+                                        <div class="aspect-one-one bg-full" style="background-image: url('{{ course.icon }}')">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    </div>
+{% endblock %}
