@@ -9,6 +9,10 @@ users = db.Table('users',
                  db.Column('user_username', db.String(15), db.ForeignKey('user.username')),
                  db.Column('course_id', db.Integer, db.ForeignKey('course.id'))
                  )
+teachers = db.Table('teachers',
+                 db.Column('user_username', db.String(15), db.ForeignKey('user.username')),
+                 db.Column('course_id', db.Integer, db.ForeignKey('course.id'))
+                 )
 
 class User(UserMixin, db.Model):
     username = db.Column(db.String(15), unique=True, primary_key=True)
@@ -24,7 +28,9 @@ class User(UserMixin, db.Model):
     helpreport = db.relationship("HelpReport", backref="user", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
-    #.courses dinamicamente enlazado
+    #.courses.all() dinamicamente enlazado - Rol: Estudiante
+    #.subjects.all() dinamicamente enlazado - Rol: Profesor
+
     def __init__(self, username, email, password, first_name="", last_name="", photo="", tw_un=""):
         self.username = username
         self.first_name = first_name
@@ -76,6 +82,14 @@ class Topic(db.Model):
     questions = db.relationship("Question", backref="topic", cascade='all, delete-orphan')
     helptheory = db.relationship("HelpTheory", backref="topic", cascade='all, delete-orphan')
     helpequation = db.relationship("HelpEquations", backref="topic", cascade='all, delete-orphan')
+    type = db.Column(db.String(50))
+    def ispublic(self):
+        return True
+    __mapper_args__ = {
+        'polymorphic_on': type,
+        'polymorphic_identity': 'topic',
+        'with_polymorphic': '*'
+    }
 
     def __init__(self, name, description, icon=""):
         self.name = name
@@ -91,6 +105,10 @@ class Course(Topic):
     id = db.Column(db.Integer, db.ForeignKey('topic.id'), primary_key=True)
     board = db.Column(db.Text)
     users = db.relationship('User', secondary=users, backref=db.backref('courses', lazy='dynamic'))
+    teachers = db.relationship('User', secondary=teachers, backref=db.backref('subjects', lazy='dynamic'))
+    __mapper_args__ = {'polymorphic_identity': 'course'}
+    def ispublic(self):
+        return False
 
 class Question(db.Model):
     __tablename__ = 'question'
