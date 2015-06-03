@@ -18,8 +18,24 @@ def json_results(question):
         result.update(json.loads(x.text))
     return json.dumps(result)
 
+def just_admins(f):
+    @wraps(f)
+    def admin(*args, **kwargs):
+        if current_user.type != "admin":
+            return redirect(url_for('home'))
+        return f(*args,**kwargs)
+    return admin
 
-def nocache(view):
+def just_teachers(f):
+    @wraps(f)
+    def teacher(*args, **kwargs):
+        if current_user.type != "teacher" and current_user.type != "admin":
+            return redirect(url_for('home'))
+        return f(*args,**kwargs)
+    return teacher
+
+
+"""def nocache(view):
     @wraps(view)
     def no_cache(*args, **kwargs):
         response = make_response(view(*args, **kwargs))
@@ -29,7 +45,7 @@ def nocache(view):
         response.headers['Expires'] = '-1'
         return response
 
-    return update_wrapper(no_cache, view)
+    return update_wrapper(no_cache, view)"""
 
 
 @app.template_global()
@@ -101,14 +117,14 @@ def load_user(user):
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
-@nocache
+#@nocache
 def home():
     return render_template('home.html')
 
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
-    username = request.args.get('username')
+    username = request.args.get('username').lower()
     social_id = request.args.get('social_id')
     email = request.args.get('email')
     if request.method == 'POST':
@@ -120,11 +136,11 @@ def register():
                 return render_template("register.html", error=u"El nombre de usuario ya se encuentra registrado")
             else:
                 if "social_id" in request.form:
-                    user = models.User(request.form["username"], request.form["email"],
+                    user = models.User(request.form["username"].lower(), request.form["email"],
                                    request.form["password"])
-                    user.social_id = social_id=request.form["social_id"]
+                    user.social_id = request.form["social_id"]
                 else:
-                    user = models.User(request.form["username"], request.form["email"],
+                    user = models.User(request.form["username"].lower(), request.form["email"],
                                    request.form["password"])
                 user.life = 9
                 try:
@@ -132,13 +148,13 @@ def register():
                     db.session.commit()
                     login_user(user)
                 except IntegrityError:
-                    return render_template("register.html",error="El correo seleccionado ya correcponde a otro usuario")
+                    return render_template("register.html",error="El correo seleccionado ya corresponde a otro usuario")
                 return redirect(url_for("home"))
     return render_template("register.html",username=username,social_id=social_id,email=email)
 
 
 @app.route("/users")
-@nocache
+#@nocache
 def users():
     users_list = models.User.query.all()
     return render_template("users.html", users=users_list)
@@ -150,7 +166,7 @@ def store():
 
 
 @app.route("/courses")
-@nocache
+#@nocache
 def courses():
     public_courses = list(set(models.Topic.query.order_by(models.Topic.id).all()) - \
         set(models.Course.query.all()))
@@ -159,15 +175,22 @@ def courses():
         inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id).first()
         if inscribed is not None:
             return render_template("courses.html", courses=public_courses, active_topic=inscribed.name)
-    return render_template("courses.html", courses=public_courses)
+    return render_template("courses.html", courses=public_courses)\
+
+@app.route("/courses/private")
+#@nocache
+@login_required
+def private_courses():
+    return render_template("private_courses.html", courses=current_user.courses.all(), \
+                           subjects=current_user.subjects.all())
 
 @app.route("/courses/<course>")
-@nocache
+#@nocache
 def course(course):
     return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
 
 @app.route("/courses/<course>/q/<int:num>")
-@nocache
+#@nocache
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
@@ -198,7 +221,7 @@ def not_access(error): #Pagina de Error: Acceso Denegado
 def login():
     error = None
     if request.method == 'POST':
-        user = models.User.query.get(unicode(request.form["username"]))
+        user = models.User.query.get(unicode(request.form["username"].lower()))
         if not isinstance(user, type(None)):
             if request.form['password'] == user.password:
                 login_user(user)
@@ -285,23 +308,33 @@ def edit_user():
             return render_template("login.html", error=u"Contraseña Incorrecta En El Formulario")
     return render_template("edit_user.html")
 
+"""
+*******************************************************************************
+*********************************** PANEL *************************************
+*******************************************************************************
+"""
+
 @app.route("/panel")
 @login_required
+@just_teachers
 def panel():
     return render_template("panel.html", models=models)
 
 @app.route("/panel/courses")
 @login_required
+@just_admins
 def courses_panel():
     return render_template("courses_panel.html", courses=models.Topic.query.all())
 
 @app.route("/panel/courses/new")
 @login_required
+@just_admins
 def new_course():
     return render_template("new_course.html")
 
 @app.route("/panel/courses/<int:course_id>/edit")
 @login_required
+@just_admins
 def edit_course(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
@@ -312,6 +345,7 @@ def edit_course(course_id=None):
 
 @app.route("/panel/courses/<int:course_id>")
 @login_required
+@just_admins
 def view_course(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
@@ -322,6 +356,7 @@ def view_course(course_id=None):
 
 @app.route("/panel/courses/<int:course_id>/question/new")
 @login_required
+@just_admins
 def new_question(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
@@ -332,6 +367,7 @@ def new_question(course_id=None):
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>")
 @login_required
+@just_admins
 def view_question(course_id=None,question_id=None):
     if isinstance(course_id,type(None)) or isinstance(question_id,type(None)):
         return abort(404)
@@ -342,6 +378,7 @@ def view_question(course_id=None,question_id=None):
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>/edit")
 @login_required
+@just_admins
 def edit_question(course_id=None,question_id=None):
     if isinstance(course_id,type(None)) or isinstance(question_id,type(None)):
         return abort(404)
@@ -349,8 +386,81 @@ def edit_question(course_id=None,question_id=None):
     if isinstance(question,type(None)):
         return abort(404)
     return render_template("edit_question.html",question=question)
+"""
+*******************************************************************************
+****************************** PANEL - TEACHER ********************************
+*******************************************************************************
+"""
+@app.route("/panel/subjects")
+@login_required
+@just_teachers
+def subjects_panel():
+    return render_template("courses_panel.html", courses=current_user.subjects.all())
 
-#SOCIAL WORKING LOGIN!
+@app.route("/panel/subjects/new")
+@login_required
+@just_teachers
+def new_subject():
+    return render_template("private_new_course.html")
+
+@app.route("/panel/subjects/<int:course_id>/edit")
+@login_required
+@just_teachers
+def edit_subject(course_id=None):
+    if isinstance(course_id,type(None)):
+        return abort(404)
+    topic = current_user.subjects
+    if isinstance(topic,type(None)):
+        return abort(404)
+    return render_template("edit_course.html", topic=topic)
+
+@app.route("/panel/subjects/<int:course_id>")
+@login_required
+@just_teachers
+def view_subject(course_id=None):
+    if isinstance(course_id,type(None)):
+        return abort(404)
+    topic = models.Topic.query.get(course_id)
+    if isinstance(topic,type(None)):
+        return abort(404)
+    return render_template("view_course.html", topic=topic)
+
+@app.route("/panel/subjects/<int:course_id>/question/new")
+@login_required
+@just_teachers
+def new_subject_question(course_id=None):
+    if isinstance(course_id,type(None)):
+        return abort(404)
+    topic = models.Topic.query.get(course_id)
+    if isinstance(topic,type(None)):
+        return abort(404)
+    return render_template("new_question.html",topic=topic)
+
+@app.route("/panel/subjects/<int:course_id>/question/<int:question_id>")
+@login_required
+@just_teachers
+def view_subject_question(course_id=None,question_id=None):
+    if isinstance(course_id,type(None)) or isinstance(question_id,type(None)):
+        return abort(404)
+    question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
+    if isinstance(question,type(None)):
+        return abort(404)
+    return render_template("view_question.html",question=question)
+
+@app.route("/panel/subjects/<int:course_id>/question/<int:question_id>/edit")
+@login_required
+@just_teachers
+def edit_subject_question(course_id=None,question_id=None):
+    if isinstance(course_id,type(None)) or isinstance(question_id,type(None)):
+        return abort(404)
+    question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
+    if isinstance(question,type(None)):
+        return abort(404)
+    return render_template("edit_question.html",question=question)
+
+
+
+#Social Network Working in local
 @app.route('/authorize/<provider>')
 def oauth_authorize(provider):
     try:
