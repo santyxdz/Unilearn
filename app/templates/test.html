@@ -11,7 +11,7 @@ Unilearn | Test de nivelacion
 <script>
     $(document).ready(function(){
         var curq = 1;
-        var MAX_Q = 8;
+        var MAX_Q = 16;
         $("button[name=nextq]").click(
             function () {
                 if(curq!=MAX_Q){
@@ -25,8 +25,103 @@ Unilearn | Test de nivelacion
                         $("button[name=endbut]").hide().show(0);
                         $("button[name=endbut]").click(
                             function(){
-                            //validar aqui las respuestas.
-                            alert("undiste el boton con el name modificado");
+                                var score = 0;
+                                var readyfor;
+                                //1st answer: 5pts
+                                var r1 = $("input[type='radio'][name='respuesta1']:checked").val();
+                                if(r1=="Opcion1") score = score+5;
+
+                                //2nd: 15 pts
+                                var checks2 = $('input[name=respuesta2]');
+                                checks2.each(function(){
+                                    if($(this).checked){
+                                        var nombrecheck = $(this).value;
+                                        if(nombrecheck == "op1" || nombrecheck=="op2" || nombrecheck=="op3"){
+                                            score += 5;
+                                        }
+                                    }
+                                });
+
+                                //3rd: 5pts
+                                var ans = document.getElementsByName("resp3")[0].text;
+                                if(ans=="12") score += 5;
+
+                                //4th: 10pts
+                                var checks4 = $('input[name=respuesta4]');
+                                checks4.each(function(){
+                                    if($(this).checked && ($(this).value=="correct1" || $(this).value=="correct2")) score = score+5;
+                                });
+
+                                //5th: 5pts
+                                var r5 = $("input[type='radio'][name='respuesta5']:checked").val();
+                                if(r5=="correct5") score += 5;
+
+                                //6th: 5pts
+                                var r6 = document.getElementsByName("resp6")[0].text;
+                                if(r6 == "x+2") score += 5;
+
+                                //7th: 10 pts
+                                var checks7 = $('input[name=respuesta7]');
+                                checks7.each(function(){
+                                    if($(this).checked && ($(this).value=="correct1" || $(this).value=="correct2")) score = score+5;
+                                });
+
+                                //8th: 5pts
+                                var r8 = document.getElementsByName("resp8")[0].text;
+                                if(r8 == "5/3") score += 5;
+
+                                //9th: 10pts
+                                var checks9 = $('input[name=respuesta9]');
+                                checks9.each(function(){
+                                    if($(this).checked && ($(this).value=="correct1" || $(this).value=="correct2")) score = score+5;
+                                });
+
+                                //10th: 5pts
+                                var r10 = $("input[type='radio'][name='respuesta10']:checked").val();
+                                if(r10=="right") score += 5;
+
+                                //11th: 5pts
+                                var r11 = document.getElementsByName("resp11")[0].text;
+                                if(r11=="10") score += 5;
+
+                                //12th: 10pts
+                                var checks12 = $('input[name=respuesta12]');
+                                checks12.each(function(){
+                                    if($(this).checked && ($(this).value=="ok1" || $(this).value=="ok2")) score = score+5;
+                                });
+
+                                //13th: 5pts
+                                var r13 = $("input[type='radio'][name='respuesta13']:checked").val();
+                                if(r13=="ok13") score += 5;
+
+                                //14th: 5pts
+                                var r14 = document.getElementsByName("resp14")[0].text;
+                                if(r14=="7/2") score += 5;
+
+                                //15th: 10pts
+                                var checks15 = $('input[name=respuesta15]');
+                                checks15.each(function(){
+                                    if($(this).checked && ($(this).value=="ok1")) score = score+10;
+                                });
+
+                                //16th: 5pts
+                                var r16 = $("input[type='radio'][name='respuesta16']:checked").val();
+                                if(r16=="ok1") score += 5;
+
+                                /////////////////
+
+                                if(score <=12) readyfor = 1;
+                                else if(score<=24) readyfor = 2;
+                                else if(score<=35) readyfor = 3;
+                                else if(score<=47) readyfor = 4;
+                                else if(score<=59) readyfor = 5;
+                                else if(score<=70) readyfor = 6;
+                                else if(score<=82) readyfor = 7;
+                                else if(score<=94) readyfor = 8;
+                                else if(score<=105) readyfor = 9;
+
+                                $.post("/api/register/", { user: "{{current_user.username}}", topic_id: readyfor }, function(data){}, "json");
+                                window.location.assign("/courses");
                             }
                         );
                     }
@@ -50,13 +145,13 @@ Unilearn | Test de nivelacion
     <div class="col-lg-3"></div>
     <div class="col-lg-6">
         <div class="well bs-component">
-            <form action="">
+            <form class="form-horizontal">
                 <section id="1">
                     <legend>Dos ruedas están unidas por una correa transmisora.
                         La primera tiene un radio de 25 cm y la segunda de 75 cm.
                         Cuando la primera ha dado 300 vueltas, ¿cuántas vueltas habrá dado la segunda?</legend>
                     <div class="text-center">
-                        <img calss="img-responsive" src="http://almez.pntic.mec.es/jgonza86/imagenes/8.gif">
+                        <img class="img-responsive" src="http://almez.pntic.mec.es/jgonza86/imagenes/8.gif">
                     </div>
                     <input type="radio" name="respuesta1" value="Opcion1" /> 150 vueltas <br>
                     <input type="radio" name="respuesta1" value="Opcion2" /> 200 vueltas <br>
@@ -77,7 +172,7 @@ Unilearn | Test de nivelacion
                     <div class="text-center">
                         <img class="img-responsive" src="http://www.oma.org.ar/omanet/educabri/clase2_1.gif">
                     </div>
-                    <input type="text" name="resp4"/>
+                    <input class="form-control" type="text" name="resp3"/>
                 </section>
                 <section id="4" style="display:none">
                     <legend>
@@ -103,7 +198,7 @@ Unilearn | Test de nivelacion
                     <legend>
                         Factorice la expresión 4 + 4(x-y) + (x-Y)²
                     </legend>
-                    <input type="text" name="resp6"/>
+                    <input class="form-control" type="text" name="resp6"/>
                 </section>
                 <section id="7" style="display:none">
                     <legend>
@@ -119,8 +214,8 @@ Unilearn | Test de nivelacion
                         Calcula la altura de un árbol, sabiendo que desde un punto del terreno se observa su copa
                         bajo un ángulo de 30° y si nos acercamos 10 m, bajo un ángulo de 60°.
                     </legend>
-                    <img src="http://www.vitutor.org/al/trigo/images/59.gif" alt="Altura de un árbol"/>
-                    <input type="text" name="resp8"/>
+                    <img class="img-responsive" src="http://www.vitutor.org/al/trigo/images/59.gif" alt="Altura de un árbol"/>
+                    <input class="form-control" type="text" name="resp8"/>
                 </section>
                 <section id="9" style="display:none">
                     <legend>
@@ -144,8 +239,76 @@ Unilearn | Test de nivelacion
                 </section>
                 <section id="11" style="display:none">
                     <legend>
-
+                        Hallar la variación de volumen que experimenta un cubo, de arista 20 cm,
+                        cuando ésta aumenta 0.2 cm su longitud.
                     </legend>
+                    <input class="form-control" type="text" name="resp11"/>
+                </section>
+                <section id="12" style="display:none">
+                    <legend>
+                        Un cuadrado tiene 2 m de lado.
+                        determínese en cuánto aumenta el área del cuadrado cuando su lado lo hace en un milímetro.
+                        Calcúlese el error que se comete al usar difernciales en lugar de incrementos.
+                        Seleccione el aumento de área y el error.
+                    </legend>
+                    <img class="img-responsive"
+                         src="http://pcnpost.com/file/2014/12/062114-SOCCER-ACF-Fiorentina-Guillermo-Cuadrado-JW-PI.jpg"
+                         alt="Cuadrado"/>
+                    <input type="checkbox" name="respuesta12" value="ok1"/>  0,004 m² <br/>
+                    <input type="checkbox" name="respuesta12" value="ok2"/> 10^-6 m² <br/>
+                    <input type="checkbox" name="respuesta12" value="none1"/> 4 * 10^-4 <br/>
+                    <input type="checkbox" name="respuesat12" value="none2"/> 1 * 10⁶ <br/>
+                    <input type="checkbox" name="respuesta12" value="none3"/> 0,000006 <br/>
+                </section>
+                <section id="13" style="display:none">
+                    <legend>
+                        De las infinitas funciones primitivas de la función y = x² - x + 1,
+                        ¿cuál es la que para x = 3 toma el valor 5? <br/>
+                    </legend>
+                    <img src="http://i.imgur.com/2K6jGYV.png" alt="Función"/>
+                    <input type="radio" name="respuesta13" value="ok13"/> <img src="http://i.imgur.com/iwaSGV3.png"
+                                                                               alt=""/>
+                    <br/>
+                    <input type="radio" name="respuesta13" value="wrong13"/> <img src="http://i.imgur.com/pQ2wUWl.png"
+                                                                                  alt=""/>
+                    <br/>
+                    <input type="radio" name="respuesta13" value="wrong13-2"/> <img src="http://i.imgur.com/7AABmpl.png"
+                                                                                    alt=""/>
+                    <br/>
+                    <input type="radio" name="respuesta13" value="wrong13-3"/> <img src="http://i.imgur.com/NSSpk3d.png"
+                                                                                    alt=""/>
+                    <br/>
+                </section>
+                <section id="14" style="display:none">
+                    <legend>
+                        Escriba el valor de la Constante C de la ecuación de la curva que pasa por P(1, 5)
+                        y cuya pendiente en cualquier punto es 3x² + 5x − 2.
+                    </legend>
+                    <!-- 7/2 -->
+                    <input class="form-control" type="text" name="resp14"/>
+                </section>
+                <section id="15" style="display:none">
+                    <legend>
+                        Sabiendo que |A| = 5, calcular los otros determinantes.
+                        Seleccionar los valores de los dos determinantes
+                    </legend>
+                    <img src="http://i.imgur.com/OZQt5u2.png" alt="Matrices"/>
+                    <input type="checkbox" name="respuesta15" value="ok1"/> 5 <br/>
+                    <input type="checkbox" name="respuesta15" value="wrong1"/> 6 <br/>
+                    <input type="checkbox" name="respuesta15" value="wrong2"/> 4.9 <br/>
+                    <input type="checkbox" name="respuesta15" value="wrong3"/> 7 <br/>
+                </section>
+                <section id="16" style="display:none">
+                    <legend>
+                        La desviación estándar que representa el número de veces que un grupo de 3 amigos come
+                        pasta durante una semana es: [2,4,3]
+                    </legend>
+                    <img class="img-responsive"
+                         src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbdszyupHil_J_uDI8i7FhUc8xTXe0uzN8i-IoxV5H_UZSBIiv"
+                         alt="Pasta"/>
+                    <input type="radio" name="respuesta16" value="ok1"/> 2/3 <br/>
+                    <input type="radio" name="respuesta16" value="wrong1"/> 1/3 <br/>
+                    <input type="radio" name="respuesta16" value="wrong2"/> 2 <br/>
                 </section>
             </form>
             <button class="btn btn-primary" name="nextq" >Siguiente</button>

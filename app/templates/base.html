@@ -76,7 +76,7 @@
             </nav>
         </li>
         <li><a href="{{ url_for("home") }}">Unilearn</a></li>
-        {% if current_user.cur_topic %}
+        {% if current_user.cur_topic or not current_user.is_authenticated() %}
             <li><a href="{{ url_for("courses") }}">Cursos</a></li>
         {% else %}
             <li><a href="{{url_for("start")}}">Empieza a aprender</a></li>
