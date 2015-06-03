@@ -82,6 +82,15 @@ def sort_topic(topic):
 def total_scores():
     return sum([x.score for x in models.UserScore.query.all()])
 
+@app.template_global()
+def progress(user,topic_id):
+     scores = models.UserScore.query.filter_by(user_username=user.username).all()
+     allquestion = len(models.Question.query.filter_by(topic_id=topic_id).all())
+     cont = 0
+     for x in scores:
+         if x.question.topic_id == topic_id:
+             cont +=1
+     return (cont*100)/allquestion
 
 @login_manager.user_loader
 def load_user(user):
