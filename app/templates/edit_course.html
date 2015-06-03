@@ -75,8 +75,12 @@
                                 $.post("/api/topics/"+"{{ topic.name }}",
                                         {"method":"delete"},
                                         function(data){
-                                            alert(data.status);
-                                            window.location.href = "/panel/courses";
+                                            if (data.status == "error"){
+                                                alert(data.error);
+                                            }else{
+                                                alert(data.status);
+                                                window.location.href = "/panel/courses";
+                                            }
                                         },
                                         "json");
                             }
