@@ -187,7 +187,10 @@ def private_courses():
 @app.route("/courses/<course>")
 #@nocache
 def course(course):
-    return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
+    course = models.Topic.query.filter_by(name=course).first()
+    if isinstance(course,type(None)):
+        return abort(404)
+    return render_template("course.html", course=course)
 
 @app.route("/courses/<course>/q/<int:num>")
 #@nocache
@@ -395,13 +398,13 @@ def edit_question(course_id=None,question_id=None):
 @login_required
 @just_teachers
 def subjects_panel():
-    return render_template("courses_panel.html", courses=current_user.subjects.all())
+    return render_template("subjects_panel.html", courses=current_user.subjects.all())
 
 @app.route("/panel/subjects/new")
 @login_required
 @just_teachers
 def new_subject():
-    return render_template("private_new_course.html")
+    return render_template("new_subject.html")
 
 @app.route("/panel/subjects/<int:course_id>/edit")
 @login_required
@@ -412,7 +415,7 @@ def edit_subject(course_id=None):
     topic = current_user.subjects
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("edit_course.html", topic=topic)
+    return render_template("edit_subject.html", topic=topic)
 
 @app.route("/panel/subjects/<int:course_id>")
 @login_required
@@ -420,7 +423,7 @@ def edit_subject(course_id=None):
 def view_subject(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
-    topic = models.Topic.query.get(course_id)
+    topic = models.Course.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
     return render_template("view_course.html", topic=topic)

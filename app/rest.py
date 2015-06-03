@@ -140,6 +140,93 @@ class RTopic(Resource):
         else:
             return {"status":"error","error": "What are you trying to do?"}
 
+class RCourse(Resource):
+    def get(self, topic_name):
+        topic = models.Course.query.filter_by(name=topic_name).first()
+        if views.is_empty(topic):
+            return {
+                "result": False,
+                "status": "error",
+                "error": "Course doesn't exit"
+            }
+        else:
+            return {
+                "result": True,
+                "topic": topic.name,
+                "status": "Successful, Topic is on DB",
+                "id": topic.id
+            }
+
+    def post(self, topic_name=None):
+        if isinstance(topic_name,type(None)):
+            if "create" == request.form["method"]:
+                if views.is_empty(request.form["name"]):
+                    return {"status":"error",
+                            "error":"Name Empty"}
+                if views.is_empty(request.form["teacher"]):
+                    return {"status":"error",
+                            "error":"You can't make a Course without a Teacher"}
+                if self.get(request.form["name"])["result"]:
+                    return {"status":"error",
+                            "error":"Course already exist"}
+                else:
+                    try:
+                        teacher = models.User.query.get(request.form["teacher"].lower())
+                        if isinstance(teacher, type(None)):
+                            return {"status":"error",
+                                    "error":"Teacher doesn't exist"}
+                        if "icon" in request.form:
+                            topic = models.Course(request.form["name"], request.form["description"],\
+                                                  request.form["icon"])
+                            db.session.add(topic)
+                            db.session.commit()
+                            topic.teachers.append(teacher)
+                            db.session.commit()
+                        else:
+                            topic = models.Course(request.form["name"], request.form["description"])
+                            topic.teachers.append(teacher)
+                            db.session.commit()
+                        db.session.add(topic)
+                        db.session.commit()
+                        return {"status": "Successful, Course Created"}
+                    except Exception as e:
+                        return {"status": "error",
+                                "error" : unicode(e)}
+        if "update" == request.form["method"]:
+            if isinstance(topic_name,type(None)):
+                return {"status":"error",
+                        "error":"Not name found, You can't update a course without a name"}
+            if views.is_empty(request.form["name"]):
+                return {"status":"error",
+                        "error":"Name empty, Give a fucking valid name"}
+            if self.get(topic_name)["result"]:
+                try:
+                    course = models.Course.query.filter_by(name=topic_name).first()
+                    course.name = request.form["name"]
+                    course.icon = request.form["icon"]
+                    course.description = request.form["description"]
+                    db.session.commit()
+                    return {"status": "Successful, Course Update"}
+                except Exception as e:
+                    return {"status": "error","error":unicode(e)}
+            else:
+                return {"status":"error","error": "Course doesn't exist"}
+        elif "delete" == request.form["method"]:
+            if isinstance(topic_name,type(None)):
+                return {"status":"error",
+                        "error":"Not name found, You can't delete a course without a name"}
+            if self.get(topic_name)["result"]:
+                try:
+                    db.session.delete(models.Topic.query.filter_by(name=topic_name).first())
+                    db.session.commit()
+                    return {"status": "Successful, Course Deleted"}
+                except Exception as e:
+                    return {"status": "error","error":unicode(e)}
+            else:
+                return {"status":"error","error": "Course doesn't exist"}
+        else:
+            return {"status":"error","error": "What are you trying to do?"}
+
 
 class RQuestion(Resource):
     def get(self, question_id=None):
@@ -537,6 +624,7 @@ class RNextQuestion(Resource):
                 "url": views.url_for("course", course=topic.name)
             }
 
+
 class RVideo(Resource):
     def get(self, question_id):
         videos = models.HelpVideos.query.filter_by(question_id=question_id)
@@ -584,6 +672,7 @@ class RVideo(Resource):
                 "status": False,
                 "message": "The information provided is not correct, must have 'video', 'question_id', and 'action'"
             }
+
 
 class RHelpReport(Resource):
     def get(self):
@@ -716,6 +805,7 @@ class RHelpReport(Resource):
 api.add_resource(RError, '/api', "/api/")
 api.add_resource(RUser, "/api/users/<username>")
 api.add_resource(RTopic, "/api/topics/<topic_name>", "/api/topics/")
+api.add_resource(RCourse, "/api/courses/<topic_name>", "/api/courses/")
 api.add_resource(RQuestion, "/api/question/<int:question_id>", "/api/question/")
 api.add_resource(RAnswer, "/api/answer/<int:question_id>", "/api/answer/",
                  "/api/answer/<int:question_id>/<int:answer_id>")

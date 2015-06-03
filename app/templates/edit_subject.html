@@ -1,0 +1,105 @@
+{% extends "panel_base.html" %}
+{% block content %}
+    <a href="javascript:showDeleteDialog()" class="btn btn-danger">Eliminar</a>
+    <div class="modal deleteDialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">¿Esta seguro que desea eliminar este curso?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Toda la información de este curso sera eliminada.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" id="delete"><b>Eliminar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Editar Información</h3>
+                </div>
+                <div class="panel-body">
+                    <fieldset>
+                        <legend>{{ topic.name }}</legend>
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Nombre</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputName" value="{{ topic.name }}" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputIcon" class="col-lg-2 control-label">Icono</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputIcon" value="{{ topic.icon }}" name="icon">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description" class="col-lg-2 control-label">Descripcion</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="3" id="description">{{ topic.description }}
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button class="btn btn-default">Cancelar</button>
+                                <button type="submit" class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+{% block js %}
+    <script>
+        function showDeleteDialog(){
+            $(".deleteDialog").modal("show")
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+                    $("button#delete").click(
+                            function(){
+                                $.post("/api/topics/"+"{{ topic.name }}",
+                                        {"method":"delete"},
+                                        function(data){
+                                            if (data.status == "error"){
+                                                alert(data.error);
+                                            }else{
+                                                alert(data.status);
+                                                window.location.href = "/panel/courses";
+                                            }
+                                        },
+                                        "json");
+                            }
+                    );
+                    $("button#saveChanges").click(
+                            function(){
+                                $.post("/api/topics/"+"{{ topic.name }}",
+                                        {"method":"update",
+                                        "name":$("input[name=name]").val(),
+                                        "icon":$("input[name=icon]").val(),
+                                        "description":$("textarea#description").val()},
+                                        function(data){
+                                            alert(data.status);
+                                            window.location.href = window.location.href;
+                                        },
+                                        "json");
+                            }
+                    );
+                }
+        );
+    </script>
+{% endblock %}
