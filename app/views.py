@@ -192,13 +192,6 @@ def test():
 def start():
     return render_template("start_learning.html")
 
-# Machetazo en 3..2..1..
-@app.route("/course/<course>")
-@nocache
-def course2(course):
-    c = models.Topic.query.filter_by(id=course)
-    return course(c.name)
-
 @app.route("/courses/<course>")
 #@nocache
 def course(course):
