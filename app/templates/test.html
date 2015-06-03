@@ -10,14 +10,31 @@ Unilearn | Test de nivelacion
 {% block js %}
 <script>
     $(document).ready(function(){
+        var curq = 1;
+        var MAX_Q = 8;
         $("button[name=nextq]").click(
             function () {
-                {%if not cur_q == MAX_Q %}
-                document.getElementById("{{cur_q}}").style.display = "none";
-                {%set cur_q = cur_q+1%}
-                document.getElementById("{{cur_q}}").style.display = "block";
-                {%endif%}
-            });
+                if(curq!=MAX_Q){
+                    document.getElementById(""+curq).style.display = "none";
+                    curq = curq + 1;
+                    if(curq == MAX_Q){
+                        var but = document.getElementsByName("nextq")[0];
+                        but.setAttribute("class","btn btn-danger");
+                        but.textContent = "Finalizar";
+                        but.setAttribute("name", "endbut");
+                        $("button[name=endbut]").hide().show(0);
+                        $("button[name=endbut]").click(
+                            function(){
+                            //validar aqui las respuestas.
+                            alert("undiste el boton con el name modificado");
+                            }
+                        );
+                    }
+                    document.getElementById(""+curq).style.display = "block";
+                }
+            }
+        );
+
         });
 </script>
 {% endblock %}
@@ -35,28 +52,103 @@ Unilearn | Test de nivelacion
         <div class="well bs-component">
             <form action="">
                 <section id="1">
-                    <legend>Esta es la primera pregunta, tal vez con una imagen</legend>
+                    <legend>Dos ruedas están unidas por una correa transmisora.
+                        La primera tiene un radio de 25 cm y la segunda de 75 cm.
+                        Cuando la primera ha dado 300 vueltas, ¿cuántas vueltas habrá dado la segunda?</legend>
                     <div class="text-center">
-                        <img src="http://cdns2.freepik.com/foto-gratis/_21338031.jpg">
+                        <img calss="img-responsive" src="http://almez.pntic.mec.es/jgonza86/imagenes/8.gif">
                     </div>
-                    <input type="radio" name="respuesta1" value="Opcion1" /> Opcion 1
-                    <input type="radio" name="respuesta1" value="Opcion2" /> Opcion 2
-                    <input type="radio" name="respuesta1" value="Opcion3"/> Opcion 3
+                    <input type="radio" name="respuesta1" value="Opcion1" /> 150 vueltas <br>
+                    <input type="radio" name="respuesta1" value="Opcion2" /> 200 vueltas <br>
+                    <input type="radio" name="respuesta1" value="Opcion3"/> 100 vueltas <br>
                 </section>
                 <section id="2" style="display:none;">
-                    <legend> ¿Cuál sería un buen enunciado para la segunda pregunta? </legend>
-                    <input type="checkbox" name="respuesta2" value="op1"/> "Cual es la mejor forma de matar a Anga?"
-                    <input type="checkbox" name="respuesta2" value="op2"/> "Por que Anga sigue vivo?"
-                    <input type="checkbox" name="respuesta2" value="op3"/> "Como hacer que Men crezca?"
-                    <input type="checkbox" name="respuesta2" value="op4"/> "Por que Santiago Suarez es tan COSOTA?"
+                    <legend> Tres hermanos ayudan al mantenimiento familiar entregando anualmente 5900 €.
+                        Si sus edades son de 20, 24 y 32 años y las aportaciones son inversamente
+                        proporcionales a la edad, ¿cuánto aporta cada uno? Seleccione las tres aportaciones </legend>
+                    <input type="checkbox" name="respuesta2" value="op1"/> 2400 <br>
+                    <input type="checkbox" name="respuesta2" value="op2"/> 2000 <br>
+                    <input type="checkbox" name="respuesta2" value="op3"/> 1500 <br>
+                    <input type="checkbox" name="respuesta2" value="op4"/> 2500 <br>
                 </section>
                 <section id="3" style="display:none;">
-                    <legend>Pregunta 3</legend>
+                    <legend>Determinar el lado de un triángulo equilátero
+                        cuyo perímetro es igual al de un cuadrado de 12 cm de lado. </legend>
+                    <div class="text-center">
+                        <img class="img-responsive" src="http://www.oma.org.ar/omanet/educabri/clase2_1.gif">
+                    </div>
                     <input type="text" name="resp4"/>
                 </section>
+                <section id="4" style="display:none">
+                    <legend>
+                        Los catetos de un triángulo inscrito en una circunferencia miden 22.2 cm
+                        y 29.6 cm respectivamente.
+                        Seleccionar la longitud y el área del círculo
+                    </legend>
+                    <input type="checkbox" name="respuesta4" value="correct1"/> 25 cm <br/>
+                    <input type="checkbox" name="respuesta4" value="correct2"/> 1.9365,5 cm² <br/>
+                    <input type="checkbox" name="respuesta4" value="nope1"/> 30 cm <br/>
+                    <input type="checkbox" name="respuesta4" value="nope2"/> 2,00145 cm² <br/>
+                    <input type="checkbox" name="respuesta4" value="nope3"/> 25 cm <br/>
+                </section>
+                <section id="5" style="display:none">
+                    <legend>
+                        Hallar el Mínimo Común Múltiplo de {3x+3, 6x-6}
+                    </legend>
+                    <input type="radio" name="respuesta5" value="correct5"/> 6 (x²+1) <br/>
+                    <input type="radio" name="respuesta5" value="alg_radio2"/> 6 (x²-1) <br/>
+                    <input type="radio" name="respuesta5" value="alg_radio3"/> 3 (x²-1) <br/>
+                </section>
+                <section id="6" style="display:none">
+                    <legend>
+                        Factorice la expresión 4 + 4(x-y) + (x-Y)²
+                    </legend>
+                    <input type="text" name="resp6"/>
+                </section>
+                <section id="7" style="display:none">
+                    <legend>
+                        De un triangulo ABC se conoce que b = 3m, y B = 54.6°. Seleccione los valores para los lados a y c
+                    </legend>
+                    <input type="checkbox" name="respuesta7" value="correct1"/> 2.132m <br/>
+                    <input type="checkbox" name="respuesta7" value="correct2"/> 3.68m <br/>
+                    <input type="checkbox" name="respuesta7" value="nope1"/> 4.67m <br/>
+                    <input type="checkbox" name="respuesat7" value="nope2"/> 2,87m <br/>
+                </section>
+                <section id="8" style="display:none">
+                    <legend>
+                        Calcula la altura de un árbol, sabiendo que desde un punto del terreno se observa su copa
+                        bajo un ángulo de 30° y si nos acercamos 10 m, bajo un ángulo de 60°.
+                    </legend>
+                    <img src="http://www.vitutor.org/al/trigo/images/59.gif" alt="Altura de un árbol"/>
+                    <input type="text" name="resp8"/>
+                </section>
+                <section id="9" style="display:none">
+                    <legend>
+                        Trabajando juntos, dos obreros tardan en hacer un trabajo 14 horas. 
+                        Cuánto tiempo tardarán en hacerlo por separado si uno es el doble de rápido que el otro?
+                        [Selecciona las dos horas de trabajo]
+                    </legend>
+                    <input type="checkbox" name="respuesta9" value="correct1"/> 21 horas <br/>
+                    <input type="checkbox" name="respuesta9" value="correct2"/> 42 horas <br/>
+                    <input type="checkbox" name="respuesta9" value="nope1"/> 40 horas <br/>
+                    <input type="checkbox" name="respuesta9" value="nope2"/> 25 horas <br/>
+                </section>
+                <section id="10" style="display:none">
+                    <legend>
+                        Un reloj marca las 3 en punto. ¿A qué hora entre las 3 y las 4 se superpondrán las agujas?
+                    </legend>
+                    <img src="http://www.vitutor.org/ecuaciones/1/images/12.gif" alt="Reloj"/>
+                    <input type="radio" name="respuesta10" value="right"/> 3 h 16 min 21 s <br/>
+                    <input type="radio" name="respuesta10" value="nope10"/> 3 h 18 min 40 s <br/>
+                    <input type="radio" name="respuesta10" value="nope102"/> 3h 3min 3s <br/>
+                </section>
+                <section id="11" style="display:none">
+                    <legend>
+
+                    </legend>
+                </section>
             </form>
-            {{ cur_q }}
-            <button class="btn btn-primary" name="nextq">Siguiente</button>
+            <button class="btn btn-primary" name="nextq" >Siguiente</button>
         </div>
     </div>
 </div>
