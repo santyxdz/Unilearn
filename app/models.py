@@ -73,6 +73,10 @@ class User(UserMixin, db.Model):
         if self.life < 10:
             self.life += 1
 
+    def newteacher(self):
+        self.type = "teacher"
+        db.session.commit()
+
 class Topic(db.Model):
     __tablename__ = "topic"
     id = db.Column(db.Integer, primary_key=True, unique=True)

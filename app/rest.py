@@ -712,6 +712,7 @@ class RHelpReport(Resource):
                 "message": "'username', 'question_id' and 'report' must be given"
             }
 
+
 api.add_resource(RError, '/api', "/api/")
 api.add_resource(RUser, "/api/users/<username>")
 api.add_resource(RTopic, "/api/topics/<topic_name>", "/api/topics/")
