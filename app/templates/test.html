@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{%block title%}
+Unilearn | Test de nivelacion
+{%endblock%}
+
+{%set cur_q=1%}
+{%set MAX_Q=3%}
+
+
+{% block js %}
+<script>
+    $(document).ready(function(){
+        $("button[name=nextq]").click(
+            function () {
+                {%if not cur_q == MAX_Q %}
+                document.getElementById("{{cur_q}}").style.display = "none";
+                {%set cur_q = cur_q+1%}
+                document.getElementById("{{cur_q}}").style.display = "block";
+                {%endif%}
+            });
+        });
+</script>
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+
+
+{% block main%}
+
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div class="well bs-component">
+            <form action="">
+                <section id="1">
+                    <legend>Esta es la primera pregunta, tal vez con una imagen</legend>
+                    <div class="text-center">
+                        <img src="http://cdns2.freepik.com/foto-gratis/_21338031.jpg">
+                    </div>
+                    <input type="radio" name="respuesta1" value="Opcion1" /> Opcion 1
+                    <input type="radio" name="respuesta1" value="Opcion2" /> Opcion 2
+                    <input type="radio" name="respuesta1" value="Opcion3"/> Opcion 3
+                </section>
+                <section id="2" style="display:none;">
+                    <legend> ¿Cuál sería un buen enunciado para la segunda pregunta? </legend>
+                    <input type="checkbox" name="respuesta2" value="op1"/> "Cual es la mejor forma de matar a Anga?"
+                    <input type="checkbox" name="respuesta2" value="op2"/> "Por que Anga sigue vivo?"
+                    <input type="checkbox" name="respuesta2" value="op3"/> "Como hacer que Men crezca?"
+                    <input type="checkbox" name="respuesta2" value="op4"/> "Por que Santiago Suarez es tan COSOTA?"
+                </section>
+                <section id="3" style="display:none;">
+                    <legend>Pregunta 3</legend>
+                    <input type="text" name="resp4"/>
+                </section>
+            </form>
+            {{ cur_q }}
+            <button class="btn btn-primary" name="nextq">Siguiente</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
