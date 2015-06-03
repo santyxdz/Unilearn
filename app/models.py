@@ -5,6 +5,10 @@ from flask_login import UserMixin
 
 app.config['SECURITY_POST_LOGIN'] = '/profile'
 
+users = db.Table('users',
+                 db.Column('user_username', db.String(15), db.ForeignKey('user.username')),
+                 db.Column('course_id', db.Integer, db.ForeignKey('course.id'))
+                 )
 
 class User(UserMixin, db.Model):
     username = db.Column(db.String(15), unique=True, primary_key=True)
@@ -20,9 +24,7 @@ class User(UserMixin, db.Model):
     helpreport = db.relationship("HelpReport", backref="user", cascade='all, delete-orphan')
     life = db.Column(db.Integer)
     type = db.Column(db.String(50))  # Profesor | Estudiante
-    # level = db.Column(db.Integer) # el topic que puede tomar despues de haber hecho el test de nivelacion
-    # Cursos = Cursos ... por hacer
-
+    #.courses dinamicamente enlazado
     def __init__(self, username, email, password, first_name="", last_name="", photo="", tw_un=""):
         self.username = username
         self.first_name = first_name
@@ -75,7 +77,6 @@ class Topic(db.Model):
     helptheory = db.relationship("HelpTheory", backref="topic", cascade='all, delete-orphan')
     helpequation = db.relationship("HelpEquations", backref="topic", cascade='all, delete-orphan')
 
-
     def __init__(self, name, description, icon=""):
         self.name = name
         self.description = description
@@ -84,6 +85,12 @@ class Topic(db.Model):
 
     def __repr__(self):
         return "<Area @" + self.name + ">"
+
+class Course(Topic):
+    __tablename__ = "course"
+    id = db.Column(db.Integer, db.ForeignKey('topic.id'), primary_key=True)
+    board = db.Column(db.Text)
+    users = db.relationship('User', secondary=users, backref=db.backref('courses', lazy='dynamic'))
 
 class Question(db.Model):
     __tablename__ = 'question'
@@ -114,14 +121,13 @@ class Question(db.Model):
         print "Question: " + self.__repr__()
 
     def __repr__(self):
-        return "<Question @" + self.statement
+        return "<Question @" + self.statement + ">"
 
 class MSUQuestion(Question):
     __tablename__ = 'msu_question'
     id = db.Column(db.Integer, db.ForeignKey('question.id'), primary_key=True)
     __mapper_args__ = {'polymorphic_identity': 'msu_question'}
 
-    # @staticmethod
     def validate_answer(self, selected, true_one):
         if selected == true_one:
             return {"score": 1.0, "message": "FELICITACIONES"}
@@ -134,7 +140,6 @@ class CompletationQuestion(Question):
     __mapper_args__ = {'polymorphic_identity': 'completation_question'}
 
     def validate_answer(self, text):
-        #if str(selection).decode('utf-8').lower() == str(text).decode('utf-8').lower():
         answers = [x.text.lower() for x in self.answers]
         if text.lower() in answers:
             return {"score": 1.0, "message": "FELICITACIONES"}
@@ -284,3 +289,4 @@ class HelpReport(db.Model):
 
     def __repr__(self):
         return "HelpReport @" + self.report
+

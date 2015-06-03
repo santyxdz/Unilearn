@@ -353,10 +353,13 @@ def edit_question(course_id=None,question_id=None):
 #SOCIAL WORKING LOGIN!
 @app.route('/authorize/<provider>')
 def oauth_authorize(provider):
-    if not current_user.is_anonymous():
-        return redirect(url_for('index'))
-    oauth = OAuthSignIn.get_provider(provider)
-    return oauth.authorize()
+    try:
+        if not current_user.is_anonymous():
+            return redirect(url_for('index'))
+        oauth = OAuthSignIn.get_provider(provider)
+        return oauth.authorize()
+    except Exception as e:
+        return unicode(e)
 
 @app.route('/callback/<provider>')
 def oauth_callback(provider):
@@ -364,15 +367,14 @@ def oauth_callback(provider):
         if not current_user.is_anonymous():
             return redirect(url_for('index'))
         oauth = OAuthSignIn.get_provider(provider)
-        return json.dumps(oauth.callback())
         social_id, username, email = oauth.callback()
         if social_id is None:
             flash('Authentication failed.')
             return redirect(url_for('index'))
         user = models.User.query.filter_by(social_id=social_id).first()
         if not user:
-            #return redirect(url_for("register",username=username,social_id=social_id,email=email))
-            return "<p>"+social_id+"<br/>"+username+"<br/>"+set_default(email,"Twitter")+"</p>"
+            return redirect(url_for("register",username=username,social_id=social_id,email=email))
+            #return "<p>"+social_id+"<br/>"+username+"<br/>"+set_default(email,"Twitter")+"</p>"
             #user = models.User(social_id=social_id, username=username, email=email)
             #db.session.add(user)
             #db.session.commit()
