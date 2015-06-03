@@ -143,11 +143,14 @@ def store():
 @app.route("/courses")
 @nocache
 def courses():
+    public_courses = list(set(models.Topic.query.order_by(models.Topic.id).all()) - \
+        set(models.Course.query.all()))
+    public_courses.sort(key=lambda x: x.id, reverse=False)
     if current_user.is_authenticated():
         inscribed = models.Topic.query.filter_by(id=current_user.cur_topic_id).first()
         if inscribed is not None:
-            return render_template("courses.html", courses=models.Topic.query.order_by(models.Topic.id).all(), active_topic=inscribed.name)
-    return render_template("courses.html", courses=models.Topic.query.order_by(models.Topic.id).all())
+            return render_template("courses.html", courses=public_courses, active_topic=inscribed.name)
+    return render_template("courses.html", courses=public_courses)
 
 @app.route("/courses/<course>")
 @nocache
