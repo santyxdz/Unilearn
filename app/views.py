@@ -82,6 +82,7 @@ def sort_topic(topic):
 def total_scores():
     return sum([x.score for x in models.UserScore.query.all()])
 
+
 @login_manager.user_loader
 def load_user(user):
     return models.User.query.get(user)
@@ -136,6 +137,8 @@ def users():
 @app.route("/store")
 def store():
     return render_template("store.html")
+
+
 
 @app.route("/courses")
 @nocache

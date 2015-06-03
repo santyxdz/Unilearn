@@ -5,7 +5,22 @@ Unilearn | Tienda
 
 {% block css %}
 <style>
+        .panel-validation{
+            background-color: rgba(203, 239, 212, 0.9);
+            box-shadow: 0 1px 6px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.4);
+            padding: 3px 10px;
+            border-radius: 10px;
 
+        }
+       .modal-backdrop {
+             background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.79);
+        }
+        .modal:before {
+          display: inline-block;
+          vertical-align: middle;
+          content: " ";
+          height: 25%;
+        }
 </style>
 {% endblock %}
 
@@ -62,15 +77,56 @@ Unilearn | Tienda
                     <img  class="text-center" width="110" height="110" src="https://cdn0.iconfinder.com/data/icons/school-medicine-people-1/110/Teacher-128.png" style='...' border="0" alt="0">
                 </div>
                 <br><span class="badge badge-warning" style="background-color: rgb(239, 199, 94);">Por 1.5$</span>
-                <button class="btn btn-danger" type="submit" id="newteacher" name="newteacher">Comprar</button>
+                <button class="btn btn-danger" type="submit"  data-toggle="modal" data-target=".validation">
+                    {% if current_user.type == "teacher" %}
+                        Comprar Mas
+                    {% else %}
+                        Comprar
+                    {% endif %}
+                </button>
             </div>
             <div class="col-md-6">
-                <em><p align="justify">Conviértete en un profesor, podrás crear cursos y unir estudiantes o usuarios a este. Además podrás ver las estadísticas de progreso de tus alumnos </p></em>
+                <em><p align="justify">
+                    {% if current_user.type != "teacher" %}
+                        Conviértete en un profesor, podrás crear cursos y unir estudiantes o usuarios a este. Además podrás ver las estadísticas de progreso de tus alumnos
+                    {% else %}
+                        Tu ya eres un Profesor, pero puedes comprar mas paquetes si deseas crear mas cursos.
+                    {% endif %}
+                </p></em>
 
             </div>
         </div>
     </div>
 
+    <div class="modal fade validation" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="opacity: 0.93;">
+            <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:none;">
+                <div class="panel-validation"><br>
+                    <div class="text-center">
+                        <img width="100" height="100" src="https://cdn0.iconfinder.com/data/icons/winter-lollipop/128/Cart.png" style='...' border="0" alt="0">
+                        <h3>¿Quieres ser un Profesor?</h3>
+                        <label>Podras crear dos cursos y unir estudiantes a estos <span class="badge badge-warning" style="background-color: rgb(239, 199, 94);">por solo 2.0$</span></label>
+                        <button id="send" data-dismiss="modal" class="btn btn-default" name="newteacher"  style="background-color: rgba(0,0,0,0);">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+{% endblock %}
+{% block js %}
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("button[name=newteacher]").click(function () {
+                   {%if current_user.is_authenticated()%}
+                        alert("Ya eres parte de la red de maestros de unilearn");
+                        {{current_user.newteacher()}}
+
+                   {% endif %}
+                });
+            });
+
+        </script>
 {% endblock %}
