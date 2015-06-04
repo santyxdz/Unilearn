@@ -1,5 +1,49 @@
 {% extends "panel_base.html" %}
 {% block content %}
+    <div class="modal addUser">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Añadir Usuario</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputAnswer" class="col-lg-2 control-label">Usuario</label>
+                        <div class="col-lg-10">
+                            <input class="form-control" id="inputAnswer" placeholder="usuario" name="user">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="new_user"><b>Agregar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal addTeacher">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Añadir Profesor</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputAnswer" class="col-lg-2 control-label">Profesor</label>
+                        <div class="col-lg-10">
+                            <input class="form-control" id="inputAnswer" placeholder="usuario" name="teacher">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="new_teacher"><b>Agregar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row text-center" style="max-width: 700px;margin: 0 auto">
         <h1>{{ topic.name }}</h1>
         <h5>{{ topic.description }}</h5>
@@ -22,8 +66,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="row text-center">
-                        <a href=""
-                           class="btn btn-success">Añadir Usuario</a>
+                        <button class="btn btn-success" id="add_user">Añadir Usuario</button>
                     </div>
                     <div class="list-group">
                         {% for user in topic.users %}
@@ -36,9 +79,9 @@
                                 </a>
                                 <div class="row-content">
                                     <div class="action-secondary">
-                                        <a href=""
-                                           class="btn btn-warning">
-                                            <i class="mdi-image-edit" style="color: #ffffff;"></i>
+                                        <a href="javascript:deleteUser('{{ user.username }}')"
+                                           class="btn btn-danger">
+                                            <i class="mdi-navigation-close" style="color: #ffffff;"></i>
                                         </a>
                                     </div>
                                     <a href="">
@@ -60,8 +103,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="row text-center">
-                        <a href=""
-                           class="btn btn-success">Añadir Profesor</a>
+                        <button class="btn btn-success" id="add_teacher">Añadir Profesor</button>
                     </div>
                     <div class="list-group">
                         {% for user in topic.teachers %}
@@ -74,9 +116,9 @@
                                 </a>
                                 <div class="row-content">
                                     <div class="action-secondary">
-                                        <a href=""
-                                           class="btn btn-warning">
-                                            <i class="mdi-image-edit" style="color: #ffffff;"></i>
+                                        <a href="javascript:deleteTeacher('{{ user.username }}')"
+                                           class="btn btn-danger">
+                                            <i class="mdi-navigation-close" style="color: #ffffff;"></i>
                                         </a>
                                     </div>
                                     <a href="">
@@ -209,4 +251,80 @@
             </div>
         </div>
     </div>
+{% endblock %}
+{% block js %}
+    <script>
+        function deleteUser(user){
+            $.post("{{ "/api/courses/"+topic.name|string }}",
+                    {"method":"delete_user",
+                        "user":user},
+                    function(data){
+                        if(data.status == "error"){
+                            alert("ERROR!: "+data.error);
+                        }else{
+                            alert(data.status);
+                            window.location.href = window.location.href;
+                        }
+                    },"json");
+        }
+        function deleteTeacher(user){
+            $.post("{{ "/api/courses/"+topic.name|string }}",
+                    {"method":"delete_teacher",
+                        "user":user},
+                    function(data){
+                        if(data.status == "error"){
+                            alert("ERROR!: "+data.error);
+                        }else{
+                            alert(data.status);
+                            window.location.href = window.location.href;
+                        }
+                    },"json");
+        }
+        $(document).ready(function(){
+                    $("button#add_user").click(
+                            function(){
+                                $(".addUser").modal("show")
+                            }
+                    );
+                    $("button#add_teacher").click(
+                            function(){
+                                $(".addTeacher").modal("show")
+                            }
+                    );
+                    $("button#new_user").click(
+                            function(){
+                                $.post("{{ "/api/courses/"+topic.name|string }}",
+                                        {"method":"add_user",
+                                            "user": $("input[name='user']").val()
+                                        },
+                                        function(data){
+                                            if(data.status == "error"){
+                                                alert("ERROR!: "+data.error);
+                                            }else{
+                                                alert(data.status);
+                                                window.location.href = window.location.href;
+                                            }
+                                        },
+                                        "json");
+                            }
+                    );$("button#new_teacher").click(
+                            function(){
+                                $.post("{{ "/api/courses/"+topic.name|string }}",
+                                        {"method":"add_teacher",
+                                            "user": $("input[name='teacher']").val()
+                                        },
+                                        function(data){
+                                            if(data.status == "error"){
+                                                alert("ERROR!: "+data.error);
+                                            }else{
+                                                alert(data.status);
+                                                window.location.href = window.location.href;
+                                            }
+                                        },
+                                        "json");
+                            }
+                    );
+                }
+        );
+    </script>
 {% endblock %}

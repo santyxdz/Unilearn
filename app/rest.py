@@ -140,6 +140,7 @@ class RTopic(Resource):
         else:
             return {"status":"error","error": "What are you trying to do?"}
 
+
 class RCourse(Resource):
     def get(self, topic_name):
         topic = models.Course.query.filter_by(name=topic_name).first()
@@ -225,6 +226,70 @@ class RCourse(Resource):
                     return {"status": "error","error":unicode(e)}
             else:
                 return {"status":"error","error": "Course doesn't exist"}
+        elif "delete_user" == request.form["method"]:
+            if isinstance(topic_name,type(None)):
+                return {"status":"error",
+                        "error":"Not name found, You can't delete a course without a name"}
+            topic = models.Course.query.filter_by(name=topic_name).first()
+            if isinstance(topic,type(None)):
+                return {"status":"error",
+                        "error":"Not found course"}
+            try:
+                user = request.form["user"]
+                topic.users.remove(models.User.query.get(user))
+                db.session.commit()
+                return {"status":"Success User remove from Course"}
+            except Exception as e:
+                return {"status":"error",
+                        "error":unicode(e)}
+        elif "delete_teacher" == request.form["method"]:
+            if isinstance(topic_name,type(None)):
+                return {"status":"error",
+                        "error":"Not name found, You can't delete a course without a name"}
+            topic = models.Course.query.filter_by(name=topic_name).first()
+            if isinstance(topic,type(None)):
+                return {"status":"error",
+                        "error":"Not found course"}
+            try:
+                user = request.form["user"]
+                topic.teachers.remove(models.User.query.get(user))
+                db.session.commit()
+                return {"status":"Success Teacher remove from Course"}
+            except Exception as e:
+                return {"status":"error",
+                        "error":unicode(e)}
+        elif "add_user" == request.form["method"]:
+            if isinstance(topic_name,type(None)):
+                return {"status":"error",
+                        "error":"Not name found, You can't delete a course without a name"}
+            topic = models.Course.query.filter_by(name=topic_name).first()
+            if isinstance(topic,type(None)):
+                return {"status":"error",
+                        "error":"Not found course"}
+            try:
+                user = request.form["user"]
+                topic.users.append(models.User.query.get(user))
+                db.session.commit()
+                return {"status":"Success User add to Course"}
+            except Exception as e:
+                return {"status":"error",
+                        "error":unicode(e)}
+        elif "add_teacher" == request.form["method"]:
+            if isinstance(topic_name,type(None)):
+                return {"status":"error",
+                        "error":"Not name found, You can't delete a course without a name"}
+            topic = models.Course.query.filter_by(name=topic_name).first()
+            if isinstance(topic,type(None)):
+                return {"status":"error",
+                        "error":"Not found course"}
+            try:
+                user = request.form["user"]
+                topic.teachers.append(models.User.query.get(user))
+                db.session.commit()
+                return {"status":"Success Teacher add to Course"}
+            except Exception as e:
+                return {"status":"error",
+                        "error":unicode(e)}
         else:
             return {"status":"error","error": "What are you trying to do?"}
 
