@@ -124,7 +124,6 @@ def load_user(user):
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
-#@nocache
 def home():
     return render_template('home.html')
 
@@ -161,7 +160,6 @@ def register():
 
 
 @app.route("/users")
-#@nocache
 def users():
     users_list = models.User.query.all()
     return render_template("users.html", users=users_list)
@@ -173,7 +171,6 @@ def store():
 
 
 @app.route("/courses")
-#@nocache
 def courses():
     public_courses = list(set(models.Topic.query.order_by(models.Topic.id).all()) - \
         set(models.Course.query.all()))
@@ -184,8 +181,7 @@ def courses():
             return render_template("courses.html", courses=public_courses, active_topic=inscribed.name)
     return render_template("courses.html", courses=public_courses)\
 
-@app.route("/courses/private")
-#@nocache
+@app.route("/subjects")
 @login_required
 def private_courses():
     return render_template("private_courses.html", courses=current_user.courses.all(), \
@@ -200,7 +196,6 @@ def start():
     return render_template("start_learning.html")
 
 @app.route("/courses/<course>")
-#@nocache
 def course(course):
     course = models.Topic.query.filter_by(name=course).first()
     if isinstance(course,type(None)):
@@ -208,19 +203,29 @@ def course(course):
     return render_template("course.html", course=course)
 
 @app.route("/courses/<course>/q/<int:num>")
-#@nocache
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
-    return render_template("question.html", question=question)
+    return render_template("question.html", question=question)\
 
+@app.route("/subjects/<course>")
+def subject(course):
+    course = models.Course.query.filter_by(name=course).first()
+    if isinstance(course,type(None)):
+        return abort(404)
+    return render_template("subject.html", course=course)
+
+@app.route("/subjects/<course>/q/<int:num>")
+def subject_questions(course, num):
+    topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
+    question = models.Question.query.filter_by(id=num, topic=topic).first()
+    return render_template("question.html", question=question)
 
 @app.after_request
 def add_header(response):
     response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
     response.headers['Cache-Control'] = 'public, max-age=1'
     return response
-
 
 @app.errorhandler(404) #Pagina de Error: No Existe
 def page_not_found(error):
