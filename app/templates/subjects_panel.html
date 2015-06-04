@@ -16,7 +16,8 @@
                             <a href="{{ url_for("view_subject",course_id=course.id) }}">
                                 <div class="list-group-item">
                                     <div class="row-picture">
-                                        <img class="circle" src="{{ course.icon }}" alt="icon" width="56" height="56">
+                                        <img class="circle" src="{{ set_default(course.icon,
+                                        "https://cdn2.iconfinder.com/data/icons/multi-media/520/book-128.png") }}" alt="icon" width="56" height="56">
                                     </div>
                                     <div class="row-content">
                                         <h4 class="list-group-item-heading">{{ course.name }}</h4>

@@ -106,7 +106,14 @@ def progress(user,topic_id):
      for x in scores:
          if x.question.topic_id == topic_id:
              cont +=1
-     return (cont*100)/allquestion
+     try:
+        return (cont*100)/allquestion
+     except ZeroDivisionError as e:
+         return 100
+
+@app.template_global()
+def is_none(object):
+    return isinstance(object,type(None))
 
 @login_manager.user_loader
 def load_user(user):
@@ -335,7 +342,11 @@ def panel():
 @login_required
 @just_admins
 def courses_panel():
-    return render_template("courses_panel.html", courses=models.Topic.query.all())
+    courses=models.Topic.query.all()
+    subjects = models.Course.query.all()
+    courses = list(set(courses)-set(subjects))
+    return render_template("courses_panel.html", courses=courses,
+                           subjects=subjects)
 
 @app.route("/panel/courses/new")
 @login_required
@@ -374,7 +385,7 @@ def new_question(course_id=None):
     topic = models.Topic.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("new_question.html",topic=topic)
+    return render_template("new_question.html",topic=topic, models=models)
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>")
 @login_required
@@ -385,7 +396,7 @@ def view_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("view_question.html",question=question)
+    return render_template("view_question.html",question=question,models=models)
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>/edit")
 @login_required
@@ -396,7 +407,7 @@ def edit_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("edit_question.html",question=question)
+    return render_template("edit_question.html",question=question, models=models)
 """
 *******************************************************************************
 ****************************** PANEL - TEACHER ********************************
@@ -420,7 +431,7 @@ def new_subject():
 def edit_subject(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
-    topic = current_user.subjects
+    topic = current_user.subjects.filter_by(id=course_id).first()
     if isinstance(topic,type(None)):
         return abort(404)
     return render_template("edit_subject.html", topic=topic)
@@ -434,7 +445,7 @@ def view_subject(course_id=None):
     topic = models.Course.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("view_course.html", topic=topic)
+    return render_template("view_subject.html", topic=topic)
 
 @app.route("/panel/subjects/<int:course_id>/question/new")
 @login_required
@@ -442,10 +453,10 @@ def view_subject(course_id=None):
 def new_subject_question(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
-    topic = models.Topic.query.get(course_id)
+    topic = models.Course.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("new_question.html",topic=topic)
+    return render_template("new_question.html",topic=topic, models=models)
 
 @app.route("/panel/subjects/<int:course_id>/question/<int:question_id>")
 @login_required
@@ -456,7 +467,7 @@ def view_subject_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("view_question.html",question=question)
+    return render_template("view_question.html",question=question, models=models)
 
 @app.route("/panel/subjects/<int:course_id>/question/<int:question_id>/edit")
 @login_required
@@ -467,7 +478,7 @@ def edit_subject_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("edit_question.html",question=question)
+    return render_template("edit_question.html",question=question,models=models)
 
 
 

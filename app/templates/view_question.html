@@ -35,7 +35,11 @@
     </div>
     <h1>{{ question.title }}:{{ question.type }}</h1>
     <small>{{ question.statement }}</small>
+    {% if is_none(models.Course.query.get(question.topic.id)) %}
     <a href="{{ url_for("edit_question",course_id=question.topic.id,question_id=question.id) }}">Editar Pregunta</a>
+    {% else %}
+    <a href="{{ url_for("edit_subject_question",course_id=question.topic.id,question_id=question.id) }}">Editar Pregunta</a>
+    {% endif %}
     <div class="panel panel-primary">
         <div class="panel-heading">
             <h3 class="panel-title">Respuestas</h3>

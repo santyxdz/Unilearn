@@ -1,0 +1,212 @@
+{% extends "panel_base.html" %}
+{% block content %}
+    <div class="row text-center" style="max-width: 700px;margin: 0 auto">
+        <h1>{{ topic.name }}</h1>
+        <h5>{{ topic.description }}</h5>
+        <hr/>
+        <h5>{{ set_default(topic.board,"<small><i> Escribe algo en tu muro </i></small>")|safe }}</h5>
+        <a href="{{ url_for("edit_subject",course_id=topic.id) }}" class="btn btn-primary">
+            Editar Curso
+        </a>
+        <a href="{{ url_for("subjects_panel") }}" class="btn btn-primary">
+            Regresar Cursos
+        </a>
+        <br/><br/>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Usuarios</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <a href=""
+                           class="btn btn-success">Añadir Usuario</a>
+                    </div>
+                    <div class="list-group">
+                        {% for user in topic.users %}
+                            <div class="list-group-item">
+                                <a href="">
+                                    <div class="row-picture">
+                                        <img class="circle" src="{{ set_default(user.photo,
+"https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png") }}" alt="icon">
+                                    </div>
+                                </a>
+                                <div class="row-content">
+                                    <div class="action-secondary">
+                                        <a href=""
+                                           class="btn btn-warning">
+                                            <i class="mdi-image-edit" style="color: #ffffff;"></i>
+                                        </a>
+                                    </div>
+                                    <a href="">
+                                        <h4 class="list-group-item-heading">@{{ user.username }}</h4>
+                                        <p class="list-group-item-text">{{ user.first_name+" "+user.last_name }}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="list-group-separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Profesores</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <a href=""
+                           class="btn btn-success">Añadir Profesor</a>
+                    </div>
+                    <div class="list-group">
+                        {% for user in topic.teachers %}
+                            <div class="list-group-item">
+                                <a href="">
+                                    <div class="row-picture">
+                                        <img class="circle" src="{{ set_default(user.photo,
+"https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png") }}" alt="icon">
+                                    </div>
+                                </a>
+                                <div class="row-content">
+                                    <div class="action-secondary">
+                                        <a href=""
+                                           class="btn btn-warning">
+                                            <i class="mdi-image-edit" style="color: #ffffff;"></i>
+                                        </a>
+                                    </div>
+                                    <a href="">
+                                        <h4 class="list-group-item-heading">@{{ user.username }}</h4>
+                                        <p class="list-group-item-text">{{ user.first_name+" "+user.last_name }}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="list-group-separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Preguntas</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <a href="{{ url_for("new_subject_question",course_id=topic.id) }}"
+                           class="btn btn-success">Añadir Pregunta</a>
+                    </div>
+                    <div class="list-group">
+                        {% for question in topic.questions %}
+                            <div class="list-group-item">
+                                <a href="{{ url_for("view_subject_question",course_id=question.topic.id,question_id=question.id) }}">
+                                    <div class="row-action-primary">
+                                        <i class="mdi-action-question-answer" style="color: #ffffff;background-color: #4caf50;"></i>
+                                    </div>
+                                </a>
+                                <div class="row-content">
+                                    <div class="action-secondary">
+                                        <a href="{{ url_for("edit_subject_question",course_id=question.topic.id,question_id=question.id) }}"
+                                           class="btn btn-warning">
+                                            <i class="mdi-image-edit" style="color: #ffffff;"></i>
+                                        </a>
+                                    </div>
+                                    <a href="{{ url_for("view_subject_question",course_id=question.topic.id,question_id=question.id) }}">
+                                        <h4 class="list-group-item-heading">{{ question.title }}</h4>
+                                        <p class="list-group-item-text">{{ question.statement[:20]+"..." }}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="list-group-separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Equaciones (Not Implemented)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <a href=""
+                           class="btn btn-success">Añadir Equacion</a>
+                    </div>
+                    <div class="list-group">
+                        {% for equation in topic.helpequation %}
+                            <div class="list-group-item">
+                                <a href="#">
+                                    <div class="row-action-primary">
+                                        <i class="mdi-action-question-answer" style="color: #ffffff;background-color: #4caf50;"></i>
+                                    </div>
+                                </a>
+                                <div class="row-content">
+                                    <div class="action-secondary">
+                                        <a href="#"
+                                           class="btn btn-warning">
+                                            <i class="mdi-image-edit" style="color: #ffffff;"></i>
+                                        </a>
+                                    </div>
+                                    <a href="">
+                                        <h4 class="list-group-item-heading">{{ equation.id }}</h4>
+                                        <p class="list-group-item-text">{{ equation.equation }}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="list-group-separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Teoria (Not Implemented)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <a href=""
+                           class="btn btn-success">Añadir Teoria</a>
+                    </div>
+                    <div class="list-group">
+                        {% for theory in topic.helptheory %}
+                            <div class="list-group-item">
+                                <a href="#">
+                                    <div class="row-action-primary">
+                                        <i class="mdi-action-question-answer" style="color: #ffffff;background-color: #4caf50;"></i>
+                                    </div>
+                                </a>
+                                <div class="row-content">
+                                    <div class="action-secondary">
+                                        <a href="#"
+                                           class="btn btn-warning">
+                                            <i class="mdi-image-edit" style="color: #ffffff;"></i>
+                                        </a>
+                                    </div>
+                                    <a href="">
+                                        <h4 class="list-group-item-heading">{{ theory.id }}</h4>
+                                        <p class="list-group-item-text">{{ theory.statement[:20] }}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="list-group-separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

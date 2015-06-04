@@ -30,6 +30,8 @@
                         {% if current_user.cur_topic or not current_user.is_authenticated()%}
                             <li><a class="gn-icon gn-icon-user" href="{{ url_for("courses") }}"
                                 style="border-top: 1px solid rgba(255,255,255,0.3);">Cursos</a></li>
+                            <li><a class="gn-icon gn-icon-user" href="{{ url_for("private_courses") }}"
+                                style="border-top: 1px solid rgba(255,255,255,0.3);">Grupos</a></li>
                         {% else %}
                             <li><a class="gn-icon gn-icon-user" href="{{ url_for("start") }}"
                                 style="border-top: 1px solid rgba(255,255,255,0.3);">Empieza a aprender</a></li>
@@ -41,13 +43,22 @@
                         <li><a class="gn-icon gn-icon-user" href="{{ url_for("store") }}">Tienda</a></li>
                         {% else %}
                         {%endif%}
-                        {% if current_user.is_authenticated() and current_user.type == "admin" %}
+                        {% if current_user.is_authenticated() and ( current_user.type == "admin" or current_user.type == "teacher") %}
                         <li>
                             <a class="gn-icon gn-icon-alter" href="{{ url_for("panel") }}">Panel</a>
+                            {% if current_user.type == "admin" %}
                             <ul class="gn-submenu">
                                 <li>
                                     <a class="gn-icon gn-icon-alter" href="{{ url_for("courses_panel") }}">
                                         Editar Cursos
+                                    </a>
+                                </li>
+                            </ul>
+                            {% endif %}
+                            <ul class="gn-submenu">
+                                <li>
+                                    <a class="gn-icon gn-icon-alter" href="{{ url_for("subjects_panel") }}">
+                                        Editar Grupos
                                     </a>
                                 </li>
                             </ul>
@@ -81,12 +92,13 @@
         {% else %}
             <li><a href="{{url_for("start")}}">Empieza a aprender</a></li>
         {%endif%}
+        <li><a href="{{ url_for("private_courses") }}">Grupos</a></li>
         {% if not current_user.is_authenticated() %}
             <li style="float: right"><a href="{{ url_for("register") }}"><span>Registrase</span></a></li>
             <li><a href="{{ url_for("login") }}"><span>Entrar</span></a></li>
         {% else %}
             <li><a href="{{ url_for("user",user=current_user.username) }}">
-                <span>Perfil</span></a>
+                <span>&nbsp;&nbsp;Perfil&nbsp;&nbsp;</span></a>
             </li>
         {% endif %}
     </ul>

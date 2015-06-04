@@ -70,8 +70,16 @@
                     topic:"{{ topic.id }}"
                     },
                     function(data){
-                        alert(data.status);
-                        window.location.href = "{{ url_for("view_course",course_id=topic.id) }}";
+                        if(data.status == "error"){
+                            alert("ERROR!: "+data.error);
+                        }else{
+                            alert(data.status);
+                            {% if is_none(models.Course.query.get(topic.id)) %}
+                            window.location.href = "{{ url_for("view_course",course_id=topic.id) }}";
+                            {% else %}
+                            window.location.href = "{{ url_for("view_subject",course_id=topic.id) }}";
+                            {% endif %}
+                        }
                     },
                     "json"
                 );

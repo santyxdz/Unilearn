@@ -205,6 +205,7 @@ class RCourse(Resource):
                     course.name = request.form["name"]
                     course.icon = request.form["icon"]
                     course.description = request.form["description"]
+                    course.board = request.form["board"]
                     db.session.commit()
                     return {"status": "Successful, Course Update"}
                 except Exception as e:
