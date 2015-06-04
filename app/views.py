@@ -124,7 +124,7 @@ def home():
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
-    username = request.args.get('username').lower()
+    username = request.args.get('username')
     social_id = request.args.get('social_id')
     email = request.args.get('email')
     if request.method == 'POST':
