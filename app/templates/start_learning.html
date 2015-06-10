@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{%block title%}
+Unilearn | Empieza
+{%endblock%}
+
+{% block js %}
+<script>
+    $(document).ready(function(){
+        $("button[name=butregister]").click(
+            function () {
+                $.post("/api/register/", { user: "{{current_user.username}}", topic_id: 1 }, function(data){}, "json");
+                window.location.assign("/courses/Aritm%C3%A9tica");
+            });
+        });
+</script>
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+
+
+{% block main%}
+
+<h3 class="panel-title">
+    ¿Tomar un test de nivelación... O empezar de cero?
+</h3>
+
+<a href="{{url_for('test')}}" class="btn btn-danger">Tomar un test</a>
+<br>
+<button name="butregister" id="butregister" class="btn btn-primary">Empezar de cero</button>
+
+{% endblock %}

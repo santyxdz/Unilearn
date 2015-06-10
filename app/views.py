@@ -106,7 +106,14 @@ def progress(user,topic_id):
      for x in scores:
          if x.question.topic_id == topic_id:
              cont +=1
-     return (cont*100)/allquestion
+     try:
+        return (cont*100)/allquestion
+     except ZeroDivisionError as e:
+         return 100
+
+@app.template_global()
+def is_none(object):
+    return isinstance(object,type(None))
 
 @login_manager.user_loader
 def load_user(user):
@@ -117,14 +124,13 @@ def load_user(user):
 @app.route("/main")
 @app.route('/index')
 @app.route('/')
-#@nocache
 def home():
     return render_template('home.html')
 
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
-    username = request.args.get('username').lower()
+    username = request.args.get('username')
     social_id = request.args.get('social_id')
     email = request.args.get('email')
     if request.method == 'POST':
@@ -154,7 +160,6 @@ def register():
 
 
 @app.route("/users")
-#@nocache
 def users():
     users_list = models.User.query.all()
     return render_template("users.html", users=users_list)
@@ -166,7 +171,6 @@ def store():
 
 
 @app.route("/courses")
-#@nocache
 def courses():
     public_courses = list(set(models.Topic.query.order_by(models.Topic.id).all()) - \
         set(models.Course.query.all()))
@@ -177,32 +181,51 @@ def courses():
             return render_template("courses.html", courses=public_courses, active_topic=inscribed.name)
     return render_template("courses.html", courses=public_courses)\
 
-@app.route("/courses/private")
-#@nocache
+@app.route("/subjects")
 @login_required
 def private_courses():
     return render_template("private_courses.html", courses=current_user.courses.all(), \
                            subjects=current_user.subjects.all())
 
+@app.route("/test")
+def test():
+    return render_template("test.html")
+
+@app.route("/start")
+def start():
+    return render_template("start_learning.html")
+
 @app.route("/courses/<course>")
-#@nocache
 def course(course):
-    return render_template("course.html", course=models.Topic.query.filter_by(name=course).first())
+    course = models.Topic.query.filter_by(name=course).first()
+    if isinstance(course,type(None)):
+        return abort(404)
+    return render_template("course.html", course=course)
 
 @app.route("/courses/<course>/q/<int:num>")
-#@nocache
 def questions(course, num):
     topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
     question = models.Question.query.filter_by(id=num, topic=topic).first()
-    return render_template("question.html", question=question)
+    return render_template("question.html", question=question)\
 
+@app.route("/subjects/<course>")
+def subject(course):
+    course = models.Course.query.filter_by(name=course).first()
+    if isinstance(course,type(None)):
+        return abort(404)
+    return render_template("subject.html", course=course)
+
+@app.route("/subjects/<course>/q/<int:num>")
+def subject_questions(course, num):
+    topic = models.Topic.query.filter_by(name=course.encode('utf-8')).first()
+    question = models.Question.query.filter_by(id=num, topic=topic).first()
+    return render_template("question.html", question=question)
 
 @app.after_request
 def add_header(response):
     response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
     response.headers['Cache-Control'] = 'public, max-age=1'
     return response
-
 
 @app.errorhandler(404) #Pagina de Error: No Existe
 def page_not_found(error):
@@ -324,7 +347,11 @@ def panel():
 @login_required
 @just_admins
 def courses_panel():
-    return render_template("courses_panel.html", courses=models.Topic.query.all())
+    courses=models.Topic.query.all()
+    subjects = models.Course.query.all()
+    courses = list(set(courses)-set(subjects))
+    return render_template("courses_panel.html", courses=courses,
+                           subjects=subjects)
 
 @app.route("/panel/courses/new")
 @login_required
@@ -363,7 +390,7 @@ def new_question(course_id=None):
     topic = models.Topic.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("new_question.html",topic=topic)
+    return render_template("new_question.html",topic=topic, models=models)
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>")
 @login_required
@@ -374,7 +401,7 @@ def view_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("view_question.html",question=question)
+    return render_template("view_question.html",question=question,models=models)
 
 @app.route("/panel/courses/<int:course_id>/question/<int:question_id>/edit")
 @login_required
@@ -385,7 +412,7 @@ def edit_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("edit_question.html",question=question)
+    return render_template("edit_question.html",question=question, models=models)
 """
 *******************************************************************************
 ****************************** PANEL - TEACHER ********************************
@@ -395,13 +422,13 @@ def edit_question(course_id=None,question_id=None):
 @login_required
 @just_teachers
 def subjects_panel():
-    return render_template("courses_panel.html", courses=current_user.subjects.all())
+    return render_template("subjects_panel.html", courses=current_user.subjects.all())
 
 @app.route("/panel/subjects/new")
 @login_required
 @just_teachers
 def new_subject():
-    return render_template("private_new_course.html")
+    return render_template("new_subject.html")
 
 @app.route("/panel/subjects/<int:course_id>/edit")
 @login_required
@@ -409,10 +436,10 @@ def new_subject():
 def edit_subject(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
-    topic = current_user.subjects
+    topic = current_user.subjects.filter_by(id=course_id).first()
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("edit_course.html", topic=topic)
+    return render_template("edit_subject.html", topic=topic)
 
 @app.route("/panel/subjects/<int:course_id>")
 @login_required
@@ -420,10 +447,10 @@ def edit_subject(course_id=None):
 def view_subject(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
-    topic = models.Topic.query.get(course_id)
+    topic = models.Course.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("view_course.html", topic=topic)
+    return render_template("view_subject.html", topic=topic)
 
 @app.route("/panel/subjects/<int:course_id>/question/new")
 @login_required
@@ -431,10 +458,10 @@ def view_subject(course_id=None):
 def new_subject_question(course_id=None):
     if isinstance(course_id,type(None)):
         return abort(404)
-    topic = models.Topic.query.get(course_id)
+    topic = models.Course.query.get(course_id)
     if isinstance(topic,type(None)):
         return abort(404)
-    return render_template("new_question.html",topic=topic)
+    return render_template("new_question.html",topic=topic, models=models)
 
 @app.route("/panel/subjects/<int:course_id>/question/<int:question_id>")
 @login_required
@@ -445,7 +472,7 @@ def view_subject_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("view_question.html",question=question)
+    return render_template("view_question.html",question=question, models=models)
 
 @app.route("/panel/subjects/<int:course_id>/question/<int:question_id>/edit")
 @login_required
@@ -456,7 +483,7 @@ def edit_subject_question(course_id=None,question_id=None):
     question = models.Question.query.filter_by(topic_id=course_id,id=question_id).first()
     if isinstance(question,type(None)):
         return abort(404)
-    return render_template("edit_question.html",question=question)
+    return render_template("edit_question.html",question=question,models=models)
 
 
 

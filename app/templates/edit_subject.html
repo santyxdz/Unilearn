@@ -48,8 +48,14 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label for="description" class="col-lg-2 control-label">Muro</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="3" id="board">{{ set_default(topic.board,"") }}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
-                                <button class="btn btn-default">Cancelar</button>
+                                <a href="{{ url_for("view_subject",course_id=topic.id) }}" class="btn btn-default">Cancelar</a>
                                 <button type="submit" class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
                             </div>
                         </div>
@@ -71,7 +77,7 @@
         $(document).ready(function(){
                     $("button#delete").click(
                             function(){
-                                $.post("/api/topics/"+"{{ topic.name }}",
+                                $.post("/api/subjects/"+"{{ topic.name }}",
                                         {"method":"delete"},
                                         function(data){
                                             if (data.status == "error"){
@@ -86,14 +92,19 @@
                     );
                     $("button#saveChanges").click(
                             function(){
-                                $.post("/api/topics/"+"{{ topic.name }}",
+                                $.post("/api/courses/"+"{{ topic.name }}",
                                         {"method":"update",
                                         "name":$("input[name=name]").val(),
                                         "icon":$("input[name=icon]").val(),
-                                        "description":$("textarea#description").val()},
+                                        "description":$("textarea#description").val(),
+                                        "board":$("textarea#board").val()},
                                         function(data){
-                                            alert(data.status);
-                                            window.location.href = window.location.href;
+                                            if(data.status == "error"){
+                                                alert("ERROR!: "+data.error);
+                                            }else{
+                                                alert(data.status);
+                                                window.location.href = window.location.href;
+                                            }
                                         },
                                         "json");
                             }

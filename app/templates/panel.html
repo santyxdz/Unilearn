@@ -86,6 +86,7 @@
                             <h3 class="panel-title">Opciones</h3>
                         </div>
                         <div class="panel-body">
+                            {% if current_user.type == "admin" %}
                             <a href="{{ url_for("courses_panel") }}">
                                 <div class="row">
                                     <div class="list-group">
@@ -112,6 +113,37 @@
                                                 <div class="action-secondary"><i class="mdi-material-info"></i></div>
                                                 <h4 class="list-group-item-heading">Añadir Curso</h4>
                                                 <p class="list-group-item-text">Añadir nuevo curso.</p>
+                                            </div>
+                                        </div></div>
+                                </div>
+                            </a>
+                            {% endif %}
+                            <a href="{{ url_for("subjects_panel") }}">
+                                <div class="row">
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-action-primary">
+                                                <i class="glyphicon glyphicon-edit"></i>
+                                            </div>
+                                            <div class="row-content">
+                                                <div class="action-secondary"><i class="mdi-material-info"></i></div>
+                                                <h4 class="list-group-item-heading">Panel de Grupos</h4>
+                                                <p class="list-group-item-text">Editar, Añadir, Eliminar Grupos.</p>
+                                            </div>
+                                        </div></div>
+                                </div>
+                            </a>
+                            <a href="{{ url_for("new_subject") }}">
+                                <div class="row">
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-action-primary">
+                                                <i class="glyphicon glyphicon-plus"></i>
+                                            </div>
+                                            <div class="row-content">
+                                                <div class="action-secondary"><i class="mdi-material-info"></i></div>
+                                                <h4 class="list-group-item-heading">Crear Grupo</h4>
+                                                <p class="list-group-item-text">Crear un nuevo grupo.</p>
                                             </div>
                                         </div></div>
                                 </div>

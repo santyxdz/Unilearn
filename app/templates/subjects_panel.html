@@ -13,7 +13,7 @@
                 <div class="panel-body">
                     <div class="list-group">
                         {% for course in courses %}
-                            <a href="{{ url_for("view_course",course_id=course.id) }}">
+                            <a href="{{ url_for("view_subject",course_id=course.id) }}">
                                 <div class="list-group-item">
                                     <div class="row-picture">
                                         <img class="circle" src="{{ set_default(course.icon,
@@ -37,7 +37,7 @@
                     <h3 class="panel-title">Opciones</h3>
                 </div>
                 <div class="panel-body">
-                    <a href="{{ url_for("new_course") }}">
+                    <a href="{{ url_for("new_subject") }}">
                         <div class="row">
                             <div class="list-group">
                                 <div class="list-group-item">
@@ -52,31 +52,6 @@
                                 </div></div>
                         </div>
                     </a>
-                </div>
-            </div>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Grupos</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="list-group">
-                        {% for course in subjects %}
-                            <a href="{{ url_for("view_course",course_id=course.id) }}">
-                                <div class="list-group-item">
-                                    <div class="row-picture">
-                                        <img class="circle" src="{{ set_default(course.icon,
-                                        "https://cdn2.iconfinder.com/data/icons/multi-media/520/book-128.png") }}"
-                                             alt="icon" width="56" height="56">
-                                    </div>
-                                    <div class="row-content">
-                                        <h4 class="list-group-item-heading">{{ course.name }}</h4>
-                                        <p class="list-group-item-text">{{ course.description[:20] }}</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="list-group-separator"></div>
-                        {% endfor %}
-                    </div>
                 </div>
             </div>
         </div>

@@ -360,7 +360,7 @@
                     <!-- formulario -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" name="sendreport" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".reportsent">Enviar</button>
+                    <button type="button" name="sendreport" class="btn btn-primary" data-dismiss="modal" data-toggle="modal">Enviar</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
@@ -405,11 +405,14 @@
                             function(){
                                 $.post("/api/evaluate/report/", {report: $("input[name='inputreport']:text"), question_id: {{question.id}},
                                     {% if current_user.is_authenticated() %}
-                                        username: {{current_user.username}}
-                                                {%else%}
-                                                username: "testuser"
+                                        username: "{{current_user.username}}"
+                                    {%else%}
+                                        username: "testuser"
                                     {%endif%}
-                            },function(data){$('.reportsent').modal('show')}, "json");
+                            },function(data){
+                                $('.reportsent').modal('show');
+                                alert(data);
+                            }, "json");
                 }
         );
         });
