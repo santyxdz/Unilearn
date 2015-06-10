@@ -73,11 +73,12 @@
         <li><a href="{{ url_for("home") }}">Unilearn</a></li>
         <li><a href="{{ url_for("courses") }}">Cursos</a></li>
         {% if not current_user.is_authenticated() %}
-            <li style="float: right"><a href="{{ url_for("register") }}"><span>Registrase</span></a></li>
+            <!--<li style="float: right"><a href="{{ url_for("register") }}"><span>Registrase</span></a></li>-->
             <li><a href="{{ url_for("login") }}"><span>Entrar</span></a></li>
         {% else %}
             <li><a href="{{ url_for("user",user=current_user.username) }}">
-                <span>Perfil</span></a>
+                <span>Perfil</span>
+                <img src="{{current_user.photo}}" style="max-width:50px;max-height:50px;" class="img-reponsive img-rounded"></a>
             </li>
         {% endif %}
     </ul>
