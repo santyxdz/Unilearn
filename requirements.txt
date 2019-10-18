@@ -20,4 +20,4 @@ psycopg2==2.5.4
 requests==2.4.3
 wsgiref==0.1.2
 rauth==0.7.1
-urllib3==1.10.4
+urllib3==1.24.2
