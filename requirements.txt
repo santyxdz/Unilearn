@@ -6,7 +6,7 @@ Flask-Script==2.0.5
 Flask-RESTful==0.3.2
 Flask-Social==1.6.2
 Flask-Login==0.2.11
-Jinja2==2.7.3
+Jinja2==2.11.3
 Mako==1.0.0
 MarkupSafe==0.23
 SQLAlchemy==0.9.8
